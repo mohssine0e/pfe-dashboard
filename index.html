@@ -58,6 +58,15 @@ nav.jump+h2{margin-top:40px}
 .chip.due{color:var(--ink);font-weight:600}.chip.hot{background:var(--ink);color:var(--ground)}
 .chip.fit-top{color:var(--ink);border:1px solid var(--ink)}
 .empty{display:none;color:var(--muted)}
+h2.sec{margin-top:34px}
+.via{display:inline-flex;align-items:center;gap:6px;font:600 12px/1 var(--mono);padding:5px 10px 5px 5px;border-radius:999px;color:var(--vc);background:color-mix(in srgb,var(--card),var(--vc) 14%);border:1px solid color-mix(in srgb,var(--card),var(--vc) 45%)}
+.ic{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 3px;border-radius:999px;background:var(--vc);color:#fff;font:700 10px/1 var(--sans);box-sizing:border-box}
+.filters label .ic{background:currentColor;margin-right:6px;vertical-align:-3px}.filters label .ic{color:inherit}
+.filters label .ic{background:var(--muted);color:var(--ground)}.filters input:checked+label .ic{background:var(--ground);color:var(--ink)}
+.via-email{--vc:#B45309}.via-rekrute{--vc:#1D4ED8}.via-stagiaires{--vc:#047857}.via-linkedin{--vc:#0A66C2}.via-careers{--vc:#7C3AED}.via-other{--vc:#6B7280}
+.m-email{--vc:#B45309}.m-rekrute{--vc:#1D4ED8}.m-stagiaires{--vc:#047857}.m-linkedin{--vc:#0A66C2}.m-careers{--vc:#7C3AED}.m-other{--vc:#6B7280}
+.card.offer{border-left:4px solid var(--vc)}
+@media (prefers-color-scheme:dark){.via-email,.m-email{--vc:#F59E0B}.via-rekrute,.m-rekrute{--vc:#60A5FA}.via-stagiaires,.m-stagiaires{--vc:#34D399}.via-linkedin,.m-linkedin{--vc:#38BDF8}.via-careers,.m-careers{--vc:#A78BFA}.via-other,.m-other{--vc:#9CA3AF}.ic{color:#0F0F0F}}
 .apps td small{display:block;color:var(--muted);font-size:12px}
 .lab{font:600 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-right:8px}
 @media (min-width:900px){.wrap{max-width:980px}.offers{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(6,1fr)}}
@@ -67,6 +76,11 @@ body:has(#l-java:checked) .offer:not([data-lane="java"]){display:none}
 body:has(#l-fullstack:checked) .offer:not([data-lane="fullstack"]){display:none}
 body:has(#l-data:checked) .offer:not([data-lane="data"]){display:none}
 body:has(#l-other:checked) .offer:not([data-lane="other"]){display:none}
+body:has(#m-rekrute:checked) #online-list .offer:not([data-src="rekrute"]){display:none}
+body:has(#m-stagiaires:checked) #online-list .offer:not([data-src="stagiaires"]){display:none}
+body:has(#m-linkedin:checked) #online-list .offer:not([data-src="linkedin"]){display:none}
+body:has(#m-careers:checked) #online-list .offer:not([data-src="careers"]){display:none}
+body:has(#m-other:checked) #online-list .offer:not([data-src="other"]){display:none}
 body:has(#f-top:checked) .offer:not([data-fit="top"]){display:none}
 body:has(#f-good:checked) .offer:not([data-fit="good"]){display:none}
 body:has(#f-weak:checked) .offer:not([data-fit="weak"]){display:none}
@@ -81,7 +95,7 @@ body:has(#s-unknown:checked) .apps tr[data-st]:not([data-st="unknown"]){display:
 </head><body><div class="wrap">
 <h1>PFE hunt dashboard</h1>
 <p class="kicker">Software, Java and DevOps PFE in Morocco, 2026-2027</p>
-<p class="updated">Data synced Nov 4, 2026, 9:15am. Page rebuilt Nov 4, 2026, 5:55pm</p>
+<p class="updated">Data synced Nov 4, 2026, 9:15am. Page rebuilt Nov 4, 2026, 6:02pm</p>
 <p class="lede">Next deadline: <b>Cnexia</b>, Stage PFE Cloud &amp; DevOps, closes Nov 10 (in 6 days). 22 offers are still open to you.</p>
 <ul><li><b>CV check:</b> your CV's profile line still names a target company (Solaire Plus). Change it to the company you're applying to before every send.</li></ul>
 <div class="stats">
@@ -92,8 +106,9 @@ body:has(#s-unknown:checked) .apps tr[data-st]:not([data-st="unknown"]){display:
 <div class="stat"><b>6</b><span>rejections</span></div>
 <div class="stat"><b>24</b><span>bounced emails</span></div>
 </div>
-<nav class="jump"><a href="#offers">Offers</a><a href="#unfinished">Unfinished</a><a href="#replies">Replies</a><a href="#applications">Applications</a></nav>
+<nav class="jump"><a href="#online">Apply online</a><a href="#email">Apply by email</a><a href="#unfinished">Unfinished</a><a href="#replies">Replies</a><a href="#applications">Applications</a></nav>
 <h2 id="offers">Open offers</h2>
+<p class="muted">10 to apply for on a website, 12 to apply for by email. The lane and fit filters work on both lists.</p>
 <div class="filters">
 <input type="radio" name="lane" id="l-all" checked><label for="l-all">All</label>
 <input type="radio" name="lane" id="l-devops"><label for="l-devops">DevOps / Cloud</label>
@@ -106,206 +121,218 @@ body:has(#s-unknown:checked) .apps tr[data-st]:not([data-st="unknown"]){display:
 <input type="radio" name="fit" id="f-top"><label for="f-top">Best fit</label>
 <input type="radio" name="fit" id="f-good"><label for="f-good">Worth applying</label>
 <input type="radio" name="fit" id="f-weak"><label for="f-weak">Weak fit</label>
-</div><div class="offers">
-<div class="card offer" data-lane="devops" data-fit="top">
-<div class="chips"><span class="chip due">Closes Nov 10, 6d</span><span class="chip">DevOps / Cloud</span><span class="chip fit-top">Best fit</span></div>
+</div>
+<h2 id="online" class="sec">Apply on a website (10)</h2>
+<p class="muted">Labelled by where the application form is: ReKrute, Stagiaires.ma, LinkedIn or the company's own careers site.</p>
+<div class="filters">
+<input type="radio" name="src" id="m-all" checked><label for="m-all">All sources</label>
+<input type="radio" name="src" id="m-rekrute"><label for="m-rekrute"><span class="ic" aria-hidden="true">R</span>ReKrute (4)</label>
+<input type="radio" name="src" id="m-stagiaires"><label for="m-stagiaires"><span class="ic" aria-hidden="true">S</span>Stagiaires.ma (4)</label>
+<input type="radio" name="src" id="m-linkedin"><label for="m-linkedin"><span class="ic" aria-hidden="true">in</span>LinkedIn (2)</label>
+</div><div class="offers" id="online-list">
+<div class="card offer m-rekrute" data-lane="devops" data-fit="top" data-src="rekrute">
+<div class="chips"><span class="via via-rekrute"><span class="ic" aria-hidden="true">R</span>ReKrute</span><span class="chip due">Closes Nov 10, 6d</span><span class="chip">DevOps / Cloud</span><span class="chip fit-top">Best fit</span></div>
 <h3><a href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html">Cnexia</a></h3>
 <div class="fact"><b>Stage PFE Cloud &amp; DevOps</b></div>
 <div class="fact muted">Rabat</div>
 <div class="fact"><span class="lab">Why</span>Closest match to your DevOps goal. All three Cnexia roles close Nov 10.</div>
 <div class="fact"><span class="lab">Tip</span>Lead with MicroPaaS and its CI/CD pipeline (GitHub Actions + Testcontainers).</div>
 <div class="fact"><span class="lab">Apply</span>Apply on ReKrute</div>
-<a class="btn" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html">Open the offer</a></div>
-<div class="card offer" data-lane="java" data-fit="top">
-<div class="chips"><span class="chip due">Closes Nov 10, 6d</span><span class="chip">Java / Backend</span><span class="chip fit-top">Best fit</span></div>
+<a class="btn" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html">Apply on ReKrute</a></div>
+<div class="card offer m-rekrute" data-lane="java" data-fit="top" data-src="rekrute">
+<div class="chips"><span class="via via-rekrute"><span class="ic" aria-hidden="true">R</span>ReKrute</span><span class="chip due">Closes Nov 10, 6d</span><span class="chip">Java / Backend</span><span class="chip fit-top">Best fit</span></div>
 <h3><a href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html">Cnexia</a></h3>
 <div class="fact"><b>Stage PFE Architecture Logicielle</b></div>
 <div class="fact muted">Rabat</div>
 <div class="fact"><span class="lab">Why</span>Architecture role that fits your microservices work.</div>
 <div class="fact"><span class="lab">Tip</span>Lead with the distributed student platform: Spring Cloud Gateway, database-per-service, WebClient.</div>
 <div class="fact"><span class="lab">Apply</span>Apply on ReKrute</div>
-<a class="btn" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html">Open the offer</a></div>
-<div class="card offer" data-lane="fullstack" data-fit="top">
-<div class="chips"><span class="chip due">Closes Nov 10, 6d</span><span class="chip">Full stack / Web</span><span class="chip fit-top">Best fit</span></div>
+<a class="btn" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html">Apply on ReKrute</a></div>
+<div class="card offer m-rekrute" data-lane="fullstack" data-fit="top" data-src="rekrute">
+<div class="chips"><span class="via via-rekrute"><span class="ic" aria-hidden="true">R</span>ReKrute</span><span class="chip due">Closes Nov 10, 6d</span><span class="chip">Full stack / Web</span><span class="chip fit-top">Best fit</span></div>
 <h3><a href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html">Cnexia</a></h3>
 <div class="fact"><b>Stage PFE Full Stack</b></div>
 <div class="fact muted">Rabat</div>
 <div class="fact"><span class="lab">Why</span>Full stack, same Nov 10 deadline as the other Cnexia roles.</div>
 <div class="fact"><span class="lab">Tip</span>Lead with your PFA: Spring Boot 3 reconciliation engine + React 19 / TypeScript.</div>
 <div class="fact"><span class="lab">Apply</span>Apply on ReKrute</div>
-<a class="btn" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html">Open the offer</a></div>
-<div class="card offer" data-lane="java" data-fit="top">
-<div class="chips"><span class="chip due">Closes Nov 15, 11d</span><span class="chip">Java / Backend</span><span class="chip fit-top">Best fit</span></div>
+<a class="btn" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html">Apply on ReKrute</a></div>
+<div class="card offer m-linkedin" data-lane="java" data-fit="top" data-src="linkedin">
+<div class="chips"><span class="via via-linkedin"><span class="ic" aria-hidden="true">in</span>LinkedIn</span><span class="chip due">Closes Nov 15, 11d</span><span class="chip">Java / Backend</span><span class="chip fit-top">Best fit</span></div>
 <h3><a href="https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499">Maersk</a></h3>
 <div class="fact"><b>End-of-Studies Internship, IT</b></div>
 <div class="fact muted">Tangier</div>
 <div class="fact"><span class="lab">Why</span>IT end-of-studies internship in Tangier; the listing prints 2027, treated as Nov 15, 2026.</div>
 <div class="fact"><span class="lab">Tip</span>The posting is in English, so apply in English.</div>
 <div class="fact"><span class="lab">Apply</span>Apply on LinkedIn</div>
-<a class="btn" href="https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499">Open the offer</a></div>
-<div class="card offer" data-lane="java" data-fit="top">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-top">Best fit</span></div>
+<a class="btn" href="https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499">Apply on LinkedIn</a></div>
+<div class="card offer m-linkedin" data-lane="java" data-fit="top" data-src="linkedin">
+<div class="chips"><span class="via via-linkedin"><span class="ic" aria-hidden="true">in</span>LinkedIn</span><span class="via via-email"><span class="ic" aria-hidden="true">@</span>or email</span><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-top">Best fit</span></div>
 <h3><a href="https://ma.linkedin.com/jobs/view/avl-maroc-pfe-internship-program-2027-at-avl-4479359586">AVL Maroc</a></h3>
 <div class="fact"><b>PFE Internship Program 2027, Software Development track</b></div>
 <div class="fact muted">Rabat, Casablanca</div>
 <div class="fact"><span class="lab">Why</span>PFE program with a Software Development track.</div>
 <div class="fact"><span class="lab">Tip</span>Apply on LinkedIn or by email, not both.</div>
 <div class="fact"><span class="lab">Apply</span>LinkedIn, or email SAMIRA.BOUDAD@AVL.COM (not both)</div>
-<a class="btn" href="https://ma.linkedin.com/jobs/view/avl-maroc-pfe-internship-program-2027-at-avl-4479359586">Open the offer</a></div>
-<div class="card offer" data-lane="devops" data-fit="top">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">DevOps / Cloud</span><span class="chip fit-top">Best fit</span></div>
+<a class="btn" href="https://ma.linkedin.com/jobs/view/avl-maroc-pfe-internship-program-2027-at-avl-4479359586">Apply on LinkedIn</a></div>
+<div class="card offer m-stagiaires" data-lane="devops" data-fit="top" data-src="stagiaires">
+<div class="chips"><span class="via via-stagiaires"><span class="ic" aria-hidden="true">S</span>Stagiaires.ma</span><span class="chip">No deadline</span><span class="chip">DevOps / Cloud</span><span class="chip fit-top">Best fit</span></div>
 <h3><a href="https://www.stagiaires.ma/stage-emploi-maroc/7681-stage-pfe-data-ia-it-d2t2">Intelcia</a></h3>
 <div class="fact"><b>Stage PFE - Data, IA &amp; IT (D2T2), DevOps Engineer / Full Stack &amp; IA tracks</b></div>
 <div class="fact muted">Casablanca (hybrid)</div>
 <div class="fact"><span class="lab">Why</span>Has a DevOps Engineer track, paid with transport covered.</div>
 <div class="fact"><span class="lab">Tip</span>Lead with MicroPaaS: Docker Engine API, Terraform, GitHub Actions and Testcontainers.</div>
 <div class="fact"><span class="lab">Apply</span>&#x27;Postuler maintenant&#x27; on Stagiaires.ma</div>
-<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7681-stage-pfe-data-ia-it-d2t2">Open the offer</a></div>
-<div class="card offer" data-lane="fullstack" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
+<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7681-stage-pfe-data-ia-it-d2t2">Apply on Stagiaires.ma</a></div>
+<div class="card offer m-rekrute" data-lane="fullstack" data-fit="good" data-src="rekrute">
+<div class="chips"><span class="via via-rekrute"><span class="ic" aria-hidden="true">R</span>ReKrute</span><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
 <h3><a href="https://www.rekrute.com/offre-emploi-offre-de-stage-pfe-developpement-web-symfony-angular-docker-recrutement-od-services-casablanca-185767.html">OD Services</a></h3>
 <div class="fact"><b>Stage PFE Web (Symfony, Angular, Docker)</b></div>
 <div class="fact muted">Casablanca</div>
 <div class="fact"><span class="lab">Why</span>Symfony, Angular and Docker.</div>
 <div class="fact"><span class="lab">Tip</span>Lead with your Laravel license platform, Docker Compose and GitLab CI.</div>
 <div class="fact"><span class="lab">Apply</span>Apply on ReKrute</div>
-<a class="btn" href="https://www.rekrute.com/offre-emploi-offre-de-stage-pfe-developpement-web-symfony-angular-docker-recrutement-od-services-casablanca-185767.html">Open the offer</a></div>
-<div class="card offer" data-lane="java" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://www.linkedin.com/in/lamiaa-fethane-54a91a1a/recent-activity/all/">Diebold Nixdorf Maroc</a></h3>
-<div class="fact"><b>PFE 2027, Informatique</b></div>
-<div class="fact muted">Casablanca</div>
-<div class="fact"><span class="lab">Why</span>Recruiter asked for CVs by email.</div>
-<div class="fact"><span class="lab">Tip</span>Put &quot;Stage PFE&quot; and &quot;Génie Logiciel&quot; in the subject.</div>
-<div class="fact"><span class="lab">Apply</span>Email lamiaa.fethane@gmail.com, subject with &quot;Stage PFE&quot; and your specialisation</div>
-<a class="btn" href="https://www.linkedin.com/in/lamiaa-fethane-54a91a1a/recent-activity/all/">Open the offer</a></div>
-<div class="card offer" data-lane="java" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://joblia.ma/offres-emploi/orange-maroc-lance-une-campagne-de-candidatures-spontanees-pour-stages-pfe-et-emplois-dans-plusieurs-villes-au-maroc/">Orange Maroc</a></h3>
-<div class="fact"><b>Spontaneous applications, Technologies &amp; Digital</b></div>
-<div class="fact muted">Casablanca</div>
-<div class="fact"><span class="lab">Why</span>Spontaneous campaign for Technologies &amp; Digital.</div>
-<div class="fact"><span class="lab">Tip</span>Use recrutement@orange.ma; your Oct 21 email went to a different Orange address.</div>
-<div class="fact"><span class="lab">Apply</span>Email recrutement@orange.ma, subject &quot;Candidature Spontanée&quot; (you emailed a different Orange address on Oct 21)</div>
-<a class="btn" href="https://joblia.ma/offres-emploi/orange-maroc-lance-une-campagne-de-candidatures-spontanees-pour-stages-pfe-et-emplois-dans-plusieurs-villes-au-maroc/">Open the offer</a></div>
-<div class="card offer" data-lane="java" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://www.linkedin.com/in/hajar-salhani-pmp%C2%AE-a2a265147/">Accenture (AFD.TECH)</a></h3>
-<div class="fact"><b>PFE applications</b></div>
-<div class="fact muted">Rabat</div>
-<div class="fact"><span class="lab">Why</span>AFD.TECH team is collecting PFE applications.</div>
-<div class="fact"><span class="lab">Tip</span>Short email, lead with Java / Spring Boot and MicroPaaS.</div>
-<div class="fact"><span class="lab">Apply</span>Email AFD_recrutement@accenture.com</div>
-<a class="btn" href="https://www.linkedin.com/in/hajar-salhani-pmp%C2%AE-a2a265147/">Open the offer</a></div>
-<div class="card offer" data-lane="fullstack" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://joblia.ma/offres-emploi/2ca-business-recrute-des-stagiaires-pfe-en-marketing-developpement-web-ia-rh-et-comptabilite/">2CA Business</a></h3>
-<div class="fact"><b>Stage PFE 2027, Web development</b></div>
-<div class="fact muted">Kenitra, Rabat</div>
-<div class="fact"><span class="lab">Why</span>Web development PFE.</div>
-<div class="fact"><span class="lab">Tip</span>Use their exact subject line.</div>
-<div class="fact"><span class="lab">Apply</span>Email rh@2cabusiness.com, subject &quot;PFE-2027-DEV – Stage PFE en Développement web&quot;</div>
-<a class="btn" href="https://joblia.ma/offres-emploi/2ca-business-recrute-des-stagiaires-pfe-en-marketing-developpement-web-ia-rh-et-comptabilite/">Open the offer</a></div>
-<div class="card offer" data-lane="fullstack" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://joblia.ma/offres-emploi/transmed-maroc-recrute-des-stagiaires-pfe-en-finance-rh-supply-chain-marketing-et-it/">Transmed Maroc</a></h3>
-<div class="fact"><b>Stage PFE, IT &amp; digital</b></div>
-<div class="fact muted">Casablanca</div>
-<div class="fact"><span class="lab">Why</span>IT &amp; digital PFE.</div>
-<div class="fact"><span class="lab">Tip</span>Use their exact subject line.</div>
-<div class="fact"><span class="lab">Apply</span>Email ikram.jawadi@transmed.com, subject &quot;Candidature Stage PFE – IT et digital&quot;</div>
-<a class="btn" href="https://joblia.ma/offres-emploi/transmed-maroc-recrute-des-stagiaires-pfe-en-finance-rh-supply-chain-marketing-et-it/">Open the offer</a></div>
-<div class="card offer" data-lane="other" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Other</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://joblia.ma/offres-emploi/hirschmann-automotive-recrute-des-stagiaires-pfe-ingenieurs-et-masters-a-oujda-pour-2027/">Hirschmann Automotive</a></h3>
-<div class="fact"><b>Stage PFE 2027</b></div>
-<div class="fact muted">Oujda</div>
-<div class="fact"><span class="lab">Why</span>Automotive, Oujda.</div>
-<div class="fact"><span class="lab">Tip</span>Use their exact subject line &quot;Stage PFE 2027&quot;.</div>
-<div class="fact"><span class="lab">Apply</span>Email recruiting.oujda@hirschmann-automotive.com, subject &quot;Stage PFE 2027&quot;</div>
-<a class="btn" href="https://joblia.ma/offres-emploi/hirschmann-automotive-recrute-des-stagiaires-pfe-ingenieurs-et-masters-a-oujda-pour-2027/">Open the offer</a></div>
-<div class="card offer" data-lane="devops" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">DevOps / Cloud</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://alouadifa.ma/stage/stage-it-kenitra-developpement-systemes/">Industrial firm, Atlantic Free Zone</a></h3>
-<div class="fact"><b>Stage IT – Développement &amp; Systèmes</b></div>
-<div class="fact muted">Kenitra</div>
-<div class="fact"><span class="lab">Why</span>Development &amp; systems, unnamed firm in the Atlantic Free Zone.</div>
-<div class="fact"><span class="lab">Tip</span>Mention Linux, Docker and Bash.</div>
-<div class="fact"><span class="lab">Apply</span>Email rh.zf@outlook.fr, subject &quot;Stage IT Kenitra&quot;</div>
-<a class="btn" href="https://alouadifa.ma/stage/stage-it-kenitra-developpement-systemes/">Open the offer</a></div>
-<div class="card offer" data-lane="fullstack" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
-<h3><a href="https://www.linkedin.com/jobs/view/4486413272/">SmilyCall</a></h3>
-<div class="fact"><b>Stage Développeur(se) Full Stack, développement assisté par l&#x27;IA</b></div>
-<div class="fact muted">Marrakech</div>
-<div class="fact"><span class="lab">Why</span>AI-assisted full stack dev, stipend, possible hire.</div>
-<div class="fact"><span class="lab">Tip</span>They require your GitHub link and 5 lines on how you organize a project when coding with AI. Confirm a 6-month PFE works.</div>
-<div class="fact"><span class="lab">Apply</span>Email talents@smilycall.com, subject &#x27;STAGE DEV | Prénom NOM&#x27;: CV + GitHub link (required) + 5 lines on how you organize a project when coding with AI</div>
-<a class="btn" href="https://www.linkedin.com/jobs/view/4486413272/">Open the offer</a></div>
-<div class="card offer" data-lane="devops" data-fit="good">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">DevOps / Cloud</span><span class="chip fit-good">Worth applying</span></div>
+<a class="btn" href="https://www.rekrute.com/offre-emploi-offre-de-stage-pfe-developpement-web-symfony-angular-docker-recrutement-od-services-casablanca-185767.html">Apply on ReKrute</a></div>
+<div class="card offer m-stagiaires" data-lane="devops" data-fit="good" data-src="stagiaires">
+<div class="chips"><span class="via via-stagiaires"><span class="ic" aria-hidden="true">S</span>Stagiaires.ma</span><span class="chip">No deadline</span><span class="chip">DevOps / Cloud</span><span class="chip fit-good">Worth applying</span></div>
 <h3><a href="https://www.stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027">Amsys Consulting</a></h3>
 <div class="fact"><b>Stage PFE - PFE Challenge 2027 (Développement logiciel &amp; Cloud, Cybersécurité, ...)</b></div>
 <div class="fact muted">Casablanca (hybrid)</div>
 <div class="fact"><span class="lab">Why</span>PFE Challenge with software &amp; cloud and cybersecurity tracks; prizes for best projects.</div>
 <div class="fact"><span class="lab">Tip</span>Needs a Stagiaires.ma account; the subjects are vague.</div>
 <div class="fact"><span class="lab">Apply</span>&#x27;Postuler maintenant&#x27; on Stagiaires.ma (needs a Stagiaires.ma account)</div>
-<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027">Open the offer</a></div>
-<div class="card offer" data-lane="other" data-fit="weak">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Other</span><span class="chip fit-weak">Weak fit</span></div>
-<h3><a href="https://www.linkedin.com/company/smart-digital-systems-sds/">Smart Digital Systems</a></h3>
-<div class="fact"><b>Stage PFE Odoo &amp; React.js (Odoo experience required)</b></div>
-<div class="fact muted">Oujda</div>
-<div class="fact"><span class="lab">Why</span>Odoo &amp; React.js; Odoo experience required.</div>
-<div class="fact"><span class="lab">Tip</span>Your CV lists no Odoo.</div>
-<div class="fact"><span class="lab">Apply</span>Email contact@smartds.ma</div>
-<a class="btn" href="https://www.linkedin.com/company/smart-digital-systems-sds/">Open the offer</a></div>
-<div class="card offer" data-lane="data" data-fit="weak">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Data / AI</span><span class="chip fit-weak">Weak fit</span></div>
-<h3><a href="https://www.linkedin.com/company/exosdata-consulting/">ExosData Consulting</a></h3>
-<div class="fact"><b>Stage PFE 2027, Graph Data Science</b></div>
-<div class="fact muted">Rabat</div>
-<div class="fact"><span class="lab">Why</span>Graph Data Science.</div>
-<div class="fact"><span class="lab">Tip</span>Data science, outside your Java / DevOps lane.</div>
-<div class="fact"><span class="lab">Apply</span>Email contact@exos-data.com and fill in their form</div>
-<a class="btn" href="https://www.linkedin.com/company/exosdata-consulting/">Open the offer</a></div>
-<div class="card offer" data-lane="data" data-fit="weak">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Data / AI</span><span class="chip fit-weak">Weak fit</span></div>
-<h3><a href="https://alouadifa.ma/stage/stage-ia-industrielle-gestion-bouskoura-oulmes/">Les Eaux Minérales d&#x27;Oulmès</a></h3>
-<div class="fact"><b>Stage IA Industrielle</b></div>
-<div class="fact muted">Bouskoura</div>
-<div class="fact"><span class="lab">Why</span>Industrial AI.</div>
-<div class="fact"><span class="lab">Tip</span>AI / data, outside your lane.</div>
-<div class="fact"><span class="lab">Apply</span>Email stage@oulmes.ma</div>
-<a class="btn" href="https://alouadifa.ma/stage/stage-ia-industrielle-gestion-bouskoura-oulmes/">Open the offer</a></div>
-<div class="card offer" data-lane="other" data-fit="weak">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Other</span><span class="chip fit-weak">Weak fit</span></div>
-<h3><a href="https://www.linkedin.com/in/zineb-265484266/">AGH Data Agency</a></h3>
-<div class="fact"><b>Stage QA Testeur Mobile (unpaid, 1-3 months)</b></div>
-<div class="fact muted">Remote</div>
-<div class="fact"><span class="lab">Why</span>Mobile QA testing, unpaid, 1-3 months.</div>
-<div class="fact"><span class="lab">Tip</span>Too short for a full PFE.</div>
-<div class="fact"><span class="lab">Apply</span>Email aghrh74@gmail.com</div>
-<a class="btn" href="https://www.linkedin.com/in/zineb-265484266/">Open the offer</a></div>
-<div class="card offer" data-lane="fullstack" data-fit="weak">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-weak">Weak fit</span></div>
+<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027">Apply on Stagiaires.ma</a></div>
+<div class="card offer m-stagiaires" data-lane="fullstack" data-fit="weak" data-src="stagiaires">
+<div class="chips"><span class="via via-stagiaires"><span class="ic" aria-hidden="true">S</span>Stagiaires.ma</span><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-weak">Weak fit</span></div>
 <h3><a href="https://www.stagiaires.ma/stage-emploi-maroc/7103-offre-de-stage-developpeur-full-stack-h-f">Warriors Team</a></h3>
 <div class="fact"><b>Développeur Full Stack (stage de fin d&#x27;études)</b></div>
 <div class="fact muted">Marrakech</div>
 <div class="fact"><span class="lab">Why</span>React/Vue/Angular with Node, PHP or Python at a marketing agency.</div>
 <div class="fact"><span class="lab">Tip</span>No deadline, duration or stipend listed; not Java / DevOps.</div>
 <div class="fact"><span class="lab">Apply</span>&#x27;Postuler maintenant&#x27; on Stagiaires.ma</div>
-<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7103-offre-de-stage-developpeur-full-stack-h-f">Open the offer</a></div>
-<div class="card offer" data-lane="fullstack" data-fit="weak">
-<div class="chips"><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-weak">Weak fit</span></div>
+<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7103-offre-de-stage-developpeur-full-stack-h-f">Apply on Stagiaires.ma</a></div>
+<div class="card offer m-stagiaires" data-lane="fullstack" data-fit="weak" data-src="stagiaires">
+<div class="chips"><span class="via via-stagiaires"><span class="ic" aria-hidden="true">S</span>Stagiaires.ma</span><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-weak">Weak fit</span></div>
 <h3><a href="https://www.stagiaires.ma/stage-emploi-maroc/7696-stage-developpeur-web-mobile-projets-applicatifs-reels-marrakech">Digital Speak (DigitalSpeak Group)</a></h3>
 <div class="fact"><b>Stage Développeur Web / Mobile (Projets Applicatifs Réels)</b></div>
 <div class="fact muted">Marrakech (on site)</div>
 <div class="fact"><span class="lab">Why</span>Web / mobile agency work, 3-6 months.</div>
 <div class="fact"><span class="lab">Tip</span>Unpaid. Your Laravel and React fit.</div>
 <div class="fact"><span class="lab">Apply</span>&#x27;Postuler maintenant&#x27; on Stagiaires.ma</div>
-<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7696-stage-developpeur-web-mobile-projets-applicatifs-reels-marrakech">Open the offer</a></div>
-<p class="empty">No offers match these filters.</p></div>
+<a class="btn" href="https://www.stagiaires.ma/stage-emploi-maroc/7696-stage-developpeur-web-mobile-projets-applicatifs-reels-marrakech">Apply on Stagiaires.ma</a></div>
+</div>
+<h2 id="email" class="sec">Apply by email (12)</h2>
+<p class="muted">No form to fill: you write the email yourself, to the address and subject the posting gives.</p>
+<div class="offers">
+<div class="card offer m-email" data-lane="java" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://www.linkedin.com/in/lamiaa-fethane-54a91a1a/recent-activity/all/">Diebold Nixdorf Maroc</a></h3>
+<div class="fact"><b>PFE 2027, Informatique</b></div>
+<div class="fact muted">Casablanca</div>
+<div class="fact"><span class="lab">Why</span>Recruiter asked for CVs by email.</div>
+<div class="fact"><span class="lab">Tip</span>Put &quot;Stage PFE&quot; and &quot;Génie Logiciel&quot; in the subject.</div>
+<div class="fact"><span class="lab">Send to</span>Email lamiaa.fethane@gmail.com, subject with &quot;Stage PFE&quot; and your specialisation</div>
+<a class="btn" href="https://www.linkedin.com/in/lamiaa-fethane-54a91a1a/recent-activity/all/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="java" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://joblia.ma/offres-emploi/orange-maroc-lance-une-campagne-de-candidatures-spontanees-pour-stages-pfe-et-emplois-dans-plusieurs-villes-au-maroc/">Orange Maroc</a></h3>
+<div class="fact"><b>Spontaneous applications, Technologies &amp; Digital</b></div>
+<div class="fact muted">Casablanca</div>
+<div class="fact"><span class="lab">Why</span>Spontaneous campaign for Technologies &amp; Digital.</div>
+<div class="fact"><span class="lab">Tip</span>Use recrutement@orange.ma; your Oct 21 email went to a different Orange address.</div>
+<div class="fact"><span class="lab">Send to</span>Email recrutement@orange.ma, subject &quot;Candidature Spontanée&quot; (you emailed a different Orange address on Oct 21)</div>
+<a class="btn" href="https://joblia.ma/offres-emploi/orange-maroc-lance-une-campagne-de-candidatures-spontanees-pour-stages-pfe-et-emplois-dans-plusieurs-villes-au-maroc/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="java" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Java / Backend</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://www.linkedin.com/in/hajar-salhani-pmp%C2%AE-a2a265147/">Accenture (AFD.TECH)</a></h3>
+<div class="fact"><b>PFE applications</b></div>
+<div class="fact muted">Rabat</div>
+<div class="fact"><span class="lab">Why</span>AFD.TECH team is collecting PFE applications.</div>
+<div class="fact"><span class="lab">Tip</span>Short email, lead with Java / Spring Boot and MicroPaaS.</div>
+<div class="fact"><span class="lab">Send to</span>Email AFD_recrutement@accenture.com</div>
+<a class="btn" href="https://www.linkedin.com/in/hajar-salhani-pmp%C2%AE-a2a265147/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="fullstack" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://joblia.ma/offres-emploi/2ca-business-recrute-des-stagiaires-pfe-en-marketing-developpement-web-ia-rh-et-comptabilite/">2CA Business</a></h3>
+<div class="fact"><b>Stage PFE 2027, Web development</b></div>
+<div class="fact muted">Kenitra, Rabat</div>
+<div class="fact"><span class="lab">Why</span>Web development PFE.</div>
+<div class="fact"><span class="lab">Tip</span>Use their exact subject line.</div>
+<div class="fact"><span class="lab">Send to</span>Email rh@2cabusiness.com, subject &quot;PFE-2027-DEV – Stage PFE en Développement web&quot;</div>
+<a class="btn" href="https://joblia.ma/offres-emploi/2ca-business-recrute-des-stagiaires-pfe-en-marketing-developpement-web-ia-rh-et-comptabilite/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="fullstack" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://joblia.ma/offres-emploi/transmed-maroc-recrute-des-stagiaires-pfe-en-finance-rh-supply-chain-marketing-et-it/">Transmed Maroc</a></h3>
+<div class="fact"><b>Stage PFE, IT &amp; digital</b></div>
+<div class="fact muted">Casablanca</div>
+<div class="fact"><span class="lab">Why</span>IT &amp; digital PFE.</div>
+<div class="fact"><span class="lab">Tip</span>Use their exact subject line.</div>
+<div class="fact"><span class="lab">Send to</span>Email ikram.jawadi@transmed.com, subject &quot;Candidature Stage PFE – IT et digital&quot;</div>
+<a class="btn" href="https://joblia.ma/offres-emploi/transmed-maroc-recrute-des-stagiaires-pfe-en-finance-rh-supply-chain-marketing-et-it/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="other" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Other</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://joblia.ma/offres-emploi/hirschmann-automotive-recrute-des-stagiaires-pfe-ingenieurs-et-masters-a-oujda-pour-2027/">Hirschmann Automotive</a></h3>
+<div class="fact"><b>Stage PFE 2027</b></div>
+<div class="fact muted">Oujda</div>
+<div class="fact"><span class="lab">Why</span>Automotive, Oujda.</div>
+<div class="fact"><span class="lab">Tip</span>Use their exact subject line &quot;Stage PFE 2027&quot;.</div>
+<div class="fact"><span class="lab">Send to</span>Email recruiting.oujda@hirschmann-automotive.com, subject &quot;Stage PFE 2027&quot;</div>
+<a class="btn" href="https://joblia.ma/offres-emploi/hirschmann-automotive-recrute-des-stagiaires-pfe-ingenieurs-et-masters-a-oujda-pour-2027/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="devops" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">DevOps / Cloud</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://alouadifa.ma/stage/stage-it-kenitra-developpement-systemes/">Industrial firm, Atlantic Free Zone</a></h3>
+<div class="fact"><b>Stage IT – Développement &amp; Systèmes</b></div>
+<div class="fact muted">Kenitra</div>
+<div class="fact"><span class="lab">Why</span>Development &amp; systems, unnamed firm in the Atlantic Free Zone.</div>
+<div class="fact"><span class="lab">Tip</span>Mention Linux, Docker and Bash.</div>
+<div class="fact"><span class="lab">Send to</span>Email rh.zf@outlook.fr, subject &quot;Stage IT Kenitra&quot;</div>
+<a class="btn" href="https://alouadifa.ma/stage/stage-it-kenitra-developpement-systemes/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="fullstack" data-fit="good" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Full stack / Web</span><span class="chip fit-good">Worth applying</span></div>
+<h3><a href="https://www.linkedin.com/jobs/view/4486413272/">SmilyCall</a></h3>
+<div class="fact"><b>Stage Développeur(se) Full Stack, développement assisté par l&#x27;IA</b></div>
+<div class="fact muted">Marrakech</div>
+<div class="fact"><span class="lab">Why</span>AI-assisted full stack dev, stipend, possible hire.</div>
+<div class="fact"><span class="lab">Tip</span>They require your GitHub link and 5 lines on how you organize a project when coding with AI. Confirm a 6-month PFE works.</div>
+<div class="fact"><span class="lab">Send to</span>Email talents@smilycall.com, subject &#x27;STAGE DEV | Prénom NOM&#x27;: CV + GitHub link (required) + 5 lines on how you organize a project when coding with AI</div>
+<a class="btn" href="https://www.linkedin.com/jobs/view/4486413272/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="other" data-fit="weak" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Other</span><span class="chip fit-weak">Weak fit</span></div>
+<h3><a href="https://www.linkedin.com/company/smart-digital-systems-sds/">Smart Digital Systems</a></h3>
+<div class="fact"><b>Stage PFE Odoo &amp; React.js (Odoo experience required)</b></div>
+<div class="fact muted">Oujda</div>
+<div class="fact"><span class="lab">Why</span>Odoo &amp; React.js; Odoo experience required.</div>
+<div class="fact"><span class="lab">Tip</span>Your CV lists no Odoo.</div>
+<div class="fact"><span class="lab">Send to</span>Email contact@smartds.ma</div>
+<a class="btn" href="https://www.linkedin.com/company/smart-digital-systems-sds/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="data" data-fit="weak" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Data / AI</span><span class="chip fit-weak">Weak fit</span></div>
+<h3><a href="https://www.linkedin.com/company/exosdata-consulting/">ExosData Consulting</a></h3>
+<div class="fact"><b>Stage PFE 2027, Graph Data Science</b></div>
+<div class="fact muted">Rabat</div>
+<div class="fact"><span class="lab">Why</span>Graph Data Science.</div>
+<div class="fact"><span class="lab">Tip</span>Data science, outside your Java / DevOps lane.</div>
+<div class="fact"><span class="lab">Send to</span>Email contact@exos-data.com and fill in their form</div>
+<a class="btn" href="https://www.linkedin.com/company/exosdata-consulting/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="data" data-fit="weak" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Data / AI</span><span class="chip fit-weak">Weak fit</span></div>
+<h3><a href="https://alouadifa.ma/stage/stage-ia-industrielle-gestion-bouskoura-oulmes/">Les Eaux Minérales d&#x27;Oulmès</a></h3>
+<div class="fact"><b>Stage IA Industrielle</b></div>
+<div class="fact muted">Bouskoura</div>
+<div class="fact"><span class="lab">Why</span>Industrial AI.</div>
+<div class="fact"><span class="lab">Tip</span>AI / data, outside your lane.</div>
+<div class="fact"><span class="lab">Send to</span>Email stage@oulmes.ma</div>
+<a class="btn" href="https://alouadifa.ma/stage/stage-ia-industrielle-gestion-bouskoura-oulmes/">Open the offer</a></div>
+<div class="card offer m-email" data-lane="other" data-fit="weak" data-src="email">
+<div class="chips"><span class="via via-email"><span class="ic" aria-hidden="true">@</span>Email</span><span class="chip">No deadline</span><span class="chip">Other</span><span class="chip fit-weak">Weak fit</span></div>
+<h3><a href="https://www.linkedin.com/in/zineb-265484266/">AGH Data Agency</a></h3>
+<div class="fact"><b>Stage QA Testeur Mobile (unpaid, 1-3 months)</b></div>
+<div class="fact muted">Remote</div>
+<div class="fact"><span class="lab">Why</span>Mobile QA testing, unpaid, 1-3 months.</div>
+<div class="fact"><span class="lab">Tip</span>Too short for a full PFE.</div>
+<div class="fact"><span class="lab">Send to</span>Email aghrh74@gmail.com</div>
+<a class="btn" href="https://www.linkedin.com/in/zineb-265484266/">Open the offer</a></div>
+</div>
 <h2 id="unfinished">Unfinished applications</h2>
 <p class="muted">Started but never submitted.</p><div class="tablewrap"><table><thead><tr><th>Company</th><th>Role</th><th>Where</th><th>Started</th></tr></thead><tbody>
 <tr><td>Coface</td><td>Stages PFE DataLab</td><td>Stagiaires.ma</td><td>Oct 21</td></tr>
