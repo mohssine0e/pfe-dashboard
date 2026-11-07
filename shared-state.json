@@ -237,9 +237,9 @@
       "rank": 3,
       "company": "Maersk",
       "task": "Review IT end-of-studies internship listing",
-      "reason": "Old tracker showed a Nov 15 closing date; verify live posting.",
-      "date": "2026-11-15",
-      "certainty": "Unverified old tracker deadline",
+      "reason": "The linked Maersk IT listing displays 15 November 2027, not 2026. Verify with employer because the date is unusually far ahead.",
+      "date": "2027-11-15",
+      "certainty": "Listing text as checked 7 Nov 2026; employer confirmation recommended",
       "kind": "deadline"
     },
     {
@@ -290,7 +290,17 @@
       "verifiedDeadline": "Only populate when explicit date is verified from an original listing; use YYYY-MM-DD",
       "deduplication": "Normalize URL (remove tracking, query params unless necessary for posting identity) or match postingId; also deduplicate normalized company plus exact role/title. Multiple genuinely distinct roles at one company allowed.",
       "isolation": "Only mutate backupSearch.offers and backupSearch.updatedAt, preserving main offers, applications, metrics and other keys. Publication via shared-state.json in GitHub; no localStorage.",
-      "review": "Do not publish private email details or unverified links."
+      "review": "Do not publish private email details or unverified links.",
+      "sources": [
+        "LinkedIn public postings",
+        "Indeed Morocco",
+        "ReKrute",
+        "Stagiaires.ma",
+        "official company career pages",
+        "public PFE catalogues",
+        "public ENSA / alumni announcements"
+      ],
+      "restrictedSources": "Only use private groups when user shares the post or grants relevant authorized access"
     }
   },
   "mainOfferRegistry": [
@@ -299,77 +309,198 @@
       "title": "STAGE PFE",
       "postingId": "rekrute:186213",
       "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html",
-      "role": "Cloud & DevOps"
+      "role": "Cloud & DevOps",
+      "sourceLabel": "ReKrute",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "verifiedDeadline": "2026-11-10",
+      "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html"
     },
     {
       "company": "Cnexia",
       "title": "STAGE PFE",
       "postingId": "rekrute:186223",
       "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
-      "role": "Software Architecture"
+      "role": "Software Architecture",
+      "sourceLabel": "ReKrute",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "verifiedDeadline": "2026-11-10",
+      "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html"
     },
     {
       "company": "Cnexia",
-      "title": null,
+      "title": "STAGE PFE",
       "postingId": "rekrute:186208",
       "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html",
-      "role": "Front-End React / TypeScript"
+      "role": "Full-Stack Developer (React / FastAPI)",
+      "sourceLabel": "ReKrute",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     },
     {
       "company": "Maersk",
       "title": "End-of-Studies Internship | Information Technology (IT)",
       "postingId": "workday:R200596",
       "url": "https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499",
-      "role": "IT"
+      "role": "IT",
+      "sourceLabel": "LinkedIn · APM Terminals",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "verifiedDeadline": "2027-11-15",
+      "deadlineSourceUrl": "https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499"
     },
     {
       "company": "AVL Maroc",
       "title": "AVL Maroc PFE Internship Program 2027",
       "postingId": "avl:39676",
       "url": "https://ma.linkedin.com/jobs/view/avl-maroc-pfe-internship-program-2027-at-avl-4479359586",
-      "role": "PFE Internship Program"
+      "role": "PFE Internship Program",
+      "sourceLabel": "LinkedIn · AVL",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     },
     {
       "company": "Intelcia",
       "title": "Stage PFE - Data, IA & IT (D2T2)",
       "postingId": "stagiaires:7681",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7681-stage-pfe-data-ia-it-d2t2",
-      "role": "Data, IA & IT"
+      "role": "Data, IA & IT",
+      "sourceLabel": "Stagiaires.ma",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     },
     {
-      "company": "OD Services",
-      "title": null,
+      "company": "O&D Services",
+      "title": "Offre de stage PFE – Développement Web (Symfony / Angular / Docker)",
       "postingId": "rekrute:185767",
       "url": "https://www.rekrute.com/offre-emploi-offre-de-stage-pfe-developpement-web-symfony-angular-docker-recrutement-od-services-casablanca-185767.html",
-      "role": "Développement web Symfony / Angular / Docker"
+      "role": "Développement web Symfony / Angular / Docker",
+      "sourceLabel": "ReKrute",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     },
     {
       "company": "Amsys Consulting",
       "title": "Stage PFE - PFE Challenge 2027",
       "postingId": "stagiaires:7671",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027",
-      "role": "PFE Challenge"
+      "role": "PFE Challenge",
+      "sourceLabel": "Stagiaires.ma",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     },
     {
       "company": "torck GmbH",
       "title": "Graduate Internship software development (m/f) Morocco",
       "postingId": "linkedin:4487295321",
       "url": "https://www.linkedin.com/jobs/view/4487295321/",
-      "role": "Full Stack .NET / Vue.js"
+      "role": "Full Stack .NET / Vue.js",
+      "sourceLabel": "LinkedIn · torck GmbH",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     },
     {
       "company": "Warriors Team",
       "title": "Offre de stage – Développeur Full Stack (H/F)",
       "postingId": "stagiaires:7103",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7103-offre-de-stage-developpeur-full-stack-h-f",
-      "role": "Développeur Full Stack"
+      "role": "Développeur Full Stack",
+      "sourceLabel": "Stagiaires.ma",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     },
     {
       "company": "Digital Speak (DigitalSpeak Group)",
       "title": "Stage Développeur Web / Mobile (Projets Applicatifs Réels) – Marrakech",
       "postingId": "stagiaires:7696",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7696-stage-developpeur-web-mobile-projets-applicatifs-reels-marrakech",
-      "role": "Développeur Web / Mobile"
+      "role": "Développeur Web / Mobile",
+      "sourceLabel": "Stagiaires.ma",
+      "verifiedTitle": true,
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
     }
-  ]
+  ],
+  "gmailVerification": {
+    "lastVerifiedAt": "2026-11-07T18:41:07+01:00",
+    "timezone": "Africa/Casablanca",
+    "scope": "Sampled Gmail query for PFE/application messages since 1 November 2026; verified connectivity and recent messages. Aggregate counts date from a separate earlier mailbox audit and were not recomputed by this sample.",
+    "staleAfterHours": 24,
+    "countsAuditedAt": "2026-11-07",
+    "method": "Connected Gmail query",
+    "result": "success"
+  },
+  "sourcesChecked": [
+    {
+      "id": "linkedin",
+      "label": "LinkedIn public jobs",
+      "url": "https://ma.linkedin.com/jobs/view/graduate-internship-software-development-m-f-morocco-at-torck-gmbh-4487295321",
+      "checkedAt": "2026-11-07T18:41:07+01:00",
+      "status": "ok",
+      "details": "Public listing verified; private groups not accessed."
+    },
+    {
+      "id": "indeed",
+      "label": "Indeed Morocco",
+      "url": "https://ma.indeed.com/q-pfe-informatique-2027-emplois.html",
+      "checkedAt": "2026-11-07T18:41:07+01:00",
+      "status": "ok",
+      "details": "Public PFE search results checked."
+    },
+    {
+      "id": "rekrute",
+      "label": "ReKrute",
+      "url": "https://www.rekrute.com/emploi-stage-en-developpement-informatique",
+      "checkedAt": "2026-11-07T18:41:07+01:00",
+      "status": "ok",
+      "details": "Public listings checked, including Cnexia and O&D Services."
+    },
+    {
+      "id": "stagiaires",
+      "label": "Stagiaires.ma",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7681-stage-pfe-data-ia-it-d2t2",
+      "checkedAt": "2026-11-07T18:41:07+01:00",
+      "status": "ok",
+      "details": "Public PFE listing verified."
+    },
+    {
+      "id": "company",
+      "label": "Company careers pages",
+      "url": null,
+      "checkedAt": "2026-11-07T18:41:07+01:00",
+      "status": "limited",
+      "details": "Targeted search for employer career pages performed; no additional verified listing from an official careers site in this pass."
+    },
+    {
+      "id": "catalogues",
+      "label": "Public PFE catalogues",
+      "url": "https://elkhadma.ma/offre/stage-pfe-cnexia-320",
+      "checkedAt": "2026-11-07T18:41:07+01:00",
+      "status": "ok",
+      "details": "Elkhadma public catalogue checked; Cnexia listing cross-referenced to ReKrute."
+    },
+    {
+      "id": "ensa",
+      "label": "ENSA / alumni announcements",
+      "url": null,
+      "checkedAt": "2026-11-07T18:41:07+01:00",
+      "status": "no_results",
+      "details": "Public search performed; no matching 2027 posting independently verified. Private-group posts not accessed."
+    }
+  ],
+  "sourceSearchPolicy": {
+    "scope": "Morocco PFE 2027 — Java, Spring Boot, React, full stack, backend, DevOps, software engineering",
+    "publicSources": [
+      "LinkedIn public postings",
+      "Indeed Morocco",
+      "ReKrute",
+      "Stagiaires.ma",
+      "official company career pages",
+      "public PFE catalogues",
+      "public ENSA / alumni announcements"
+    ],
+    "restrictedSources": "Only use private groups when user shares the post or grants relevant authorized access",
+    "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
+    "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
+  }
 }
