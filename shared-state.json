@@ -1,11 +1,18 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updatedAt": "2026-11-07",
-  "mode": "Shared read-only snapshot; refreshed when GitHub file is updated. Browser manual changes are device-local.",
-  "source": "Gmail sent-mail verification on Nov 7, 2026",
-  "summary": {
+  "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
+  "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
+  "metrics": {
+    "emailSentMessages": 86,
+    "emailSentScope": "Externally addressed emails matching PFE/candidature/internship since 1 Sep 2026; includes the 8 sent 7 Nov; may contain repeated recipients.",
     "newlySent": 8,
-    "interviewPrepItems": 1
+    "identifiedBounceReports": 3,
+    "confirmedAssessments": 1,
+    "confirmedRejectionMessages": 2,
+    "unfinishedSubmissions": 4,
+    "verifiedUniqueEmployerReplies": 0,
+    "replyNote": "Employer acknowledgments and automated responses excluded; fuller review needed to establish unique genuine recruiter reply count."
   },
   "applications": [
     {
@@ -15,7 +22,8 @@
       "status": "Sent",
       "cv": "Software Engineer",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
     },
     {
       "company": "Transmed Maroc",
@@ -24,7 +32,8 @@
       "status": "Sent",
       "cv": "Full-Stack Java / React",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
     },
     {
       "company": "2CA Business",
@@ -33,7 +42,8 @@
       "status": "Sent",
       "cv": "Full-Stack Java / React",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
     },
     {
       "company": "Accenture (AFD.TECH)",
@@ -42,7 +52,8 @@
       "status": "Sent",
       "cv": "Software Engineer",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
     },
     {
       "company": "Orange Maroc",
@@ -51,7 +62,8 @@
       "status": "Sent",
       "cv": "Software Engineer",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
     },
     {
       "company": "Diebold Nixdorf Maroc",
@@ -60,7 +72,8 @@
       "status": "Sent",
       "cv": "Software Engineer",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
     },
     {
       "company": "PCA",
@@ -69,7 +82,8 @@
       "status": "Sent",
       "cv": "Software Engineer",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
     },
     {
       "company": "SmilyCall",
@@ -78,11 +92,179 @@
       "status": "Sent",
       "cv": "Full-Stack Java / React",
       "language": "EN",
-      "date": "2026-11-07"
+      "date": "2026-11-07",
+      "source": "Gmail sent label"
+    },
+    {
+      "company": "BCG X",
+      "role": "Delivery AI Software Engineering Intern",
+      "channel": "website",
+      "status": "Assessment invited",
+      "date": "2026-11-04",
+      "source": "CodeSignal and BCG invitation",
+      "priority": "urgent",
+      "notes": "Invitation issued 4 Nov; 7-day expiry stated in email. Check whether completed."
+    },
+    {
+      "company": "Bertrandt",
+      "role": "Software, Cloud & Test Automation PFE",
+      "channel": "website",
+      "status": "Acknowledged",
+      "date": "2026-10-28",
+      "source": "Employer application acknowledgement"
+    },
+    {
+      "company": "CGI",
+      "role": "PFE Développeur JEE / Angular / .NET / PHP",
+      "channel": "website",
+      "status": "Acknowledged",
+      "date": "2026-10-25",
+      "source": "Employer application acknowledgement"
+    },
+    {
+      "company": "Nemo Technology",
+      "role": "PFE 2026–2027",
+      "channel": "website",
+      "status": "Acknowledged",
+      "date": "2026-10-28",
+      "source": "Employer receipt acknowledgement"
+    },
+    {
+      "company": "Assystem",
+      "role": "Développeur PHP",
+      "channel": "website",
+      "status": "Rejected",
+      "date": "2026-11-02",
+      "source": "Employer response"
+    },
+    {
+      "company": "Assystem",
+      "role": "Other Assystem application",
+      "channel": "website",
+      "status": "Rejected",
+      "date": "2026-10-22",
+      "source": "Employer response"
+    },
+    {
+      "company": "Coface",
+      "role": "Stages PFE DataLab",
+      "channel": "website",
+      "status": "Needs completion",
+      "date": "2026-10-21",
+      "source": "Stagiaires.ma reminder",
+      "url": "https://ma.indeed.com/viewjob?jk=360ef3ffeb228cb6"
+    },
+    {
+      "company": "Sofrecom Maroc",
+      "role": "Développement PHP",
+      "channel": "website",
+      "status": "Needs completion",
+      "date": "2026-10-21",
+      "source": "Stagiaires.ma reminder",
+      "url": "https://www.linkedin.com/jobs/view/4481734605"
+    },
+    {
+      "company": "Xcelerit",
+      "role": "Software Engineering Intern, Quant Finance",
+      "channel": "website",
+      "status": "Needs completion",
+      "date": "2026-10-21",
+      "source": "Stagiaires.ma reminder",
+      "url": "https://www.linkedin.com/jobs/view/4460361252"
+    },
+    {
+      "company": "Trusted Advisors",
+      "role": "Développeur Full Stack Spring Boot / React",
+      "channel": "website",
+      "status": "Needs completion",
+      "date": "2026-10-25",
+      "source": "Employer email verification request",
+      "url": "https://jobs.trustedadvisors-group.com"
+    },
+    {
+      "company": "Inetum",
+      "role": "SAP Hybris PFE",
+      "channel": "website",
+      "status": "Submission failed",
+      "date": "2026-10-28",
+      "source": "LinkedIn application problem"
+    },
+    {
+      "company": "Maroc Telecom",
+      "role": "Java / Spring Boot PFE outreach",
+      "channel": "email",
+      "status": "Bounced",
+      "date": "2026-10-21",
+      "source": "Non-delivery report"
+    },
+    {
+      "company": "Safran",
+      "role": "Java / Spring Boot PFE outreach",
+      "channel": "email",
+      "status": "Bounced",
+      "date": "2026-10-21",
+      "source": "Non-delivery report"
+    },
+    {
+      "company": "Innolia",
+      "role": "Java / Spring Boot PFE outreach",
+      "channel": "email",
+      "status": "Delivery issue",
+      "date": "2026-10-21",
+      "source": "Forwarding failure; original delivery uncertain"
     }
   ],
+  "priority": [
+    {
+      "rank": 1,
+      "company": "BCG X",
+      "task": "Check and complete CodeSignal assessment",
+      "reason": "Invited Nov 4; seven-day deadline mentioned. Confirm whether already completed.",
+      "date": "2026-11-11",
+      "certainty": "From employer's 7-day rule; verify email",
+      "kind": "assessment"
+    },
+    {
+      "rank": 2,
+      "company": "Cnexia",
+      "task": "Review and apply to Cloud & DevOps, Architecture and Full-Stack positions",
+      "reason": "Previous tracker listed a Nov 10 closing date; verify live listings.",
+      "date": "2026-11-10",
+      "certainty": "Unverified old tracker deadline",
+      "kind": "deadline"
+    },
+    {
+      "rank": 3,
+      "company": "Maersk",
+      "task": "Review IT end-of-studies internship listing",
+      "reason": "Old tracker showed a Nov 15 closing date; verify live posting.",
+      "date": "2026-11-15",
+      "certainty": "Unverified old tracker deadline",
+      "kind": "deadline"
+    },
+    {
+      "rank": 4,
+      "company": "Coface / Sofrecom / Xcelerit / Trusted Advisors",
+      "task": "Finish or verify outstanding website application steps",
+      "reason": "Application completion prompts exist in Gmail; not confirmed completed.",
+      "kind": "unfinished"
+    },
+    {
+      "rank": 5,
+      "company": "Maroc Telecom / Safran / Innolia",
+      "task": "Check delivery failures before following up",
+      "reason": "Gmail returned two non-delivery reports and one forwarding failure.",
+      "kind": "bounce"
+    }
+  ],
+  "followUpPolicy": {
+    "minimumDays": 14,
+    "recommendation": "Only consider one targeted, polite follow-up per suitable employer after confirming delivery, contact legitimacy, and no intervening reply. Avoid blanket mass follow-ups; prioritize matching open PFE roles.",
+    "alreadyReviewedCount": 0
+  },
   "notes": [
-    "Newly sent count refers only to the eight verified messages on 7 November, not your entire application history.",
-    "No recipient addresses or message bodies are stored in this publicly hosted JSON."
+    "This data is published on a public GitHub Pages site. Email addresses and message bodies are intentionally omitted.",
+    "Counts of sent email messages are not equivalent to unique completed applications or successful delivery.",
+    "No application submission or email-sending feature exists in the dashboard."
   ]
 }
