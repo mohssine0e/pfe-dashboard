@@ -78,6 +78,34 @@ footer{font-size:12px;color:var(--muted);line-height:1.65;margin-top:24px}
 .admin-offer-panel .admin-save.is-applied{background:#e9f3ef;color:#236248;border:1px solid #b8d9c9}
 .admin-offer-panel .admin-feedback{font-size:11px;min-width:0}
 @media(max-width:600px){.offers{grid-template-columns:1fr}.offer{padding:14px}#company-list{max-height:310px}}
+
+/* Five navigable views: keep existing data bindings and Firebase controls alive. */
+:root{--nav-height:58px}
+.site-nav{position:sticky;top:0;z-index:30;background:#f5f7fbf2;backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:13px;margin:9px 0 20px;padding:6px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;box-shadow:0 5px 22px #122e4e0b}
+.site-nav a{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;color:var(--muted);font-size:13px;font-weight:650;padding:11px 8px;border-radius:9px;transition:background .15s,color .15s;min-width:0}
+.site-nav a:hover{background:#eaf0f8;color:var(--brand)}
+.site-nav a[aria-current="page"]{background:var(--brand);color:#fff;box-shadow:0 2px 6px #153a6030}
+.nav-icon{font-size:17px;line-height:1}
+.page-panel[hidden]{display:none!important}
+.page-heading{margin:6px 0 16px}.page-heading h2{font-size:clamp(24px,3vw,31px);margin:0 0 4px}.page-heading p{color:var(--muted);margin:0;font-size:14px}
+.page-panel>section:first-of-type{margin-top:10px}
+#view-overview .home-grid{display:grid;grid-template-columns:1fr;gap:0}
+#view-applications #pipeline{max-width:none}
+#view-applications #company-list{max-height:440px}
+#view-overview #priorities{margin-top:16px}
+#view-applications #private-auth{margin-top:14px}
+#view-monitoring .freshness{margin:14px 0}
+#view-cvs .cv-library{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+#view-cvs .cv-library a{overflow-wrap:anywhere}
+body.route-ready #view-overview .page-heading{margin-top:2px}
+@media(max-width:700px){
+ main{padding-bottom:104px}
+ .site-nav{position:fixed;top:auto;bottom:0;left:0;right:0;margin:0;border:0;border-top:1px solid var(--line);border-radius:15px 15px 0 0;padding:7px 7px max(7px,env(safe-area-inset-bottom));gap:0;background:#ffffffef;box-shadow:0 -5px 25px #102d4618}
+ .site-nav a{flex-direction:column;gap:1px;padding:5px 1px;font-size:10px;border-radius:9px}
+ .site-nav .nav-icon{font-size:20px}
+ .site-nav a[aria-current="page"]{background:#e8f1fa;color:var(--brand);box-shadow:none}
+ .page-heading h2{font-size:24px}
+}
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>Application command center</h1><p>A focused overview of your internship search. Public information stays read-only; your private application tracking is available only after authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -112,6 +140,70 @@ footer{font-size:12px;color:var(--muted);line-height:1.65;margin-top:24px}
 <section id="followups"><h2>Follow-up intelligence</h2><p id="followup-text" class="muted">Loading follow-up guidance…</p><p><small>A follow-up is a suggestion, not an automatic outgoing email. Check that the employer is relevant, your message was delivered, and no reply arrived before contacting anyone again.</small></p></section>
 <section id="maya-backup" aria-labelledby="maya-title"><h2 id="maya-title">Backup search — Maya</h2><p class="muted">Separate daily backup results: only relevant PFE postings absent from the main offer list. A different role at the same company can appear separately. Published in shared data for phone and PC.</p><div id="maya-list" class="backup-list"><p>No additional offers found yet.</p></div><p id="maya-status">Waiting for shared backup search data.</p></section><footer><strong>Shared sync:</strong> All devices read <code>shared-state.json</code> published with this dashboard. Snapshots update when ChatGPT verifies and commits new information; Gmail is not directly connected to the public webpage. Refresh to fetch a newer snapshot. This site is publicly viewable: no recipient addresses, CV bytes, recruiter email content, or login tokens are embedded here. Sent-message statistics may count multiple emails to one company. Verified source snapshot: <span id="snapshot-date">—</span>.</footer>
 </main><script>
+/* Route existing sections into five views without breaking their listeners or state. */
+(()=>{
+  'use strict';
+  const main=document.querySelector('main'),header=main.querySelector('header');
+  const nav=document.createElement('nav');
+  nav.className='site-nav';
+  nav.setAttribute('aria-label','Dashboard pages');
+  const specs=[
+    ['overview','Overview','⌂','Your daily priorities and progress at a glance.'],
+    ['opportunities','Opportunities','⌕','Browse verified openings, review CV guidance and record applications.'],
+    ['applications','Applications','✓','Your private application tracking, recent company activity and follow-ups.'],
+    ['cvs','CV Library','▤','Approved CV versions and recruitment-platform profile guidance.'],
+    ['monitoring','Monitoring','◷','Gmail freshness, source audits and backup opportunity discovery.']
+  ];
+  const pages=new Map();
+  const navigation=new Map();
+  for(const [id,label,icon,desc] of specs){
+    const link=document.createElement('a');
+    link.href='#/'+id;link.dataset.route=id;
+    const symbol=document.createElement('span');symbol.className='nav-icon';symbol.setAttribute('aria-hidden','true');symbol.textContent=icon;
+    const name=document.createElement('span');name.textContent=label;link.append(symbol,name);
+    nav.append(link);navigation.set(id,link);
+    const page=document.createElement('div');page.id='view-'+id;page.className='page-panel';page.hidden=id!=='overview';
+    page.setAttribute('aria-label',label+' page');
+    const title=document.createElement('div');title.className='page-heading';
+    const heading=document.createElement('h2');heading.textContent=label;
+    const subtitle=document.createElement('p');subtitle.textContent=desc;
+    title.append(heading,subtitle);page.append(title);pages.set(id,page);
+  }
+  header.after(nav);
+  const footer=main.querySelector('footer');
+  for(const page of pages.values())main.insertBefore(page,footer);
+  function move(id,destination){const node=document.getElementById(id);if(node)pages.get(destination).append(node)}
+  function moveSelector(selector,destination){const node=main.querySelector(selector);if(node)pages.get(destination).append(node)}
+  move('overview','overview');
+  move('priorities','overview');
+  move('opportunities','opportunities');
+  move('private-auth','applications');
+  move('pipeline','applications');
+  move('followups','applications');
+  move('prep','applications');
+  move('cv-library','cvs');
+  move('platform-cv-profiles','cvs');
+  moveSelector('.freshness','monitoring');
+  move('sources-audit','monitoring');
+  move('maya-backup','monitoring');
+  const emptyTwo=main.querySelector('.two');if(emptyTwo&&!emptyTwo.children.length)emptyTwo.remove();
+  function showRoute(){
+    const segment=(location.hash.match(/^#\/?([a-z-]+)/)||[])[1];
+    const route=pages.has(segment)?segment:'overview';
+    for(const [key,page] of pages){
+      page.hidden=key!==route;
+      const link=navigation.get(key);
+      if(key===route)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
+    }
+    document.title=(specs.find(s=>s[0]===route)?.[1]||'Overview')+' · PFE Command Center';
+    document.body.classList.add('route-ready');
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+  window.addEventListener('hashchange',showRoute);
+  showRoute();
+})();
+</script>
+<script>
 (()=>{'use strict';
 const $=id=>document.getElementById(id);const text=(id,v)=>{if($(id))$(id).textContent=String(v??'—')};
 const clean=x=>String(x??'').slice(0,300);
