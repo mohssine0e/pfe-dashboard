@@ -505,5 +505,7 @@
     "restrictedSources": "Only use private groups when user shares the post or grants relevant authorized access",
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
-  }
+  },
+  "lastSyncedAt": "2026-11-07T18:48:59+01:00",
+  "syncTimezone": "Africa/Casablanca"
 }
