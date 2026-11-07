@@ -57,7 +57,7 @@ const cards=[...document.querySelectorAll('.offer')];
 function filter(){const q=$('search').value.trim().toLowerCase(),lane=$('lane').value,fit=$('fit').value;cards.forEach(card=>{card.hidden=!!((q&&!card.textContent.toLowerCase().includes(q))||(lane&&card.dataset.lane!==lane)||(fit&&card.dataset.fit!==fit))})}
 ['search','lane','fit'].forEach(id=>$(id).addEventListener('input',filter));
 function normalizeUrl(value){try{const u=new URL(value);const id=(u.pathname.match(/(?:jobs\/view\/|stage-emploi-maroc\/|job\/|offre-emploi-)[^/]*?(\d{4,})(?:[/.]|$)/)||[])[1];return id?(u.hostname.replace(/^www\.|^ma\./,'')+':'+id):u.hostname.toLowerCase().replace(/^www\./,'')+u.pathname.replace(/\/$/,'').toLowerCase()}catch{return ''}}
-function normalizedText(value){return String(value||'').normalize('NFKC').toLocaleLowerCase().replace(/[^\\p{L}\\p{N}]+/gu,' ').trim().replace(/\\s+/g,' ')}
+function normalizedText(value){return String(value||'').normalize('NFKC').toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim().replace(/\s+/g,' ')}
 function makeMaya(data){
  const root=$('maya-list');root.replaceChildren();
  const candidates=Array.isArray(data.backupSearch?.offers)?data.backupSearch.offers:[];
