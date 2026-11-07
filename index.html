@@ -133,6 +133,18 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 .offer-footer .buttons a{font-size:12px;padding:9px 7px;min-height:38px;border-radius:9px}
 .offer .admin-offer-panel{order:5;margin-top:12px}
 @media(max-width:700px){.offer-role-block{min-height:0}.offer-header{margin-bottom:9px}.offers{gap:12px}}
+
+/* Step 2: saved statuses drive the opportunity list without exposing private data. */
+#opportunities .controls{margin-bottom:6px}
+#application-status-filter{min-width:135px}
+.offer-filter-summary{margin:3px 0 13px;font-size:12px;color:var(--muted)}
+.offer-empty{border:1px dashed #bac9d7;border-radius:12px;padding:22px;text-align:center;color:var(--muted);background:#fafcff}
+.offer-empty[hidden]{display:none}
+.offer.offer-is-applied{border-color:#c6d9cf;background:#fafdfb}
+.offer.offer-is-applied .offer-header h3{color:#526e5c}
+.offer.offer-is-applied .offer-header:after{content:'Applied';background:#e8f3ec;color:#236248;border:1px solid #bfd9c8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:750}
+.offer.offer-is-applied .offer-header .tags{display:none}
+@media(max-width:700px){#application-status-filter{flex:1;min-width:calc(50% - 5px)}}
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>Application command center</h1><p>A focused overview of your internship search. Public information stays read-only; your private application tracking is available only after authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -151,7 +163,7 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 <div class="banner" id="audit">Loading shared Gmail audit snapshot…</div></section>
 <div class="two"><section id="priorities"><h2>Next best actions</h2><div id="priority-list">Loading priorities…</div></section>
 <section id="pipeline"><h2>Company progress</h2><p class="muted">Recent application activity · scroll for older records</p><div id="company-list" role="region" aria-label="Scrollable company application history" tabindex="0">Loading records…</div></section></div>
-<section id="opportunities"><h2>Website application opportunities</h2><p class="muted">Before applying, check the application method and which CV the external platform will actually attach. The dashboard never submits forms or sends emails.</p><div class="controls"><input id="search" aria-label="Search companies" placeholder="Search companies, positions…"><select id="lane" aria-label="Specialization"><option value="">All specializations</option><option value="java">Software / Java</option><option value="fullstack">Full stack</option><option value="devops">DevOps / Cloud</option></select><select id="fit" aria-label="Match quality"><option value="">All matches</option><option value="top">Best fit</option><option value="good">Good fit</option><option value="weak">Lower fit</option></select></div><div class="offers"><article class="offer" data-offer-index="0" data-lane="devops" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>devops</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Cloud &amp; DevOps track</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence"><strong>Submission:</strong> <span>User reported submission — verify in ReKrute history</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
+<section id="opportunities"><h2>Website application opportunities</h2><p class="muted">Before applying, check the application method and which CV the external platform will actually attach. The dashboard never submits forms or sends emails.</p><div class="controls"><input id="search" aria-label="Search companies" placeholder="Search companies, positions…"><select id="lane" aria-label="Specialization"><option value="">All specializations</option><option value="java">Software / Java</option><option value="fullstack">Full stack</option><option value="devops">DevOps / Cloud</option></select><select id="fit" aria-label="Match quality"><option value="">All matches</option><option value="top">Best fit</option><option value="good">Good fit</option><option value="weak">Lower fit</option></select><select id="application-status-filter" aria-label="Filter by application status"><option value="open">Open offers</option><option value="applied">Applied offers</option><option value="all">All offers</option></select></div><p id="offer-filter-count" class="offer-filter-summary" aria-live="polite">Showing open offers. Sign in to include private application statuses.</p><p id="offer-no-matches" class="offer-empty" hidden>No offers match these filters.</p><div class="offers"><article class="offer" data-offer-index="0" data-lane="devops" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>devops</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Cloud &amp; DevOps track</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence"><strong>Submission:</strong> <span>User reported submission — verify in ReKrute history</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
 <article class="offer" data-offer-index="1" data-lane="java" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>java</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Software Architecture track</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence" hidden><strong>Submission:</strong> <span>Not verified</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
 <article class="offer" data-offer-index="2" data-lane="fullstack" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>fullstack</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Front-End React / TypeScript track · <strong>Title unverified</strong></p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence" hidden><strong>Submission:</strong> <span>Not verified</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
 <article class="offer" data-offer-index="3" data-lane="java" data-fit="top"><div class="offer-header"><h3>Maersk</h3><div class="tags"><span>java</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">End-of-Studies Internship | Information Technology (IT)</p><p class="role">IT</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499" target="_blank" rel="noopener noreferrer">LinkedIn</a></p><p class="deadline">Deadline previously listed: 15 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Easy Apply or company portal</span></p><p class="submission-evidence" hidden><strong>Submission:</strong> <span>Not verified</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
@@ -236,8 +248,28 @@ const $=id=>document.getElementById(id);const text=(id,v)=>{if($(id))$(id).textC
 const clean=x=>String(x??'').slice(0,300);
 const make=(tag,cls,str)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(str!==undefined)x.textContent=clean(str);return x};
 const cards=[...document.querySelectorAll('.offer')];
-function filter(){const q=$('search').value.trim().toLowerCase(),lane=$('lane').value,fit=$('fit').value;cards.forEach(card=>{card.hidden=!!((q&&!card.textContent.toLowerCase().includes(q))||(lane&&card.dataset.lane!==lane)||(fit&&card.dataset.fit!==fit))})}
-['search','lane','fit'].forEach(id=>$(id).addEventListener('input',filter));
+function filter(){
+ const q=$('search').value.trim().toLowerCase(),lane=$('lane').value,fit=$('fit').value;
+ const status=$('application-status-filter').value;
+ const container=document.querySelector('.offers');
+ const ordered=[...cards].sort((a,b)=>Number(a.dataset.applied==='true')-Number(b.dataset.applied==='true')||Number(a.dataset.offerIndex)-Number(b.dataset.offerIndex));
+ ordered.forEach(card=>container.append(card));
+ let visible=0,applied=0,known=0;
+ cards.forEach(card=>{
+   const isApplied=card.dataset.applied==='true';
+   const registered=card.dataset.applicationLoaded==='true';
+   if(registered)known++;
+   if(isApplied)applied++;
+   const statusMiss=status==='open'?isApplied:status==='applied'?!isApplied:false;
+   card.hidden=Boolean(statusMiss||(q&&!card.textContent.toLowerCase().includes(q))||(lane&&card.dataset.lane!==lane)||(fit&&card.dataset.fit!==fit));
+   if(!card.hidden)visible++;
+ });
+ text('offer-filter-count',visible+' of '+cards.length+' offers shown · '+applied+' privately marked applied'+(known<cards.length?' · Sign in to load saved statuses':''));
+ $('offer-no-matches').hidden=visible!==0;
+}
+['search','lane','fit','application-status-filter'].forEach(id=>$(id).addEventListener('input',filter));
+document.addEventListener('pfe:application-statuses-updated',filter);
+filter();
 function normalizeUrl(value){try{const u=new URL(value);const id=(u.pathname.match(/(?:jobs\/view\/|stage-emploi-maroc\/|job\/|offre-emploi-)[^/]*?(\d{4,})(?:[/.]|$)/)||[])[1];return id?(u.hostname.replace(/^www\.|^ma\./,'')+':'+id):u.hostname.toLowerCase().replace(/^www\./,'')+u.pathname.replace(/\/$/,'').toLowerCase()}catch{return ''}}
 function normalizedText(value){return String(value||'').normalize('NFKC').toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim().replace(/\s+/g,' ')}
 function makeMaya(data){
@@ -370,6 +402,12 @@ function removeControls(){
   if(unsubscribe){unsubscribe();unsubscribe=null;}
   for(const panel of panels.values())panel.root.remove();
   panels.clear();
+  for(const card of cards){
+    delete card.dataset.applied;
+    delete card.dataset.applicationLoaded;
+    card.classList.remove('offer-is-applied');
+  }
+  document.dispatchEvent(new Event('pfe:application-statuses-updated'));
 }
 async function buildPanel(card,offer,key,sequence){
   if(sequence!==authSequence||!adminReady)return;
@@ -417,12 +455,17 @@ function renderSaved(snapshot){
   for(const panel of panels.values()){
     const data=snapshot.get(panel.key);
     panel.applied=Boolean(data&&data.status==='applied');
+    const card=panel.root.closest('.offer');
+    card.dataset.applied=panel.applied?'true':'false';
+    card.dataset.applicationLoaded='true';
+    card.classList.toggle('offer-is-applied',panel.applied);
     panel.save.textContent=panel.applied?'✓ Applied'+(data.submittedOn?' · '+data.submittedOn:''):'Mark as applied';
     panel.save.classList.toggle('is-applied',panel.applied);
     panel.save.title=panel.applied?'Click to undo this manually recorded status':'Record this application as applied today';
-    const publicStatus=panel.root.closest('.offer')?.querySelector('.submission-evidence');
-    if(publicStatus)publicStatus.hidden=panel.applied;
+    const publicStatus=card.querySelector('.submission-evidence');
+    if(publicStatus)publicStatus.hidden=panel.applied||publicStatus.textContent.includes('Not verified');
   }
+  document.dispatchEvent(new Event('pfe:application-statuses-updated'));
 }
 async function authorizeAndLoad(user,sequence){
   status.textContent='Checking private Firestore permissions…';
