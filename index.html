@@ -145,6 +145,23 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 .offer.offer-is-applied .offer-header:after{content:'Applied';background:#e8f3ec;color:#236248;border:1px solid #bfd9c8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:750}
 .offer.offer-is-applied .offer-header .tags{display:none}
 @media(max-width:700px){#application-status-filter{flex:1;min-width:calc(50% - 5px)}}
+
+/* Step 3: low-emphasis, compact green applied action inside each card footer. */
+.offer-footer{display:flex;flex-direction:column;gap:0}
+.offer-footer .admin-offer-panel{order:initial;margin:10px 0 0;padding:9px 0 0;border-top:1px solid #edf1f4;display:flex;align-items:center;justify-content:flex-end;gap:8px;min-height:36px}
+.offer-footer .admin-offer-panel .admin-save{
+  display:inline-flex;align-items:center;justify-content:center;flex:none;
+  width:auto;max-width:100%;min-height:30px;padding:5px 10px;
+  border:1px solid #b4d8c1;background:#f3faf5;color:#287048;
+  box-shadow:none;border-radius:18px;font-size:11px;font-weight:750;
+  line-height:1.3;cursor:pointer;transition:background .15s,border-color .15s
+}
+.offer-footer .admin-offer-panel .admin-save:hover{background:#e6f5eb;border-color:#91c5a5}
+.offer-footer .admin-offer-panel .admin-save:focus-visible{outline:2px solid #3b9363;outline-offset:2px}
+.offer-footer .admin-offer-panel .admin-save.is-applied{background:#e5f2e9;border-color:#9dceb1;color:#276c45}
+.offer-footer .admin-offer-panel .admin-feedback{font-size:10px;color:#718177;line-height:1.3;margin-right:auto;white-space:normal}
+.offer-footer .admin-offer-panel .admin-save:disabled{opacity:.6;cursor:wait}
+@media(max-width:700px){.offer-footer .admin-offer-panel{justify-content:flex-end}}
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>Application command center</h1><p>A focused overview of your internship search. Public information stays read-only; your private application tracking is available only after authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -417,8 +434,9 @@ async function buildPanel(card,offer,key,sequence){
   save.type='button';
   const feedback=make('span','admin-feedback','');
   feedback.setAttribute('role','status');
-  root.append(save,feedback);
-  card.append(root);
+  root.append(feedback,save);
+  const footer=card.querySelector('.offer-footer');
+  (footer||card).append(root);
   const panel={root,save,feedback,offer,key,applied:false};
   panels.set(key,panel);
   save.addEventListener('click',async()=>{
@@ -459,7 +477,8 @@ function renderSaved(snapshot){
     card.dataset.applied=panel.applied?'true':'false';
     card.dataset.applicationLoaded='true';
     card.classList.toggle('offer-is-applied',panel.applied);
-    panel.save.textContent=panel.applied?'✓ Applied'+(data.submittedOn?' · '+data.submittedOn:''):'Mark as applied';
+    panel.save.textContent=panel.applied?'✓ Applied':'Mark as applied';
+    panel.feedback.textContent=panel.applied?(data.submittedOn?'Recorded '+data.submittedOn:'Recorded privately'):'';
     panel.save.classList.toggle('is-applied',panel.applied);
     panel.save.title=panel.applied?'Click to undo this manually recorded status':'Record this application as applied today';
     const publicStatus=card.querySelector('.submission-evidence');
