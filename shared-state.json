@@ -436,16 +436,22 @@
         "evidence": null,
         "recordedAt": null
       },
-      "methodLabel": "Platform listing: exact upload route to verify",
+      "methodLabel": "AVL official careers · confirm CV upload step",
       "compatibilityWarning": "The selected CV may be a profile-stored resume or an upload; verify which file before confirming.",
-      "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
+      "applicationInstructions": "Open the official AVL careers listing. If it requests a separate CV upload, use the prepared AVL-specific draft. If it only reuses a saved profile CV, use the general CV. Check the actual form before uploading.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
       "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
+      "tailoredCvStatus": "Lightly tailored draft prepared from approved Software Engineering CV; company-specific profile only. Application upload field not yet confirmed; not submitted.",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
-      "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
+      "applicationMethodCertainty": "Official AVL career listing verified; whether the external application form permits a dedicated CV upload has not been verified",
+      "officialCareersUrl": "https://jobs.avl.com/job/Sala-Al-Jadida-AVL-Maroc-PFE-Internship-Program-2027/1448541033/",
+      "officialCareerPageVerified": true,
+      "officialCareerPageVerifiedOn": "2026-11-08",
+      "tailoredCvDraftUrl": "https://drive.google.com/file/d/1yLZaSfI8ug968butVeSv5IFrG9A4olbH/view?usp=drivesdk",
+      "tailoredCvDraftEditableUrl": "https://docs.google.com/document/d/18eA4hI7C5ulTj9mpyCMq9DZVh6Fg-iFm/edit?usp=drivesdk&ouid=114726997409359666465&rtpof=true&sd=true",
+      "tailoredCvDraftName": "Mohssine_Echlaihi_PFE_AVL_Maroc.pdf"
     },
     {
       "company": "Intelcia",
@@ -732,7 +738,8 @@
     "examples": [
       "For a named company, use a copy and add one precise sentence about its role and why the existing experience fits.",
       "Check each claim against the original master and the public job posting.",
-      "Do not pretend the dashboard CV is automatically used by the external recruitment portal."
+      "Do not pretend the dashboard CV is automatically used by the external recruitment portal.",
+      "AVL Maroc 2027: a short role-specific profile draft is prepared while the dedicated upload field remains unverified; it is not a submitted CV."
     ],
     "namingPolicy": {
       "platform": "Mohssine_Echlaihi_PFE.pdf",
