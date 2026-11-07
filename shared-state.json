@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "updatedAt": "2026-11-07",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
@@ -266,5 +266,110 @@
     "This data is published on a public GitHub Pages site. Email addresses and message bodies are intentionally omitted.",
     "Counts of sent email messages are not equivalent to unique completed applications or successful delivery.",
     "No application submission or email-sending feature exists in the dashboard."
+  ],
+  "backupSearch": {
+    "label": "Backup search — Maya",
+    "updatedAt": null,
+    "producer": "Maya / compatible daily backup search",
+    "offers": [],
+    "rules": {
+      "scope": "Only relevant 2027 Morocco PFE software engineering, Java/Spring Boot, React/full-stack, cloud/backend/DevOps opportunities not already in main offers",
+      "required": [
+        "title",
+        "company",
+        "sourceUrl",
+        "verifiedTitle"
+      ],
+      "optional": [
+        "postingId",
+        "verifiedDeadline",
+        "deadlineSourceUrl",
+        "discoveredAt",
+        "role"
+      ],
+      "verifiedDeadline": "Only populate when explicit date is verified from an original listing; use YYYY-MM-DD",
+      "deduplication": "Normalize URL (remove tracking, query params unless necessary for posting identity) or match postingId; also deduplicate normalized company plus exact role/title. Multiple genuinely distinct roles at one company allowed.",
+      "isolation": "Only mutate backupSearch.offers and backupSearch.updatedAt, preserving main offers, applications, metrics and other keys. Publication via shared-state.json in GitHub; no localStorage.",
+      "review": "Do not publish private email details or unverified links."
+    }
+  },
+  "mainOfferRegistry": [
+    {
+      "company": "Cnexia",
+      "title": "STAGE PFE",
+      "postingId": "rekrute:186213",
+      "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html",
+      "role": "Cloud & DevOps"
+    },
+    {
+      "company": "Cnexia",
+      "title": "STAGE PFE",
+      "postingId": "rekrute:186223",
+      "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
+      "role": "Software Architecture"
+    },
+    {
+      "company": "Cnexia",
+      "title": null,
+      "postingId": "rekrute:186208",
+      "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html",
+      "role": "Front-End React / TypeScript"
+    },
+    {
+      "company": "Maersk",
+      "title": "End-of-Studies Internship | Information Technology (IT)",
+      "postingId": "workday:R200596",
+      "url": "https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499",
+      "role": "IT"
+    },
+    {
+      "company": "AVL Maroc",
+      "title": "AVL Maroc PFE Internship Program 2027",
+      "postingId": "avl:39676",
+      "url": "https://ma.linkedin.com/jobs/view/avl-maroc-pfe-internship-program-2027-at-avl-4479359586",
+      "role": "PFE Internship Program"
+    },
+    {
+      "company": "Intelcia",
+      "title": "Stage PFE - Data, IA & IT (D2T2)",
+      "postingId": "stagiaires:7681",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7681-stage-pfe-data-ia-it-d2t2",
+      "role": "Data, IA & IT"
+    },
+    {
+      "company": "OD Services",
+      "title": null,
+      "postingId": "rekrute:185767",
+      "url": "https://www.rekrute.com/offre-emploi-offre-de-stage-pfe-developpement-web-symfony-angular-docker-recrutement-od-services-casablanca-185767.html",
+      "role": "Développement web Symfony / Angular / Docker"
+    },
+    {
+      "company": "Amsys Consulting",
+      "title": "Stage PFE - PFE Challenge 2027",
+      "postingId": "stagiaires:7671",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027",
+      "role": "PFE Challenge"
+    },
+    {
+      "company": "torck GmbH",
+      "title": "Graduate Internship software development (m/f) Morocco",
+      "postingId": "linkedin:4487295321",
+      "url": "https://www.linkedin.com/jobs/view/4487295321/",
+      "role": "Full Stack .NET / Vue.js"
+    },
+    {
+      "company": "Warriors Team",
+      "title": "Offre de stage – Développeur Full Stack (H/F)",
+      "postingId": "stagiaires:7103",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7103-offre-de-stage-developpeur-full-stack-h-f",
+      "role": "Développeur Full Stack"
+    },
+    {
+      "company": "Digital Speak (DigitalSpeak Group)",
+      "title": "Stage Développeur Web / Mobile (Projets Applicatifs Réels) – Marrakech",
+      "postingId": "stagiaires:7696",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7696-stage-developpeur-web-mobile-projets-applicatifs-reels-marrakech",
+      "role": "Développeur Web / Mobile"
+    }
   ]
 }
