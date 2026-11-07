@@ -119,7 +119,6 @@ function showVerifiedOfferTitles(data){
  if(sourceLink){if(source.url&&/^https?:\/\//i.test(source.url)){sourceLink.href=source.url;sourceLink.textContent='Source: '+(source.sourceLabel||'Original listing');sourceLink.removeAttribute('aria-disabled')}
  else{sourceLink.removeAttribute('href');sourceLink.textContent='Source unavailable'}}
  })}
-}
 async function load(){text('audit','Loading verified shared snapshot…');
 try{const resp=await fetch('./shared-state.json?t='+Date.now(),{cache:'no-store'});if(!resp.ok)throw Error('HTTP '+resp.status);const d=await resp.json();if(!d||!d.metrics||!Array.isArray(d.applications))throw Error('Invalid data');
 const m=d.metrics;text('k-sent',m.emailSentMessages);text('k-last',m.newlySent);text('k-replies',m.confirmedAssessments);text('k-responses',m.verifiedUniqueEmployerReplies);text('k-unfinished',m.unfinishedSubmissions);text('k-rejections',m.confirmedRejectionMessages);text('k-bounces',m.identifiedBounceReports);
