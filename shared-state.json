@@ -265,7 +265,8 @@
   "notes": [
     "This data is published on a public GitHub Pages site. Email addresses and message bodies are intentionally omitted.",
     "Counts of sent email messages are not equivalent to unique completed applications or successful delivery.",
-    "No application submission or email-sending feature exists in the dashboard."
+    "No application submission or email-sending feature exists in the dashboard.",
+    "Approved CV masters refreshed 7 November 2026. Archived older PDF versions were deleted from Drive; keep master CVs unchanged and tailor only copies for named roles."
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
@@ -627,7 +628,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-07T18:48:59+01:00",
+  "lastSyncedAt": "2026-11-07T19:28:48+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "Approved immutable master versions. For a future named company/role, make a copy and lightly tailor only the profile/objective to truthful offer-specific language; preserve verified experience and tech stacks. Do not modify masters, invent claims, auto-apply, or email from dashboard.",
