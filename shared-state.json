@@ -266,7 +266,8 @@
     "This data is published on a public GitHub Pages site. Email addresses and message bodies are intentionally omitted.",
     "Counts of sent email messages are not equivalent to unique completed applications or successful delivery.",
     "No application submission or email-sending feature exists in the dashboard.",
-    "Approved CV masters refreshed 7 November 2026. Archived older PDF versions were deleted from Drive; keep master CVs unchanged and tailor only copies for named roles."
+    "Approved CV masters refreshed 7 November 2026. Archived older PDF versions were deleted from Drive; keep master CVs unchanged and tailor only copies for named roles.",
+    "CV files renamed to short application-ready names in Google Drive; document IDs and links unchanged. Private tracker Firestore permission probe fixed in dashboard code."
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
@@ -328,9 +329,9 @@
       "applicationInstructions": "First update the saved ReKrute profile CV to Mohssine_Echlaihi_PFE.pdf. Review documents before clicking « Envoyer ma candidature », then check « Mes Candidatures ».",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Platform profile CV — generic, NOT a dedicated application upload",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "ReKrute may automatically attach the CV already stored in your candidate profile. Downloading a specialist CV here does not change that uploaded profile CV.",
       "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV"
     },
@@ -357,9 +358,9 @@
       "applicationInstructions": "First update the saved ReKrute profile CV to Mohssine_Echlaihi_PFE.pdf. Review documents before clicking « Envoyer ma candidature », then check « Mes Candidatures ».",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Platform profile CV — generic, NOT a dedicated application upload",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "ReKrute may automatically attach the CV already stored in your candidate profile. Downloading a specialist CV here does not change that uploaded profile CV.",
       "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV"
     },
@@ -384,9 +385,9 @@
       "applicationInstructions": "First update the saved ReKrute profile CV to Mohssine_Echlaihi_PFE.pdf. Review documents before clicking « Envoyer ma candidature », then check « Mes Candidatures ».",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Platform profile CV — generic, NOT a dedicated application upload",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "ReKrute may automatically attach the CV already stored in your candidate profile. Downloading a specialist CV here does not change that uploaded profile CV.",
       "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV"
     },
@@ -413,9 +414,9 @@
       "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Generic CV until direct upload is verified",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
       "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
     },
@@ -440,9 +441,9 @@
       "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Generic CV until direct upload is verified",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
       "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
     },
@@ -456,7 +457,7 @@
       "verifiedTitle": true,
       "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
       "applicationMethod": "stagiaires",
-      "cvMasterId": "cloud",
+      "cvMasterId": "software",
       "submission": {
         "status": "Not verified",
         "evidence": null,
@@ -467,9 +468,9 @@
       "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Generic CV until direct upload is verified",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
       "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
     },
@@ -494,9 +495,9 @@
       "applicationInstructions": "First update the saved ReKrute profile CV to Mohssine_Echlaihi_PFE.pdf. Review documents before clicking « Envoyer ma candidature », then check « Mes Candidatures ».",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Platform profile CV — generic, NOT a dedicated application upload",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "ReKrute may automatically attach the CV already stored in your candidate profile. Downloading a specialist CV here does not change that uploaded profile CV.",
       "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV"
     },
@@ -510,7 +511,7 @@
       "verifiedTitle": true,
       "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
       "applicationMethod": "stagiaires",
-      "cvMasterId": "cloud",
+      "cvMasterId": "software",
       "submission": {
         "status": "Not verified",
         "evidence": null,
@@ -521,9 +522,9 @@
       "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Generic CV until direct upload is verified",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
       "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
     },
@@ -548,9 +549,9 @@
       "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Generic CV until direct upload is verified",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
       "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
     },
@@ -575,9 +576,9 @@
       "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Generic CV until direct upload is verified",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
       "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
     },
@@ -602,9 +603,9 @@
       "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "Generic CV until direct upload is verified",
+      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
       "tailoredCvUrl": null,
-      "tailoredCvStatus": "Not prepared — no verified dedicated upload route",
+      "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
       "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
     }
@@ -697,7 +698,7 @@
   "lastSyncedAt": "2026-11-07T19:28:48+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
-    "policy": "Keep all three approved CVs unchanged as master sources. For a confirmed external career-site application with a dedicated PDF upload, make an employer/role-specific COPY of the closest master and lightly tailor the profile/objective to that actual posting, preserving truthful technical details. For a platform that submits the profile CV (e.g., ReKrute), use the single general CV Mohssine_Echlaihi_PFE.pdf. Do not invent experience, claim tailored copy was submitted, or alter the master.",
+    "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
     "defaultLanguage": "EN",
     "versions": [
       {
