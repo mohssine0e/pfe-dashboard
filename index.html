@@ -195,6 +195,10 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 .applied-toggle .applied-check:disabled+.applied-check-visual{opacity:.55;cursor:wait}
 .offer-footer .admin-offer-panel .admin-feedback{margin-left:auto;font-size:11px;color:#668376}
 @media(prefers-reduced-motion:reduce){.offer:not(.offer-is-applied){animation:none}.applied-check-visual{transition:none}}
+
+/* Keep prepared CV drafts distinct from verified, upload-ready tailored CV links. */
+.tailored-draft-link{display:inline-flex;font-size:11px;color:#246a94;text-decoration:underline;text-underline-offset:2px;margin:6px 0 0;font-weight:650;line-height:1.4}
+.tailored-draft-link:hover{color:#174b70}
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>Application command center</h1><p>A focused overview of your internship search. Public information stays read-only; your private application tracking is available only after authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -394,6 +398,22 @@ function showApplicationMethods(data){
    const method=card.querySelector('.application-method');
    if(method)method.textContent=item.methodLabel||'Check external website';
 
+   // An official employer career-page CV draft is optional until its upload field is verified.
+   const existingDraft=card.querySelector('.tailored-draft-link');
+   if(existingDraft)existingDraft.remove();
+   if(item.tailoredCvDraftUrl&&/^https:\/\/drive\.google\.com\/file\//.test(item.tailoredCvDraftUrl)){
+     const draft=document.createElement('a');
+     draft.className='tailored-draft-link';
+     draft.href=item.tailoredCvDraftUrl;
+     draft.target='_blank';draft.rel='noopener noreferrer';
+     draft.textContent='View tailored CV draft · upload not confirmed';
+     draft.title='Company-specific profile only. Verify the application form asks for a separate CV upload before using.';
+     card.querySelector('.method-block')?.append(draft);
+   }
+   if(item.officialCareersUrl&&/^https:\/\//.test(item.officialCareersUrl)){
+     const listing=card.querySelector('.offer-footer .buttons a.secondary');
+     if(listing){listing.href=item.officialCareersUrl;listing.textContent='Official careers';}
+   }
    const status=card.querySelector('.submission-evidence span');
    if(status)status.textContent=item.submission?.status||'Not verified';
    const statusRow=card.querySelector('.submission-evidence');if(statusRow)statusRow.hidden=!item.submission?.status||item.submission.status==='Not verified';
