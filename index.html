@@ -157,7 +157,7 @@ function showApplicationMethods(data){
    const item=entries[index];if(!item)return;
    const master=masters.get(item.recommendedCvId||item.cvMasterId);
    const link=card.querySelector('.buttons a.btn');
-   if(link&&master&&/^https:\/\/drive\.google\.com\/file\//.test(master.pdf||'')){link.href=master.pdf;link.textContent='View '+(master.filename||'recommended CV')}
+   if(link&&master&&/^https:\/\/drive\.google\.com\/file\//.test(master.pdf||'')){const tailored=item.tailoredCvUrl&&/^https:\/\//.test(item.tailoredCvUrl);link.href=tailored?item.tailoredCvUrl:master.pdf;link.textContent=tailored?'View tailored CV':'View '+((item.applicationMethod==='rekrute'||item.applicationMethod==='linkedin'||item.applicationMethod==='stagiaires')?'general CV':'recommended CV')}
    const strategy=card.querySelector('.cv-strategy');if(strategy){const route=item.tailoredCvUrl?'Dedicated copy available: '+item.tailoredCvUrl:'No dedicated company CV prepared until direct PDF upload is verified.';strategy.textContent='CV strategy: '+route+' Profile-based applications use the general CV.';}
    const method=card.querySelector('.application-method');
    if(method)method.textContent=item.methodLabel||'Check external website';
