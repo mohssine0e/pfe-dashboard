@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-07",
+  "mode": "Shared read-only snapshot; refreshed when GitHub file is updated. Browser manual changes are device-local.",
+  "source": "Gmail sent-mail verification on Nov 7, 2026",
+  "summary": {
+    "newlySent": 8,
+    "interviewPrepItems": 1
+  },
+  "applications": [
+    {
+      "company": "AVL Maroc",
+      "role": "PFE Software Development",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Software Engineer",
+      "language": "EN",
+      "date": "2026-11-07"
+    },
+    {
+      "company": "Transmed Maroc",
+      "role": "PFE IT & Digital",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Full-Stack Java / React",
+      "language": "EN",
+      "date": "2026-11-07"
+    },
+    {
+      "company": "2CA Business",
+      "role": "PFE Développement Web",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Full-Stack Java / React",
+      "language": "EN",
+      "date": "2026-11-07"
+    },
+    {
+      "company": "Accenture (AFD.TECH)",
+      "role": "PFE Java / Génie Logiciel",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Software Engineer",
+      "language": "EN",
+      "date": "2026-11-07"
+    },
+    {
+      "company": "Orange Maroc",
+      "role": "PFE Génie Logiciel",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Software Engineer",
+      "language": "EN",
+      "date": "2026-11-07"
+    },
+    {
+      "company": "Diebold Nixdorf Maroc",
+      "role": "PFE Génie Logiciel",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Software Engineer",
+      "language": "EN",
+      "date": "2026-11-07"
+    },
+    {
+      "company": "PCA",
+      "role": "PFE Ingénieur Support",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Software Engineer",
+      "language": "EN",
+      "date": "2026-11-07"
+    },
+    {
+      "company": "SmilyCall",
+      "role": "PFE Développement Full Stack",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Full-Stack Java / React",
+      "language": "EN",
+      "date": "2026-11-07"
+    }
+  ],
+  "notes": [
+    "Newly sent count refers only to the eight verified messages on 7 November, not your entire application history.",
+    "No recipient addresses or message bodies are stored in this publicly hosted JSON."
+  ]
+}
