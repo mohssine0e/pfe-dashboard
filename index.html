@@ -162,6 +162,39 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 .offer-footer .admin-offer-panel .admin-feedback{font-size:10px;color:#718177;line-height:1.3;margin-right:auto;white-space:normal}
 .offer-footer .admin-offer-panel .admin-save:disabled{opacity:.6;cursor:wait}
 @media(max-width:700px){.offer-footer .admin-offer-panel{justify-content:flex-end}}
+
+/* Compact applied checkbox + quiet animated blue borders; accessible reduced-motion fallback. */
+.offer:not(.offer-is-applied){
+  border:1px solid #a8c9ec;
+  box-shadow:0 0 0 1px #d9e9f8,0 2px 11px #1e5d920b;
+  animation:open-offer-border 5.8s ease-in-out infinite;
+}
+@keyframes open-offer-border{
+  0%,100%{border-color:#a8c9ec;box-shadow:0 0 0 1px #d9e9f8,0 2px 11px #1e5d920b}
+  50%{border-color:#7baee1;box-shadow:0 0 0 2px #c7e1fa,0 3px 13px #1e5d9212}
+}
+.offer.offer-is-applied{
+  border:1.5px solid #65b58a!important;
+  box-shadow:0 0 0 1px #c5e5d4,0 3px 12px #2c8a5010!important;
+  background:#fbfefc;
+  animation:none;
+}
+.offer-footer .admin-offer-panel{
+  margin:9px 0 0;padding:10px 0 0;
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid #edf1f5;gap:8px;min-height:34px;
+}
+.applied-toggle{display:inline-flex;align-items:center;gap:8px;cursor:pointer;min-height:28px;position:relative;font-size:12px;color:#536b80;font-weight:650;user-select:none}
+.applied-toggle .applied-check{position:absolute;opacity:0;width:25px;height:25px;margin:0;cursor:pointer}
+.applied-check-visual{display:grid;place-items:center;width:18px;height:18px;border:1.5px solid #9cb8d3;border-radius:5px;background:white;transition:background .15s,border-color .15s,box-shadow .15s;flex:none}
+.applied-toggle:hover .applied-check-visual{border-color:#4684bf;box-shadow:0 0 0 3px #e9f2fb}
+.applied-toggle .applied-check:checked+.applied-check-visual{background:#278657;border-color:#278657}
+.applied-toggle .applied-check:checked+.applied-check-visual:after{content:'✓';color:white;font-size:13px;font-weight:800;line-height:1}
+.applied-toggle .applied-check:focus-visible+.applied-check-visual{outline:2px solid #215f99;outline-offset:3px}
+.applied-toggle .applied-check:checked~.applied-check-label{color:#257449}
+.applied-toggle .applied-check:disabled+.applied-check-visual{opacity:.55;cursor:wait}
+.offer-footer .admin-offer-panel .admin-feedback{margin-left:auto;font-size:11px;color:#668376}
+@media(prefers-reduced-motion:reduce){.offer:not(.offer-is-applied){animation:none}.applied-check-visual{transition:none}}
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>Application command center</h1><p>A focused overview of your internship search. Public information stays read-only; your private application tracking is available only after authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -430,28 +463,34 @@ async function buildPanel(card,offer,key,sequence){
   if(sequence!==authSequence||!adminReady)return;
   const root=make('div','admin-offer-panel');
   root.setAttribute('aria-label','Private application tracking');
-  const save=make('button','admin-save','Mark as applied');
-  save.type='button';
+  const label=make('label','applied-toggle');
+  const toggle=make('input');
+  toggle.type='checkbox';
+  toggle.className='applied-check';
+  toggle.setAttribute('aria-label','Mark '+String(offer.company||'this offer')+' as applied');
+  const mark=make('span','applied-check-visual');
+  mark.setAttribute('aria-hidden','true');
+  const name=make('span','applied-check-label','Applied');
+  label.append(toggle,mark,name);
   const feedback=make('span','admin-feedback','');
   feedback.setAttribute('role','status');
-  root.append(feedback,save);
+  root.append(label,feedback);
   const footer=card.querySelector('.offer-footer');
   (footer||card).append(root);
-  const panel={root,save,feedback,offer,key,applied:false};
+  const panel={root,toggle,label,name,feedback,offer,key,applied:false};
   panels.set(key,panel);
-  save.addEventListener('click',async()=>{
-    if(!adminReady||sequence!==authSequence||!auth.currentUser)return;
-    const removing=panel.applied;
-    if(removing&&!window.confirm('Remove the applied mark for this offer?'))return;
-    save.disabled=true;
-    feedback.textContent=removing?'Removing…':'Saving…';
+  toggle.addEventListener('change',async()=>{
+    if(!adminReady||sequence!==authSequence||!auth.currentUser){
+      toggle.checked=panel.applied;return;
+    }
+    const nextApplied=toggle.checked;
+    if(!nextApplied&&!window.confirm('Remove the applied status for this offer?')){
+      toggle.checked=true;return;
+    }
+    toggle.disabled=true;
+    feedback.textContent=nextApplied?'Saving…':'Removing…';
     try{
-      if(removing){
-        await deleteDoc(doc(db,'privateApplications',key));
-        feedback.textContent='Mark removed.';
-      }else{
-        // The button records the user's assertion, not independently verified site confirmation.
-        // Compute the date at the moment of the click; never infer it from a form field.
+      if(nextApplied){
         await setDoc(doc(db,'privateApplications',key),{
           postingUrl:String(offer.url||''),
           company:String(offer.company||''),
@@ -459,14 +498,18 @@ async function buildPanel(card,offer,key,sequence){
           status:'applied',
           submittedOn:localDate(),
           evidence:'self-report',
-          evidenceSource:'Manually marked by user; no platform or email confirmation checked',
+          evidenceSource:'Manually checked by user; no independent platform confirmation verified',
           updatedAt:serverTimestamp()
         });
-        feedback.textContent='Saved privately.';
+      }else{
+        await deleteDoc(doc(db,'privateApplications',key));
       }
+      feedback.textContent='';
+      // The Firestore listener is authoritative and refreshes filters.
     }catch(error){
-      feedback.textContent='Could not save: '+(error.code||'unknown');
-    }finally{save.disabled=false;}
+      toggle.checked=panel.applied;
+      feedback.textContent='Save failed: '+(error.code||'unknown');
+    }finally{toggle.disabled=false;}
   });
 }
 function renderSaved(snapshot){
@@ -477,10 +520,10 @@ function renderSaved(snapshot){
     card.dataset.applied=panel.applied?'true':'false';
     card.dataset.applicationLoaded='true';
     card.classList.toggle('offer-is-applied',panel.applied);
-    panel.save.textContent=panel.applied?'✓ Applied':'Mark as applied';
-    panel.feedback.textContent=panel.applied?(data.submittedOn?'Recorded '+data.submittedOn:'Recorded privately'):'';
-    panel.save.classList.toggle('is-applied',panel.applied);
-    panel.save.title=panel.applied?'Click to undo this manually recorded status':'Record this application as applied today';
+    panel.toggle.checked=panel.applied;
+    panel.name.textContent=panel.applied?'Applied':'Mark as applied';
+    panel.feedback.textContent=panel.applied?(data.submittedOn?'· '+data.submittedOn:'· Saved privately'):'';
+    panel.label.title=panel.applied?'Uncheck to undo the private applied mark':'Check to record this offer as applied today';
     const publicStatus=card.querySelector('.submission-evidence');
     if(publicStatus)publicStatus.hidden=panel.applied||publicStatus.textContent.includes('Not verified');
   }
