@@ -28,11 +28,55 @@ footer{margin-top:35px;font-size:13px;color:var(--muted)}
 #workspace output{display:block;white-space:pre-wrap;background:var(--bg);border-radius:8px;padding:14px;margin-top:12px}
 .job .site-status{margin-top:10px;display:grid;gap:5px;font-size:13px;color:var(--muted)}
 .job .site-status select{width:100%}
+</style><style>
+#overview{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin:24px 0}
+#overview h2{font-size:22px;margin:0 0 8px}
+#overview .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+#overview .kpi{background:var(--bg);padding:15px;border-radius:11px;min-height:105px}
+#overview .kpi strong{display:block;font-size:30px;line-height:1.2;font-variant-numeric:tabular-nums}
+#overview .kpi span{font-size:13px;color:var(--muted)}
+#overview .audit{font-size:13px;color:var(--muted);background:#f4f7fb;border-left:3px solid #607e9f;padding:12px}
+#overview .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}
+#overview .subcard{padding:16px;border:1px solid var(--line);border-radius:10px}
+#overview h3{margin:0 0 10px;font-size:17px}
+#overview .bar{height:11px;border-radius:20px;background:#e5ecf3;overflow:hidden;display:flex}
+#overview .bar span{background:#315a84;display:block;height:100%;transition:width .1s}
+#overview .bar span:nth-child(2){background:#83a9c7}#overview .bar span:nth-child(3){background:#e1ba71}
+#overview .rowline{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+#overview .task{display:flex;gap:8px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+#overview .task .bullet{width:8px;height:8px;border-radius:50%;background:#c58a2e;flex:none;margin-top:7px}
+#overview .task button{padding:4px 9px;margin-left:auto}
+#overview .progress{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px}
+#overview p.hint{color:var(--muted);font-size:13px}
+#overview .metrics-note{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 </style></head><body><main>
 <header><h1>PFE opportunities · 2027</h1><p>A public, privacy-conscious shortlist of software engineering internship listings. Choose a CV, review the employer's instructions, and apply on the external website.</p></header>
 <div class="notice"><strong>Important:</strong> Check the current listing and deadline before applying. CV files and application records are kept outside this public page. Preparation markers are saved only in your own browser, not synchronized across devices. The previous private application data is not shown.</div>
 <div class="notice"><strong>Priority:</strong> The earlier tracker listed Cnexia's three positions as closing on <strong>10 November 2026</strong> and Maersk's on <strong>15 November 2026</strong>. Dates have not been independently confirmed; check the listings immediately.</div>
-<section id="workspace">
+<section id="overview" aria-labelledby="overview-title">
+<h2 id="overview-title">Application command center</h2>
+<p class="hint">Live statistics for records saved in this browser. This dashboard does not automatically access your Gmail account.</p>
+<div class="kpis">
+<div class="kpi"><strong id="k-email-sent">0</strong><span>Emails marked sent</span></div>
+<div class="kpi"><strong id="k-company-replies">0</strong><span>Companies with replies (manual)</span></div>
+<div class="kpi"><strong id="k-website-submitted">0</strong><span>Web applications submitted</span></div>
+<div class="kpi"><strong id="k-interviews">0</strong><span>Interviews / assessments</span></div>
+<div class="kpi"><strong id="k-active">0</strong><span>Active application records</span></div>
+<div class="kpi"><strong id="k-needs-action">0</strong><span>Action items</span></div>
+</div>
+<div class="audit"><strong>Gmail status:</strong> Not synchronized. These numbers represent <em>your local tracking records</em>, not your full email history. Previously confirmed automated drafts are not counted as sent. Use the email section to add or update records.</div>
+<div class="two">
+<div class="subcard"><h3>Application pipeline</h3><div class="bar" aria-hidden="true" id="pipeline-bar"><span style="width:0%"></span><span style="width:0%"></span><span style="width:0%"></span></div><div class="metrics-note"><span>■ In progress</span><span>■ Responded</span><span>■ Closed</span></div><div id="pipeline-details" aria-live="polite"></div></div>
+<div class="subcard"><h3>Next best actions</h3><div id="action-queue" aria-live="polite"></div></div>
+</div>
+<div class="two"><div class="subcard"><h3>Progress by company</h3><div id="company-progress"></div></div>
+<div class="subcard"><h3>Productivity suggestions</h3>
+<div class="task"><span class="bullet"></span><div><strong>Record exact application dates</strong><div class="progress">Follow-ups should use real sent dates, not estimated ones</div></div></div>
+<div class="task"><span class="bullet"></span><div><strong>Prepare one PDF per company</strong><div class="progress">Track language, CV version and submission method</div></div></div>
+<div class="task"><span class="bullet"></span><div><strong>Prioritize replies and expiring offers</strong><div class="progress">Act on assessments and interviews before starting more applications</div></div></div>
+<div class="task"><span class="bullet"></span><div><strong>Review bounced addresses</strong><div class="progress">Verify contact addresses before sending new email</div></div></div>
+</div></div>
+</section><section id="workspace">
 <h2>Application workspace</h2>
 <p class="hint"><strong>Local-only first version.</strong> Application records are saved in this browser, not GitHub. No synchronization with Gmail or other devices yet. Use Export to back them up privately. Avoid shared devices.</p>
 <div class="tabs">
@@ -117,5 +161,44 @@ el("tailor-text").textContent=fr?
 el("tailor-copy").onclick=()=>{const t=el("tailor-text").textContent;if(t&&navigator.clipboard)navigator.clipboard.writeText(t)};
 el("backup-export").onclick=()=>{const file=new Blob([JSON.stringify({version:1,exported:new Date().toISOString(),...state},null,2)],{type:"application/json"}),url=URL.createObjectURL(file),a=document.createElement("a");a.href=url;a.download="pfe-private-backup.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
 el("backup-import").onchange=async ev=>{const file=ev.target.files?.[0];if(!file)return;try{if(file.size>2000000)throw Error("File too large");const obj=JSON.parse(await file.text());if(!obj||!Array.isArray(obj.emails)||typeof obj.website!=="object"||!obj.website)throw Error("Invalid format");if(!confirm("Replace current local records with this backup?"))return;state={emails:obj.emails.filter(x=>x&&typeof x==="object").slice(0,1000),website:obj.website};save();location.reload()}catch(err){el("backup-status").textContent="Import failed: "+err.message}};
+})();
+</script><script>
+(()=>{'use strict';
+const key='pfe-hunt-records-v1';
+const statuses={website:['Not started','CV ready','Submitted','Acknowledged','Interview','Rejected','Closed'],email:['Draft','Ready for review','Sent','Replied','Interview','Rejected','Bounced']};
+const get=()=>{try{const v=JSON.parse(localStorage.getItem(key)||'{}');return {emails:Array.isArray(v.emails)?v.emails:[],website:v.website&&typeof v.website==='object'?v.website:{}}}catch{return {emails:[],website:{}}}};
+const set=(id,n)=>{const e=document.getElementById(id);if(e)e.textContent=n};
+const line=(label,value)=>{const el=document.createElement('div');el.className='rowline';const a=document.createElement('span'),b=document.createElement('strong');a.textContent=label;b.textContent=value;el.append(a,b);return el};
+function update(){const data=get(),emails=data.emails.filter(x=>x&&typeof x==='object'),web=Object.entries(data.website).filter(([k,v])=>v&&v.status&&v.status!=='Not started');
+const es=emails.filter(x=>['Sent','Replied','Interview','Rejected','Bounced'].includes(x.status));
+const replies=emails.filter(x=>['Replied','Interview','Rejected'].includes(x.status));
+const sites=web.filter(([k,v])=>['Submitted','Acknowledged','Interview','Rejected','Closed'].includes(v.status));
+const interviews=emails.filter(x=>x.status==='Interview').length+web.filter(([k,v])=>v.status==='Interview').length;
+const active=emails.filter(x=>!['Rejected','Bounced'].includes(x.status)).length+web.filter(([k,v])=>!['Rejected','Closed'].includes(v.status)).length;
+const actionEmail=emails.filter(x=>['Draft','Ready for review','Bounced','Replied','Interview'].includes(x.status));
+const actionWeb=web.filter(([k,v])=>['CV ready','Acknowledged','Interview'].includes(v.status));
+const firms=new Set(replies.map(x=>String(x.company||'').trim().toLowerCase()).filter(Boolean));
+set('k-email-sent',es.length);set('k-company-replies',firms.size);set('k-website-submitted',sites.length);set('k-interviews',interviews);set('k-active',active);set('k-needs-action',actionEmail.length+actionWeb.length);
+const progress=document.getElementById('pipeline-details');progress.replaceChildren();
+const responded=replies.length+web.filter(([k,v])=>['Acknowledged','Interview'].includes(v.status)).length;
+const closed=emails.filter(x=>['Rejected','Bounced'].includes(x.status)).length+web.filter(([k,v])=>['Rejected','Closed'].includes(v.status)).length;
+const started=emails.length+web.length;const ongoing=Math.max(0,started-responded-closed);
+for(const [label,num] of [['In progress',ongoing],['Responded / acknowledged',responded],['Closed / rejected / bounced',closed]])progress.append(line(label,num));
+const bar=document.getElementById('pipeline-bar'),nums=[ongoing,responded,closed];[...bar.children].forEach((x,i)=>x.style.width=(started?Math.max(0,nums[i])/started*100:0)+'%');
+const queue=document.getElementById('action-queue');queue.replaceChildren();let count=0;
+const task=(title,desc)=>{const e=document.createElement('div');e.className='task';const dot=document.createElement('span');dot.className='bullet';const body=document.createElement('div');const strong=document.createElement('strong');strong.textContent=title;const small=document.createElement('div');small.className='progress';small.textContent=desc;body.append(strong,small);e.append(dot,body);queue.append(e);count++};
+actionEmail.slice(0,5).forEach(x=>task(x.company||'Email application',x.status==='Bounced'?'Verify recipient before retrying':x.status==='Draft'?'Review draft before sending':x.status==='Interview'?'Prepare for interview':x.status==='Replied'?'Read reply and decide next step':'Send only after approval'));
+const cards=[...document.querySelectorAll('.job')];actionWeb.slice(0,5).forEach(([idx,v])=>task(cards[Number(idx)]?.querySelector('h3')?.textContent||'Website application',v.status==='CV ready'?'Submit application on company website':v.status==='Interview'?'Prepare assessment / interview':'Check application response'));
+if(!count)task('No urgent local actions','Mark offers prepared or add email applications to build your queue');
+const companies=document.getElementById('company-progress');companies.replaceChildren();
+const items=[...emails.map(x=>({name:x.company||'Unknown',type:'Email',status:x.status||'Draft'})),...web.map(([idx,v])=>({name:cards[Number(idx)]?.querySelector('h3')?.textContent||'Company',type:'Website',status:v.status}))];
+if(!items.length){const p=document.createElement('p');p.className='hint';p.textContent='No locally recorded applications yet. Your existing Gmail messages will appear here after a private import or synchronization is implemented.';companies.append(p)}
+else items.slice(-20).reverse().forEach(x=>companies.append(line(x.name+' · '+x.type,x.status)));
+}
+document.addEventListener('change',e=>{if(e.target.closest('#workspace')||e.target.closest('.job'))setTimeout(update,0)});
+document.addEventListener('submit',e=>{if(e.target.closest('#workspace'))setTimeout(update,0)});
+document.addEventListener('click',e=>{if(e.target.closest('#workspace'))setTimeout(update,0)});
+window.addEventListener('storage',e=>{if(e.key===key)update()});
+update();
 })();
 </script></body></html>
