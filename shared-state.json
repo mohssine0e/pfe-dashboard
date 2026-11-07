@@ -11,8 +11,8 @@
     "confirmedAssessments": 1,
     "confirmedRejectionMessages": 2,
     "unfinishedSubmissions": 4,
-    "verifiedUniqueEmployerReplies": 0,
-    "replyNote": "Employer acknowledgments and automated responses excluded; fuller review needed to establish unique genuine recruiter reply count."
+    "verifiedUniqueEmployerReplies": 2,
+    "replyNote": "At least two distinct companies with substantive response evidence checked: BCG X (assessment invitation) and Assystem (rejections). This is a verified lower bound, not a complete inbox-wide reply count."
   },
   "applications": [
     {
