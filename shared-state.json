@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "updatedAt": "2026-11-07",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
@@ -314,7 +314,18 @@
       "verifiedTitle": true,
       "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
       "verifiedDeadline": "2026-11-10",
-      "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html"
+      "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html",
+      "applicationMethod": "rekrute",
+      "cvMasterId": "cloud",
+      "submission": {
+        "status": "Reported submitted — verify in platform history",
+        "evidence": "User reported clicking Envoyer ma candidature in ReKrute and the site attaching a previously stored profile CV; actual CV version and employer receipt not independently confirmed",
+        "recordedAt": "2026-11-07"
+      },
+      "methodLabel": "Profile CV may submit automatically",
+      "compatibilityWarning": "Downloading the recommended CV here does not change the CV attached in your ReKrute profile; ReKrute automatically attaches its saved CV.",
+      "applicationInstructions": "Before clicking « Envoyer ma candidature », verify the CV and associated files stored in your ReKrute candidate account; check « Mes Candidatures » afterward.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "Cnexia",
@@ -326,7 +337,18 @@
       "verifiedTitle": true,
       "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
       "verifiedDeadline": "2026-11-10",
-      "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html"
+      "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
+      "applicationMethod": "rekrute",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Profile CV may submit automatically",
+      "compatibilityWarning": "Downloading the recommended CV here does not change the CV attached in your ReKrute profile; ReKrute automatically attaches its saved CV.",
+      "applicationInstructions": "Before clicking « Envoyer ma candidature », verify the CV and associated files stored in your ReKrute candidate account; check « Mes Candidatures » afterward.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "Cnexia",
@@ -336,7 +358,18 @@
       "role": "Full-Stack Developer (React / FastAPI)",
       "sourceLabel": "ReKrute",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "rekrute",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Profile CV may submit automatically",
+      "compatibilityWarning": "Downloading the recommended CV here does not change the CV attached in your ReKrute profile; ReKrute automatically attaches its saved CV.",
+      "applicationInstructions": "Before clicking « Envoyer ma candidature », verify the CV and associated files stored in your ReKrute candidate account; check « Mes Candidatures » afterward.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "Maersk",
@@ -348,7 +381,18 @@
       "verifiedTitle": true,
       "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
       "verifiedDeadline": "2027-11-15",
-      "deadlineSourceUrl": "https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499"
+      "deadlineSourceUrl": "https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499",
+      "applicationMethod": "linkedin",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Check Easy Apply vs external portal",
+      "compatibilityWarning": "The selected CV may be a profile-stored resume or an upload; verify which file before confirming.",
+      "applicationInstructions": "Check whether the listing uses LinkedIn Easy Apply or redirects to the employer. Check resume selection and review the confirmation screen/history.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "AVL Maroc",
@@ -358,7 +402,18 @@
       "role": "PFE Internship Program",
       "sourceLabel": "LinkedIn · AVL",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "linkedin",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Check Easy Apply vs external portal",
+      "compatibilityWarning": "The selected CV may be a profile-stored resume or an upload; verify which file before confirming.",
+      "applicationInstructions": "Check whether the listing uses LinkedIn Easy Apply or redirects to the employer. Check resume selection and review the confirmation screen/history.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "Intelcia",
@@ -368,7 +423,18 @@
       "role": "Data, IA & IT",
       "sourceLabel": "Stagiaires.ma",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "stagiaires",
+      "cvMasterId": "cloud",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Check listing for application route",
+      "compatibilityWarning": "Application form or external site may use a different file; inspect before final submission.",
+      "applicationInstructions": "Open the posting, follow its stated apply route, and verify any resume selection, confirmation email, or application-history entry.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "O&D Services",
@@ -378,7 +444,18 @@
       "role": "Développement web Symfony / Angular / Docker",
       "sourceLabel": "ReKrute",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "rekrute",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Profile CV may submit automatically",
+      "compatibilityWarning": "Downloading the recommended CV here does not change the CV attached in your ReKrute profile; ReKrute automatically attaches its saved CV.",
+      "applicationInstructions": "Before clicking « Envoyer ma candidature », verify the CV and associated files stored in your ReKrute candidate account; check « Mes Candidatures » afterward.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "Amsys Consulting",
@@ -388,7 +465,18 @@
       "role": "PFE Challenge",
       "sourceLabel": "Stagiaires.ma",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "stagiaires",
+      "cvMasterId": "cloud",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Check listing for application route",
+      "compatibilityWarning": "Application form or external site may use a different file; inspect before final submission.",
+      "applicationInstructions": "Open the posting, follow its stated apply route, and verify any resume selection, confirmation email, or application-history entry.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "torck GmbH",
@@ -398,7 +486,18 @@
       "role": "Full Stack .NET / Vue.js",
       "sourceLabel": "LinkedIn · torck GmbH",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "linkedin",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Check Easy Apply vs external portal",
+      "compatibilityWarning": "The selected CV may be a profile-stored resume or an upload; verify which file before confirming.",
+      "applicationInstructions": "Check whether the listing uses LinkedIn Easy Apply or redirects to the employer. Check resume selection and review the confirmation screen/history.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "Warriors Team",
@@ -408,7 +507,18 @@
       "role": "Développeur Full Stack",
       "sourceLabel": "Stagiaires.ma",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "stagiaires",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Check listing for application route",
+      "compatibilityWarning": "Application form or external site may use a different file; inspect before final submission.",
+      "applicationInstructions": "Open the posting, follow its stated apply route, and verify any resume selection, confirmation email, or application-history entry.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     },
     {
       "company": "Digital Speak (DigitalSpeak Group)",
@@ -418,7 +528,18 @@
       "role": "Développeur Web / Mobile",
       "sourceLabel": "Stagiaires.ma",
       "verifiedTitle": true,
-      "titleVerifiedAt": "2026-11-07T18:41:07+01:00"
+      "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
+      "applicationMethod": "stagiaires",
+      "cvMasterId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null,
+        "recordedAt": null
+      },
+      "methodLabel": "Check listing for application route",
+      "compatibilityWarning": "Application form or external site may use a different file; inspect before final submission.",
+      "applicationInstructions": "Open the posting, follow its stated apply route, and verify any resume selection, confirmation email, or application-history entry.",
+      "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified)."
     }
   ],
   "gmailVerification": {
@@ -507,5 +628,70 @@
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
   "lastSyncedAt": "2026-11-07T18:48:59+01:00",
-  "syncTimezone": "Africa/Casablanca"
+  "syncTimezone": "Africa/Casablanca",
+  "cvMasters": {
+    "policy": "Approved immutable master versions. For a future named company/role, make a copy and lightly tailor only the profile/objective to truthful offer-specific language; preserve verified experience and tech stacks. Do not modify masters, invent claims, auto-apply, or email from dashboard.",
+    "defaultLanguage": "EN",
+    "versions": [
+      {
+        "id": "software",
+        "name": "Software Engineering — General",
+        "focus": "General-purpose PFE / ReKrute profile",
+        "pdf": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk",
+        "docx": "https://docs.google.com/document/d/11Ekpg-BhQpRfiNvW4gOvDGlmQZ0xon6w/edit?usp=drivesdk&ouid=114726997409359666465&rtpof=true&sd=true"
+      },
+      {
+        "id": "java",
+        "name": "Java Backend",
+        "focus": "Java 21, Spring Boot, API/microservices and distributed systems",
+        "pdf": "https://drive.google.com/file/d/1r8hgV6ZE2vL9HnAjFf5JVQbyHEJmhnmH/view?usp=drivesdk",
+        "docx": "https://docs.google.com/document/d/1UhfpR9a5pTg8lkamvoXGGwRfHw2_T2EB/edit?usp=drivesdk&ouid=114726997409359666465&rtpof=true&sd=true"
+      },
+      {
+        "id": "cloud",
+        "name": "Cloud & DevOps",
+        "focus": "Docker, CI/CD, infrastructure tooling and MicroPaaS",
+        "pdf": "https://drive.google.com/file/d/1qM71FKPzU4TIObkxMwJn6Pik31NSsqcC/view?usp=drivesdk",
+        "docx": "https://docs.google.com/document/d/12tiL-sJHNLBdm0uQQkePLqemVRSXgS6O/edit?usp=drivesdk&ouid=114726997409359666465&rtpof=true&sd=true"
+      }
+    ],
+    "examples": [
+      "For a named company, use a copy and add one precise sentence about its role and why the existing experience fits.",
+      "Check each claim against the original master and the public job posting.",
+      "Do not pretend the dashboard CV is automatically used by the external recruitment portal."
+    ]
+  },
+  "platformProfiles": [
+    {
+      "platform": "ReKrute",
+      "site": "https://www.rekrute.com/",
+      "recommendedMaster": "software",
+      "uploadedCvStatus": "Not verified",
+      "applicationBehavior": "ReKrute automatically attaches the CV stored in the candidate profile and associated files.",
+      "action": "Replace your saved ReKrute profile CV with the approved Software Engineering master before further applications; review all attached files. Updating profile does not confirm an earlier application used the new CV.",
+      "source": "https://www.rekrute.com/fr/conditions-utilisation.html"
+    },
+    {
+      "platform": "LinkedIn",
+      "site": "https://www.linkedin.com/",
+      "recommendedMaster": "software",
+      "uploadedCvStatus": "Not verified",
+      "applicationBehavior": "Application behavior varies between Easy Apply and employer-hosted links; check for uploaded/resume selection prompts.",
+      "action": "Review the resume attached to each application and don't assume a downloaded dashboard CV is used."
+    },
+    {
+      "platform": "Stagiaires.ma",
+      "site": "https://www.stagiaires.ma/",
+      "recommendedMaster": "software",
+      "uploadedCvStatus": "Not verified",
+      "applicationBehavior": "Listing may require a separate form or redirect to another provider; attachment behavior not verified globally.",
+      "action": "Open the listing and check its actual instructions. Verify whether a saved profile CV, upload field, or external form is used."
+    }
+  ],
+  "submissionPolicy": {
+    "confirmedRequires": "Employer/platform application confirmation, application-history record, or user-supplied report of completed submission; distinguish these evidence types.",
+    "sentEmail": "A message in Gmail SENT proves email transmission by the account, not delivery, receipt, review or an employer-site application.",
+    "unknownDefault": "Not verified",
+    "noAutoSubmission": true
+  }
 }
