@@ -11,11 +11,58 @@ main{max-width:1060px;margin:auto;padding:30px 22px 90px}h1{font-size:clamp(28px
 h3{font-size:19px;margin:9px 0 3px}.job p{margin:4px 0 9px}.meta{display:flex;gap:8px;font-size:12px;color:var(--muted);text-transform:capitalize}.meta span{border:1px solid var(--line);padding:3px 8px;border-radius:16px}.cv{color:var(--muted)}
 .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:12px}a,button{border-radius:8px;padding:9px 12px;font:inherit;cursor:pointer;text-decoration:none}a{background:#193654;color:white}button{border:1px solid #b9c7d8;background:white;color:var(--ink)}button.done{background:#e4f5e9;border-color:#73bf8b}
 footer{margin-top:35px;font-size:13px;color:var(--muted)}
+</style><style>
+#workspace{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin:24px 0}
+#workspace h2{margin:0 0 8px}#workspace .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+#workspace .tab{background:#fff;color:var(--ink);border:1px solid var(--line)}
+#workspace .tab.active{background:#193654;color:#fff}
+#workspace .panel[hidden],.job[hidden]{display:none!important}
+#workspace .fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+#workspace label{display:grid;gap:4px;font-size:13px;color:var(--muted)}
+#workspace input,#workspace select{width:100%;padding:9px}
+#workspace .record{padding:12px 0;border-top:1px solid var(--line);display:flex;gap:12px;align-items:start;justify-content:space-between;flex-wrap:wrap}
+#workspace .record p{margin:3px 0;color:var(--muted);font-size:13px}
+#workspace .record select{width:auto;min-width:130px}
+#workspace .hint{font-size:13px;color:var(--muted)}
+#workspace .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+#workspace output{display:block;white-space:pre-wrap;background:var(--bg);border-radius:8px;padding:14px;margin-top:12px}
+.job .site-status{margin-top:10px;display:grid;gap:5px;font-size:13px;color:var(--muted)}
+.job .site-status select{width:100%}
 </style></head><body><main>
 <header><h1>PFE opportunities · 2027</h1><p>A public, privacy-conscious shortlist of software engineering internship listings. Choose a CV, review the employer's instructions, and apply on the external website.</p></header>
 <div class="notice"><strong>Important:</strong> Check the current listing and deadline before applying. CV files and application records are kept outside this public page. Preparation markers are saved only in your own browser, not synchronized across devices. The previous private application data is not shown.</div>
 <div class="notice"><strong>Priority:</strong> The earlier tracker listed Cnexia's three positions as closing on <strong>10 November 2026</strong> and Maersk's on <strong>15 November 2026</strong>. Dates have not been independently confirmed; check the listings immediately.</div>
-<div class="controls"><input id="search" placeholder="Search company or role..." aria-label="Search offers"><select id="lane" aria-label="Filter by specialization"><option value="">All roles</option><option value="devops">DevOps / Cloud</option><option value="java">Backend / Java</option><option value="fullstack">Full-Stack</option></select><select id="fit" aria-label="Filter by fit"><option value="">All fits</option><option value="top">Best fit</option><option value="good">Good fit</option><option value="weak">Lower fit</option></select></div>
+<section id="workspace">
+<h2>Application workspace</h2>
+<p class="hint"><strong>Local-only first version.</strong> Application records are saved in this browser, not GitHub. No synchronization with Gmail or other devices yet. Use Export to back them up privately. Avoid shared devices.</p>
+<div class="tabs">
+<button type="button" class="tab active" data-panel="web">Website applications</button>
+<button type="button" class="tab" data-panel="email">Email applications</button>
+<button type="button" class="tab" data-panel="cv">CV personalization</button>
+<button type="button" class="tab" data-panel="backup">Backup</button></div>
+<div class="panel" id="pane-web"><p class="hint">Select each opportunity's status below, only after actually completing that step. English CV is preferred unless the job explicitly requests French.</p></div>
+<div class="panel" id="pane-email" hidden>
+<p class="hint">Manually record application emails. Creating records here does not send messages or inspect Gmail.</p>
+<form id="app-add"><div class="fields">
+<label>Company<input name="company" required maxlength="100"></label>
+<label>Position<input name="role" required maxlength="130"></label>
+<label>Recipient (optional)<input type="email" name="recipient"></label>
+<label>CV track<select name="track"><option>Software Engineer</option><option>Full-Stack Java / React</option><option>Java Backend / DevOps</option></select></label>
+<label>CV language<select name="language"><option>English</option><option>French</option></select></label>
+<label>Status<select name="status"><option>Draft</option><option>Ready for review</option><option>Sent</option><option>Replied</option><option>Interview</option><option>Rejected</option><option>Bounced</option></select></label>
+</div><div class="actions"><button type="submit">Add email application</button></div></form><div id="email-list"></div></div>
+<div class="panel" id="pane-cv" hidden>
+<p class="hint">Change only the professional summary for the target offer. Preserve your experience, project claims, and demonstrable skills.</p>
+<div class="fields"><label>Company<input id="tailor-company" maxlength="100"></label>
+<label>Position<input id="tailor-role" maxlength="120"></label>
+<label>Language<select id="tailor-language"><option>English</option><option>French</option></select></label>
+<label>CV track<select id="tailor-track"><option>Software Engineer</option><option>Full-Stack Java / React</option><option>Java Backend / DevOps</option></select></label></div>
+<div class="actions"><button type="button" id="tailor-go">Generate summary</button><button type="button" id="tailor-copy">Copy text</button></div>
+<output id="tailor-text"></output><p class="hint">Text only: this does not create or alter a PDF. French master PDFs must be produced before French-language submissions.</p></div>
+<div class="panel" id="pane-backup" hidden>
+<p class="hint">Export private JSON. Never commit this data to the public repo.</p>
+<div class="actions"><button type="button" id="backup-export">Export JSON</button><label>Import backup<input type="file" id="backup-import" accept=".json,application/json"></label></div>
+<p id="backup-status" class="hint"></p></div></section><div class="controls"><input id="search" placeholder="Search company or role..." aria-label="Search offers"><select id="lane" aria-label="Filter by specialization"><option value="">All roles</option><option value="devops">DevOps / Cloud</option><option value="java">Backend / Java</option><option value="fullstack">Full-Stack</option></select><select id="fit" aria-label="Filter by fit"><option value="">All fits</option><option value="top">Best fit</option><option value="good">Good fit</option><option value="weak">Lower fit</option></select></div>
 <div class="grid" id="offers"><article class="job" data-lane="devops" data-fit="top"><div class="meta"><span>devops</span><span>top fit</span></div><h3>Cnexia</h3><p>PFE opportunity</p><p class="cv">Recommended CV: <strong>Java Backend / DevOps</strong></p><div class="actions"><a target="_blank" rel="noopener noreferrer" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html">Review official listing ↗</a><button type="button" data-key="pfe-job-0" aria-label="Toggle preparation status for Cnexia">Mark prepared</button></div></article>
 <article class="job" data-lane="java" data-fit="top"><div class="meta"><span>java</span><span>top fit</span></div><h3>Cnexia</h3><p>PFE opportunity</p><p class="cv">Recommended CV: <strong>Software Engineer</strong></p><div class="actions"><a target="_blank" rel="noopener noreferrer" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html">Review official listing ↗</a><button type="button" data-key="pfe-job-1" aria-label="Toggle preparation status for Cnexia">Mark prepared</button></div></article>
 <article class="job" data-lane="fullstack" data-fit="top"><div class="meta"><span>fullstack</span><span>top fit</span></div><h3>Cnexia</h3><p>PFE opportunity</p><p class="cv">Recommended CV: <strong>Full-Stack Java / React</strong></p><div class="actions"><a target="_blank" rel="noopener noreferrer" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html">Review official listing ↗</a><button type="button" data-key="pfe-job-2" aria-label="Toggle preparation status for Cnexia">Mark prepared</button></div></article>
@@ -33,4 +80,42 @@ const q=document.querySelector('#search'),lane=document.querySelector('#lane'),f
 function render(){for(const card of document.querySelectorAll('.job')){card.hidden=!!(q.value&&!card.textContent.toLowerCase().includes(q.value.toLowerCase())||lane.value&&card.dataset.lane!==lane.value||fit.value&&card.dataset.fit!==fit.value)}}
 [q,lane,fit].forEach(el=>el.addEventListener('input',render));
 for(const b of document.querySelectorAll('button[data-key]')){const k=b.dataset.key;try{if(localStorage.getItem(k)==='1'){b.classList.add('done');b.textContent='Prepared ✓'}}catch{}b.addEventListener('click',()=>{const done=!b.classList.contains('done');b.classList.toggle('done',done);b.textContent=done?'Prepared ✓':'Mark prepared';try{localStorage.setItem(k,done?'1':'0')}catch{}})}
+</script><script>
+(()=>{"use strict";
+const key="pfe-hunt-records-v1",websiteStatuses=["Not started","CV ready","Submitted","Acknowledged","Interview","Rejected","Closed"],emailStatuses=["Draft","Ready for review","Sent","Replied","Interview","Rejected","Bounced"];
+let state={website:{},emails:[]};
+try{const saved=JSON.parse(localStorage.getItem(key)||"{}");if(saved&&typeof saved==="object"){state.website=saved.website&&typeof saved.website==="object"?saved.website:{};state.emails=Array.isArray(saved.emails)?saved.emails:[]}}catch{}
+const save=()=>{try{localStorage.setItem(key,JSON.stringify(state))}catch{alert("Browser storage unavailable. Export data before leaving.")}};
+const el=id=>document.getElementById(id);
+document.querySelectorAll("#workspace .tab").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll("#workspace .tab").forEach(b=>b.classList.toggle("active",b===btn));document.querySelectorAll("#workspace .panel").forEach(p=>p.hidden=p.id!=="pane-"+btn.dataset.panel)}));
+document.querySelectorAll(".job").forEach((card,i)=>{
+const box=document.createElement("label");box.className="site-status";box.textContent="Application status (in this browser)";
+const sel=document.createElement("select");sel.setAttribute("aria-label","Application status for "+(card.querySelector("h3")?.textContent||"offer"));
+websiteStatuses.forEach(st=>{const opt=document.createElement("option");opt.value=st;opt.textContent=st;sel.append(opt)});
+sel.value=websiteStatuses.includes(state.website[i]?.status)?state.website[i].status:"Not started";
+sel.addEventListener("change",()=>{state.website[i]={status:sel.value,updated:new Date().toISOString()};save()});box.append(sel);
+const lang=document.createElement("p");lang.className="cv";lang.textContent="CV language: English default. Use French only if the posting explicitly requires it.";
+card.append(lang,box);
+});
+const clean=x=>String(x||"").slice(0,220);
+function renderEmails(){const target=el("email-list");target.replaceChildren();
+for(const r of state.emails){const line=document.createElement("div");line.className="record";
+const left=document.createElement("div"),title=document.createElement("strong"),meta=document.createElement("p");
+title.textContent=r.company+" — "+r.role;meta.textContent=[r.recipient,r.track,r.language].filter(Boolean).join(" · ");left.append(title,meta);
+const select=document.createElement("select");select.setAttribute("aria-label","Email status for "+r.company);
+emailStatuses.forEach(x=>{const o=document.createElement("option");o.value=x;o.textContent=x;select.append(o)});select.value=emailStatuses.includes(r.status)?r.status:"Draft";
+select.onchange=()=>{r.status=select.value;save()};
+const remove=document.createElement("button");remove.type="button";remove.textContent="Remove";remove.onclick=()=>{if(confirm("Remove this local record?")){state.emails=state.emails.filter(a=>a.id!==r.id);save();renderEmails()}};
+const right=document.createElement("div");right.className="actions";right.append(select,remove);line.append(left,right);target.append(line)}}renderEmails();
+el("app-add").addEventListener("submit",ev=>{ev.preventDefault();const form=ev.currentTarget,fd=new FormData(form);const rec={id:crypto.randomUUID(),created:new Date().toISOString()};for(const [k,v] of fd)rec[k]=clean(v);state.emails.push(rec);save();form.reset();renderEmails()});
+el("tailor-go").onclick=()=>{const c=el("tailor-company").value.trim(),r=el("tailor-role").value.trim(),track=el("tailor-track").value,fr=el("tailor-language").value==="French";
+const strength=track==="Java Backend / DevOps"?"Java/Spring Boot, Docker, Linux and automated CI/CD":track==="Full-Stack Java / React"?"Java/Spring Boot, React/TypeScript and full-stack development":"Java/Spring Boot services, React applications and software design";
+const company=c||(fr?"votre entreprise":"your company"),role=r||(fr?"génie logiciel":"software engineering");
+el("tailor-text").textContent=fr?
+"Élève-ingénieur en dernière année de Génie Logiciel à l’ENSA Al Hoceima, avec une expérience pratique en "+strength+". Passionné par Linux, l’open source, la résolution de problèmes et l’architecture logicielle. Je recherche un stage PFE de 5 à 6 mois chez "+company+" en "+role+" afin de contribuer à des projets concrets et de progresser auprès d’ingénieurs expérimentés.":
+"Final-year Software Engineering student at ENSA Al Hoceima with hands-on experience in "+strength+". Passionate about Linux, open-source software, problem-solving and software architecture. Seeking a 5–6 month PFE internship in "+role+" at "+company+" to contribute to real-world projects and learn from experienced engineers."};
+el("tailor-copy").onclick=()=>{const t=el("tailor-text").textContent;if(t&&navigator.clipboard)navigator.clipboard.writeText(t)};
+el("backup-export").onclick=()=>{const file=new Blob([JSON.stringify({version:1,exported:new Date().toISOString(),...state},null,2)],{type:"application/json"}),url=URL.createObjectURL(file),a=document.createElement("a");a.href=url;a.download="pfe-private-backup.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+el("backup-import").onchange=async ev=>{const file=ev.target.files?.[0];if(!file)return;try{if(file.size>2000000)throw Error("File too large");const obj=JSON.parse(await file.text());if(!obj||!Array.isArray(obj.emails)||typeof obj.website!=="object"||!obj.website)throw Error("Invalid format");if(!confirm("Replace current local records with this backup?"))return;state={emails:obj.emails.filter(x=>x&&typeof x==="object").slice(0,1000),website:obj.website};save();location.reload()}catch(err){el("backup-status").textContent="Import failed: "+err.message}};
+})();
 </script></body></html>
