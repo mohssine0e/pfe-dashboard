@@ -221,11 +221,11 @@
       "company": "Inetum",
       "role": "SAP Hybris PFE",
       "channel": "website",
-      "status": "Submission failed",
-      "date": "2026-10-28",
-      "source": "LinkedIn application problem",
+      "status": "Acknowledged",
+      "date": "2026-11-08",
+      "source": "Inetum Business Solutions Maroc employer recruitment platform confirmation",
       "recordId": "app-inetum-sap-hybris-pfe",
-      "evidenceCategory": "LinkedIn application problem"
+      "evidenceCategory": "Employer-platform receipt for exact SAP Hybris PFE role; queued for review"
     },
     {
       "company": "Maroc Telecom",
@@ -974,12 +974,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-08T20:00:52.034Z",
+    "lastVerifiedAt": "2026-11-08T21:06:16.899Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Recent Gmail inbox since 2026-11-07 with context back to prior successful audit 2026-11-08T19:16:51Z; sent PFE messages since 2026-11-07; StagiairesMA completion notices since 2026-11-07. No full historical recount. Excluded promotions, job alerts, duplicate platform notices.",
+    "scope": "Inbox since 2026-11-07 with overlap from previous audit 2026-11-08T20:00:52Z; sent applications since 2026-11-08 including attachment metadata; StagiairesMA completion notices since 2026-11-07. No historical aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: recent inbox, sent PFE applications, StagiairesMA completion notices; read_email for relevant Adkomo employer receipt, Netopia and Beebay sent applications, Indeed Digital Speak confirmation, and CGI reminder",
+    "method": "Connected Gmail search_emails inbox/sent/completion notices; read_email for new Ostorlab intermediary reminder and Inetum SAP Hybris employer acknowledgement",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1063,7 +1063,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-08T20:00:52.034Z",
+  "lastSyncedAt": "2026-11-08T21:06:16.899Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -1360,6 +1360,19 @@
       "warning": "Choose Cloud / DevOps focus; avoid implying Databricks or Talend experience.",
       "discoveredAt": "2026-11-08",
       "source": "StagiairesMA automated completion email"
+    },
+    {
+      "id": "ostorlab-software-engineer-intern-indeed-6ddfe80a0a2a2515",
+      "company": "Ostorlab",
+      "role": "Software Engineer Intern",
+      "platform": "Indeed",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=6ddfe80a0a2a2515",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk",
+      "cvLabel": "General Software Engineering PFE CV",
+      "status": "needs-original-platform-check",
+      "warning": "Internship indicated; confirm PFE eligibility, duration, start date and official submission on Indeed. StagiairesMA reminder is not employer confirmation.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion notice"
     }
   ],
   "completionQueuePolicy": {
