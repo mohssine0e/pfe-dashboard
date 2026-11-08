@@ -529,9 +529,11 @@ function showVerifiedOfferTitles(data){
  if(heading)heading.textContent=source.company||'Company unverified';
  if(title)title.textContent=(source.verifiedTitle&&source.title)?source.title:'Exact original title not verified';
  if(role&&source.role)role.textContent=source.role;
- const emailSent=source.submission?.sourceType==='verified-sent-mail';
- card.dataset.confirmedEmailSent=emailSent?'true':'false';
- if(emailSent&&!card.dataset.expired){card.classList.add('offer-is-applied')}
+ const sourceType=source.submission?.sourceType;
+ const recordedApplied=sourceType==='verified-sent-mail'||sourceType==='user-reported-submission';
+ card.dataset.confirmedEmailSent=recordedApplied?'true':'false';
+ card.dataset.publicApplicationEvidence=sourceType||'';
+ if(recordedApplied&&card.dataset.expired!=='true'){card.classList.add('offer-is-applied')}
  if(sourceLink){if(source.url&&/^https?:\/\//i.test(source.url)){sourceLink.href=source.url;sourceLink.textContent='Source: '+(source.sourceLabel||'Original listing');sourceLink.removeAttribute('aria-disabled')}
  else{sourceLink.removeAttribute('href');sourceLink.textContent='Source unavailable'}}
  })}
@@ -866,11 +868,11 @@ function renderSaved(snapshot){
    card.classList.toggle('offer-is-expired',isExpired);
    panel.applied.input.checked=isApplied;
    panel.expired.input.checked=isExpired;
-   panel.applied.caption.textContent=card.dataset.confirmedEmailSent==='true'?(panel.offer.applicationMethod==='formThenEmail'?'Applied · form + email':'Applied via email'):isApplied?'Applied':'Mark as applied';
+   panel.applied.caption.textContent=card.dataset.confirmedEmailSent==='true'?(card.dataset.publicApplicationEvidence==='user-reported-submission'?'Applied · user-reported':panel.offer.applicationMethod==='formThenEmail'?'Applied · form + email':'Applied via email'):isApplied?'Applied':'Mark as applied';
    panel.applied.input.disabled=card.dataset.confirmedEmailSent==='true';
    panel.applied.input.checked=isApplied||card.dataset.confirmedEmailSent==='true';
    panel.expired.caption.textContent=isExpired?'Expired':'Mark as expired';
-   panel.applied.label.title=card.dataset.confirmedEmailSent==='true'?'Sent via verified connected Gmail; this cannot be unsent':isApplied?'Uncheck to clear applied status':'Manually record application completion';
+   panel.applied.label.title=card.dataset.confirmedEmailSent==='true'?(card.dataset.publicApplicationEvidence==='user-reported-submission'?'LinkedIn submission reported by user; platform receipt not independently verified':'Sent via connected Gmail; this cannot be unsent'):isApplied?'Uncheck to clear applied status':'Manually record application completion';
    panel.expired.label.title=isExpired?'Uncheck to clear expired status':'Manually record the listing as expired (not source-verified)';
    panel.feedback.textContent=isApplied?(data?.submittedOn?'· '+data.submittedOn:''):isExpired?(data?.expiredOn?'· '+data.expiredOn:''):'';
    const publicStatus=card.querySelector('.submission-evidence');
