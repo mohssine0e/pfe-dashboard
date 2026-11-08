@@ -547,11 +547,115 @@ function showApplicationMethods(data){
    const statusRow=card.querySelector('.submission-evidence');if(statusRow)statusRow.hidden=!item.submission?.status||item.submission.status==='Not verified';
  });
 }
+
+let deskSnapshot=null;
+const statusesForGroup=(status,group)=>{
+ const s=String(status||'').toLowerCase();
+ if(group==='sent')return /sent|acknowledg|awaiting|applied/.test(s);
+ if(group==='action')return /needs|fail|bounce|delivery|draft|unfinished/.test(s);
+ if(group==='assessment')return /assessment|interview|hirevue|test/.test(s);
+ if(group==='rejected')return /reject/.test(s);
+ return true;
+};
+function renderApplicationTable(d){
+ const table=$('application-table-body');table.replaceChildren();
+ const q=$('app-table-search').value.toLowerCase().trim(),group=$('app-table-status').value,sort=$('app-table-sort').value;
+ const rows=(Array.isArray(d.applications)?d.applications:[]).filter(a=>
+  (!q||[a.company,a.role,a.channel,a.status].join(' ').toLowerCase().includes(q))&&statusesForGroup(a.status,group));
+ rows.sort((a,b)=>sort==='company'?String(a.company).localeCompare(String(b.company)):sort==='oldest'?String(a.date||'').localeCompare(String(b.date||'')):String(b.date||'').localeCompare(String(a.date||'')));
+ for(const a of rows){
+  const tr=document.createElement('tr'),who=document.createElement('td'),company=make('strong',null,a.company||'Unknown company'),role=make('small',null,a.role||'Role not recorded');
+  who.append(company,role);
+  const date=make('td',null,a.date||'Unknown');
+  const channel=make('td',null,a.channel||'Not recorded');
+  const state=document.createElement('td'),badge=make('span','status',a.status||'Unverified');state.append(badge);
+  tr.append(who,date,channel,state);table.append(tr);
+ }
+ if(!rows.length){const row=document.createElement('tr'),cell=make('td',null,'No matching recorded applications.');cell.colSpan=4;row.append(cell);table.append(row)}
+ text('app-table-count',rows.length+' of '+(d.applications||[]).length+' recorded entries · not a complete employer receipt count');
+}
+['app-table-search','app-table-status','app-table-sort'].forEach(id=>$(id)?.addEventListener('input',()=>{if(deskSnapshot)renderApplicationTable(deskSnapshot)}));
+function renderDeskSections(d){
+ deskSnapshot=d;
+ renderApplicationTable(d);
+ const records=Array.isArray(d.applications)?d.applications:[];
+ const list=$('activity-feed');list.replaceChildren();
+ const sorted=[...records].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+ for(const item of sorted.slice(0,12)){
+  const entry=make('div','desk-item');
+  entry.append(make('strong',null,(item.company||'Unknown')+' · '+(item.status||'Unverified')));
+  entry.append(make('small',null,[item.date,item.role,item.channel].filter(Boolean).join(' · ')));
+  list.append(entry);
+ }
+ if(!list.children.length)list.append(make('p','muted','No documented application activity yet.'));
+ const deadline=$('deadline-list');deadline.replaceChildren();
+ const dated=(d.mainOfferRegistry||[]).filter(x=>x.verifiedDeadline&&/^\d{4}-\d{2}-\d{2}$/.test(x.verifiedDeadline)).sort((a,b)=>a.verifiedDeadline.localeCompare(b.verifiedDeadline));
+ const today=new Date().toLocaleDateString('en-CA',{timeZone:'Africa/Casablanca'});
+ for(const item of dated){
+  const overdue=item.verifiedDeadline<today,soon=item.verifiedDeadline>=today;
+  const entry=make('div','desk-item '+(overdue?'is-overdue':soon?'is-upcoming':''));
+  entry.append(make('strong',null,item.company+' · '+item.title));
+  entry.append(make('small',null,'Verified listing deadline: '+item.verifiedDeadline+(overdue?' · passed':' · upcoming')));
+  if(item.url&&/^https:\/\//i.test(item.url)){const link=make('a',null,'Original posting');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';entry.append(link)}
+  deadline.append(entry);
+ }
+ const assessment=(d.priority||[]).filter(x=>x.kind==='assessment'&&x.date);
+ for(const item of assessment){
+  const entry=make('div','desk-item');
+  entry.append(make('strong',null,item.company+' · assessment action'));
+  entry.append(make('small',null,item.date+' · '+(item.certainty||'Check original invitation')+' · '+item.task));
+  deadline.append(entry);
+ }
+ if(!deadline.children.length)deadline.append(make('p','muted','No verified dates available.'));
+ const funnel=$('funnel-chart');funnel.replaceChildren();
+ const unique=new Set(records.map(x=>[x.company,x.role].map(v=>String(v||'').toLowerCase().trim()).join('|'))).size;
+ const sent=records.filter(x=>statusesForGroup(x.status,'sent')).length;
+ const waiting=records.filter(x=>/sent|acknowledg|awaiting/i.test(x.status||'')).length;
+ const assessments=records.filter(x=>/assessment|interview/i.test(x.status||'')).length;
+ const rejected=records.filter(x=>/reject/i.test(x.status||'')).length;
+ const series=[['Recorded entries',unique],['Sent / acknowledged',sent],['Awaiting response',waiting],['Assessment / interview',assessments],['Rejected',rejected]];
+ const max=Math.max(1,...series.map(x=>x[1]));
+ for(const [name,val] of series){
+  const line=make('div','funnel-row'),label=make('span',null,name),track=make('div','track'),fill=make('div','fill'),count=make('strong',null,String(val));
+  fill.style.width=Math.round(val/max*100)+'%';track.append(fill);line.append(label,track,count);funnel.append(line);
+ }
+ const action=$('action-center');action.replaceChildren();
+ const actionEntries=(d.priority||[]).slice(0,5);
+ for(const item of actionEntries){
+  const line=make('div','desk-item');
+  line.append(make('strong',null,item.company+' · '+item.task));
+  line.append(make('small',null,[item.date,item.certainty,item.reason].filter(Boolean).join(' · ')));
+  action.append(line);
+ }
+ if(!actionEntries.length)action.append(make('p','muted','No prioritized actions recorded in this snapshot.'));
+ const cv=$('cv-variant-list');cv.replaceChildren();
+ const variants=(d.mainOfferRegistry||[]).filter(o=>o.tailoredCvUrl||o.tailoredCvDraftUrl);
+ for(const item of variants){
+  const el=make('div','desk-item'),link=make('a',null,'View '+(item.tailoredCvUrl?'application-ready copy':'prepared draft'));
+  const uri=item.tailoredCvUrl||item.tailoredCvDraftUrl;link.href=uri;link.target='_blank';link.rel='noopener noreferrer';
+  el.append(make('strong',null,item.company+' · '+(item.role||item.title)));
+  el.append(make('small',null,item.tailoredCvStatus||'A company-specific copy exists; submission not verified.'));
+  el.append(link);cv.append(el);
+ }
+ if(!variants.length)cv.append(make('p','muted','No company-specific CV copies in the verified registry.'));
+ const auto=$('automation-monitor-list');auto.replaceChildren();
+ const tasks=d.automationMonitor?.tasks||[];
+ for(const item of tasks){
+  const entry=make('div','desk-item'),line=item.title+' · '+(item.enabled?'Enabled':'Paused');
+  entry.append(make('strong',null,line));
+  entry.append(make('small',null,item.scheduleLabel+' · Last observed run: '+(item.lastObservedRun||'None verified')));
+  auto.append(entry);
+ }
+ if(!tasks.length)auto.append(make('p','muted','Run metadata has not been checked.'));
+ const checked=d.automationMonitor?.inspectedAt;
+ if(checked)auto.append(make('p','muted','Task metadata inspected at '+checked+'. The live scheduler may have newer information.'));
+ if(d.calendarAudit?.checkedAt){text('calendar-check-note','Google Calendar reviewed '+d.calendarAudit.checkedAt+' · '+d.calendarAudit.note)}
+}
 async function load(){text('audit','Loading verified shared snapshot…');
 try{const resp=await fetch('./shared-state.json?t='+Date.now(),{cache:'no-store'});if(!resp.ok)throw Error('HTTP '+resp.status);const d=await resp.json();if(!d||!d.metrics||!Array.isArray(d.applications))throw Error('Invalid data');
 const m=d.metrics;text('k-sent',m.emailSentMessages);text('k-last',m.newlySent);text('k-replies',m.confirmedAssessments);text('k-responses',m.verifiedUniqueEmployerReplies);text('k-unfinished',m.unfinishedSubmissions);text('k-rejections',m.confirmedRejectionMessages);text('k-bounces',m.identifiedBounceReports);
 text('audit','Gmail verified on '+clean(d.updatedAt)+'. '+clean(m.emailSentScope)+' Acknowledgments and automatic confirmations are not counted as genuine recruiter replies. These figures are a verified subset, not a complete response-rate calculation.');
-text('snapshot-date',d.updatedAt);const synced=d.lastSyncedAt?new Date(d.lastSyncedAt):null;if(synced&&Number.isFinite(synced.getTime())){let stamp;try{stamp=new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short',timeZone:d.syncTimezone||'Africa/Casablanca'}).format(synced)}catch{stamp=synced.toISOString()}text('last-sync-time',stamp+' · '+humanAge(Date.now()-synced.getTime()))}else{text('last-sync-time','Not yet synced')}showGmailFreshness(d);showSources(d);showVerifiedOfferTitles(d);showApplicationMethods(d);makeMaya(d);
+text('snapshot-date',d.updatedAt);const synced=d.lastSyncedAt?new Date(d.lastSyncedAt):null;if(synced&&Number.isFinite(synced.getTime())){let stamp;try{stamp=new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short',timeZone:d.syncTimezone||'Africa/Casablanca'}).format(synced)}catch{stamp=synced.toISOString()}text('last-sync-time',stamp+' · '+humanAge(Date.now()-synced.getTime()))}else{text('last-sync-time','Not yet synced')}showGmailFreshness(d);showSources(d);showVerifiedOfferTitles(d);showApplicationMethods(d);makeMaya(d);renderDeskSections(d);
 const ps=$('priority-list');ps.replaceChildren();(d.priority||[]).forEach(a=>{const row=make('div','priority'),rank=make('div','rank',a.rank),info=make('div'),title=make('strong',null,a.company+' · '+a.task),desc=make('small',null,a.reason);info.append(title,desc);if(a.date)info.append(make('div','when',a.date+' · '+a.certainty));row.append(rank,info);ps.append(row)});
 const target=$('company-list');target.replaceChildren();const rows=[...d.applications].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));rows.slice(0,28).forEach(a=>{const r=make('div','status-row'),info=make('div'),name=make('strong',null,a.company),desc=make('small',null,[a.role,a.channel,a.date].filter(Boolean).join(' · ')),stat=make('span','status',a.status);info.append(name,desc);r.append(info,stat);target.append(r)});
 const p=d.followUpPolicy||{};text('followup-text',p.recommendation||'Prioritize urgent assessments, incomplete submissions and relevant offers before follow-up emails.');
