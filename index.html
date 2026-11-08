@@ -293,6 +293,7 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
   </div>
   <div id="auth-uid-row" hidden><p class="auth-note"><strong>Signed-in Firebase user ID (UID):</strong> <code id="auth-id"></code></p><p class="auth-note">Copy this UID into Firebase → Firestore → Rules for your account-only permission rule. A UID is an account identifier, not a password; keep it private anyway. Do not publish it in the dashboard repository.</p><button id="auth-copy" type="button">Copy my UID</button></div>
 </section>
+<section id="private-records-section" hidden><div class="section-header"><h2>My private applied records</h2><small>Owner-only Firebase data · not in GitHub</small></div><p class="muted">Your checked offers and private notes appear here after authorization. Unchecking an offer in Opportunities removes its applied record.</p><div id="private-records-list">Checking authorization…</div></section>
 <section id="sources-audit" aria-labelledby="sources-heading"><div class="section-header"><h2 id="sources-heading">Sources checked</h2><small>Last recorded public-source checks, not continuous monitoring</small></div><div id="sources-list" class="sources-list"><p>Loading source audit…</p></div><p class="muted" id="sources-footer">Private-group posts are excluded unless you share them or authorize access.</p></section>
 <section id="overview"><h2>Progress overview</h2><div class="kpi-grid">
 <div class="kpi"><strong id="k-sent">—</strong><span>Matching sent email messages</span></div><div class="kpi"><strong id="k-last">—</strong><span>Applications emailed in latest batch</span></div><div class="kpi"><strong id="k-responses">—</strong><span>Companies with substantive responses (verified)</span></div><div class="kpi"><strong id="k-replies">—</strong><span>Assessment invitations</span></div><div class="kpi"><strong id="k-unfinished">—</strong><span>Website steps unfinished</span></div><div class="kpi"><strong id="k-rejections">—</strong><span>Verified rejection messages</span></div><div class="kpi"><strong id="k-bounces">—</strong><span>Identified delivery failures</span></div></div>
@@ -372,6 +373,7 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
   move('analytics-section','overview');
   move('opportunities','opportunities');
   move('private-auth','applications');
+  move('private-records-section','applications');
   move('pipeline','applications');
   move('application-table-section','applications');
   move('activity-feed-section','applications');
@@ -709,6 +711,8 @@ function removeControls(){
     delete card.dataset.applicationLoaded;
     card.classList.remove('offer-is-applied');
   }
+  const privateSection=$('private-records-section');
+  if(privateSection){privateSection.hidden=true;$('private-records-list').replaceChildren();}
   document.dispatchEvent(new Event('pfe:application-statuses-updated'));
 }
 async function buildPanel(card,offer,key,sequence){
@@ -752,7 +756,7 @@ async function buildPanel(card,offer,key,sequence){
           evidence:'self-report',
           evidenceSource:'Manually checked by user; no independent platform confirmation verified',
           updatedAt:serverTimestamp()
-        });
+        },{merge:true});
       }else{
         await deleteDoc(doc(db,'privateApplications',key));
       }
@@ -763,6 +767,35 @@ async function buildPanel(card,offer,key,sequence){
       feedback.textContent='Save failed: '+(error.code||'unknown');
     }finally{toggle.disabled=false;}
   });
+}
+
+function renderPrivateRecords(snapshot){
+ const root=$('private-records-list'),section=$('private-records-section');
+ if(!root||!section)return;
+ section.hidden=false;root.replaceChildren();
+ const rows=[];
+ snapshot.forEach(docSnap=>{const info=docSnap.data();if(info&&info.status==='applied')rows.push({key:docSnap.id,...info})});
+ rows.sort((a,b)=>String(b.submittedOn||'').localeCompare(String(a.submittedOn||'')));
+ for(const record of rows){
+   const el=make('div','private-record'),top=make('strong',null,(record.company||'Unknown')+' · '+(record.role||'PFE application'));
+   el.append(top,make('small',null,'User-marked applied · '+(record.submittedOn||'Date not recorded')));
+   if(record.postingUrl&&/^https:\/\//i.test(record.postingUrl)){
+     const link=make('a',null,'Original listing');link.href=record.postingUrl;link.target='_blank';link.rel='noopener noreferrer';el.append(link);
+   }
+   const details=document.createElement('details'),summary=make('summary',null,'Private notes');
+   const area=document.createElement('textarea');area.value=String(record.notes||'').slice(0,500);area.maxLength=500;area.setAttribute('aria-label','Private note for '+(record.company||'application'));
+   const save=make('button',null,'Save note');save.type='button';
+   const noteStatus=make('span','notes-feedback','');
+   save.addEventListener('click',async()=>{
+     if(!adminReady||!auth.currentUser)return;
+     save.disabled=true;noteStatus.textContent='Saving…';
+     try{await setDoc(doc(db,'privateApplications',record.key),{notes:area.value.slice(0,500),notesUpdatedAt:serverTimestamp()},{merge:true});noteStatus.textContent='Saved privately';}
+     catch(e){noteStatus.textContent='Could not save: '+(e.code||'unknown');}
+     finally{save.disabled=false;}
+   });
+   details.append(summary,area,save,noteStatus);el.append(details);root.append(el);
+ }
+ if(!rows.length)root.append(make('p','muted','No privately checked applications yet.'));
 }
 function renderSaved(snapshot){
   for(const panel of panels.values()){
@@ -806,6 +839,7 @@ async function authorizeAndLoad(user,sequence){
       const rows=new Map();
       snap.forEach(doc=>rows.set(doc.id,doc.data()));
       renderSaved(rows);
+      renderPrivateRecords(snap);
     },error=>{
       removeControls();
       status.textContent='Private tracking unavailable: '+(error.code||'database access error')+'. Check published Firestore rules.';
