@@ -455,7 +455,8 @@ function filter(){
  ordered.forEach(card=>container.append(card));
  let visible=0,applied=0,expired=0,known=0;
  cards.forEach(card=>{
-   const isApplied=card.dataset.applied==='true',isExpired=card.dataset.expired==='true';
+   const isExpired=card.dataset.expired==='true';
+   const isApplied=!isExpired&&(card.dataset.applied==='true'||card.dataset.confirmedEmailSent==='true');
    if(card.dataset.applicationLoaded==='true')known++;
    if(isApplied)applied++;
    if(isExpired)expired++;
@@ -528,6 +529,9 @@ function showVerifiedOfferTitles(data){
  if(heading)heading.textContent=source.company||'Company unverified';
  if(title)title.textContent=(source.verifiedTitle&&source.title)?source.title:'Exact original title not verified';
  if(role&&source.role)role.textContent=source.role;
+ const emailSent=source.submission?.sourceType==='verified-sent-mail';
+ card.dataset.confirmedEmailSent=emailSent?'true':'false';
+ if(emailSent&&!card.dataset.expired){card.classList.add('offer-is-applied')}
  if(sourceLink){if(source.url&&/^https?:\/\//i.test(source.url)){sourceLink.href=source.url;sourceLink.textContent='Source: '+(source.sourceLabel||'Original listing');sourceLink.removeAttribute('aria-disabled')}
  else{sourceLink.removeAttribute('href');sourceLink.textContent='Source unavailable'}}
  })}
@@ -696,7 +700,7 @@ async function load(){text('audit','Loading verified shared snapshot…');
 try{const resp=await fetch('./shared-state.json?t='+Date.now(),{cache:'no-store'});if(!resp.ok)throw Error('HTTP '+resp.status);const d=await resp.json();if(!d||!d.metrics||!Array.isArray(d.applications))throw Error('Invalid data');
 const m=d.metrics;text('k-sent',m.emailSentMessages);text('k-last',m.newlySent);text('k-replies',m.confirmedAssessments);text('k-responses',m.verifiedUniqueEmployerReplies);text('k-unfinished',m.unfinishedSubmissions);text('k-rejections',m.confirmedRejectionMessages);text('k-bounces',m.identifiedBounceReports);
 text('audit','Gmail verified on '+clean(d.updatedAt)+'. '+clean(m.emailSentScope)+' Acknowledgments and automatic confirmations are not counted as genuine recruiter replies. These figures are a verified subset, not a complete response-rate calculation.');
-text('snapshot-date',d.updatedAt);const synced=d.lastSyncedAt?new Date(d.lastSyncedAt):null;if(synced&&Number.isFinite(synced.getTime())){let stamp;try{stamp=new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short',timeZone:d.syncTimezone||'Africa/Casablanca'}).format(synced)}catch{stamp=synced.toISOString()}text('last-sync-time',stamp+' · '+humanAge(Date.now()-synced.getTime()))}else{text('last-sync-time','Not yet synced')}showGmailFreshness(d);showSources(d);showVerifiedOfferTitles(d);showApplicationMethods(d);makeMaya(d);renderDeskSections(d);
+text('snapshot-date',d.updatedAt);const synced=d.lastSyncedAt?new Date(d.lastSyncedAt):null;if(synced&&Number.isFinite(synced.getTime())){let stamp;try{stamp=new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short',timeZone:d.syncTimezone||'Africa/Casablanca'}).format(synced)}catch{stamp=synced.toISOString()}text('last-sync-time',stamp+' · '+humanAge(Date.now()-synced.getTime()))}else{text('last-sync-time','Not yet synced')}showGmailFreshness(d);showSources(d);showVerifiedOfferTitles(d);showApplicationMethods(d);makeMaya(d);renderDeskSections(d);filter();
 const ps=$('priority-list');ps.replaceChildren();(d.priority||[]).forEach(a=>{const row=make('div','priority'),rank=make('div','rank',a.rank),info=make('div'),title=make('strong',null,a.company+' · '+a.task),desc=make('small',null,a.reason);info.append(title,desc);if(a.date)info.append(make('div','when',a.date+' · '+a.certainty));row.append(rank,info);ps.append(row)});
 const target=$('company-list');target.replaceChildren();const rows=[...d.applications].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));rows.slice(0,28).forEach(a=>{const r=make('div','status-row'),info=make('div'),name=make('strong',null,a.company),desc=make('small',null,[a.role,a.channel,a.date].filter(Boolean).join(' · ')),stat=make('span','status',a.status);info.append(name,desc);r.append(info,stat);target.append(r)});
 const p=d.followUpPolicy||{};text('followup-text',p.recommendation||'Prioritize urgent assessments, incomplete submissions and relevant offers before follow-up emails.');
@@ -858,13 +862,15 @@ function renderSaved(snapshot){
    card.dataset.applied=isApplied?'true':'false';
    card.dataset.expired=isExpired?'true':'false';
    card.dataset.applicationLoaded='true';
-   card.classList.toggle('offer-is-applied',isApplied);
+   card.classList.toggle('offer-is-applied',(isApplied||card.dataset.confirmedEmailSent==='true')&&!isExpired);
    card.classList.toggle('offer-is-expired',isExpired);
    panel.applied.input.checked=isApplied;
    panel.expired.input.checked=isExpired;
-   panel.applied.caption.textContent=isApplied?'Applied':'Mark as applied';
+   panel.applied.caption.textContent=card.dataset.confirmedEmailSent==='true'?'Applied via email':isApplied?'Applied':'Mark as applied';
+   panel.applied.input.disabled=card.dataset.confirmedEmailSent==='true';
+   panel.applied.input.checked=isApplied||card.dataset.confirmedEmailSent==='true';
    panel.expired.caption.textContent=isExpired?'Expired':'Mark as expired';
-   panel.applied.label.title=isApplied?'Uncheck to clear applied status':'Manually record application completion';
+   panel.applied.label.title=card.dataset.confirmedEmailSent==='true'?'Sent via verified connected Gmail; this cannot be unsent':isApplied?'Uncheck to clear applied status':'Manually record application completion';
    panel.expired.label.title=isExpired?'Uncheck to clear expired status':'Manually record the listing as expired (not source-verified)';
    panel.feedback.textContent=isApplied?(data?.submittedOn?'· '+data.submittedOn:''):isExpired?(data?.expiredOn?'· '+data.expiredOn:''):'';
    const publicStatus=card.querySelector('.submission-evidence');
