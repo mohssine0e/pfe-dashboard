@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-08T16:13:21+00:00",
+  "updatedAt": "2026-11-08",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
@@ -320,6 +320,20 @@
       "date": "2026-11-08",
       "source": "StagiairesMA completion request",
       "evidenceCategory": "Third-party application platform reminder; employer receipt unverified"
+    },
+    {
+      "recordId": "app-torck-gmbh-linkedin-4487295321",
+      "company": "torck GmbH",
+      "role": "Graduate Internship software development (m/f) Morocco",
+      "channel": "LinkedIn Easy Apply",
+      "status": "Applied — user reported",
+      "cv": "Not independently verified (LinkedIn)",
+      "language": "EN/DE",
+      "date": "2026-11-08",
+      "source": "User-reported completed LinkedIn application, no platform confirmation independently verified",
+      "postingId": "linkedin:4487295321",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4487295321/",
+      "evidenceCategory": "User report — completed LinkedIn application"
     }
   ],
   "priority": [
@@ -380,7 +394,8 @@
     "PFE Desk adaptation on 8 November 2026: friend-template identities, email addresses, Drive folder and ChatGPT Sites hosting NOT reused; existing Mohssine GitHub Pages, Google Drive CVs and private Firebase tracking preserved. New table, activity, analytics, deadlines, owner-only note editor and four task schedules added. Calendar searches found no relevant events.",
     "Verification correction: Cnexia 10 November dates were previously listed but not independently confirmed; excluded from verified-deadline analytics pending original-source verification.",
     "8 Nov 2026: Sent Beebay direct-email application via connected Gmail, tailored Beebay PDF attached, Gmail returned SENT label; employer receipt not independently confirmed. Corrected listing method from inferred website upload to official mailto.",
-    "8 Nov 2026: Netopia Next Gen 2027 form submitted according to user success screen. Required follow-up CV email sent via connected Gmail (SENT confirmed, PDF attached), selected Full Stack Engineer Java / React. Shortlisting and test invitation not yet confirmed."
+    "8 Nov 2026: Netopia Next Gen 2027 form submitted according to user success screen. Required follow-up CV email sent via connected Gmail (SENT confirmed, PDF attached), selected Full Stack Engineer Java / React. Shortlisting and test invitation not yet confirmed.",
+    "8 Nov 2026: user reported torck GmbH LinkedIn Easy Apply completed. Public-safe record added, status user-reported, employer receipt and chosen CV unknown; do not count as independently verified."
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
@@ -714,20 +729,21 @@
       "applicationMethod": "linkedin",
       "cvMasterId": "software",
       "submission": {
-        "status": "Not verified",
-        "evidence": null,
-        "recordedAt": null
+        "status": "Applied — user-reported LinkedIn submission; no independent platform confirmation checked",
+        "evidence": "User reported completion of the LinkedIn application on 8 November 2026 after completing the question pages; no employer receipt or screenshot of LinkedIn final confirmation independently verified.",
+        "recordedAt": "2026-11-08",
+        "sourceType": "user-reported-submission"
       },
-      "methodLabel": "Platform listing: exact upload route to verify",
+      "methodLabel": "LinkedIn Easy Apply · submitted (user-reported)",
       "compatibilityWarning": "The selected CV may be a profile-stored resume or an upload; verify which file before confirming.",
-      "applicationInstructions": "Check the original apply flow and its resume selection. If you are redirected to a company careers page with an upload field, use a lightly tailored COPY of the matching master.",
+      "applicationInstructions": "User reports submitting the LinkedIn Easy Apply form. Do not reapply unless platform history shows incomplete; await status update or recruiter response.",
       "submissionEvidenceRule": "Confirmed only with an application-history entry, explicit platform/employer confirmation, or user-reported completed submission (labeled as user-reported rather than independently verified).",
       "recommendedCvId": "software",
-      "cvUsage": "General profile CV for recruitment platform; check actual attachment method before submission",
+      "cvUsage": "User submitted via LinkedIn; exact selected resume version was not independently verified.",
       "tailoredCvUrl": null,
       "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "Confirm whether this listing uses a platform CV, an upload, or a separate company careers form. Use the general CV unless a direct CV upload is confirmed.",
-      "applicationMethodCertainty": "Application route varies; direct PDF upload not confirmed"
+      "applicationMethodCertainty": "User used LinkedIn 5-page apply flow and reported completion on 8 November 2026; CV attachment version and platform receipt not independently confirmed."
     },
     {
       "company": "Warriors Team",
@@ -1030,7 +1046,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-08T16:05:48.505Z",
+  "lastSyncedAt": "2026-11-08T16:26:54.090Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
