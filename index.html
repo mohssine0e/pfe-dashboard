@@ -319,6 +319,40 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 @media(prefers-reduced-motion:reduce){.offer:not(.offer-is-applied):not(.offer-is-expired){animation:none}}
 .completion-queue-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}.completion-entry{border:1px solid #dbe3ed;border-radius:11px;padding:14px;background:#fafcff}.completion-entry p{font-size:13px;line-height:1.45}.completion-head{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start}.completion-head small{display:block}.completion-links{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.completion-links a{font-size:12px}
 .completion-entry.offer-is-applied{border-color:#74a78f;background:#f0faf4}.completion-entry.offer-is-expired{border-color:#a8a29a;background:#f6f5f3;opacity:.87}.completion-source{display:block;margin-top:4px}.completion-controls{margin-top:10px;padding-top:8px;border-top:1px solid #e1e6ed;font-size:12px}.completion-controls .offer-status-toggles{display:flex;flex-wrap:wrap;gap:12px}.completion-entry .completion-head .status{font-size:11px}
+
+/* Completion queue UI v2: compact masonry-like rows, no stretched cards or phantom checkboxes. */
+#completion-queue-section{min-width:0}
+#completion-queue-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:14px;align-items:start;grid-auto-rows:max-content}
+#completion-queue-list .completion-entry{align-self:start;min-width:0;min-height:0;display:flex;flex-direction:column;gap:10px;border-radius:13px;padding:16px;border:1px solid #dfe6ee;background:#fff;box-shadow:0 2px 9px #172b4310}
+#completion-queue-list .completion-entry p{margin:0;line-height:1.5;font-size:12px}
+#completion-queue-list .completion-head{display:flex;flex-direction:column;align-items:stretch;gap:7px;min-width:0}
+#completion-queue-list .completion-head strong{display:block;font-size:15px;line-height:1.3;letter-spacing:-.015em;color:#1b3045}
+#completion-queue-list .completion-head small{display:block;margin-top:3px;line-height:1.4;font-size:12px;overflow-wrap:anywhere}
+#completion-queue-list .completion-status{display:inline-flex;align-self:flex-start;max-width:100%;white-space:normal;text-align:left;line-height:1.35;font-size:11px;padding:5px 9px;border-radius:7px;color:#37546f;background:#edf3f9;font-weight:700}
+#completion-queue-list .completion-entry.offer-is-applied{border-color:#b8dbc8;background:#fbfefc}
+#completion-queue-list .completion-entry.offer-is-applied .completion-status{color:#246746;background:#e5f4eb}
+#completion-queue-list .completion-entry.offer-is-expired{border-color:#cbc5be;background:#faf9f7;opacity:1}
+#completion-queue-list .completion-entry.offer-is-expired .completion-status{color:#6f615a;background:#f0edea}
+#completion-queue-list .completion-source{color:#718196;font-size:11px;line-height:1.4;margin:0}
+#completion-queue-list .completion-warning{color:#53657a}
+#completion-queue-list .completion-links{display:flex;gap:7px;flex-wrap:wrap;margin:0}
+#completion-queue-list .completion-links a{font-size:11px;padding:8px 10px;min-height:35px;line-height:1.25;white-space:normal}
+#completion-queue-list .completion-listing-meta{font-size:11px;line-height:1.35;color:#748499}
+#completion-queue-list .completion-controls{margin:2px 0 0;padding:11px 0 0;border-top:1px solid #e5eaf1;min-height:0;min-width:0;font-size:12px}
+#completion-queue-list .completion-controls .offer-status-toggles{display:flex;flex-wrap:wrap;gap:11px 18px;align-items:center;min-width:0}
+#completion-queue-list .completion-controls label.status-toggle{display:inline-flex!important;position:relative;flex-direction:row;align-items:center;gap:7px;margin:0!important;padding:2px 0!important;min-height:24px;min-width:0;width:auto!important;font-size:12px;font-weight:650;line-height:1.35;cursor:pointer;white-space:nowrap;user-select:none}
+#completion-queue-list .completion-controls input.applied-check{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;opacity:0!important;cursor:pointer;z-index:1}
+#completion-queue-list .completion-controls .applied-check-visual{display:grid;place-items:center;flex:0 0 17px;width:17px;height:17px;border:1.5px solid #9ab4ce;border-radius:5px;background:white;pointer-events:none}
+#completion-queue-list .completion-controls .applied-check-label{display:inline!important;font-size:12px;line-height:1.35}
+#completion-queue-list .completion-controls .applied-check:checked+.applied-check-visual{background:#248258;border-color:#248258}
+#completion-queue-list .completion-controls .expired-toggle .applied-check:checked+.applied-check-visual{background:#84746d;border-color:#84746d}
+#completion-queue-list .completion-controls .applied-check:checked+.applied-check-visual:after{content:'✓';font-size:12px;line-height:1;color:#fff;font-weight:800}
+#completion-queue-list .completion-controls .applied-check:focus-visible+.applied-check-visual{outline:2px solid #235d99;outline-offset:2px}
+#completion-queue-list .completion-controls .applied-check:disabled{cursor:default}
+#completion-queue-list .completion-controls .applied-check:disabled+.applied-check-visual{opacity:.75}
+#completion-queue-list .completion-controls .admin-feedback{display:block;margin-top:5px;font-size:11px;color:#61778e;line-height:1.45}
+@media(max-width:700px){#completion-queue-list{grid-template-columns:1fr}#completion-queue-list .completion-entry{padding:14px}}
+
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>PFE Desk 2027</h1><p>One focused workspace for your 2027 PFE applications. Public opportunity summaries are read-only; personal applied statuses and notes require authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -619,20 +653,20 @@ function renderCompletionQueue(d){
   about.append(make('strong',null,offer.company||'Company'),make('small',null,offer.role||''));
   const mail=offer.emailEvidence;
   const mailVerified=mail?.sourceType==='verified-employer-email'&&['applied','expired','rejected','assessment','interview','acknowledged'].includes(mail.status);
-  const startLabel=mailVerified?('Email-verified: '+mail.status):offer.status==='applied-user-reported'?'Applied (user-reported)':'Not yet confirmed';
+  const startLabel=mailVerified?(mail.status==='acknowledged'?'Application received · email':mail.status==='interview'?'Interview · email':mail.status==='assessment'?'Assessment · email':mail.status==='rejected'?'Not selected · email':mail.status==='expired'?'Closed · email':'Application sent · email'):offer.status==='applied-user-reported'?'Applied · user-reported':'Not yet confirmed';
   const state=make('span','status completion-status',startLabel);
   const source=make('small','completion-source',mailVerified?'Source: verified employer email · '+String(mail.verifiedAt||''):offer.status==='applied-user-reported'?'Source: user report':'Source: StagiairesMA reminder; employer application not verified');
   head.append(about,state);article.append(head,source);
-  const desc=make('p','muted',offer.warning||'Verify the original job listing before submitting.');
+  const desc=make('p','completion-warning',offer.warning||'Verify the original job listing before submitting.');
   article.append(desc);
   const links=make('div','completion-links');
   for(const item of [{url:offer.applyUrl,label:'Open application'},{url:offer.cvUrl,label:'View matching CV'},{url:offer.letterUrl,label:'Cover letter'}]){
    if(!item.url||!/^https:\/\//i.test(item.url))continue;
-   const link=document.createElement('a');link.href=item.url;link.textContent=item.label;
+   const link=document.createElement('a');link.href=item.url;link.textContent=item.label==='Open application'&&(mailVerified||offer.status==='applied-user-reported')?'View listing':item.label;
    link.className=item.label==='Open application'?'btn':'secondary';link.target='_blank';link.rel='noopener noreferrer';links.append(link);
   }
   article.append(links);
-  article.append(make('small',null,'Listing: '+(offer.platform||'external platform')+' · Last checked: '+(offer.discoveredAt||'unknown')));
+  article.append(make('small','completion-listing-meta','Listing: '+(offer.platform||'external platform')+' · Checked '+(offer.discoveredAt||'unknown')));
   const control=make('div','completion-controls');
   control.textContent='Sign in with GitHub in Applications to mark Applied or Expired privately.';
   article.append(control);
@@ -921,19 +955,19 @@ function renderCompletionStatuses(snapshot){
   const verified=email?.sourceType==='verified-employer-email'&&['applied','expired','rejected','assessment','interview','acknowledged'].includes(email.status);
   const privateStatus=record?.status==='applied'?'applied':record?.status==='expired'?'expired':'open';
   const userStatus=offer.status==='applied-user-reported'?'applied':'open';
-  const effective=verified?(email.status==='expired'?'expired':'applied'):(privateStatus!=='open'?privateStatus:userStatus);
-  const label=verified?('Email-verified: '+email.status):privateStatus!=='open'?(privateStatus==='applied'?'Applied · manual':'Expired · manual'):userStatus==='applied'?'Applied · user-reported':'Not yet confirmed';
+  const effective=verified?(email.status==='expired'?'expired':email.status==='rejected'?'open':'applied'):(privateStatus!=='open'?privateStatus:userStatus);
+  const label=verified?(email.status==='acknowledged'?'Application received · email':email.status==='interview'?'Interview scheduled · email':email.status==='assessment'?'Assessment · email':email.status==='rejected'?'Not selected · email':email.status==='expired'?'Listing closed · email':'Application sent · email'):privateStatus!=='open'?(privateStatus==='applied'?'Applied · manual':'Expired · manual'):userStatus==='applied'?'Applied · user-reported':'Not yet confirmed';
   panel.state=effective;
   panel.applied.input.checked=effective==='applied';panel.expired.input.checked=effective==='expired';
   panel.applied.input.disabled=verified;panel.expired.input.disabled=verified;
-  panel.applied.caption.textContent=verified&&effective==='applied'?'Applied · email verified': 'Applied';
-  panel.expired.caption.textContent=verified&&effective==='expired'?'Expired · email verified':'Expired';
+  panel.applied.caption.textContent='Applied';
+  panel.expired.caption.textContent='Expired';
   const badge=panel.card.querySelector('.completion-status');if(badge)badge.textContent=label;
   const source=panel.card.querySelector('.completion-source');
   if(source)source.textContent=verified?'Source: verified employer email · '+String(email.verifiedAt||''):privateStatus!=='open'?'Source: private manual mark':userStatus==='applied'?'Source: user-reported completion':'Source: StagiairesMA reminder only';
   panel.card.classList.toggle('offer-is-applied',effective==='applied');
   panel.card.classList.toggle('offer-is-expired',effective==='expired');
-  if(verified)panel.feedback.textContent='Verified email status supersedes manual mark; private notes are preserved.';
+  if(verified)panel.feedback.textContent='Employer email confirmed this stage. Manual history and notes remain private.';
   else if(panel.feedback.textContent.startsWith('Verified email'))panel.feedback.textContent='';
  }
 }
