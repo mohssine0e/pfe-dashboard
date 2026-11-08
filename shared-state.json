@@ -961,10 +961,11 @@
     "lastVerifiedAt": "2026-11-08T16:13:21+00:00",
     "timezone": "Africa/Casablanca",
     "scope": "Connected Gmail inbox checked for new PFE-related action requests and employer acknowledgements; relevant messages read on 8 Nov 2026. Public snapshot stores only role/company/status aggregates.",
-    "staleAfterHours": 24,
+    "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
     "method": "Connected Gmail search_emails and read_email",
-    "result": "success"
+    "result": "success",
+    "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
   "sourcesChecked": [
     {
@@ -1185,7 +1186,7 @@
     "note": "No matching confirmed PFE calendar events found; no events were created."
   },
   "automationMonitor": {
-    "inspectedAt": "2026-11-08T15:13:23.782Z",
+    "inspectedAt": "2026-11-08T16:56:25.857Z",
     "timezone": "Africa/Casablanca",
     "privateMetadataNote": "Run records are previous observations, not proof of the latest GitHub write. Scheduler access does not equal Firebase access.",
     "tasks": [
@@ -1211,11 +1212,12 @@
         "purpose": "Urgent decisions and evidence-backed priorities"
       },
       {
-        "title": "PFE Hourly Monitor & Sync",
-        "scheduleLabel": "Hourly",
+        "title": "PFE Hourly Gmail & Dashboard Sync",
+        "scheduleLabel": "Every hour",
         "enabled": true,
         "lastObservedRun": "2026-11-08 14:25 UTC (prior configuration)",
-        "purpose": "Important email alerts and cautious public-safe sync"
+        "purpose": "Hourly verified Gmail check and GitHub snapshot freshness; relevant alerts only",
+        "note": "Last observed run shown below is historical; scheduler is not a live web-page connection."
       }
     ]
   }
