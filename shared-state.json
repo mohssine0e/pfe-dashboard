@@ -974,12 +974,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-08T21:06:16.899Z",
+    "lastVerifiedAt": "2026-11-08T21:45:34.792Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Inbox since 2026-11-07 with overlap from previous audit 2026-11-08T20:00:52Z; sent applications since 2026-11-08 including attachment metadata; StagiairesMA completion notices since 2026-11-07. No historical aggregate recount.",
+    "scope": "Connected Gmail searches after 2026-11-07 with overlap through previous successful audit 2026-11-08T21:06:16Z: relevant inbox activity, StagiairesMA completion notices, and sent PFE applications with attachment metadata. Re-read latest Ostorlab notice; no historical aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails inbox/sent/completion notices; read_email for new Ostorlab intermediary reminder and Inetum SAP Hybris employer acknowledgement",
+    "method": "Connected Gmail search_emails (inbox relevance, StagiairesMA completion, sent applications/attachment metadata); read_email (Ostorlab intermediary notice)",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1063,7 +1063,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-08T21:06:16.899Z",
+  "lastSyncedAt": "2026-11-08T21:45:34.792Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
