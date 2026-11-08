@@ -256,6 +256,20 @@
       "source": "Forwarding failure; original delivery uncertain",
       "recordId": "app-innolia-java-spring-boot-pfe-outreach",
       "evidenceCategory": "Forwarding failure; original delivery uncertain"
+    },
+    {
+      "recordId": "app-we-are-beebay-stagiaire-dev-pfe-h-f",
+      "company": "We Are Beebay",
+      "role": "Stagiaire Dev PFE H/F",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Beebay Java Backend tailored",
+      "language": "FR",
+      "date": "2026-11-08",
+      "source": "Gmail sent operation confirmed; no employer receipt evidenced",
+      "postingId": "beebay:stagiaire-dev-pfe",
+      "postingUrl": "https://www.wearebeebay.com/careers/stagiaire-dev-pfe",
+      "evidenceCategory": "Gmail sent label, attachment verified, delivery unconfirmed"
     }
   ],
   "priority": [
@@ -314,7 +328,8 @@
     "CV files renamed to short application-ready names in Google Drive; document IDs and links unchanged. Private tracker Firestore permission probe fixed in dashboard code.",
     "8 Nov 2026: Beebay, Netopia, Adkomo and conditional FGMED added from public originals; Softnovation/Qualitiz closed listings excluded. Verified paid/pre-hire claims are descriptive, not guaranteed. Private Firebase checked statuses not accessible to public audit.",
     "PFE Desk adaptation on 8 November 2026: friend-template identities, email addresses, Drive folder and ChatGPT Sites hosting NOT reused; existing Mohssine GitHub Pages, Google Drive CVs and private Firebase tracking preserved. New table, activity, analytics, deadlines, owner-only note editor and four task schedules added. Calendar searches found no relevant events.",
-    "Verification correction: Cnexia 10 November dates were previously listed but not independently confirmed; excluded from verified-deadline analytics pending original-source verification."
+    "Verification correction: Cnexia 10 November dates were previously listed but not independently confirmed; excluded from verified-deadline analytics pending original-source verification.",
+    "8 Nov 2026: Sent Beebay direct-email application via connected Gmail, tailored Beebay PDF attached, Gmail returned SENT label; employer receipt not independently confirmed. Corrected listing method from inferred website upload to official mailto."
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
@@ -723,13 +738,15 @@
       "paid": true,
       "preHire": true,
       "submission": {
-        "status": "Not verified",
-        "evidence": null,
-        "recordedAt": null
+        "status": "Sent via Gmail — delivery not independently confirmed",
+        "evidence": "Gmail send operation returned a sent message with SENT label; attached the approved Beebay-specific PDF. No independent employer receipt confirmed.",
+        "recordedAt": "2026-11-08",
+        "submittedCv": "Mohssine_Echlaihi_PFE_We_Are_Beebay.pdf",
+        "sourceType": "verified-sent-mail"
       },
       "submissionEvidenceRule": "Private applied marks require user action; public data does not verify submission.",
-      "applicationMethodCertainty": "Original listing checked on 2026-11-08; actual completion unverified",
-      "cvUsage": "Generic CV unless a separate upload is verified",
+      "applicationMethodCertainty": "Official careers 'Postuler' is a mailto: link to the employer's published mailbox; direct email route confirmed by user-provided original posting 2026-11-08",
+      "cvUsage": "Dedicated Beebay PDF sent as email attachment; do not infer website-upload form",
       "tailoredCvDraftUrl": null,
       "benefitEvidenceUrl": "https://www.wearebeebay.com/careers/stagiaire-dev-pfe",
       "company": "We Are Beebay",
@@ -738,14 +755,14 @@
       "url": "https://www.wearebeebay.com/careers/stagiaire-dev-pfe",
       "postingId": "beebay:stagiaire-dev-pfe",
       "sourceLabel": "Official Beebay careers",
-      "applicationMethod": "directUpload",
-      "methodLabel": "Employer application form · CV upload verified",
-      "applicationInstructions": "Official employer form requires CV. Use the lightly tailored Beebay Java Backend copy. This dashboard never submits forms.",
+      "applicationMethod": "email",
+      "methodLabel": "Apply by email · CV attachment",
+      "applicationInstructions": "Application sent on 2026-11-08 from connected Gmail, with the lightly tailored Beebay PDF attached. Check Gmail Sent and watch for a recruiter reply; do not reapply automatically.",
       "recommendedCvId": "java",
       "cvMasterId": "java",
       "tailoredCvUrl": "https://drive.google.com/file/d/1KZErAfKcB_ugZgmQSOdN8nHgcRVN7p6U/view?usp=drivesdk",
       "tailoredCvDraftEditableUrl": "https://docs.google.com/document/d/1YnJpq8Q_o1Fjt7J_HCEgiQ6ICfIeosbG/edit?usp=drivesdk",
-      "tailoredCvStatus": "Prepared for verified direct PDF upload, not submitted",
+      "tailoredCvStatus": "Tailored Beebay PDF attached to sent Gmail application on 8 Nov 2026",
       "paidStatus": "Internship bonus; amount not disclosed",
       "preHireStatus": "CDI possible after 6-month stage",
       "duration": "6 months",
@@ -753,7 +770,8 @@
       "fit": "top",
       "lane": "java",
       "benefitLabel": "Paid · amount undisclosed",
-      "deadlineSourceUrl": null
+      "deadlineSourceUrl": null,
+      "emailApplicationRouting": "mailto:contact@wearebeebay.com?subject=Candidature%20%3A%20Stagiaire%20Dev%20PFE%20H%2FF"
     },
     {
       "verifiedTitle": true,
@@ -958,7 +976,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-08T14:03:27.572Z",
+  "lastSyncedAt": "2026-11-08T15:55:21.145Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
