@@ -974,12 +974,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-08T16:13:21+00:00",
+    "lastVerifiedAt": "2026-11-08T19:16:51.103Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail inbox checked for new PFE-related action requests and employer acknowledgements; relevant messages read on 8 Nov 2026. Public snapshot stores only role/company/status aggregates.",
+    "scope": "Connected Gmail: inbox messages dated 8 Nov 2026, including PFE employer acknowledgements, platform submission confirmations and StagiairesMA completion notices; recent sent PFE mail checked since 6 Nov. Excluded job alerts and unrelated notifications. Not a full historical recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails and read_email",
+    "method": "Connected Gmail search_emails (inbox, StagiairesMA and sent) plus read_email of relevant employer and Indeed confirmations",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1063,7 +1063,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-08T17:50:17.959Z",
+  "lastSyncedAt": "2026-11-08T19:16:51.103Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -1250,7 +1250,14 @@
       "status": "applied-user-reported",
       "warning": "Applied to Intelcia Careers on Nov 8 according to user; do not submit twice.",
       "discoveredAt": "2026-11-08",
-      "source": "StagiairesMA automated completion email; direct employer form already user-confirmed"
+      "source": "StagiairesMA automated completion email; direct employer form already user-confirmed",
+      "emailEvidence": {
+        "sourceType": "verified-employer-email",
+        "status": "acknowledged",
+        "verifiedAt": "2026-11-08",
+        "evidenceType": "employer-confirmation",
+        "summary": "Employer confirmed receipt of this PFE application; review pending."
+      }
     },
     {
       "id": "warriors-fullstack",
@@ -1319,7 +1326,14 @@
       "discoveredAt": "2026-11-08",
       "source": "StagiairesMA automated completion email; employer page independently checked 2026-11-08",
       "contractType": "CDI",
-      "pfeEligible": "Not advertised"
+      "pfeEligible": "Not advertised",
+      "emailEvidence": {
+        "sourceType": "verified-employer-email",
+        "status": "acknowledged",
+        "verifiedAt": "2026-11-08",
+        "evidenceType": "employer-confirmation",
+        "summary": "Employer hiring platform confirmed application received and queued for review; this is a junior-to-senior role, not a verified PFE internship."
+      }
     },
     {
       "id": "sofrecom-devops",
