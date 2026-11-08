@@ -271,7 +271,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-08T09:00:00+01:00",
+    "updatedAt": "2026-11-08T09:48:47+00:00",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -283,6 +283,46 @@
         "source": "Joblia.ma (published 2026-11-04)",
         "discoveredAt": "2026-11-08T09:00:00+01:00",
         "note": "PFE campaign in Rabat for final-year students: Tech (develop and improve group applications, design, testing, release to production, documentation), plus Cybersécurité and Data & IA tracks. Apply by email to agbs-internship2026@axa.com with the chosen track in the subject. No deadline or start date stated; confirm the PFE period. Not found in Gmail as applied."
+      },
+      {
+        "title": "Software, Cloud & Test Automation PFE 2027",
+        "company": "Bertrandt Group",
+        "role": "Software engineering, cloud, CI/CD and test automation",
+        "verifiedTitle": true,
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/software-cloud-test-automation-pfe-2027-at-bertrandt-group-4483224231",
+        "postingId": "4483224231",
+        "source": "LinkedIn public employer job listing",
+        "discoveredAt": "2026-11-08T09:48:47+00:00",
+        "location": "Rabat, Morocco",
+        "note": "High fit: web/backend/frontend, Java, Python, React, Angular, AWS/Azure, Docker, CI/CD and automation. English CV requested. Separate upload field and duration not confirmed; do not claim submission."
+      },
+      {
+        "title": "Research Assistant - PFE 2027",
+        "company": "Oracle",
+        "role": "Oracle Morocco R&D software engineering internship",
+        "verifiedTitle": true,
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/research-assistant-pfe-2027-at-oracle-4419628643",
+        "postingId": "4419628643",
+        "source": "LinkedIn public Oracle job listing",
+        "discoveredAt": "2026-11-08T09:48:47+00:00",
+        "location": "Casablanca, Morocco",
+        "durationMonths": 6,
+        "note": "High-fit software R&D internship; Oracle employees confirm the 2027 PFE program is open with six-month placements and rolling review, no fixed deadline. English resume required; separate CV upload field not confirmed. Avoid multiple accounts or duplicate applications."
+      },
+      {
+        "title": "Orange Maroc recrute ses stagiaires PFE 2027",
+        "company": "Orange Maroc",
+        "role": "Développement web (front-end, back-end, full-stack)",
+        "verifiedTitle": true,
+        "sourceUrl": "https://joblia.ma/offres-emploi/orange-maroc-recrute-ses-stagiaires-pfe-2027/",
+        "source": "Joblia.ma, published 2026-11-06; corroborated by Emploi Maroc",
+        "discoveredAt": "2026-11-08T09:48:47+00:00",
+        "location": "Agadir, Rabat, Casablanca",
+        "durationMonths": 5,
+        "startDate": "2027-02-01",
+        "verifiedDeadline": "2027-01-10",
+        "deadlineSourceUrl": "https://joblia.ma/offres-emploi/orange-maroc-recrute-ses-stagiaires-pfe-2027/",
+        "note": "Strong full-stack fit: paid five-month PFE beginning 1 February 2027, with web front-end/back-end/full-stack among tracks. Deadline 10 January 2027 per two public reposts; official Orange application form and separate CV upload have not been independently confirmed. Use generic CV until confirmed."
       }
     ],
     "rules": {
