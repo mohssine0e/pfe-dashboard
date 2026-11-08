@@ -1248,7 +1248,7 @@
       "cvLabel": "Intelcia PFE · Feb 2027",
       "cvNote": "February 2027 Intelcia-specific CV prepared; final uploaded version was not independently confirmed.",
       "status": "applied-user-reported",
-      "warning": "Applied to Intelcia Careers on Nov 8 according to user; do not submit twice.",
+      "warning": "Intelcia confirmed receiving your Stage PFE – D2T2 application on 8 Nov 2026. Recruiting review is pending; do not apply twice.",
       "discoveredAt": "2026-11-08",
       "source": "StagiairesMA automated completion email; direct employer form already user-confirmed",
       "emailEvidence": {
@@ -1256,7 +1256,7 @@
         "status": "acknowledged",
         "verifiedAt": "2026-11-08",
         "evidenceType": "employer-confirmation",
-        "summary": "Employer confirmed receipt of this PFE application; review pending."
+        "summary": "Intelcia acknowledged receipt of the D2T2 PFE application; recruiter review pending."
       }
     },
     {
@@ -1322,7 +1322,7 @@
       "cvLabel": "Azure & DevOps PFE · Feb 2027",
       "letterUrl": "https://drive.google.com/file/d/1xC8UUIPZAGPyQ1LFZ4YKaP6qEs0E3Sdj/view?usp=drivesdk",
       "status": "needs-original-platform-check",
-      "warning": "IMPORTANT: Official employer listing is CDI, not PFE. Apply only if seeking full-time work, or ask recruiting about a separate PFE opportunity. This letter explicitly requests PFE consideration.",
+      "warning": "Inetum acknowledged this application on 8 Nov 2026 and queued it for review. This role is advertised as a CDI, not a PFE internship; no new submission is needed.",
       "discoveredAt": "2026-11-08",
       "source": "StagiairesMA automated completion email; employer page independently checked 2026-11-08",
       "contractType": "CDI",
@@ -1332,7 +1332,7 @@
         "status": "acknowledged",
         "verifiedAt": "2026-11-08",
         "evidenceType": "employer-confirmation",
-        "summary": "Employer hiring platform confirmed application received and queued for review; this is a junior-to-senior role, not a verified PFE internship."
+        "summary": "Inetum Offshore Maroc acknowledged this exact DevOps role and said the application is queued for review; the vacancy is CDI, not a PFE posting."
       }
     },
     {
