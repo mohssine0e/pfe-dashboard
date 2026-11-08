@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-08T16:13:21+00:00",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
@@ -284,6 +284,42 @@
       "postingId": "linkedin-post:7524050262198587392",
       "postingUrl": "https://fr.linkedin.com/posts/netopia-solutions_netopiagroup-nextgen2027-pfe2027-activity-7524050262198587392-Kw_E",
       "evidenceCategory": "User confirmation plus Gmail sent with attachment; employer receipt unknown"
+    },
+    {
+      "company": "FGMED",
+      "role": "Stage PFE / PFA Développeur(se) Full-Stack Next.js & PostgreSQL – SaaS",
+      "postingId": "indeed:67e2348cae6a9da8",
+      "url": "https://ma.indeed.com/viewjob?jk=67e2348cae6a9da8",
+      "recordId": "app-fgmed-pfe-pfa-fullstack-nextjs-postgresql-indeed-67e2348cae6a9da8",
+      "channel": "website",
+      "status": "Needs completion",
+      "date": "2026-11-08",
+      "source": "StagiairesMA completion request",
+      "evidenceCategory": "Third-party application platform reminder; employer receipt unverified"
+    },
+    {
+      "company": "CGI",
+      "role": "Stage PFE Consultants – Cloud / Databricks / Talend / DevOps / BI",
+      "postingId": "linkedin:4482169267",
+      "url": "https://www.linkedin.com/jobs/view/4482169267",
+      "recordId": "app-cgi-stage-pfe-consultants-cloud-devops-linkedin-4482169267",
+      "channel": "website",
+      "status": "Needs completion",
+      "date": "2026-11-08",
+      "source": "StagiairesMA completion request",
+      "evidenceCategory": "Third-party application platform reminder; employer receipt unverified"
+    },
+    {
+      "company": "Sofrecom Maroc",
+      "role": "Stagiaire Développeur – Automatisation & DevOps (démarrage immédiat)",
+      "postingId": "linkedin:4477651751",
+      "url": "https://www.linkedin.com/jobs/view/4477651751",
+      "recordId": "app-sofrecom-stage-automatisation-devops-linkedin-4477651751",
+      "channel": "website",
+      "status": "Needs completion",
+      "date": "2026-11-08",
+      "source": "StagiairesMA completion request",
+      "evidenceCategory": "Third-party application platform reminder; employer receipt unverified"
     }
   ],
   "priority": [
@@ -537,9 +573,9 @@
       "applicationMethod": "linkedin",
       "cvMasterId": "software",
       "submission": {
-        "status": "Not verified",
-        "evidence": null,
-        "recordedAt": null
+        "status": "Acknowledged",
+        "evidence": "Employer Workday application-received confirmation; review in progress, no decision",
+        "recordedAt": "2026-11-08"
       },
       "methodLabel": "Platform listing: exact upload route to verify",
       "compatibilityWarning": "The selected CV may be a profile-stored resume or an upload; verify which file before confirming.",
@@ -906,12 +942,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-08T08:50:06+00:00",
+    "lastVerifiedAt": "2026-11-08T16:13:21+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail searched for PFE/application-related messages since 20 October 2026 (100 results sampled; additional pages exist), plus targeted inbound replies/action-required and bounce searches since 6 November and GitHub security alert. Recent targeted searches completed; no new substantive employer reply or bounce verified. Historical aggregate metrics not re-audited.",
+    "scope": "Connected Gmail inbox checked for new PFE-related action requests and employer acknowledgements; relevant messages read on 8 Nov 2026. Public snapshot stores only role/company/status aggregates.",
     "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (broad and targeted queries)",
+    "method": "Connected Gmail search_emails and read_email",
     "result": "success"
   },
   "sourcesChecked": [
