@@ -23,7 +23,9 @@
       "cv": "Software Engineer",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-avl-maroc-pfe-software-development",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "Transmed Maroc",
@@ -33,7 +35,9 @@
       "cv": "Full-Stack Java / React",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-transmed-maroc-pfe-it-digital",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "2CA Business",
@@ -43,7 +47,9 @@
       "cv": "Full-Stack Java / React",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-2ca-business-pfe-developpement-web",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "Accenture (AFD.TECH)",
@@ -53,7 +59,9 @@
       "cv": "Software Engineer",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-accenture-afd-tech-pfe-java-genie-logiciel",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "Orange Maroc",
@@ -63,7 +71,9 @@
       "cv": "Software Engineer",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-orange-maroc-pfe-genie-logiciel",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "Diebold Nixdorf Maroc",
@@ -73,7 +83,9 @@
       "cv": "Software Engineer",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-diebold-nixdorf-maroc-pfe-genie-logiciel",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "PCA",
@@ -83,7 +95,9 @@
       "cv": "Software Engineer",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-pca-pfe-ingenieur-support",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "SmilyCall",
@@ -93,7 +107,9 @@
       "cv": "Full-Stack Java / React",
       "language": "EN",
       "date": "2026-11-07",
-      "source": "Gmail sent label"
+      "source": "Gmail sent label",
+      "recordId": "app-smilycall-pfe-developpement-full-stack",
+      "evidenceCategory": "Gmail sent label"
     },
     {
       "company": "BCG X",
@@ -103,7 +119,9 @@
       "date": "2026-11-04",
       "source": "CodeSignal and BCG invitation",
       "priority": "urgent",
-      "notes": "Invitation issued 4 Nov; 7-day expiry stated in email. Check whether completed."
+      "notes": "Invitation issued 4 Nov; 7-day expiry stated in email. Check whether completed.",
+      "recordId": "app-bcg-x-delivery-ai-software-engineering-intern",
+      "evidenceCategory": "CodeSignal and BCG invitation"
     },
     {
       "company": "Bertrandt",
@@ -111,7 +129,9 @@
       "channel": "website",
       "status": "Acknowledged",
       "date": "2026-10-28",
-      "source": "Employer application acknowledgement"
+      "source": "Employer application acknowledgement",
+      "recordId": "app-bertrandt-software-cloud-test-automation-pfe",
+      "evidenceCategory": "Employer application acknowledgement"
     },
     {
       "company": "CGI",
@@ -119,7 +139,9 @@
       "channel": "website",
       "status": "Acknowledged",
       "date": "2026-10-25",
-      "source": "Employer application acknowledgement"
+      "source": "Employer application acknowledgement",
+      "recordId": "app-cgi-pfe-developpeur-jee-angular-net-php",
+      "evidenceCategory": "Employer application acknowledgement"
     },
     {
       "company": "Nemo Technology",
@@ -127,7 +149,9 @@
       "channel": "website",
       "status": "Acknowledged",
       "date": "2026-10-28",
-      "source": "Employer receipt acknowledgement"
+      "source": "Employer receipt acknowledgement",
+      "recordId": "app-nemo-technology-pfe-2026-2027",
+      "evidenceCategory": "Employer receipt acknowledgement"
     },
     {
       "company": "Assystem",
@@ -135,7 +159,9 @@
       "channel": "website",
       "status": "Rejected",
       "date": "2026-11-02",
-      "source": "Employer response"
+      "source": "Employer response",
+      "recordId": "app-assystem-developpeur-php",
+      "evidenceCategory": "Employer response"
     },
     {
       "company": "Assystem",
@@ -143,7 +169,9 @@
       "channel": "website",
       "status": "Rejected",
       "date": "2026-10-22",
-      "source": "Employer response"
+      "source": "Employer response",
+      "recordId": "app-assystem-other-assystem-application",
+      "evidenceCategory": "Employer response"
     },
     {
       "company": "Coface",
@@ -152,7 +180,9 @@
       "status": "Needs completion",
       "date": "2026-10-21",
       "source": "Stagiaires.ma reminder",
-      "url": "https://ma.indeed.com/viewjob?jk=360ef3ffeb228cb6"
+      "url": "https://ma.indeed.com/viewjob?jk=360ef3ffeb228cb6",
+      "recordId": "app-coface-stages-pfe-datalab",
+      "evidenceCategory": "Stagiaires.ma reminder"
     },
     {
       "company": "Sofrecom Maroc",
@@ -161,7 +191,9 @@
       "status": "Needs completion",
       "date": "2026-10-21",
       "source": "Stagiaires.ma reminder",
-      "url": "https://www.linkedin.com/jobs/view/4481734605"
+      "url": "https://www.linkedin.com/jobs/view/4481734605",
+      "recordId": "app-sofrecom-maroc-developpement-php",
+      "evidenceCategory": "Stagiaires.ma reminder"
     },
     {
       "company": "Xcelerit",
@@ -170,7 +202,9 @@
       "status": "Needs completion",
       "date": "2026-10-21",
       "source": "Stagiaires.ma reminder",
-      "url": "https://www.linkedin.com/jobs/view/4460361252"
+      "url": "https://www.linkedin.com/jobs/view/4460361252",
+      "recordId": "app-xcelerit-software-engineering-intern-quant-finance",
+      "evidenceCategory": "Stagiaires.ma reminder"
     },
     {
       "company": "Trusted Advisors",
@@ -179,7 +213,9 @@
       "status": "Needs completion",
       "date": "2026-10-25",
       "source": "Employer email verification request",
-      "url": "https://jobs.trustedadvisors-group.com"
+      "url": "https://jobs.trustedadvisors-group.com",
+      "recordId": "app-trusted-advisors-developpeur-full-stack-spring-boot-react",
+      "evidenceCategory": "Employer email verification request"
     },
     {
       "company": "Inetum",
@@ -187,7 +223,9 @@
       "channel": "website",
       "status": "Submission failed",
       "date": "2026-10-28",
-      "source": "LinkedIn application problem"
+      "source": "LinkedIn application problem",
+      "recordId": "app-inetum-sap-hybris-pfe",
+      "evidenceCategory": "LinkedIn application problem"
     },
     {
       "company": "Maroc Telecom",
@@ -195,7 +233,9 @@
       "channel": "email",
       "status": "Bounced",
       "date": "2026-10-21",
-      "source": "Non-delivery report"
+      "source": "Non-delivery report",
+      "recordId": "app-maroc-telecom-java-spring-boot-pfe-outreach",
+      "evidenceCategory": "Non-delivery report"
     },
     {
       "company": "Safran",
@@ -203,7 +243,9 @@
       "channel": "email",
       "status": "Bounced",
       "date": "2026-10-21",
-      "source": "Non-delivery report"
+      "source": "Non-delivery report",
+      "recordId": "app-safran-java-spring-boot-pfe-outreach",
+      "evidenceCategory": "Non-delivery report"
     },
     {
       "company": "Innolia",
@@ -211,7 +253,9 @@
       "channel": "email",
       "status": "Delivery issue",
       "date": "2026-10-21",
-      "source": "Forwarding failure; original delivery uncertain"
+      "source": "Forwarding failure; original delivery uncertain",
+      "recordId": "app-innolia-java-spring-boot-pfe-outreach",
+      "evidenceCategory": "Forwarding failure; original delivery uncertain"
     }
   ],
   "priority": [
@@ -268,7 +312,8 @@
     "No application submission or email-sending feature exists in the dashboard.",
     "Approved CV masters refreshed 7 November 2026. Archived older PDF versions were deleted from Drive; keep master CVs unchanged and tailor only copies for named roles.",
     "CV files renamed to short application-ready names in Google Drive; document IDs and links unchanged. Private tracker Firestore permission probe fixed in dashboard code.",
-    "8 Nov 2026: Beebay, Netopia, Adkomo and conditional FGMED added from public originals; Softnovation/Qualitiz closed listings excluded. Verified paid/pre-hire claims are descriptive, not guaranteed. Private Firebase checked statuses not accessible to public audit."
+    "8 Nov 2026: Beebay, Netopia, Adkomo and conditional FGMED added from public originals; Softnovation/Qualitiz closed listings excluded. Verified paid/pre-hire claims are descriptive, not guaranteed. Private Firebase checked statuses not accessible to public audit.",
+    "PFE Desk adaptation on 8 November 2026: friend-template identities, email addresses, Drive folder and ChatGPT Sites hosting NOT reused; existing Mohssine GitHub Pages, Google Drive CVs and private Firebase tracking preserved. New table, activity, analytics, deadlines, owner-only note editor and four task schedules added. Calendar searches found no relevant events."
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
@@ -1003,5 +1048,82 @@
     "unknownDefault": "Not verified",
     "noAutoSubmission": true
   },
-  "cvWorkflowUpdatedAt": "2026-11-07"
+  "cvWorkflowUpdatedAt": "2026-11-07",
+  "candidatePreferences": {
+    "displayName": "Mohssine Echlaihi",
+    "education": "Final-year Software Engineering, ENSA Al Hoceima",
+    "graduationYear": 2027,
+    "internshipType": "Projet de Fin d'Études (PFE)",
+    "duration": "5–6 months",
+    "preferredStartDates": [
+      "2027-01-15",
+      "2027-02-01"
+    ],
+    "roles": [
+      "Software Engineering",
+      "Java / Spring Boot Backend",
+      "Full-Stack Java / React",
+      "Cloud & DevOps",
+      "Applied AI when software engineering fit is strong"
+    ],
+    "geographicScope": "Morocco-wide, including Casablanca, Rabat, Tangier and appropriate remote opportunities; no strict city ordering specified",
+    "languagePolicy": "English CV preferred; French only if employer requires it",
+    "opportunityPriorities": [
+      "High technical fit",
+      "Credible direct posting",
+      "Paid internship if explicitly documented",
+      "Pré-embauche if explicitly documented"
+    ],
+    "submissionSafety": "No auto-apply, no auto-email, no unverified CV attachments"
+  },
+  "trackerArchitecture": {
+    "publicDiscovery": "GitHub Pages and GitHub shared-state.json (public-safe, read-only published snapshot)",
+    "privateApplications": "Owner-authorized Firebase Firestore privateApplications, with user-marked applied status and notes",
+    "privacyBoundary": "The GitHub Pages site itself is public; only authenticated Firebase records are owner-restricted. Do not copy Gmail bodies, contacts, tokens or private notes into GitHub.",
+    "syncBehavior": "Automations update only verified, public-safe GitHub data. Private Firebase edits are synced directly among authorized devices; tasks must never pretend to read private checkboxes without access.",
+    "completePrivateSite": false,
+    "verifiedStorageForPrivateNotes": "Firebase Firestore (existing authorized login, browser interactions observed earlier by user)",
+    "dashboardMetadataUpdatedAt": "2026-11-08T15:13:23.782Z"
+  },
+  "calendarAudit": {
+    "checkedAt": "2026-11-08T15:13:23.782Z",
+    "scope": "Primary Google Calendar; 2026-09-01 to 2027-05-31; PFE, stage PFE, assessment, CodeSignal and interview searches",
+    "matchedRelevantEvents": 0,
+    "note": "No matching confirmed PFE calendar events found; no events were created."
+  },
+  "automationMonitor": {
+    "inspectedAt": "2026-11-08T15:13:23.782Z",
+    "timezone": "Africa/Casablanca",
+    "privateMetadataNote": "Run records are previous observations, not proof of the latest GitHub write. Scheduler access does not equal Firebase access.",
+    "tasks": [
+      {
+        "title": "PFE Internship Search & dashboard",
+        "scheduleLabel": "08:00 daily",
+        "enabled": true,
+        "lastObservedRun": "2026-11-08 08:50 UTC (status not independently confirmed by this page)",
+        "purpose": "Verified PFE openings, Gmail and public-safe snapshot"
+      },
+      {
+        "title": "Backup search — Maya",
+        "scheduleLabel": "10:00 daily",
+        "enabled": true,
+        "lastObservedRun": "2026-11-08 09:49 UTC (prior schedule)",
+        "purpose": "Independent deduplicated extra search"
+      },
+      {
+        "title": "PFE Priority Desk",
+        "scheduleLabel": "15:00 daily",
+        "enabled": true,
+        "lastObservedRun": null,
+        "purpose": "Urgent decisions and evidence-backed priorities"
+      },
+      {
+        "title": "PFE Hourly Monitor & Sync",
+        "scheduleLabel": "Hourly",
+        "enabled": true,
+        "lastObservedRun": "2026-11-08 14:25 UTC (prior configuration)",
+        "purpose": "Important email alerts and cautious public-safe sync"
+      }
+    ]
+  }
 }
