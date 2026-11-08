@@ -318,6 +318,7 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 .offer .offer-footer .admin-offer-panel .admin-feedback{margin-left:auto;font-size:10px}
 @media(prefers-reduced-motion:reduce){.offer:not(.offer-is-applied):not(.offer-is-expired){animation:none}}
 .completion-queue-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}.completion-entry{border:1px solid #dbe3ed;border-radius:11px;padding:14px;background:#fafcff}.completion-entry p{font-size:13px;line-height:1.45}.completion-head{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start}.completion-head small{display:block}.completion-links{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.completion-links a{font-size:12px}
+.completion-entry.offer-is-applied{border-color:#74a78f;background:#f0faf4}.completion-entry.offer-is-expired{border-color:#a8a29a;background:#f6f5f3;opacity:.87}.completion-source{display:block;margin-top:4px}.completion-controls{margin-top:10px;padding-top:8px;border-top:1px solid #e1e6ed;font-size:12px}.completion-controls .offer-status-toggles{display:flex;flex-wrap:wrap;gap:12px}.completion-entry .completion-head .status{font-size:11px}
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>PFE Desk 2027</h1><p>One focused workspace for your 2027 PFE applications. Public opportunity summaries are read-only; personal applied statuses and notes require authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -613,10 +614,15 @@ function renderCompletionQueue(d){
  const entries=Array.isArray(d.completionQueue)?d.completionQueue:[];
  for(const offer of entries){
   const article=make('article','completion-entry');
+  article.dataset.completionId=String(offer.id||'');
   const head=make('div','completion-head'),about=make('div');
   about.append(make('strong',null,offer.company||'Company'),make('small',null,offer.role||''));
-  const state=make('span','status',offer.status==='applied-user-reported'?'Applied (user-reported)':'Completion not verified');
-  head.append(about,state);article.append(head);
+  const mail=offer.emailEvidence;
+  const mailVerified=mail?.sourceType==='verified-employer-email'&&['applied','expired','rejected','assessment','interview','acknowledged'].includes(mail.status);
+  const startLabel=mailVerified?('Email-verified: '+mail.status):offer.status==='applied-user-reported'?'Applied (user-reported)':'Not yet confirmed';
+  const state=make('span','status completion-status',startLabel);
+  const source=make('small','completion-source',mailVerified?'Source: verified employer email · '+String(mail.verifiedAt||''):offer.status==='applied-user-reported'?'Source: user report':'Source: StagiairesMA reminder; employer application not verified');
+  head.append(about,state);article.append(head,source);
   const desc=make('p','muted',offer.warning||'Verify the original job listing before submitting.');
   article.append(desc);
   const links=make('div','completion-links');
@@ -626,11 +632,15 @@ function renderCompletionQueue(d){
    link.className=item.label==='Open application'?'btn':'secondary';link.target='_blank';link.rel='noopener noreferrer';links.append(link);
   }
   article.append(links);
-  article.append(make('small',null,'Source: '+(offer.platform||'external platform')+' · Last checked: '+(offer.discoveredAt||'unknown')));
+  article.append(make('small',null,'Listing: '+(offer.platform||'external platform')+' · Last checked: '+(offer.discoveredAt||'unknown')));
+  const control=make('div','completion-controls');
+  control.textContent='Sign in with GitHub in Applications to mark Applied or Expired privately.';
+  article.append(control);
   wrap.append(article);
  }
  if(!entries.length)wrap.append(make('p','muted','No external completion notices recorded yet.'));
- text('completion-queue-summary',entries.length+' recorded completion notices · '+entries.filter(x=>x.status==='applied-user-reported').length+' already marked applied · originals require platform verification');
+ text('completion-queue-summary',entries.length+' recorded completion notices · '+entries.filter(x=>x.status==='applied-user-reported'||x.emailEvidence?.sourceType==='verified-employer-email').length+' with application evidence · private status controls require GitHub sign-in');
+ document.dispatchEvent(new CustomEvent('pfe:completion-queue-rendered',{detail:{entries}}));
 }
 function renderApplicationTable(d){
  const table=$('application-table-body');table.replaceChildren();
@@ -756,7 +766,8 @@ const app=initializeApp(config);
 const auth=getAuth(app),db=getFirestore(app),$=id=>document.getElementById(id);
 const login=$('auth-login'),logout=$('auth-logout'),uidRow=$('auth-uid-row'),uidText=$('auth-id'),status=$('auth-status');
 const cards=[...document.querySelectorAll('.offer')];
-const panels=new Map();
+const panels=new Map(),completionPanels=new Map();
+let privateStatusSnapshot=new Map(),completionQueueEntries=[];
 let unsubscribe=null,authSequence=0,adminReady=false;
 
 const localDate=()=>{
@@ -781,6 +792,9 @@ function removeControls(){
   if(unsubscribe){unsubscribe();unsubscribe=null;}
   for(const panel of panels.values())panel.root.remove();
   panels.clear();
+  for(const panel of completionPanels.values())panel.root.replaceChildren();
+  completionPanels.clear();
+  privateStatusSnapshot=new Map();
   for(const card of cards){
     delete card.dataset.applied;
     delete card.dataset.expired;
@@ -857,6 +871,76 @@ async function buildPanel(card,offer,key,sequence){
  applied.input.addEventListener('change',()=>change(applied));
  expired.input.addEventListener('change',()=>change(expired));
 }
+async function buildCompletionControls(entries,sequence){
+ if(!adminReady||sequence!==authSequence||!auth.currentUser)return;
+ completionQueueEntries=Array.isArray(entries)?entries:[];
+ for(const offer of completionQueueEntries){
+  const card=[...document.querySelectorAll('.completion-entry')].find(x=>x.dataset.completionId===String(offer.id||''));
+  if(!card||!offer.applyUrl||!/^https:\/\//.test(offer.applyUrl))continue;
+  const key=await offerKey({url:offer.originalListingUrl||offer.applyUrl});
+  if(sequence!==authSequence||!adminReady)return;
+  const root=card.querySelector('.completion-controls');if(!root||completionPanels.has(key))continue;
+  root.replaceChildren();
+  const makeToggle=(type,labelText)=>{
+   const label=make('label',type+'-toggle status-toggle');
+   const input=make('input','applied-check');input.type='checkbox';
+   input.setAttribute('aria-label','Mark '+offer.company+' '+offer.role+' as '+type);
+   const visual=make('span','applied-check-visual');visual.setAttribute('aria-hidden','true');
+   const caption=make('span','applied-check-label',labelText);
+   label.append(input,visual,caption);return {label,input,caption};
+  };
+  const applied=makeToggle('applied','Applied'),expired=makeToggle('expired','Expired');
+  const group=make('div','offer-status-toggles'),feedback=make('span','admin-feedback','');
+  group.append(applied.label,expired.label);feedback.setAttribute('role','status');
+  root.append(group,feedback);
+  const panel={root,applied,expired,feedback,offer,key,state:'open',card};
+  completionPanels.set(key,panel);
+  const change=async(target)=>{
+   if(!adminReady||sequence!==authSequence||!auth.currentUser)return;
+   const evidence=offer.emailEvidence;
+   if(evidence?.sourceType==='verified-employer-email'){renderCompletionStatuses(privateStatusSnapshot);return;}
+   const next=target.input.checked?(target===applied?'applied':'expired'):'open';
+   if(next==='open'&&!window.confirm('Clear this manually recorded completion status?')){renderCompletionStatuses(privateStatusSnapshot);return;}
+   applied.input.disabled=true;expired.input.disabled=true;feedback.textContent='Saving privately…';
+   try{
+    const metadata={postingUrl:String(offer.originalListingUrl||offer.applyUrl),company:String(offer.company||''),role:String(offer.role||''),status:next,evidence:next==='applied'?'self-report':next==='expired'?'user-marked-expired':'manual-reset',evidenceSource:next==='applied'?'Manually marked applied; no employer confirmation':'Manual status, not email-verified',submittedOn:next==='applied'?localDate():null,expiredOn:next==='expired'?localDate():null,updatedAt:serverTimestamp()};
+    await setDoc(doc(db,'privateApplications',key),metadata,{merge:true});
+    feedback.textContent='Saved to your private tracking';
+   }catch(error){feedback.textContent='Save failed: '+(error.code||'unknown');renderCompletionStatuses(privateStatusSnapshot);}
+   finally{applied.input.disabled=false;expired.input.disabled=false;}
+  };
+  applied.input.addEventListener('change',()=>change(applied));
+  expired.input.addEventListener('change',()=>change(expired));
+ }
+ renderCompletionStatuses(privateStatusSnapshot);
+}
+function renderCompletionStatuses(snapshot){
+ for(const panel of completionPanels.values()){
+  const record=snapshot.get(panel.key),offer=panel.offer;
+  const email=offer.emailEvidence;
+  const verified=email?.sourceType==='verified-employer-email'&&['applied','expired','rejected','assessment','interview','acknowledged'].includes(email.status);
+  const privateStatus=record?.status==='applied'?'applied':record?.status==='expired'?'expired':'open';
+  const userStatus=offer.status==='applied-user-reported'?'applied':'open';
+  const effective=verified?(email.status==='expired'?'expired':'applied'):(privateStatus!=='open'?privateStatus:userStatus);
+  const label=verified?('Email-verified: '+email.status):privateStatus!=='open'?(privateStatus==='applied'?'Applied · manual':'Expired · manual'):userStatus==='applied'?'Applied · user-reported':'Not yet confirmed';
+  panel.state=effective;
+  panel.applied.input.checked=effective==='applied';panel.expired.input.checked=effective==='expired';
+  panel.applied.input.disabled=verified;panel.expired.input.disabled=verified;
+  panel.applied.caption.textContent=verified&&effective==='applied'?'Applied · email verified': 'Applied';
+  panel.expired.caption.textContent=verified&&effective==='expired'?'Expired · email verified':'Expired';
+  const badge=panel.card.querySelector('.completion-status');if(badge)badge.textContent=label;
+  const source=panel.card.querySelector('.completion-source');
+  if(source)source.textContent=verified?'Source: verified employer email · '+String(email.verifiedAt||''):privateStatus!=='open'?'Source: private manual mark':userStatus==='applied'?'Source: user-reported completion':'Source: StagiairesMA reminder only';
+  panel.card.classList.toggle('offer-is-applied',effective==='applied');
+  panel.card.classList.toggle('offer-is-expired',effective==='expired');
+  if(verified)panel.feedback.textContent='Verified email status supersedes manual mark; private notes are preserved.';
+  else if(panel.feedback.textContent.startsWith('Verified email'))panel.feedback.textContent='';
+ }
+}
+document.addEventListener('pfe:completion-queue-rendered',event=>{
+ completionQueueEntries=event.detail?.entries||[];
+ if(adminReady)buildCompletionControls(completionQueueEntries,authSequence).catch(()=>{});
+});
 function renderPrivateRecords(snapshot){
  const root=$('private-records-list'),section=$('private-records-section');
  if(!root||!section)return;
@@ -886,6 +970,8 @@ function renderPrivateRecords(snapshot){
  if(!rows.length)root.append(make('p','muted','No manually marked applied or expired offers yet.'));
 }
 function renderSaved(snapshot){
+ privateStatusSnapshot=snapshot;
+ renderCompletionStatuses(snapshot);
  for(const panel of panels.values()){
    const data=snapshot.get(panel.key);
    panel.state=data?.status==='applied'?'applied':data?.status==='expired'?'expired':'open';
@@ -929,6 +1015,7 @@ async function authorizeAndLoad(user,sequence){
       const key=await offerKey(offer);
       await buildPanel(cards[index],offer,key,sequence);
     }
+    await buildCompletionControls(state.completionQueue||completionQueueEntries,sequence);
     if(sequence!==authSequence||!adminReady)return;
     unsubscribe=onSnapshot(collection(db,'privateApplications'),snap=>{
       if(sequence!==authSequence||!adminReady)return;
