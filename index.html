@@ -866,7 +866,7 @@ function renderSaved(snapshot){
    card.classList.toggle('offer-is-expired',isExpired);
    panel.applied.input.checked=isApplied;
    panel.expired.input.checked=isExpired;
-   panel.applied.caption.textContent=card.dataset.confirmedEmailSent==='true'?'Applied via email':isApplied?'Applied':'Mark as applied';
+   panel.applied.caption.textContent=card.dataset.confirmedEmailSent==='true'?(panel.offer.applicationMethod==='formThenEmail'?'Applied · form + email':'Applied via email'):isApplied?'Applied':'Mark as applied';
    panel.applied.input.disabled=card.dataset.confirmedEmailSent==='true';
    panel.applied.input.checked=isApplied||card.dataset.confirmedEmailSent==='true';
    panel.expired.caption.textContent=isExpired?'Expired':'Mark as expired';
