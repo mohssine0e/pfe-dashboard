@@ -281,6 +281,42 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 .private-record button{font-size:11px;padding:6px 10px}
 .private-record .notes-feedback{font-size:11px;color:var(--muted);margin-left:8px}
 @media(max-width:600px){.desk-table{min-width:570px}.funnel-row{grid-template-columns:105px 1fr 26px;gap:7px}#app-table-search{min-width:100%}}
+
+/* Explicit user-marked expired state, separate from verified posting deadlines. */
+.offer:not(.offer-is-applied):not(.offer-is-expired){border-color:#a8c9ec;animation:open-offer-border 5.8s ease-in-out infinite}
+.offer.offer-is-expired{
+ border:1.5px solid #b8a7a0!important;background:#fcfaf9;
+ box-shadow:0 0 0 1px #e8e0dd,0 2px 12px #6552490b!important;
+ animation:none!important;
+}
+.offer.offer-is-expired .offer-header h3{color:#746a66}
+.offer.offer-is-expired .offer-header:after{
+ content:'Expired';background:#f1ece9;color:#796960;border:1px solid #ded1cb;
+ border-radius:20px;padding:2px 8px;font-size:10px;font-weight:750
+}
+.offer.offer-is-expired .offer-header .tags{display:none}
+.offer .offer-footer .admin-offer-panel{
+ flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 10px
+}
+.offer-status-toggles{display:flex;flex-wrap:wrap;align-items:center;gap:10px 15px;min-width:0}
+.offer .offer-footer .admin-offer-panel label.status-toggle{
+ display:inline-flex;align-items:center;flex-direction:row;gap:7px;
+ position:relative;min-height:26px;margin:0;padding:0;width:auto;cursor:pointer;
+ font-size:11px;font-weight:650;white-space:nowrap
+}
+.offer .offer-footer .admin-offer-panel label.status-toggle .applied-check{
+ position:absolute;left:0;top:50%;transform:translateY(-50%);
+ width:18px;min-width:0;max-width:18px;height:18px;margin:0;padding:0;opacity:0;cursor:pointer
+}
+.offer .offer-footer .admin-offer-panel label.status-toggle .applied-check-visual{
+ width:17px;height:17px;min-width:17px;flex:0 0 17px
+}
+.offer .offer-footer .admin-offer-panel label.expired-toggle .applied-check:checked+.applied-check-visual{
+ background:#84746d;border-color:#84746d
+}
+.offer .offer-footer .admin-offer-panel label.expired-toggle .applied-check:checked~.applied-check-label{color:#75675f}
+.offer .offer-footer .admin-offer-panel .admin-feedback{margin-left:auto;font-size:10px}
+@media(prefers-reduced-motion:reduce){.offer:not(.offer-is-applied):not(.offer-is-expired){animation:none}}
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>PFE Desk 2027</h1><p>One focused workspace for your 2027 PFE applications. Public opportunity summaries are read-only; personal applied statuses and notes require authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
@@ -300,7 +336,7 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 <div class="banner" id="audit">Loading shared Gmail audit snapshot…</div></section>
 <div class="two"><section id="priorities"><h2>Next best actions</h2><div id="priority-list">Loading priorities…</div></section>
 <section id="pipeline"><h2>Company progress</h2><p class="muted">Recent application activity · scroll for older records</p><div id="company-list" role="region" aria-label="Scrollable company application history" tabindex="0">Loading records…</div></section></div>
-<section id="opportunities"><h2>Website application opportunities</h2><p class="muted">Before applying, check the application method and which CV the external platform will actually attach. The dashboard never submits forms or sends emails.</p><div class="controls"><input id="search" aria-label="Search companies" placeholder="Search companies, positions…"><select id="lane" aria-label="Specialization"><option value="">All specializations</option><option value="java">Software / Java</option><option value="fullstack">Full stack</option><option value="devops">DevOps / Cloud</option></select><select id="fit" aria-label="Match quality"><option value="">All matches</option><option value="top">Best fit</option><option value="good">Good fit</option><option value="weak">Lower fit</option></select><select id="application-status-filter" aria-label="Filter by application status"><option value="open">Open offers</option><option value="applied">Applied offers</option><option value="all">All offers</option></select></div><p id="offer-filter-count" class="offer-filter-summary" aria-live="polite">Showing open offers. Sign in to include private application statuses.</p><p id="offer-no-matches" class="offer-empty" hidden>No offers match these filters.</p><div class="offers"><article class="offer" data-offer-index="0" data-lane="devops" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>devops</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Cloud &amp; DevOps track</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence"><strong>Submission:</strong> <span>User reported submission — verify in ReKrute history</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
+<section id="opportunities"><h2>Website application opportunities</h2><p class="muted">Before applying, check the application method and which CV the external platform will actually attach. The dashboard never submits forms or sends emails.</p><div class="controls"><input id="search" aria-label="Search companies" placeholder="Search companies, positions…"><select id="lane" aria-label="Specialization"><option value="">All specializations</option><option value="java">Software / Java</option><option value="fullstack">Full stack</option><option value="devops">DevOps / Cloud</option></select><select id="fit" aria-label="Match quality"><option value="">All matches</option><option value="top">Best fit</option><option value="good">Good fit</option><option value="weak">Lower fit</option></select><select id="application-status-filter" aria-label="Filter by application status"><option value="open">Open offers</option><option value="applied">Applied offers</option><option value="expired">Expired offers</option><option value="all">All offers</option></select></div><p id="offer-filter-count" class="offer-filter-summary" aria-live="polite">Showing open offers. Sign in to include private application statuses.</p><p id="offer-no-matches" class="offer-empty" hidden>No offers match these filters.</p><div class="offers"><article class="offer" data-offer-index="0" data-lane="devops" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>devops</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Cloud &amp; DevOps track</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence"><strong>Submission:</strong> <span>User reported submission — verify in ReKrute history</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
 <article class="offer" data-offer-index="1" data-lane="java" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>java</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Software Architecture track</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence" hidden><strong>Submission:</strong> <span>Not verified</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
 <article class="offer" data-offer-index="2" data-lane="fullstack" data-fit="top"><div class="offer-header"><h3>Cnexia</h3><div class="tags"><span>fullstack</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">STAGE PFE</p><p class="role">Front-End React / TypeScript track · <strong>Title unverified</strong></p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html" target="_blank" rel="noopener noreferrer">ReKrute</a></p><p class="deadline">Deadline previously listed: 10 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Profile CV auto-attached</span></p><p class="submission-evidence" hidden><strong>Submission:</strong> <span>Not verified</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
 <article class="offer" data-offer-index="3" data-lane="java" data-fit="top"><div class="offer-header"><h3>Maersk</h3><div class="tags"><span>java</span><span>top fit</span></div></div><div class="offer-role-block"><p class="jobtitle">End-of-Studies Internship | Information Technology (IT)</p><p class="role">IT</p></div><div class="offer-meta"><p class="provenance"><a class="source-link" href="https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499" target="_blank" rel="noopener noreferrer">LinkedIn</a></p><p class="deadline">Deadline previously listed: 15 Nov · verify</p></div><div class="method-block"><p class="method-label"><strong>Apply via</strong> <span class="application-method">Easy Apply or company portal</span></p><p class="submission-evidence" hidden><strong>Submission:</strong> <span>Not verified</span></p></div><div class="offer-footer"><div class="buttons"><a class="btn" href="https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View general CV</a><a class="secondary" href="https://ma.linkedin.com/jobs/view/end-of-studies-internship-information-technology-it-at-a-p-moller-maersk-4479882499" target="_blank" rel="noopener noreferrer">Open listing</a></div></div></article>
@@ -414,19 +450,20 @@ function filter(){
  const q=$('search').value.trim().toLowerCase(),lane=$('lane').value,fit=$('fit').value;
  const status=$('application-status-filter').value;
  const container=document.querySelector('.offers');
- const ordered=[...cards].sort((a,b)=>Number(a.dataset.applied==='true')-Number(b.dataset.applied==='true')||Number(a.dataset.offerIndex)-Number(b.dataset.offerIndex));
+ const orderOf=card=>card.dataset.expired==='true'?2:card.dataset.applied==='true'?1:0;
+ const ordered=[...cards].sort((a,b)=>orderOf(a)-orderOf(b)||Number(a.dataset.offerIndex)-Number(b.dataset.offerIndex));
  ordered.forEach(card=>container.append(card));
- let visible=0,applied=0,known=0;
+ let visible=0,applied=0,expired=0,known=0;
  cards.forEach(card=>{
-   const isApplied=card.dataset.applied==='true';
-   const registered=card.dataset.applicationLoaded==='true';
-   if(registered)known++;
+   const isApplied=card.dataset.applied==='true',isExpired=card.dataset.expired==='true';
+   if(card.dataset.applicationLoaded==='true')known++;
    if(isApplied)applied++;
-   const statusMiss=status==='open'?isApplied:status==='applied'?!isApplied:false;
+   if(isExpired)expired++;
+   const statusMiss=status==='open'?(isApplied||isExpired):status==='applied'?!isApplied:status==='expired'?!isExpired:false;
    card.hidden=Boolean(statusMiss||(q&&!card.textContent.toLowerCase().includes(q))||(lane&&card.dataset.lane!==lane)||(fit&&card.dataset.fit!==fit));
    if(!card.hidden)visible++;
  });
- text('offer-filter-count',visible+' of '+cards.length+' offers shown · '+applied+' privately marked applied'+(known<cards.length?' · Sign in to load saved statuses':''));
+ text('offer-filter-count',visible+' of '+cards.length+' offers shown · '+applied+' applied · '+expired+' expired'+(known<cards.length?' · Sign in to load private statuses':''));
  $('offer-no-matches').hidden=visible!==0;
 }
 ['search','lane','fit','application-status-filter'].forEach(id=>$(id).addEventListener('input',filter));
@@ -710,77 +747,90 @@ function removeControls(){
   panels.clear();
   for(const card of cards){
     delete card.dataset.applied;
+    delete card.dataset.expired;
     delete card.dataset.applicationLoaded;
-    card.classList.remove('offer-is-applied');
+    card.classList.remove('offer-is-applied','offer-is-expired');
   }
   const privateSection=$('private-records-section');
   if(privateSection){privateSection.hidden=true;$('private-records-list').replaceChildren();}
   document.dispatchEvent(new Event('pfe:application-statuses-updated'));
 }
 async function buildPanel(card,offer,key,sequence){
-  if(sequence!==authSequence||!adminReady)return;
-  const root=make('div','admin-offer-panel');
-  root.setAttribute('aria-label','Private application tracking');
-  const label=make('label','applied-toggle');
-  const toggle=make('input');
-  toggle.type='checkbox';
-  toggle.className='applied-check';
-  toggle.setAttribute('aria-label','Mark '+String(offer.company||'this offer')+' as applied');
-  const mark=make('span','applied-check-visual');
-  mark.setAttribute('aria-hidden','true');
-  const name=make('span','applied-check-label','Applied');
-  label.append(toggle,mark,name);
-  const feedback=make('span','admin-feedback','');
-  feedback.setAttribute('role','status');
-  root.append(label,feedback);
-  const footer=card.querySelector('.offer-footer');
-  (footer||card).append(root);
-  const panel={root,toggle,label,name,feedback,offer,key,applied:false};
-  panels.set(key,panel);
-  toggle.addEventListener('change',async()=>{
-    if(!adminReady||sequence!==authSequence||!auth.currentUser){
-      toggle.checked=panel.applied;return;
-    }
-    const nextApplied=toggle.checked;
-    if(!nextApplied&&!window.confirm('Remove the applied status for this offer?')){
-      toggle.checked=true;return;
-    }
-    toggle.disabled=true;
-    feedback.textContent=nextApplied?'Saving…':'Removing…';
-    try{
-      if(nextApplied){
-        await setDoc(doc(db,'privateApplications',key),{
-          postingUrl:String(offer.url||''),
-          company:String(offer.company||''),
-          role:String(offer.role||offer.title||''),
-          status:'applied',
-          submittedOn:localDate(),
-          evidence:'self-report',
-          evidenceSource:'Manually checked by user; no independent platform confirmation verified',
-          updatedAt:serverTimestamp()
-        },{merge:true});
-      }else{
-        await deleteDoc(doc(db,'privateApplications',key));
-      }
-      feedback.textContent='';
-      // The Firestore listener is authoritative and refreshes filters.
-    }catch(error){
-      toggle.checked=panel.applied;
-      feedback.textContent='Save failed: '+(error.code||'unknown');
-    }finally{toggle.disabled=false;}
-  });
+ if(sequence!==authSequence||!adminReady)return;
+ const root=make('div','admin-offer-panel');
+ root.setAttribute('aria-label','Private application status');
+ const makeToggle=(type,labelText)=>{
+   const label=make('label',type+'-toggle status-toggle');
+   const input=make('input','applied-check');
+   input.type='checkbox';
+   input.setAttribute('aria-label','Mark '+String(offer.company||'this offer')+' as '+type);
+   const visual=make('span','applied-check-visual');visual.setAttribute('aria-hidden','true');
+   const caption=make('span','applied-check-label',labelText);
+   label.append(input,visual,caption);
+   return {label,input,caption};
+ };
+ const applied=makeToggle('applied','Mark as applied');
+ const expired=makeToggle('expired','Mark as expired');
+ const group=make('div','offer-status-toggles');
+ group.append(applied.label,expired.label);
+ const feedback=make('span','admin-feedback','');
+ feedback.setAttribute('role','status');
+ root.append(group,feedback);
+ (card.querySelector('.offer-footer')||card).append(root);
+ const panel={root,applied,expired,feedback,offer,key,state:'open'};
+ panels.set(key,panel);
+ const change=async(target)=>{
+   if(!adminReady||sequence!==authSequence||!auth.currentUser){
+     applied.input.checked=panel.state==='applied';expired.input.checked=panel.state==='expired';return;
+   }
+   const next=target.input.checked?(target===applied?'applied':'expired'):'open';
+   if(next==='open'&&!window.confirm('Clear this manually recorded status?')){
+     applied.input.checked=panel.state==='applied';expired.input.checked=panel.state==='expired';return;
+   }
+   applied.input.disabled=true;expired.input.disabled=true;
+   feedback.textContent='Saving…';
+   try{
+     const metadata={
+       postingUrl:String(offer.url||''),
+       company:String(offer.company||''),
+       role:String(offer.role||offer.title||''),
+       status:next,
+       updatedAt:serverTimestamp()
+     };
+     if(next==='applied')Object.assign(metadata,{
+       submittedOn:localDate(),expiredOn:null,
+       evidence:'self-report',
+       evidenceSource:'User manually marked as applied; platform confirmation not independently checked'
+     });
+     if(next==='expired')Object.assign(metadata,{
+       expiredOn:localDate(),submittedOn:null,
+       evidence:'user-marked-expired',
+       evidenceSource:'User manually marked listing expired; original deadline not independently verified'
+     });
+     if(next==='open')Object.assign(metadata,{
+       expiredOn:null,submittedOn:null,evidence:'manual-reset',evidenceSource:'User cleared status'
+     });
+     // Merge keeps any existing private notes when switching or clearing statuses.
+     await setDoc(doc(db,'privateApplications',key),metadata,{merge:true});
+     feedback.textContent='';
+   }catch(error){
+     applied.input.checked=panel.state==='applied';expired.input.checked=panel.state==='expired';
+     feedback.textContent='Save failed: '+(error.code||'unknown');
+   }finally{applied.input.disabled=false;expired.input.disabled=false;}
+ };
+ applied.input.addEventListener('change',()=>change(applied));
+ expired.input.addEventListener('change',()=>change(expired));
 }
-
 function renderPrivateRecords(snapshot){
  const root=$('private-records-list'),section=$('private-records-section');
  if(!root||!section)return;
  section.hidden=false;root.replaceChildren();
  const rows=[];
- snapshot.forEach(docSnap=>{const info=docSnap.data();if(info&&info.status==='applied')rows.push({key:docSnap.id,...info})});
- rows.sort((a,b)=>String(b.submittedOn||'').localeCompare(String(a.submittedOn||'')));
+ snapshot.forEach(docSnap=>{const info=docSnap.data();if(info&&(info.status==='applied'||info.status==='expired'))rows.push({key:docSnap.id,...info})});
+ rows.sort((a,b)=>String(b.submittedOn||b.expiredOn||'').localeCompare(String(a.submittedOn||a.expiredOn||'')));
  for(const record of rows){
    const el=make('div','private-record'),top=make('strong',null,(record.company||'Unknown')+' · '+(record.role||'PFE application'));
-   el.append(top,make('small',null,'User-marked applied · '+(record.submittedOn||'Date not recorded')));
+   el.append(top,make('small',null,(record.status==='expired'?'User-marked expired · '+(record.expiredOn||'Date not recorded'):'User-marked applied · '+(record.submittedOn||'Date not recorded'))));
    if(record.postingUrl&&/^https:\/\//i.test(record.postingUrl)){
      const link=make('a',null,'Original listing');link.href=record.postingUrl;link.target='_blank';link.rel='noopener noreferrer';el.append(link);
    }
@@ -797,24 +847,30 @@ function renderPrivateRecords(snapshot){
    });
    details.append(summary,area,save,noteStatus);el.append(details);root.append(el);
  }
- if(!rows.length)root.append(make('p','muted','No privately checked applications yet.'));
+ if(!rows.length)root.append(make('p','muted','No manually marked applied or expired offers yet.'));
 }
 function renderSaved(snapshot){
-  for(const panel of panels.values()){
-    const data=snapshot.get(panel.key);
-    panel.applied=Boolean(data&&data.status==='applied');
-    const card=panel.root.closest('.offer');
-    card.dataset.applied=panel.applied?'true':'false';
-    card.dataset.applicationLoaded='true';
-    card.classList.toggle('offer-is-applied',panel.applied);
-    panel.toggle.checked=panel.applied;
-    panel.name.textContent=panel.applied?'Applied':'Mark as applied';
-    panel.feedback.textContent=panel.applied?(data.submittedOn?'· '+data.submittedOn:'· Saved privately'):'';
-    panel.label.title=panel.applied?'Uncheck to undo the private applied mark':'Check to record this offer as applied today';
-    const publicStatus=card.querySelector('.submission-evidence');
-    if(publicStatus)publicStatus.hidden=panel.applied||publicStatus.textContent.includes('Not verified');
-  }
-  document.dispatchEvent(new Event('pfe:application-statuses-updated'));
+ for(const panel of panels.values()){
+   const data=snapshot.get(panel.key);
+   panel.state=data?.status==='applied'?'applied':data?.status==='expired'?'expired':'open';
+   const card=panel.root.closest('.offer');
+   const isApplied=panel.state==='applied',isExpired=panel.state==='expired';
+   card.dataset.applied=isApplied?'true':'false';
+   card.dataset.expired=isExpired?'true':'false';
+   card.dataset.applicationLoaded='true';
+   card.classList.toggle('offer-is-applied',isApplied);
+   card.classList.toggle('offer-is-expired',isExpired);
+   panel.applied.input.checked=isApplied;
+   panel.expired.input.checked=isExpired;
+   panel.applied.caption.textContent=isApplied?'Applied':'Mark as applied';
+   panel.expired.caption.textContent=isExpired?'Expired':'Mark as expired';
+   panel.applied.label.title=isApplied?'Uncheck to clear applied status':'Manually record application completion';
+   panel.expired.label.title=isExpired?'Uncheck to clear expired status':'Manually record the listing as expired (not source-verified)';
+   panel.feedback.textContent=isApplied?(data?.submittedOn?'· '+data.submittedOn:''):isExpired?(data?.expiredOn?'· '+data.expiredOn:''):'';
+   const publicStatus=card.querySelector('.submission-evidence');
+   if(publicStatus)publicStatus.hidden=isApplied||isExpired||publicStatus.textContent.includes('Not verified');
+ }
+ document.dispatchEvent(new Event('pfe:application-statuses-updated'));
 }
 async function authorizeAndLoad(user,sequence){
   status.textContent='Checking private Firestore permissions…';
