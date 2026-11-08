@@ -313,7 +313,8 @@
     "Approved CV masters refreshed 7 November 2026. Archived older PDF versions were deleted from Drive; keep master CVs unchanged and tailor only copies for named roles.",
     "CV files renamed to short application-ready names in Google Drive; document IDs and links unchanged. Private tracker Firestore permission probe fixed in dashboard code.",
     "8 Nov 2026: Beebay, Netopia, Adkomo and conditional FGMED added from public originals; Softnovation/Qualitiz closed listings excluded. Verified paid/pre-hire claims are descriptive, not guaranteed. Private Firebase checked statuses not accessible to public audit.",
-    "PFE Desk adaptation on 8 November 2026: friend-template identities, email addresses, Drive folder and ChatGPT Sites hosting NOT reused; existing Mohssine GitHub Pages, Google Drive CVs and private Firebase tracking preserved. New table, activity, analytics, deadlines, owner-only note editor and four task schedules added. Calendar searches found no relevant events."
+    "PFE Desk adaptation on 8 November 2026: friend-template identities, email addresses, Drive folder and ChatGPT Sites hosting NOT reused; existing Mohssine GitHub Pages, Google Drive CVs and private Firebase tracking preserved. New table, activity, analytics, deadlines, owner-only note editor and four task schedules added. Calendar searches found no relevant events.",
+    "Verification correction: Cnexia 10 November dates were previously listed but not independently confirmed; excluded from verified-deadline analytics pending original-source verification."
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
@@ -412,7 +413,7 @@
       "sourceLabel": "ReKrute",
       "verifiedTitle": true,
       "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
-      "verifiedDeadline": "2026-11-10",
+      "verifiedDeadline": null,
       "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html",
       "applicationMethod": "rekrute",
       "cvMasterId": "software",
@@ -430,7 +431,9 @@
       "tailoredCvUrl": null,
       "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "ReKrute may automatically attach the CV already stored in your candidate profile. Downloading a specialist CV here does not change that uploaded profile CV.",
-      "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV"
+      "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV",
+      "unverifiedDeadline": "2026-11-10",
+      "deadlineVerification": "Previously listed 10 November 2026; original employer deadline not independently reconfirmed"
     },
     {
       "company": "Cnexia",
@@ -441,7 +444,7 @@
       "sourceLabel": "ReKrute",
       "verifiedTitle": true,
       "titleVerifiedAt": "2026-11-07T18:41:07+01:00",
-      "verifiedDeadline": "2026-11-10",
+      "verifiedDeadline": null,
       "deadlineSourceUrl": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
       "applicationMethod": "rekrute",
       "cvMasterId": "software",
@@ -459,7 +462,9 @@
       "tailoredCvUrl": null,
       "tailoredCvStatus": "Not prepared — dedicated company upload not verified",
       "cvCompatibilityWarning": "ReKrute may automatically attach the CV already stored in your candidate profile. Downloading a specialist CV here does not change that uploaded profile CV.",
-      "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV"
+      "applicationMethodCertainty": "User observed one-click ReKrute application with saved CV",
+      "unverifiedDeadline": "2026-11-10",
+      "deadlineVerification": "Previously listed 10 November 2026; original employer deadline not independently reconfirmed"
     },
     {
       "company": "Cnexia",
@@ -1097,7 +1102,7 @@
     "privateMetadataNote": "Run records are previous observations, not proof of the latest GitHub write. Scheduler access does not equal Firebase access.",
     "tasks": [
       {
-        "title": "PFE Internship Search & dashboard",
+        "title": "PFE Internship Search & Dashboard",
         "scheduleLabel": "08:00 daily",
         "enabled": true,
         "lastObservedRun": "2026-11-08 08:50 UTC (status not independently confirmed by this page)",
