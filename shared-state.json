@@ -1063,7 +1063,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-08T17:33:18.925Z",
+  "lastSyncedAt": "2026-11-08T17:50:17.959Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -1236,5 +1236,123 @@
         "note": "Last observed run shown below is historical; scheduler is not a live web-page connection."
       }
     ]
+  },
+  "completionQueue": [
+    {
+      "id": "intelcia-d2t2",
+      "company": "Intelcia",
+      "role": "Stage PFE – D2T2",
+      "platform": "Indeed / Intelcia Careers",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=18018e79f12d8fba",
+      "cvUrl": "https://drive.google.com/file/d/1SgWUZ7iCO3CGAjsrFh8NzGrBaEx8NgdJ/view?usp=drivesdk",
+      "cvLabel": "Intelcia PFE (previously prepared)",
+      "cvNote": "Intelcia-specific earlier file exists; use the February 2027 version you actually uploaded.",
+      "status": "applied-user-reported",
+      "warning": "Applied to Intelcia Careers on Nov 8 according to user; do not submit twice.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email; direct employer form already user-confirmed"
+    },
+    {
+      "id": "warriors-fullstack",
+      "company": "WARRIORS TEAM",
+      "role": "Développeur Full Stack (stage)",
+      "platform": "Indeed",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=0e7a2585179fe5b1",
+      "cvUrl": "https://drive.google.com/file/d/1Ad2pZohIJqxfysNRogMgkLumA3vTLIaR/view?usp=drivesdk",
+      "cvLabel": "Full Stack PFE · Feb 2027",
+      "status": "needs-original-platform-check",
+      "warning": "Check offer availability and internship duration before submitting.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email"
+    },
+    {
+      "id": "digital-speak",
+      "company": "Digital Speak",
+      "role": "Stage Développeur Web / Mobile – Marrakech",
+      "platform": "Indeed",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=45da0704b27b275c",
+      "cvUrl": "https://drive.google.com/file/d/1tcIW4Nj-MwLhAgxCXZvImjO8rw77YhyS/view?usp=drivesdk",
+      "cvLabel": "Web & Mobile PFE · Feb 2027",
+      "status": "needs-original-platform-check",
+      "warning": "Confirm February start, duration, and ability to work in Marrakech.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email"
+    },
+    {
+      "id": "fgmed-nextjs",
+      "company": "FGMED",
+      "role": "Full Stack Next.js & PostgreSQL – paid internship",
+      "platform": "Indeed",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=67e2348cae6a9da8",
+      "cvUrl": "https://drive.google.com/file/d/1Q3A6RZWJCycIWpUYIPUosiATxozZE2Ib/view?usp=drivesdk",
+      "cvLabel": "Next.js/PostgreSQL PFE · Feb 2027",
+      "status": "needs-original-platform-check",
+      "warning": "Previously advertised immediate start; February availability may not match. Verify before applying.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email"
+    },
+    {
+      "id": "dcap-devops",
+      "company": "DCAP Digital",
+      "role": "DevOps Engineer",
+      "platform": "LinkedIn",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4450740534",
+      "cvUrl": "https://drive.google.com/file/d/1T95_zuQoX9aK5g0RP0wTbFpXfxYisWMT/view?usp=drivesdk",
+      "cvLabel": "DevOps PFE · Feb 2027",
+      "status": "needs-original-platform-check",
+      "warning": "Confirm that the position accepts PFE interns; standard engineering job title is not proof of an internship.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email"
+    },
+    {
+      "id": "inetum-devops",
+      "company": "Inetum",
+      "role": "Ingénieur DevOps Azure / Kubernetes / CI-CD (Junior à Senior)",
+      "platform": "LinkedIn / Inetum Careers",
+      "applyUrl": "https://www.inetum.com/fr/accueil/carrieres/c87354d9-c486-484c-a95d-2c1b9088b95e.html",
+      "originalListingUrl": "https://www.linkedin.com/jobs/view/4469161023",
+      "cvUrl": "https://drive.google.com/file/d/1SgWUZ7iCO3CGAjsrFh8NzGrBaEx8NgdJ/view?usp=drivesdk",
+      "cvLabel": "Azure & DevOps PFE · Feb 2027",
+      "letterUrl": "https://drive.google.com/file/d/1xC8UUIPZAGPyQ1LFZ4YKaP6qEs0E3Sdj/view?usp=drivesdk",
+      "status": "needs-original-platform-check",
+      "warning": "IMPORTANT: Official employer listing is CDI, not PFE. Apply only if seeking full-time work, or ask recruiting about a separate PFE opportunity. This letter explicitly requests PFE consideration.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email; employer page independently checked 2026-11-08",
+      "contractType": "CDI",
+      "pfeEligible": "Not advertised"
+    },
+    {
+      "id": "sofrecom-devops",
+      "company": "Sofrecom Maroc",
+      "role": "Stagiaire Développeur – Automatisation & DevOps",
+      "platform": "LinkedIn",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4477651751",
+      "cvUrl": "https://drive.google.com/file/d/1yxNf3exFt_VFm6gEX8IuBPr4VwmuCY0N/view?usp=drivesdk",
+      "cvLabel": "Automation & DevOps PFE · Feb 2027",
+      "status": "needs-original-platform-check",
+      "warning": "Job notice indicates immediate start; confirm February 2027 is accepted.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email"
+    },
+    {
+      "id": "cgi-cloud-pfe",
+      "company": "CGI",
+      "role": "Stage PFE Consultants (Cloud / Databricks / Talend / DevOps / BI)",
+      "platform": "LinkedIn",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4482169267",
+      "cvUrl": "https://drive.google.com/file/d/1FjM7ENUNPDnGKckzwHuXiSKYZgCVm_q1/view?usp=drivesdk",
+      "cvLabel": "Cloud & DevOps PFE · Feb 2027",
+      "status": "needs-original-platform-check",
+      "warning": "Choose Cloud / DevOps focus; avoid implying Databricks or Talend experience.",
+      "discoveredAt": "2026-11-08",
+      "source": "StagiairesMA automated completion email"
+    }
+  ],
+  "completionQueuePolicy": {
+    "source": "Connected Gmail: automated StagiairesMA messages titled « Complétez votre candidature »",
+    "lastReconciledAt": "2026-11-08",
+    "scope": "User-visible list of external application links and relevant CVs; email delivery to a listing intermediary does not confirm final submission to the employer",
+    "defaultStatus": "needs-original-platform-check",
+    "privacy": "No private message bodies, mail IDs, recipient addresses, or tokens are included"
   }
 }
