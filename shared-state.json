@@ -271,9 +271,20 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": null,
+    "updatedAt": "2026-11-08T09:00:00+01:00",
     "producer": "Maya / compatible daily backup search",
-    "offers": [],
+    "offers": [
+      {
+        "title": "Stage PFE Tech (also Cybersécurité, Data & IA) — Rabat · source: Joblia.ma",
+        "company": "AXA Global Business Services Maroc (AXA GBS)",
+        "role": "Stage PFE Tech",
+        "verifiedTitle": true,
+        "sourceUrl": "https://joblia.ma/offres-emploi/axa-gbs-lance-sa-campagne-de-stages-pfe-a-rabat/",
+        "source": "Joblia.ma (published 2026-11-04)",
+        "discoveredAt": "2026-11-08T09:00:00+01:00",
+        "note": "PFE campaign in Rabat for final-year students: Tech (develop and improve group applications, design, testing, release to production, documentation), plus Cybersécurité and Data & IA tracks. Apply by email to agbs-internship2026@axa.com with the chosen track in the subject. No deadline or start date stated; confirm the PFE period. Not found in Gmail as applied."
+      }
+    ],
     "rules": {
       "scope": "Only relevant 2027 Morocco PFE software engineering, Java/Spring Boot, React/full-stack, cloud/backend/DevOps opportunities not already in main offers",
       "required": [
