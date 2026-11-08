@@ -270,6 +270,20 @@
       "postingId": "beebay:stagiaire-dev-pfe",
       "postingUrl": "https://www.wearebeebay.com/careers/stagiaire-dev-pfe",
       "evidenceCategory": "Gmail sent label, attachment verified, delivery unconfirmed"
+    },
+    {
+      "recordId": "app-netopia-solutions-next-gen-2027-full-stack-java-react",
+      "company": "Netopia Solutions",
+      "role": "Full Stack Engineer Java / React – Next Gen 2027",
+      "channel": "form + email",
+      "status": "Sent",
+      "cv": "Software Engineering general PDF",
+      "language": "FR",
+      "date": "2026-11-08",
+      "source": "User-confirmed form submission; Gmail SENT and PDF attachment verified",
+      "postingId": "linkedin-post:7524050262198587392",
+      "postingUrl": "https://fr.linkedin.com/posts/netopia-solutions_netopiagroup-nextgen2027-pfe2027-activity-7524050262198587392-Kw_E",
+      "evidenceCategory": "User confirmation plus Gmail sent with attachment; employer receipt unknown"
     }
   ],
   "priority": [
@@ -329,7 +343,8 @@
     "8 Nov 2026: Beebay, Netopia, Adkomo and conditional FGMED added from public originals; Softnovation/Qualitiz closed listings excluded. Verified paid/pre-hire claims are descriptive, not guaranteed. Private Firebase checked statuses not accessible to public audit.",
     "PFE Desk adaptation on 8 November 2026: friend-template identities, email addresses, Drive folder and ChatGPT Sites hosting NOT reused; existing Mohssine GitHub Pages, Google Drive CVs and private Firebase tracking preserved. New table, activity, analytics, deadlines, owner-only note editor and four task schedules added. Calendar searches found no relevant events.",
     "Verification correction: Cnexia 10 November dates were previously listed but not independently confirmed; excluded from verified-deadline analytics pending original-source verification.",
-    "8 Nov 2026: Sent Beebay direct-email application via connected Gmail, tailored Beebay PDF attached, Gmail returned SENT label; employer receipt not independently confirmed. Corrected listing method from inferred website upload to official mailto."
+    "8 Nov 2026: Sent Beebay direct-email application via connected Gmail, tailored Beebay PDF attached, Gmail returned SENT label; employer receipt not independently confirmed. Corrected listing method from inferred website upload to official mailto.",
+    "8 Nov 2026: Netopia Next Gen 2027 form submitted according to user success screen. Required follow-up CV email sent via connected Gmail (SENT confirmed, PDF attached), selected Full Stack Engineer Java / React. Shortlisting and test invitation not yet confirmed."
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
@@ -779,24 +794,27 @@
       "paid": true,
       "preHire": true,
       "submission": {
-        "status": "Not verified",
-        "evidence": null,
-        "recordedAt": null
+        "status": "Form user-confirmed + CV email sent (Gmail verified); employer receipt not independently confirmed",
+        "evidence": "Form success screen reported by user on 2026-11-08; Gmail SENT message and attached PDF confirmed. Shortlisting not confirmed.",
+        "recordedAt": "2026-11-08",
+        "submittedCv": "Mohssine_Echlaihi_PFE.pdf",
+        "sourceType": "verified-sent-mail",
+        "selectedRole": "Full Stack Engineer Java / React"
       },
       "submissionEvidenceRule": "Private applied marks require user action; public data does not verify submission.",
-      "applicationMethodCertainty": "Original listing checked on 2026-11-08; actual completion unverified",
-      "cvUsage": "Generic CV unless a separate upload is verified",
+      "applicationMethodCertainty": "User confirmed form success screen on 2026-11-08. Follow-up instruction explicitly required emailing CV to official Netopia internship mailbox. Connected Gmail SENT and PDF attachment verified on 2026-11-08.",
+      "cvUsage": "General Software Engineering PDF emailed as required after completing the form.",
       "tailoredCvDraftUrl": null,
       "benefitEvidenceUrl": "https://fr.linkedin.com/posts/netopia-solutions_netopiagroup-nextgen2027-pfe2027-activity-7524050262198587392-Kw_E",
       "company": "Netopia Solutions",
       "title": "PFE Next Gen 2027",
-      "role": "IT / Digital / Software Engineering",
+      "role": "Full Stack Engineer Java / React (Netopia Next Gen 2027)",
       "url": "https://fr.linkedin.com/posts/netopia-solutions_netopiagroup-nextgen2027-pfe2027-activity-7524050262198587392-Kw_E",
       "postingId": "linkedin-post:7524050262198587392",
       "sourceLabel": "Official Netopia LinkedIn post",
-      "applicationMethod": "externalFormUnverified",
-      "methodLabel": "Application form linked from official post",
-      "applicationInstructions": "Form linked from official Netopia announcement; confirm whether it requires a separate CV upload. Prior 2026 PFA outreach is not this PFE 2027 campaign.",
+      "applicationMethod": "formThenEmail",
+      "methodLabel": "Form submitted · CV email sent",
+      "applicationInstructions": "Form submitted successfully; required subsequent CV email sent on 2026-11-08. No further application required unless recruiter requests it. Await possible shortlist invitation to online technical assessment.",
       "recommendedCvId": "software",
       "cvMasterId": "software",
       "tailoredCvUrl": null,
@@ -976,7 +994,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-08T15:55:21.145Z",
+  "lastSyncedAt": "2026-11-08T16:05:48.505Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
