@@ -1353,6 +1353,13 @@
     "lastReconciledAt": "2026-11-08",
     "scope": "User-visible list of external application links and relevant CVs; email delivery to a listing intermediary does not confirm final submission to the employer",
     "defaultStatus": "needs-original-platform-check",
-    "privacy": "No private message bodies, mail IDs, recipient addresses, or tokens are included"
+    "privacy": "No private message bodies, mail IDs, recipient addresses, or tokens are included",
+    "statusTracking": {
+      "manual": "Owner-only Firestore privateApplications checkbox state, keyed by hash of canonical listing URL; applied and expired mutually exclusive; notes preserved using merges.",
+      "baseline": "Public completionQueue.status is a source marker; StagiairesMA reminders are not employer verification.",
+      "verifiedEmail": "Evidence from a genuinely read, role-specific employer email may populate the public-safe completionQueue[].emailEvidence={sourceType:'verified-employer-email',status,verifiedAt,evidenceType,summary}; verified evidence displays over a private manual mark but does not overwrite or read Firestore private status or notes.",
+      "invalidEvidence": "Never infer application completion from generic reminders, job alerts, registration, or no reply; do not treat rejection as expiry.",
+      "lastPolicyUpdated": "2026-11-08"
+    }
   }
 }
