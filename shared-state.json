@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-09T22:27:48.217+00:00",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
@@ -423,6 +423,67 @@
       "evidenceCategory": "Verified employer automated confirmation; recruiter review pending",
       "applicationStatusUrl": "https://socgen.taleo.net/careersection/sgcareers/profile.ftl",
       "notes": "2027-01-06 start advertised. AI agent/incident management role. No interview or offer yet."
+    },
+    {
+      "recordId": "app-axa-campagne-stages-pfe-pfa-2027-2026-30448",
+      "company": "AXA",
+      "role": "Campagne Stages PFE & PFA 2027",
+      "postingId": "2026-30448",
+      "channel": "AXA careers portal (iCIMS)",
+      "status": "Acknowledged — application submitted",
+      "date": "2026-11-09",
+      "source": "AXA employer application receipt, 9 Nov 2026",
+      "evidenceCategory": "Verified employer automated application acknowledgment; review pending",
+      "applicationStatusUrl": "https://careers-fr-axa.icims.com/",
+      "notes": "Distinct from AXA talent-network registration and AXA Développeur IT vacancy."
+    },
+    {
+      "recordId": "app-axa-developpeur-it-2026-23200",
+      "company": "AXA",
+      "role": "Développeur IT",
+      "postingId": "2026-23200",
+      "channel": "AXA careers portal (iCIMS)",
+      "status": "Acknowledged — application submitted (contract/PFE fit unverified)",
+      "date": "2026-11-09",
+      "source": "AXA employer application receipt, 9 Nov 2026",
+      "evidenceCategory": "Verified employer automated application acknowledgment; PFE eligibility unverified",
+      "applicationStatusUrl": "https://careers-fr-axa.icims.com/",
+      "notes": "Not confirmed to be a PFE internship; separate from AXA PFE/PFA campaign."
+    },
+    {
+      "recordId": "app-sdg-group-unspecified-role-2026-11-09",
+      "company": "SDG Group",
+      "role": "Role not specified in employer acknowledgment",
+      "channel": "Employer recruiting platform (Teamtailor)",
+      "status": "Acknowledged — exact vacancy unverified",
+      "date": "2026-11-09",
+      "source": "SDG Group employer acknowledgment, 9 Nov 2026",
+      "evidenceCategory": "Verified employer application receipt; posting identity not provided",
+      "notes": "Do not merge with a specific SDG vacancy until exact role is confirmed."
+    },
+    {
+      "recordId": "app-candilia-stage-pfe-fullstack-ia-linkedin-4477161148",
+      "company": "Candilia",
+      "role": "Stage PFE : Développeur(se) Full Stack IA",
+      "postingId": "linkedin:4477161148",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4477161148/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-09",
+      "source": "LinkedIn application sent confirmation, 9 Nov 2026",
+      "evidenceCategory": "Verified LinkedIn sending confirmation; not employer acknowledgment"
+    },
+    {
+      "recordId": "app-btechnologie-stage-pfe-telecom-it-linkedin-4485997484",
+      "company": "Btechnologie",
+      "role": "Stage PFE - Télécom & IT",
+      "postingId": "linkedin:4485997484",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4485997484/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-09",
+      "source": "LinkedIn application sent confirmation, 9 Nov 2026",
+      "evidenceCategory": "Verified LinkedIn sending confirmation; not employer acknowledgment"
     }
   ],
   "priority": [
@@ -1187,12 +1248,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T21:49:12.243+00:00",
+    "lastVerifiedAt": "2026-11-09T22:27:48.217+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "73 overlapping received/non-promotional messages after 8 Nov (including sent where applicable); 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 48 targeted recruiting matches after 7 Nov. Compared against previous successful 9 Nov 20:52:49 audit. Société Générale Stage PFE Software Engineer requisition 26000NJA acknowledgment verified; distinct record already present in latest shared-state.json, so no duplicate. AXA Talent Network welcome is registration only, not application. No new completion notices or urgent actions. Historical aggregate totals not recounted; countsAuditedAt remains 7 Nov.",
+    "scope": "85 non-promotional messages after 8 Nov; 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 57 targeted recruiting matches after 7 Nov. Compared against prior successful audit at 2026-11-09 21:49:12 Africa/Casablanca. Read two AXA employer acknowledgments (distinct requisitions), SDG Group acknowledgment without specified role, and two LinkedIn sent-application confirmations (Candilia and Btechnologie). No new StagiairesMA completion notice, interview, assessment, rejection, or deadline verified. Historical aggregate totals NOT recounted; countsAuditedAt remains 7 Nov.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (overlapping non-promotional received, sent attachment metadata, StagiairesMA completion notices, targeted recruiting queries) and batch_read_email for exact new employer acknowledgment and AXA registration notice.",
+    "method": "Connected Gmail search_emails (overlapping received, sent with attachment metadata, StagiairesMA completion notices, targeted recruiting terms), plus read_email for five newly identified confirmations; GitHub fetch_file and update_file.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1276,7 +1337,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T21:49:12.243+00:00",
+  "lastSyncedAt": "2026-11-09T22:27:48.217+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
