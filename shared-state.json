@@ -1001,12 +1001,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T10:42:12.099+00:00",
+    "lastVerifiedAt": "2026-11-09T11:57:31.772+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "9 Nov 2026 audit: 14 sent messages (attachment filenames available), 9 StagiairesMA intermediary completion notices, 42 targeted recruiting matches; received non-promotional messages checked with overlapping window. No newly dated employer/PFE messages or completion notices after previous audit. No aggregate recount; countsAuditedAt remains 7 Nov 2026.",
+    "scope": "9 Nov 2026: 48 received/non-sent non-promotional messages, 14 sent messages with attachment metadata, 9 StagiairesMA completion notices, plus targeted recruiting search with overlapping earlier context. No PFE-relevant messages newer than prior successful verification at 10:42:12 Africa/Casablanca; latest received message at 10:18 was unrelated. Existing application and completion records preserved. No aggregate recount; countsAuditedAt remains 7 Nov 2026.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: overlapping searches after 7 Nov for non-promotional received mail, sent mail with attachment metadata, StagiairesMA completion subjects and targeted recruitment terms; all four searches completed without pagination.",
+    "method": "Connected Gmail search_emails: non-promotional received mail after 8 Nov, sent mail after 7 Nov with attachment metadata, StagiairesMA external-completion subjects after 7 Nov, and targeted recruitment terms after 7 Nov; four completed unpaginated searches.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1090,7 +1090,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T10:42:12.099+00:00",
+  "lastSyncedAt": "2026-11-09T11:57:31.772+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
