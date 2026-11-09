@@ -358,6 +358,29 @@
       "date": "2026-11-09",
       "source": "Connected Gmail SENT message, outgoing PFE outreach",
       "evidenceCategory": "Verified sent email with PDF CV attachment; employer receipt unconfirmed"
+    },
+    {
+      "recordId": "app-managem-stage-pfe-2027-req888",
+      "company": "Managem",
+      "role": "Offre de stage PFE 2027",
+      "postingId": "req888",
+      "channel": "employer recruitment portal",
+      "status": "Acknowledged",
+      "date": "2026-11-09",
+      "source": "Employer recruitment confirmation",
+      "evidenceCategory": "Employer-platform acknowledgement of exact req888 application; review pending"
+    },
+    {
+      "recordId": "app-sofrecom-maroc-stagiaire-full-stack-linkedin-4483544158",
+      "company": "Sofrecom Maroc",
+      "role": "Stagiaire Full Stack (F/H) – 6 mois",
+      "postingId": "linkedin:4483544158",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4483544158/",
+      "channel": "LinkedIn application",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-09",
+      "source": "LinkedIn application submission confirmation",
+      "evidenceCategory": "Third-party platform confirmation of exact posting; no employer acknowledgement"
     }
   ],
   "priority": [
@@ -1100,12 +1123,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T17:54:04.383+00:00",
+    "lastVerifiedAt": "2026-11-09T18:24:31.086+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "57 non-sent non-promotional received messages after 8 Nov 2026; 17 sent messages after 6 Nov 2026 with attachment metadata; 9 StagiairesMA completion notices after 6 Nov; 35 targeted recruiting matches after 8 Nov. Compared against successful 17:13:15 Africa/Casablanca audit. No new PFE employer action since that audit; BCG X assessment confirmation and torck questionnaire previously tracked. Counts not recounted; independent countsAuditedAt unchanged.",
+    "scope": "62 received non-sent non-promotional messages after 8 Nov; 14 sent messages after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; targeted recruiting search after 8 Nov. Compared with prior successful audit 9 Nov 17:54:04 Africa/Casablanca. New exact-role Managem req888 employer acknowledgement and Sofrecom Full Stack LinkedIn application confirmation; Ostorlab intermediary reminder repeated and did not reopen completion queue. Aggregate counts not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: overlapping received, sent with attachment metadata, targeted recruiting and StagiairesMA external-completion searches; all result pages exhausted.",
+    "method": "Connected Gmail search_emails overlapping received, sent with attachment metadata, targeted recruiting, and StagiairesMA completion notices; read exact new application confirmations and intermediary notice.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1189,7 +1212,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T17:54:04.383+00:00",
+  "lastSyncedAt": "2026-11-09T18:24:31.086+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
