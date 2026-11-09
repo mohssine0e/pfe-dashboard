@@ -325,14 +325,15 @@
       "company": "torck GmbH",
       "role": "Graduate Internship software development (m/f) Morocco",
       "channel": "LinkedIn Easy Apply",
-      "status": "Applied — user reported",
+      "status": "Applied via LinkedIn — ATS questionnaire completion unverified",
       "cv": "Not independently verified (LinkedIn)",
       "language": "EN/DE",
       "date": "2026-11-08",
-      "source": "User-reported completed LinkedIn application, no platform confirmation independently verified",
+      "source": "LinkedIn application sent confirmation dated 8 Nov 2026",
       "postingId": "linkedin:4487295321",
       "postingUrl": "https://www.linkedin.com/jobs/view/4487295321/",
-      "evidenceCategory": "User report — completed LinkedIn application"
+      "evidenceCategory": "Verified LinkedIn application confirmation; ATS form completion not verified",
+      "notes": "LinkedIn application confirmed by LinkedIn email dated 8 Nov 2026; HR questionnaire invited 9 Nov, user requested help and viewed verification code, but final form submission is not confirmed."
     },
     {
       "recordId": "app-intelcia-d2t2-2027",
@@ -364,11 +365,13 @@
       "company": "Managem",
       "role": "Offre de stage PFE 2027",
       "postingId": "req888",
-      "channel": "employer recruitment portal",
-      "status": "Acknowledged",
+      "channel": "Managem careers portal (Cornerstone)",
+      "status": "Acknowledged — application submitted",
       "date": "2026-11-09",
-      "source": "Employer recruitment confirmation",
-      "evidenceCategory": "Employer-platform acknowledgement of exact req888 application; review pending"
+      "source": "Managem recruitment email: Confirmation de candidature - Offre de stage PFE 2027, 9 Nov",
+      "evidenceCategory": "Verified employer receipt",
+      "applicationStatusUrl": "https://managem.csod.com/ux/ats/careersite/4/home/requisition/888?c=managem",
+      "notes": "Employer acknowledged req888; no screening decision yet."
     },
     {
       "recordId": "app-sofrecom-maroc-stagiaire-full-stack-linkedin-4483544158",
@@ -376,11 +379,12 @@
       "role": "Stagiaire Full Stack (F/H) – 6 mois",
       "postingId": "linkedin:4483544158",
       "postingUrl": "https://www.linkedin.com/jobs/view/4483544158/",
-      "channel": "LinkedIn application",
+      "channel": "LinkedIn",
       "status": "Application sent via LinkedIn — employer receipt unverified",
       "date": "2026-11-09",
-      "source": "LinkedIn application submission confirmation",
-      "evidenceCategory": "Third-party platform confirmation of exact posting; no employer acknowledgement"
+      "source": "LinkedIn email: Your application was sent to Sofrecom Maroc, 9 Nov 2026",
+      "evidenceCategory": "Verified LinkedIn sending confirmation",
+      "notes": "Separate from Sofrecom PHP and DevOps vacancies; do not conflate their statuses."
     },
     {
       "recordId": "app-capgemini-software-developer-intern-2026-10-21",
@@ -400,20 +404,35 @@
       "role": "Stage PFE - R&D Software Engineer",
       "postingId": "26000NJV",
       "channel": "employer recruitment portal (Taleo)",
-      "status": "Acknowledged",
+      "status": "Acknowledged — application submitted",
       "date": "2026-11-09",
-      "source": "Employer recruitment confirmation",
-      "evidenceCategory": "Employer automated acknowledgement of exact application; recruiter review pending; no interview or deadline confirmed"
+      "source": "Employer email: Your application for the position of Stage PFE - R&D Software Engineer-26000NJV, 9 Nov 2026",
+      "evidenceCategory": "Verified employer automated confirmation; recruiter review pending",
+      "applicationStatusUrl": "https://socgen.taleo.net/careersection/sgcareers/profile.ftl",
+      "notes": "Six-month paid R&D Software Engineer internship. No interview or employer decision yet."
+    },
+    {
+      "recordId": "app-societe-generale-stage-pfe-software-engineer-26000nja",
+      "company": "Société Générale (SG African Technologies & Services)",
+      "role": "Stage PFE - Software Engineer (AI incident management)",
+      "postingId": "26000NJA",
+      "channel": "employer recruitment portal (Taleo)",
+      "status": "Acknowledged — application submitted",
+      "date": "2026-11-09",
+      "source": "Employer email: Your application for the position of Stage PFE - Software Engineer-26000NJA, 9 Nov 2026",
+      "evidenceCategory": "Verified employer automated confirmation; recruiter review pending",
+      "applicationStatusUrl": "https://socgen.taleo.net/careersection/sgcareers/profile.ftl",
+      "notes": "2027-01-06 start advertised. AI agent/incident management role. No interview or offer yet."
     }
   ],
   "priority": [
     {
       "rank": 1,
       "company": "torck GmbH",
-      "task": "Complete required HR questionnaire for Graduate Internship software development (Morocco)",
-      "reason": "Employer requested an additional form; applications without it will not be considered. Prior application exists; do not reapply.",
+      "task": "Confirm torck HR questionnaire submission (deadline 13 Nov), or complete it",
+      "reason": "LinkedIn application sent; ATS form invitation and verification code received. No final ATS screening form submission confirmation found.",
       "date": "2026-11-13",
-      "certainty": "Verified employer email 9 Nov; completion unverified",
+      "certainty": "Verified LinkedIn application; ATS questionnaire completion unverified",
       "kind": "unfinished",
       "actionLinks": [
         {
@@ -447,9 +466,31 @@
     },
     {
       "rank": 3,
-      "company": "Ostorlab / CGI / Sofrecom / FGMED",
+      "company": "New PFE applications",
+      "task": "Track Société Générale (26000NJV and 26000NJA), Managem (req888), and Sofrecom Full Stack — await review",
+      "reason": "Both Société Générale roles and Managem acknowledged on 9 Nov. LinkedIn confirms Sofrecom Full Stack submission. No interview invitations verified.",
+      "certainty": "Employer / platform confirmation emails verified",
+      "kind": "followup",
+      "actionLinks": [
+        {
+          "label": "Société Générale application profile",
+          "url": "https://socgen.taleo.net/careersection/sgcareers/profile.ftl"
+        },
+        {
+          "label": "Managem requisition 888",
+          "url": "https://managem.csod.com/ux/ats/careersite/4/home/requisition/888?c=managem"
+        },
+        {
+          "label": "Sofrecom Full Stack posting",
+          "url": "https://www.linkedin.com/jobs/view/4483544158/"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "company": "Ostorlab / CGI / Sofrecom DevOps / FGMED",
       "task": "Verify actual employer application forms, PFE duration and start-date compatibility before completing remaining steps",
-      "reason": "Platform-generated completion prompts are not employer confirmations. FGMED advertises paid internship but immediate-start mismatch remains unverified.",
+      "reason": "Platform-generated completion prompts are not employer confirmations. FGMED advertises paid internship but immediate-start mismatch remains unverified. Sofrecom Full Stack application is separately confirmed sent via LinkedIn; its DevOps listing remains unverified.",
       "certainty": "Platform notices verified; employer-side completion not verified",
       "kind": "unfinished",
       "actionLinks": [
@@ -472,7 +513,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "company": "Maersk / Intelcia / Inetum",
       "task": "Monitor existing applications without duplicate submissions",
       "reason": "Employer acknowledgments already exist; no new interview invitation verified.",
@@ -490,7 +531,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "company": "BCG X",
       "task": "Assessment completed — await BCG X review",
       "reason": "Completion confirmed by CodeSignal email on 9 Nov and by the candidate. No passing score, employer decision or new assessment step verified.",
