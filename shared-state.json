@@ -365,43 +365,45 @@
     {
       "rank": 1,
       "company": "BCG X",
-      "task": "Check and complete CodeSignal assessment",
-      "reason": "Invited Nov 4; seven-day deadline mentioned. Confirm whether already completed.",
+      "task": "Complete or verify completion of Software Engineering CodeSignal assessment",
+      "reason": "Official assessment invitation specifies a 70-minute proctored test and an explicit deadline; completion not verified.",
       "date": "2026-11-11",
-      "certainty": "From employer's 7-day rule; verify email",
+      "certainty": "Verified invitation; exact time intentionally omitted from public summary",
       "kind": "assessment"
     },
     {
       "rank": 2,
-      "company": "Cnexia",
-      "task": "Review and apply to Cloud & DevOps, Architecture and Full-Stack positions",
-      "reason": "Previous tracker listed a Nov 10 closing date; verify live listings.",
-      "date": "2026-11-10",
-      "certainty": "Unverified old tracker deadline",
-      "kind": "deadline"
+      "company": "torck GmbH",
+      "task": "Complete required HR questionnaire for Graduate Internship software development (Morocco)",
+      "reason": "Employer requested an additional form; applications without it will not be considered. Prior application exists; do not reapply.",
+      "date": "2026-11-13",
+      "certainty": "Verified employer email 9 Nov; completion unverified",
+      "kind": "unfinished"
     },
     {
       "rank": 3,
-      "company": "Maersk",
-      "task": "Review IT end-of-studies internship listing",
-      "reason": "The linked Maersk IT listing displays 15 November 2027, not 2026. Verify with employer because the date is unusually far ahead.",
-      "date": "2027-11-15",
-      "certainty": "Listing text as checked 7 Nov 2026; employer confirmation recommended",
+      "company": "Cnexia",
+      "task": "Check live availability and submission status for Cloud & DevOps, Architecture and Full-Stack PFE roles",
+      "reason": "Previously recorded Nov 10 closing date is not independently verified. One Cloud & DevOps submission was reported; avoid duplicate applications.",
+      "date": "2026-11-10",
+      "certainty": "Unverified tracker deadline",
       "kind": "deadline"
     },
     {
       "rank": 4,
-      "company": "Coface / Sofrecom / Xcelerit / Trusted Advisors",
-      "task": "Finish or verify outstanding website application steps",
-      "reason": "Application completion prompts exist in Gmail; not confirmed completed.",
+      "company": "Ostorlab / CGI / Sofrecom / FGMED",
+      "task": "Verify actual employer application forms, PFE duration and start-date compatibility before completing remaining steps",
+      "reason": "Platform-generated completion prompts are not employer confirmations. FGMED advertises paid internship but immediate-start mismatch remains unverified.",
+      "certainty": "Platform notices verified; employer-side completion not verified",
       "kind": "unfinished"
     },
     {
       "rank": 5,
-      "company": "Maroc Telecom / Safran / Innolia",
-      "task": "Check delivery failures before following up",
-      "reason": "Gmail returned two non-delivery reports and one forwarding failure.",
-      "kind": "bounce"
+      "company": "Maersk / Intelcia / Inetum",
+      "task": "Monitor existing applications without duplicate submissions",
+      "reason": "Employer acknowledgments already exist; no new interview invitation verified.",
+      "certainty": "Employer acknowledgment emails verified",
+      "kind": "followup"
     }
   ],
   "followUpPolicy": {
