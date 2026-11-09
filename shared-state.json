@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-09T22:27:48.217+00:00",
+  "updatedAt": "2026-11-09T22:27:54.220+00:00",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
@@ -449,17 +449,6 @@
       "evidenceCategory": "Verified employer automated application acknowledgment; PFE eligibility unverified",
       "applicationStatusUrl": "https://careers-fr-axa.icims.com/",
       "notes": "Not confirmed to be a PFE internship; separate from AXA PFE/PFA campaign."
-    },
-    {
-      "recordId": "app-sdg-group-unspecified-role-2026-11-09",
-      "company": "SDG Group",
-      "role": "Role not specified in employer acknowledgment",
-      "channel": "Employer recruiting platform (Teamtailor)",
-      "status": "Acknowledged — exact vacancy unverified",
-      "date": "2026-11-09",
-      "source": "SDG Group employer acknowledgment, 9 Nov 2026",
-      "evidenceCategory": "Verified employer application receipt; posting identity not provided",
-      "notes": "Do not merge with a specific SDG vacancy until exact role is confirmed."
     },
     {
       "recordId": "app-candilia-stage-pfe-fullstack-ia-linkedin-4477161148",
@@ -1248,9 +1237,9 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T22:27:48.217+00:00",
+    "lastVerifiedAt": "2026-11-09T22:27:54.220+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "85 non-promotional messages after 8 Nov; 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 57 targeted recruiting matches after 7 Nov. Compared against prior successful audit at 2026-11-09 21:49:12 Africa/Casablanca. Read two AXA employer acknowledgments (distinct requisitions), SDG Group acknowledgment without specified role, and two LinkedIn sent-application confirmations (Candilia and Btechnologie). No new StagiairesMA completion notice, interview, assessment, rejection, or deadline verified. Historical aggregate totals NOT recounted; countsAuditedAt remains 7 Nov.",
+    "scope": "85 non-promotional messages after 8 Nov; 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 57 targeted recruiting matches after 7 Nov. Compared against prior successful audit at 2026-11-09 21:49:12 Africa/Casablanca. Read two AXA employer acknowledgments (distinct requisitions), SDG Group acknowledgment with unverified role (excluded from application rows), and two LinkedIn sent-application confirmations (Candilia and Btechnologie). No new StagiairesMA completion notice, interview, assessment, rejection, or deadline verified. Historical aggregate totals NOT recounted; countsAuditedAt remains 7 Nov.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
     "method": "Connected Gmail search_emails (overlapping received, sent with attachment metadata, StagiairesMA completion notices, targeted recruiting terms), plus read_email for five newly identified confirmations; GitHub fetch_file and update_file.",
@@ -1337,7 +1326,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T22:27:48.217+00:00",
+  "lastSyncedAt": "2026-11-09T22:27:54.220+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
