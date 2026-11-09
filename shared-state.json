@@ -425,7 +425,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-08T09:48:47+00:00",
+    "updatedAt": "2026-11-09T10:00:00+01:00",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -437,18 +437,6 @@
         "source": "Joblia.ma (published 2026-11-04)",
         "discoveredAt": "2026-11-08T09:00:00+01:00",
         "note": "PFE campaign in Rabat for final-year students: Tech (develop and improve group applications, design, testing, release to production, documentation), plus Cybersécurité and Data & IA tracks. Apply by email to agbs-internship2026@axa.com with the chosen track in the subject. No deadline or start date stated; confirm the PFE period. Not found in Gmail as applied."
-      },
-      {
-        "title": "Software, Cloud & Test Automation PFE 2027",
-        "company": "Bertrandt Group",
-        "role": "Software engineering, cloud, CI/CD and test automation",
-        "verifiedTitle": true,
-        "sourceUrl": "https://ma.linkedin.com/jobs/view/software-cloud-test-automation-pfe-2027-at-bertrandt-group-4483224231",
-        "postingId": "4483224231",
-        "source": "LinkedIn public employer job listing",
-        "discoveredAt": "2026-11-08T09:48:47+00:00",
-        "location": "Rabat, Morocco",
-        "note": "High fit: web/backend/frontend, Java, Python, React, Angular, AWS/Azure, Docker, CI/CD and automation. English CV requested. Separate upload field and duration not confirmed; do not claim submission."
       },
       {
         "title": "Research Assistant - PFE 2027",
@@ -477,6 +465,17 @@
         "verifiedDeadline": "2027-01-10",
         "deadlineSourceUrl": "https://joblia.ma/offres-emploi/orange-maroc-recrute-ses-stagiaires-pfe-2027/",
         "note": "Strong full-stack fit: paid five-month PFE beginning 1 February 2027, with web front-end/back-end/full-stack among tracks. Deadline 10 January 2027 per two public reposts; official Orange application form and separate CV upload have not been independently confirmed. Use generic CV until confirmed."
+      },
+      {
+        "title": "End-of-Studies Project (PFE) Internship Opportunities (Onsite Casablanca) · source: Effyis Group careers",
+        "company": "Effyis Group",
+        "role": "PFE Internship (Development or DevOps)",
+        "verifiedTitle": true,
+        "sourceUrl": "https://www.effyisgroup.com/careers/pfe-internship",
+        "source": "Effyis Group official careers page (checked 2026-11-09; page undated)",
+        "discoveredAt": "2026-11-09T10:00:00+01:00",
+        "location": "Casablanca, Morocco (onsite)",
+        "note": "Fintech/banking PFE for final-year engineering students. Tracks: Development (backend, REST APIs, web/mobile), Data, and DevOps (CI/CD, Docker & Kubernetes, cloud, security). Apply via the form on the page with CV upload; pick the role with 'Internship' appended (e.g. 'DevOps Internship' or 'Development Internship'). No deadline, duration or start date stated; the page is undated, so confirm the 2027 intake. Not found in Gmail as applied."
       }
     ],
     "rules": {
