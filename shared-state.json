@@ -381,6 +381,18 @@
       "date": "2026-11-09",
       "source": "LinkedIn application submission confirmation",
       "evidenceCategory": "Third-party platform confirmation of exact posting; no employer acknowledgement"
+    },
+    {
+      "recordId": "app-capgemini-software-developer-intern-2026-10-21",
+      "company": "Capgemini Engineering",
+      "role": "Software Developer Intern",
+      "channel": "employer career website (SuccessFactors)",
+      "status": "Application received — under review",
+      "date": "2026-10-21",
+      "source": "Capgemini Group – New Job Application Received email dated 21 Oct 2026",
+      "evidenceCategory": "Verified employer application acknowledgment; exact requisition ID not stated in email",
+      "notes": "Existing Capgemini career account created 21 Oct 2026. Do not repeat the same Software Developer Intern application; compare requisition ID in candidate profile before any new submission.",
+      "applicationStatusUrl": "https://career5.successfactors.eu/career?company=capgemitecP3&clientId=jobs2web&lang=en_US&navBarLevel=MY_PROFILE"
     }
   ],
   "priority": [
