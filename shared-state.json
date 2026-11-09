@@ -425,7 +425,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-09T10:00:00+01:00",
+    "updatedAt": "2026-11-09T10:52:12+00:00",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -476,6 +476,23 @@
         "discoveredAt": "2026-11-09T10:00:00+01:00",
         "location": "Casablanca, Morocco (onsite)",
         "note": "Fintech/banking PFE for final-year engineering students. Tracks: Development (backend, REST APIs, web/mobile), Data, and DevOps (CI/CD, Docker & Kubernetes, cloud, security). Apply via the form on the page with CV upload; pick the role with 'Internship' appended (e.g. 'DevOps Internship' or 'Development Internship'). No deadline, duration or start date stated; the page is undated, so confirm the 2027 intake. Not found in Gmail as applied."
+      },
+      {
+        "title": "OFFRE DE STAGE PFE – SOFTWARE ENGINEERING | FINTECH & MONÉTIQUE",
+        "company": "NUPSOL",
+        "role": "Software Engineering / Java Spring Boot / React / Backend / DevOps",
+        "verifiedTitle": true,
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/offre-de-stage-pfe-%E2%80%93-software-engineering-fintech-mon%C3%A9tique-at-nupsol-4485815122",
+        "postingId": "linkedin:4485815122",
+        "source": "NUPSOL original LinkedIn job posting",
+        "location": "Casablanca, Morocco",
+        "discoveredAt": "2026-11-09T10:52:12+00:00",
+        "checkedAt": "2026-11-09T10:52:12+00:00",
+        "applicationMethod": "Email CV and brief introduction to company address stated in original listing",
+        "dedicatedCvUploadVerified": false,
+        "cvGuidance": "Email application: use approved generic CV unless preparing a separate company-specific copy; do not modify masters or assert submission.",
+        "durationNote": "PFE duration according to student's institution; confirm acceptance of 5–6 months before applying.",
+        "note": "Excellent fit: Java/JEE, Spring Boot, REST APIs, React/MERN, Docker, CI/CD, SOLID, testing. Original employer listing does not specify fixed deadline, 2027 intake date, or a separate PDF upload form."
       }
     ],
     "rules": {
