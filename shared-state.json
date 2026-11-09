@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
@@ -985,12 +985,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T08:06:23.145+00:00",
+    "lastVerifiedAt": "2026-11-09T08:30:00.156+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "60 recent non-promotional non-sent messages, 14 sent messages with attachment metadata, and 9 external-completion notices; all searches fully paginated (no next page). No messages newer than previous successful audit at 2026-11-09T06:53:20.457+00:00. Historical aggregate totals not recounted; countsAuditedAt remains 2026-11-07.",
-    "staleAfterHours": 2,
+    "scope": "Connected Gmail queries: non-sent non-promotional messages since 7 Nov 2026 (55 returned, no next page); sent PFE/candidature/internship since 7 Nov (14 returned, no next page, attachment filenames); targeted application/assessment/rejection/delivery messages since 8 Nov (31 returned, no next page). Message dates span earlier than this audit; no new substantive employer reply or new bounce verified. Historical metrics not fully recounted.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: non-promotional non-sent after 2026-11-07 (60), sent after 2026-11-07 (14; attachment metadata), targeted external-completion subject search after 2026-11-01 (9); overlapping prior successful audit.",
+    "method": "Connected Gmail search_emails, three successful fully paginated searches; message metadata/snippets and outgoing attachment filenames reviewed. No private mailbox content published.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -998,64 +998,64 @@
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
-      "url": "https://ma.linkedin.com/jobs/view/graduate-internship-software-development-m-f-morocco-at-torck-gmbh-4487295321",
-      "checkedAt": "2026-11-08T08:50:06+00:00",
+      "url": "https://ma.linkedin.com/jobs/view/software-cloud-test-automation-pfe-2027-at-bertrandt-group-4483224231",
+      "checkedAt": "2026-11-09T08:30:00.156+00:00",
       "status": "ok",
-      "details": "Public indexed LinkedIn jobs checked. Bertrandt Group 'Software, Cloud & Test Automation PFE 2027' and Oracle 'Research Assistant - PFE 2027' verified as public listings; Bertrandt requests an English CV. Other Bertrandt specializations also observed; not added as duplicate roles.",
+      "details": "Public LinkedIn PFE 2027 searches; Bertrandt Software, Cloud & Test Automation remains a verified high-fit listing, previously identified; no independently verified new unique high-fit employer mailto.",
       "accessIssue": null
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
       "url": "https://ma.indeed.com/q-pfe-informatique-2027-emplois.html",
-      "checkedAt": "2026-11-08T08:50:06+00:00",
+      "checkedAt": "2026-11-09T08:30:00.156+00:00",
       "status": "no_results",
-      "details": "Targeted public web search for 2027 PFE Java/IT listings on Indeed Morocco returned no independently verified exact matching posting in this pass.",
+      "details": "Targeted Indeed Morocco PFE Java/Spring Boot 2027 public indexed search; no newly verified unique matching posting.",
       "accessIssue": null
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
-      "url": "https://www.rekrute.com/emploi-stage-en-developpement-informatique",
-      "checkedAt": "2026-11-08T08:50:06+00:00",
-      "status": "no_results",
-      "details": "Targeted public web search for 2027 PFE software roles on ReKrute yielded no new independently verified exact matching posting in this pass.",
+      "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
+      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "status": "ok",
+      "details": "Cnexia software architecture PFE listing cross-checked against Elkhadma mirror; deadline remains 10 Nov 2026. Saved-profile application method; not a direct email.",
       "accessIssue": null
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
-      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7681-stage-pfe-data-ia-it-d2t2",
-      "checkedAt": "2026-11-08T08:50:06+00:00",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027",
+      "checkedAt": "2026-11-09T08:30:00.156+00:00",
       "status": "ok",
-      "details": "Public Stagiaires.ma 2027 campaign (1 Nov 2026–31 Jan 2027) and Oracle Research Assistant PFE 2027 listing checked; no new unique high-fit listing added.",
+      "details": "Amsys PFE Challenge 2027 and Oracle PFE 2027 public listings checked; existing opportunity or previously reported, no unique new offer.",
       "accessIssue": null
     },
     {
       "id": "company",
       "label": "Company careers pages",
       "url": null,
-      "checkedAt": "2026-11-08T08:50:06+00:00",
+      "checkedAt": "2026-11-09T08:30:00.156+00:00",
       "status": "limited",
-      "details": "Targeted official employer careers search for AVL Morocco PFE 2027; no newly confirmed direct-upload form in this pass.",
-      "accessIssue": "Official form upload behavior was not verified; do not infer a dedicated upload field."
+      "details": "Targeted indexed search of official Oracle and Bertrandt careers pages; no confirmed direct-email application instruction or upload field.",
+      "accessIssue": "Official application flow not independently inspected or confirmed."
     },
     {
       "id": "catalogues",
       "label": "Public PFE catalogues",
-      "url": "https://elkhadma.ma/offre/stage-pfe-cnexia-320",
-      "checkedAt": "2026-11-08T08:50:06+00:00",
-      "status": "no_results",
-      "details": "Targeted public PFE catalog search (Elkhadma) found no new verified unique high-fit posting in this pass.",
+      "url": "https://elkhadma.ma/ar/offre/stage-pfe-cnexia-320",
+      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "status": "ok",
+      "details": "Elkhadma Cnexia PFE architecture listing checked, reference 186223 and deadline 10 Nov 2026; already tracked.",
       "accessIssue": null
     },
     {
       "id": "ensa",
       "label": "ENSA / alumni announcements",
-      "url": null,
-      "checkedAt": "2026-11-08T08:50:06+00:00",
+      "url": "https://ensah.ma/public/tableauAffichage.php",
+      "checkedAt": "2026-11-09T08:30:00.156+00:00",
       "status": "no_results",
-      "details": "Targeted public ENSAH announcement search found no new verified employer PFE posting; no private groups accessed.",
+      "details": "Public ENSA Al Hoceima announcements and program pages searched; no verified new 2027 employer PFE offer.",
       "accessIssue": null
     }
   ],
@@ -1074,7 +1074,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T08:06:23.145+00:00",
+  "lastSyncedAt": "2026-11-09T08:30:00.156+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
