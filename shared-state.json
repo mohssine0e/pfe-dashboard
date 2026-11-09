@@ -365,10 +365,10 @@
     {
       "rank": 1,
       "company": "BCG X",
-      "task": "Complete or verify completion of Software Engineering CodeSignal assessment",
-      "reason": "Official assessment invitation specifies a 70-minute proctored test and an explicit deadline; completion not verified.",
+      "task": "BCG X Software Engineering CodeSignal assessment completed; await employer review",
+      "reason": "CodeSignal confirmed completion on 9 Nov 2026 and said score/report will be shared with BCG X soon. No score, employer decision, or further action verified.",
       "date": "2026-11-11",
-      "certainty": "Verified invitation; exact time intentionally omitted from public summary",
+      "certainty": "Verified CodeSignal assessment completion email 9 Nov 2026; employer outcome pending",
       "kind": "assessment"
     },
     {
@@ -1053,12 +1053,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T15:39:34.169+00:00",
+    "lastVerifiedAt": "2026-11-09T17:13:15.555+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "9 Nov 2026 audit with overlap from last successful check 13:34 Africa/Casablanca: received search 48 messages; sent search 14 messages with attachment metadata; nine existing StagiairesMA completion notices; targeted recruiting overlap. Verified torck employer HR questionnaire for Graduate Internship software development (Morocco), due 13 Nov 2026, already reflected in priority tracker. No other new PFE-relevant action. Aggregate totals not recounted; independent countsAuditedAt remains 7 Nov 2026.",
+    "scope": "Connected Gmail: 56 non-sent non-promotional received messages after 8 Nov 2026, 14 sent messages after 7 Nov with attachment metadata, 9 StagiairesMA external-completion notices after 7 Nov, 42 targeted recruiting matches after 7 Nov; all result pages exhausted. Read new CodeSignal BCG X assessment completion notice (9 Nov 2026). No other new relevant employer message found. Aggregate counts not recounted; countsAuditedAt remains 7 Nov 2026.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (received after 8 Nov excluding sent/promotions, sent after 7 Nov with attachment metadata, StagiairesMA completion notices after 6 Nov, targeted recruiting after 7 Nov), followed by read_email of torck employer request; all search result pages exhausted.",
+    "method": "Connected Gmail search_emails across received, sent, StagiairesMA and targeted recruiting scopes, plus batch_read_email of new CodeSignal assessment completion; overlap with last successful verification at 15:39:34 Africa/Casablanca.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1142,7 +1142,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T15:39:34.169+00:00",
+  "lastSyncedAt": "2026-11-09T17:13:15.555+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
