@@ -1187,12 +1187,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T20:52:49.685+00:00",
+    "lastVerifiedAt": "2026-11-09T21:49:12.243+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "72 overlapping received/non-promotional messages after 8 Nov (including sent where applicable); 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 39 targeted recruiting matches after 8 Nov. Compared against 9 Nov 20:16:12 Africa/Casablanca audit. New: Société Générale Stage PFE R&D Software Engineer requisition 26000NJV employer automated application acknowledgement. No new completion notices or urgent action verified. Historical aggregate counts not recounted; countsAuditedAt remains 7 Nov.",
+    "scope": "73 overlapping received/non-promotional messages after 8 Nov (including sent where applicable); 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 48 targeted recruiting matches after 7 Nov. Compared against previous successful 9 Nov 20:52:49 audit. Société Générale Stage PFE Software Engineer requisition 26000NJA acknowledgment verified; distinct record already present in latest shared-state.json, so no duplicate. AXA Talent Network welcome is registration only, not application. No new completion notices or urgent actions. Historical aggregate totals not recounted; countsAuditedAt remains 7 Nov.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: overlapping received non-promotional, sent with attachment metadata, StagiairesMA completion notices, and targeted recruiting terms; read employer acknowledgement for exact role.",
+    "method": "Connected Gmail search_emails (overlapping non-promotional received, sent attachment metadata, StagiairesMA completion notices, targeted recruiting queries) and batch_read_email for exact new employer acknowledgment and AXA registration notice.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1276,7 +1276,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T20:52:49.685+00:00",
+  "lastSyncedAt": "2026-11-09T21:49:12.243+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
