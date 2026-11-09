@@ -115,13 +115,12 @@
       "company": "BCG X",
       "role": "Delivery AI Software Engineering Intern",
       "channel": "website",
-      "status": "Assessment invited",
+      "status": "Assessment completed — awaiting employer review",
       "date": "2026-11-04",
       "source": "CodeSignal and BCG invitation",
-      "priority": "urgent",
-      "notes": "Invitation issued 4 Nov; 7-day expiry stated in email. Check whether completed.",
+      "notes": "CodeSignal completion confirmed by email on 9 Nov 2026; user also reports completing the assessment. BCG X has not yet confirmed the result or next stage.",
       "recordId": "app-bcg-x-delivery-ai-software-engineering-intern",
-      "evidenceCategory": "CodeSignal and BCG invitation"
+      "evidenceCategory": "Verified CodeSignal completion email and user confirmation"
     },
     {
       "company": "Bertrandt",
@@ -364,46 +363,94 @@
   "priority": [
     {
       "rank": 1,
-      "company": "BCG X",
-      "task": "BCG X Software Engineering CodeSignal assessment completed; await employer review",
-      "reason": "CodeSignal confirmed completion on 9 Nov 2026 and said score/report will be shared with BCG X soon. No score, employer decision, or further action verified.",
-      "date": "2026-11-11",
-      "certainty": "Verified CodeSignal assessment completion email 9 Nov 2026; employer outcome pending",
-      "kind": "assessment"
-    },
-    {
-      "rank": 2,
       "company": "torck GmbH",
       "task": "Complete required HR questionnaire for Graduate Internship software development (Morocco)",
       "reason": "Employer requested an additional form; applications without it will not be considered. Prior application exists; do not reapply.",
       "date": "2026-11-13",
       "certainty": "Verified employer email 9 Nov; completion unverified",
-      "kind": "unfinished"
+      "kind": "unfinished",
+      "actionLinks": [
+        {
+          "label": "Complete torck HR questionnaire",
+          "url": "https://ats.torck.io/public/questions/d7d1a375-eb73-4f19-a871-def352fb6616?type=hr"
+        }
+      ]
     },
     {
-      "rank": 3,
+      "rank": 2,
       "company": "Cnexia",
       "task": "Check live availability and submission status for Cloud & DevOps, Architecture and Full-Stack PFE roles",
       "reason": "Previously recorded Nov 10 closing date is not independently verified. One Cloud & DevOps submission was reported; avoid duplicate applications.",
       "date": "2026-11-10",
       "certainty": "Unverified tracker deadline",
-      "kind": "deadline"
+      "kind": "deadline",
+      "actionLinks": [
+        {
+          "label": "Cloud & DevOps listing",
+          "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186213.html"
+        },
+        {
+          "label": "Software Architecture listing",
+          "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html"
+        },
+        {
+          "label": "Full-Stack Developer (React / FastAPI) listing",
+          "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186208.html"
+        }
+      ]
     },
     {
-      "rank": 4,
+      "rank": 3,
       "company": "Ostorlab / CGI / Sofrecom / FGMED",
       "task": "Verify actual employer application forms, PFE duration and start-date compatibility before completing remaining steps",
       "reason": "Platform-generated completion prompts are not employer confirmations. FGMED advertises paid internship but immediate-start mismatch remains unverified.",
       "certainty": "Platform notices verified; employer-side completion not verified",
-      "kind": "unfinished"
+      "kind": "unfinished",
+      "actionLinks": [
+        {
+          "label": "FGMED application page",
+          "url": "https://ma.indeed.com/viewjob?jk=67e2348cae6a9da8"
+        },
+        {
+          "label": "Sofrecom Maroc application page",
+          "url": "https://www.linkedin.com/jobs/view/4477651751"
+        },
+        {
+          "label": "CGI application page",
+          "url": "https://www.linkedin.com/jobs/view/4482169267"
+        },
+        {
+          "label": "Ostorlab application page",
+          "url": "https://ma.indeed.com/viewjob?jk=6ddfe80a0a2a2515"
+        }
+      ]
     },
     {
-      "rank": 5,
+      "rank": 4,
       "company": "Maersk / Intelcia / Inetum",
       "task": "Monitor existing applications without duplicate submissions",
       "reason": "Employer acknowledgments already exist; no new interview invitation verified.",
       "certainty": "Employer acknowledgment emails verified",
-      "kind": "followup"
+      "kind": "followup",
+      "actionLinks": [
+        {
+          "label": "Check Maersk application status",
+          "url": "https://maersk.wd3.myworkdayjobs.com/APMT_Careers"
+        },
+        {
+          "label": "Review Intelcia careers",
+          "url": "https://www.intelcia.com"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "company": "BCG X",
+      "task": "Assessment completed — await BCG X review",
+      "reason": "Completion confirmed by CodeSignal email on 9 Nov and by the candidate. No passing score, employer decision or new assessment step verified.",
+      "certainty": "Completion verified; assessment outcome pending",
+      "kind": "assessment",
+      "actionLinks": []
     }
   ],
   "followUpPolicy": {
