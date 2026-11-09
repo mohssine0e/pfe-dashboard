@@ -1135,12 +1135,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T18:24:31.086+00:00",
+    "lastVerifiedAt": "2026-11-09T20:16:12.148+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "62 received non-sent non-promotional messages after 8 Nov; 14 sent messages after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; targeted recruiting search after 8 Nov. Compared with prior successful audit 9 Nov 17:54:04 Africa/Casablanca. New exact-role Managem req888 employer acknowledgement and Sofrecom Full Stack LinkedIn application confirmation; Ostorlab intermediary reminder repeated and did not reopen completion queue. Aggregate counts not recounted; countsAuditedAt unchanged.",
+    "scope": "71 overlapping received/non-promotional messages after 8 Nov (including sent where applicable); 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 37 targeted recruiting matches after 8 Nov. Compared to 9 Nov 18:24:31 Africa/Casablanca audit. New since then: Capgemini password reset (account security, not application evidence); no new employer recruiting activity or completion notice. Historical counts not recounted; countsAuditedAt preserved.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails overlapping received, sent with attachment metadata, targeted recruiting, and StagiairesMA completion notices; read exact new application confirmations and intermediary notice.",
+    "method": "Connected Gmail search_emails: overlapping received non-promotional, sent with attachment metadata, StagiairesMA completion notices, and targeted recruiting terms; compared against previous successful audit.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1224,7 +1224,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T18:24:31.086+00:00",
+  "lastSyncedAt": "2026-11-09T20:16:12.148+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
