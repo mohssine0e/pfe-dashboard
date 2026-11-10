@@ -485,6 +485,18 @@
       "date": "2026-11-09",
       "source": "LinkedIn application sent confirmation, 9 Nov 2026",
       "evidenceCategory": "Verified LinkedIn sending confirmation; not employer acknowledgment"
+    },
+    {
+      "recordId": "app-logista-it-stage-pfe-2027-java-jee",
+      "company": "LOGISTA IT",
+      "role": "Stage PFE 2027 – Développement Java/JEE",
+      "channel": "email",
+      "status": "Sent",
+      "cv": "Java Backend PDF attachment verified",
+      "language": "FR",
+      "date": "2026-11-10",
+      "source": "Verified direct outgoing application to company; subsequent CV attachment correction",
+      "evidenceCategory": "Gmail sent label; CV attachment verified; employer receipt unconfirmed"
     }
   ],
   "priority": [
@@ -1249,12 +1261,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-10T00:39:25.919+00:00",
+    "lastVerifiedAt": "2026-11-10T01:55:16.870+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Recent received messages since 9 Nov with overlap to prior 10 Nov 00:06 audit; sent messages since 7 Nov including attachment metadata; targeted recruiting messages since 7 Nov; 16 newly received StagiairesMA notices read in full (16/16), 16 distinct posting URLs, including possible cross-posting duplicates. Notices are intermediary-only, not employer-confirmed submission failures. Historical metrics not recounted; countsAuditedAt unchanged. No newly verified employer assessment, interview, rejection or deadline.",
+    "scope": "Received since 9 Nov (non-promotional, excluding spam/trash): 56; sent since 7 Nov: 16 with attachment metadata; StagiairesMA/external completion notices since 8 Nov: 26; 0 messages newer than prior verified timestamp, 0 successfully read, 0 read failures. Previously audited 16 StagiairesMA notices remain within overlap; no new notices after prior verification. Historical aggregate counts not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails with overlapping recent received, sent, targeted recruiting and StagiairesMA completion queries; read_email for 16 new intermediary notices; GitHub fetch_file/update_file.",
+    "method": "Connected Gmail search_emails with received, sent and external-completion overlap; batch_read_email for messages newer than previous successful audit; GitHub fetch_file/update_file.",
     "result": "success",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
@@ -1338,7 +1350,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-10T00:39:25.919+00:00",
+  "lastSyncedAt": "2026-11-10T01:55:16.870+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
