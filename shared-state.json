@@ -1261,77 +1261,77 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-10T08:28:38.081+00:00",
+    "lastVerifiedAt": "2026-11-10T08:36:43+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-08 excluding promotions/social/spam/trash: first 100 results, further page available (not exhaustive); sent after 2026-11-07: 16 complete; external-completion notices after 2026-11-08: 26 complete; targeted recruiting after 2026-11-08: 67 complete. Read 21 newest/overlapping messages successfully; latest received message 2026-11-10T03:03:42 (unrelated LinkedIn notification), older than prior verified audit at 2026-11-10T08:19:32.739+00:00. No new PFE activity verified in inspected messages. Historical totals not recounted; countsAuditedAt unchanged.",
-    "staleAfterHours": 2,
+    "scope": "Connected Gmail searches: messages after 2026-11-08 (up to 100 results, not exhaustive); Sent after 2026-11-08; targeted assessment/application/rejection/delivery terms after 2026-11-05. Selected relevant messages read, including torck completion request, BCG X assessment completion, SG acknowledgements, StagiairesMA completion notices and LOGISTA IT sent attachment. Historical counts not exhaustively re-audited.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_email_ids (four overlapping searches) and batch_read_email (21 newest/overlapping messages); GitHub fetch_file/update_file",
+    "method": "Connected Gmail search_emails (three successful searches) and batch_read_email (eight selected messages)",
     "result": "success",
-    "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
+    "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
   "sourcesChecked": [
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
       "url": "https://ma.linkedin.com/jobs/view/software-cloud-test-automation-pfe-2027-at-bertrandt-group-4483224231",
-      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "checkedAt": "2026-11-10T08:36:43+00:00",
       "status": "ok",
-      "details": "Public LinkedIn PFE 2027 searches; Bertrandt Software, Cloud & Test Automation remains a verified high-fit listing, previously identified; no independently verified new unique high-fit employer mailto.",
+      "details": "Public Bertrandt PFE listing checked; previously identified, not new.",
       "accessIssue": null
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
-      "url": "https://ma.indeed.com/q-pfe-informatique-2027-emplois.html",
-      "checkedAt": "2026-11-09T08:30:00.156+00:00",
-      "status": "no_results",
-      "details": "Targeted Indeed Morocco PFE Java/Spring Boot 2027 public indexed search; no newly verified unique matching posting.",
+      "url": "https://ma.indeed.com/q-stage-informatique-pfe-emplois.html",
+      "checkedAt": "2026-11-10T08:36:43+00:00",
+      "status": "ok",
+      "details": "Public Indeed PFE listings checked; no uniquely verified direct-email match.",
       "accessIssue": null
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
       "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
-      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "checkedAt": "2026-11-10T08:36:43+00:00",
       "status": "ok",
-      "details": "Cnexia software architecture PFE listing cross-checked against Elkhadma mirror; deadline remains 10 Nov 2026. Saved-profile application method; not a direct email.",
+      "details": "Cnexia original STAGE PFE software architecture posting inspected; deadline not independently displayed in accessible original page.",
       "accessIssue": null
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
-      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027",
-      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7204-founder-s-associate-pfe-2027",
+      "checkedAt": "2026-11-10T08:36:43+00:00",
       "status": "ok",
-      "details": "Amsys PFE Challenge 2027 and Oracle PFE 2027 public listings checked; existing opportunity or previously reported, no unique new offer.",
+      "details": "Public PFE campaign and existing offers checked; no new verified direct-email opportunity.",
       "accessIssue": null
     },
     {
       "id": "company",
       "label": "Company careers pages",
       "url": null,
-      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "checkedAt": "2026-11-10T08:36:43+00:00",
       "status": "limited",
-      "details": "Targeted indexed search of official Oracle and Bertrandt careers pages; no confirmed direct-email application instruction or upload field.",
-      "accessIssue": "Official application flow not independently inspected or confirmed."
+      "details": "Indexed official employer careers searched; Orange campaign found on third-party sites but employer-owned form not verified.",
+      "accessIssue": "Official application flow and upload field not independently confirmed."
     },
     {
       "id": "catalogues",
       "label": "Public PFE catalogues",
-      "url": "https://elkhadma.ma/ar/offre/stage-pfe-cnexia-320",
-      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "url": "https://joblia.ma/offres-emploi/orange-maroc-recrute-ses-stagiaires-pfe-2027/",
+      "checkedAt": "2026-11-10T08:36:43+00:00",
       "status": "ok",
-      "details": "Elkhadma Cnexia PFE architecture listing checked, reference 186223 and deadline 10 Nov 2026; already tracked.",
+      "details": "Joblia and EmploiMaroc Orange Maroc PFE 2027 five-month campaign checked; third-party listing only, employer authorization not verified.",
       "accessIssue": null
     },
     {
       "id": "ensa",
       "label": "ENSA / alumni announcements",
       "url": "https://ensah.ma/public/tableauAffichage.php",
-      "checkedAt": "2026-11-09T08:30:00.156+00:00",
+      "checkedAt": "2026-11-10T08:36:43+00:00",
       "status": "no_results",
-      "details": "Public ENSA Al Hoceima announcements and program pages searched; no verified new 2027 employer PFE offer.",
+      "details": "Public ENSA announcements searched; no verified new employer PFE posting.",
       "accessIssue": null
     }
   ],
