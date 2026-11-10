@@ -526,7 +526,7 @@
       "cv": "Mohssine_Echlaihi_PFE.pdf (general Software Engineering, attachment verified)",
       "language": "FR",
       "date": "2026-11-10",
-      "source": "Company LinkedIn PFE 2027 recruitment announcement and Gmail SENT message 1a1c7121568f2408",
+      "source": "Company LinkedIn PFE 2027 recruitment announcement and Gmail SENT message",
       "evidenceCategory": "Gmail SENT label and PDF attachment independently checked; employer delivery/receipt not confirmed",
       "notes": "Direct-email application for Web & Digital Solutions track. Do not repeat unless a recruiter requests follow-up."
     },
@@ -564,6 +564,19 @@
         "evidenceType": "employer-confirmation",
         "summary": "Devoteam acknowledged the AI R&D internship application and indicated a five-day review/contact window."
       }
+    },
+    {
+      "recordId": "app-societe-generale-stage-pfe-developpeur-devops-pega-26000njb",
+      "company": "Société Générale (SG African Technologies & Services)",
+      "role": "Stage PFE - Développeur DevOps / Pega",
+      "postingId": "26000NJB",
+      "channel": "employer recruitment portal (Taleo)",
+      "status": "Acknowledged — application submitted",
+      "date": "2026-11-10",
+      "source": "Employer recruitment portal automated application confirmation, 10 Nov 2026",
+      "evidenceCategory": "Verified employer application receipt for exact requisition 26000NJB; recruiter review pending",
+      "applicationStatusUrl": "https://socgen.taleo.net/careersection/sgcareers/profile.ftl",
+      "notes": "Separate from Société Générale R&D Software Engineer 26000NJV and Software Engineer 26000NJA. No action deadline or assessment requested."
     }
   ],
   "priority": [
@@ -1308,12 +1321,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-10T21:55:07+01:00",
+    "lastVerifiedAt": "2026-11-10T21:47:51.582+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-10 excluding promotions/social: 42 complete; sent after 2026-11-09: 5 complete with attachment metadata; StagiairesMA completion notices after 2026-11-10: 16 complete; overlapping recruiting search after 2026-11-07 reviewed. Two new exact-role employer acknowledgments read (Cilas and Devoteam). No new external-completion notices after previous audit. Historical aggregate totals not recounted.",
+    "scope": "Received after 2026-11-09 excluding promotions/social (up to 100 results, pagination not exhausted); sent after 2026-11-07 (up to 100 results); StagiairesMA completion notices after 2026-11-07 (up to 100 results); recruiting terms after 2026-11-07 (first 100, more pages). Employer confirmation for Société Générale requisition 26000NJB read and reconciled; SQORUS direct sent PDF verified and already present. No newly received StagiairesMA notice after previous audit; aggregate counts not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails across received, sent, completion and recruiting scopes; read_email for two new employer confirmations; attachment metadata inspected; no full historical recount",
+    "method": "Connected Gmail search_emails (recent received, sent, StagiairesMA completion, recruiting overlap); read_email exact employer confirmation and sent application; attachment metadata reviewed; historical totals not recounted",
     "result": "success",
     "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
@@ -1397,7 +1410,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-10T21:55:07+01:00",
+  "lastSyncedAt": "2026-11-10T21:47:51.582+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
