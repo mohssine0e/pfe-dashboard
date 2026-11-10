@@ -635,19 +635,9 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-09T17:30:00+01:00",
+    "updatedAt": "2026-11-10T10:00:00+01:00",
     "producer": "Maya / compatible daily backup search",
     "offers": [
-      {
-        "title": "Stage PFE Tech (also Cybersécurité, Data & IA) — Rabat · source: Joblia.ma",
-        "company": "AXA Global Business Services Maroc (AXA GBS)",
-        "role": "Stage PFE Tech",
-        "verifiedTitle": true,
-        "sourceUrl": "https://joblia.ma/offres-emploi/axa-gbs-lance-sa-campagne-de-stages-pfe-a-rabat/",
-        "source": "Joblia.ma (published 2026-11-04)",
-        "discoveredAt": "2026-11-08T09:00:00+01:00",
-        "note": "PFE campaign in Rabat for final-year students: Tech (develop and improve group applications, design, testing, release to production, documentation), plus Cybersécurité and Data & IA tracks. Apply by email to agbs-internship2026@axa.com with the chosen track in the subject. No deadline or start date stated; confirm the PFE period. Not found in Gmail as applied."
-      },
       {
         "title": "Research Assistant - PFE 2027",
         "company": "Oracle",
@@ -723,36 +713,6 @@
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No NUPSOL email in Gmail (checked 2026-11-09)",
         "verifiedAt": "2026-11-09T17:30:00+01:00"
-      },
-      {
-        "title": "Campagne de stages PFE 2027 · source: LinkedIn",
-        "company": "Groupe Managem",
-        "exactRole": "Campagne de stages PFE 2027",
-        "role": "Multi-field PFE campaign; IT listed among support functions (Fonctions transverses)",
-        "verifiedTitle": true,
-        "location": "Morocco — mining sites in the South-East and East (LinkedIn lists Ouarzazate); geographic flexibility required",
-        "sourceUrl": "https://www.linkedin.com/jobs/view/4487135993/",
-        "link": "https://www.linkedin.com/jobs/view/4487135993/",
-        "postingId": "linkedin:4487135993",
-        "source": "Groupe Managem original LinkedIn posting (Apply redirects to Managem's official Cornerstone careers site, req888)",
-        "found": "LinkedIn job search 'PFE', Morocco, past week; posted 2026-11-09",
-        "discoveredAt": "2026-11-09T17:30:00+01:00",
-        "verifiedAt": "2026-11-09T17:30:00+01:00",
-        "status": "Company portal — low priority",
-        "applicationMethod": "Official employer careers portal (Cornerstone/CSOD); requires creating a candidate profile",
-        "officialApplicationUrl": "https://managem.csod.com/ux/ats/careersite/4/home/requisition/888?c=managem",
-        "dedicatedCvUploadVerified": false,
-        "dedicatedCvUploadNote": "Portal shows 'Apply Now' and 'Create Profile'; the CV upload step sits behind sign-in and was not opened.",
-        "requiredDocuments": [
-          "Candidate profile on Managem careers site",
-          "CV (upload step not verified)"
-        ],
-        "recommendedCv": "Mohssine_Echlaihi_PFE.pdf (generic)",
-        "nextAction": "Only if interested in an IT role at an industrial/mining group: create a Managem profile and apply to req888, naming IT as the target function.",
-        "compatibilityAssessment": "Weak to moderate: a mining/industrial campaign; IT is one support function among many, with no software, Java or DevOps subject described. Requires willingness to work at remote operational sites. No deadline, duration or start date stated beyond 'PFE 2027'. Over 200 LinkedIn applicants.",
-        "alreadyApplied": false,
-        "alreadyAppliedEvidence": "No Managem email in Gmail (checked 2026-11-09)",
-        "note": "Low priority: IT is only listed among support functions; on-site at mining sites."
       }
     ],
     "rules": {
