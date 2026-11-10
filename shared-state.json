@@ -473,6 +473,18 @@
       "date": "2026-11-09",
       "source": "LinkedIn application sent confirmation, 9 Nov 2026",
       "evidenceCategory": "Verified LinkedIn sending confirmation; not employer acknowledgment"
+    },
+    {
+      "recordId": "app-oriental-group-stage-developpement-web-linkedin-4481015855",
+      "company": "ORIENTAL GROUP / Marrakech",
+      "role": "Offre de stage en Développement Web H/F",
+      "postingId": "linkedin:4481015855",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4481015855/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-09",
+      "source": "LinkedIn application sent confirmation, 9 Nov 2026",
+      "evidenceCategory": "Verified LinkedIn sending confirmation; not employer acknowledgment"
     }
   ],
   "priority": [
@@ -1237,13 +1249,13 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-09T22:27:54.220+00:00",
+    "lastVerifiedAt": "2026-11-10T00:06:16.130+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "85 non-promotional messages after 8 Nov; 14 sent after 7 Nov with attachment metadata; 10 StagiairesMA completion notices after 7 Nov; 57 targeted recruiting matches after 7 Nov. Compared against prior successful audit at 2026-11-09 21:49:12 Africa/Casablanca. Read two AXA employer acknowledgments (distinct requisitions), SDG Group acknowledgment with unverified role (excluded from application rows), and two LinkedIn sent-application confirmations (Candilia and Btechnologie). No new StagiairesMA completion notice, interview, assessment, rejection, or deadline verified. Historical aggregate totals NOT recounted; countsAuditedAt remains 7 Nov.",
+    "scope": "88 non-promotional received/recent messages (newer_than:2d); 14 sent messages (newer_than:3d), attachment metadata reviewed; 10 StagiairesMA completion notices since 7 Nov; 47 targeted recruiting matches since 8 Nov. 97 unique matched messages, 95 successfully read; two historical reads returned errors. Compared against 9 Nov 22:27:54 successful audit. One new LinkedIn sent-application confirmation for ORIENTAL GROUP / Marrakech, not employer acknowledgment; SDG Group welcome was general talent-network registration. No newly verified urgent employer action or completion request. Historical aggregate counts not recounted; countsAuditedAt remains unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (overlapping received, sent with attachment metadata, StagiairesMA completion notices, targeted recruiting terms), plus read_email for five newly identified confirmations; GitHub fetch_file and update_file.",
-    "result": "success",
+    "method": "Connected Gmail search_email_ids with overlapping received, sent, intermediary and targeted queries; batch_read_email for 95/97 unique matches; GitHub fetch_file and update_file. Two older matched message reads failed; verification scope explicitly partial.",
+    "result": "success-with-two-historical-read-errors",
     "hourlySyncPolicy": "Re-verify connected Gmail every hourly run and commit verified freshness only after a successful check; freshness is an audit timestamp, not a live Gmail connection. Notifications only for meaningful new messages."
   },
   "sourcesChecked": [
@@ -1326,7 +1338,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-09T22:27:54.220+00:00",
+  "lastSyncedAt": "2026-11-10T00:06:16.130+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
