@@ -577,6 +577,40 @@
       "evidenceCategory": "Verified employer application receipt for exact requisition 26000NJB; recruiter review pending",
       "applicationStatusUrl": "https://socgen.taleo.net/careersection/sgcareers/profile.ftl",
       "notes": "Separate from Société Générale R&D Software Engineer 26000NJV and Software Engineer 26000NJA. No action deadline or assessment requested."
+    },
+    {
+      "recordId": "app-segula-campagne-pfe-2026-2027",
+      "company": "Segula Technologies",
+      "role": "Campagne PFE 2026-2027",
+      "channel": "employer application portal",
+      "status": "Acknowledged — awaiting review",
+      "date": "2026-11-10",
+      "source": "Direct employer automated receipt acknowledgment",
+      "evidenceCategory": "Employer confirmed receipt for named PFE campaign; specific project not established",
+      "notes": "No assessment or action deadline in acknowledgment."
+    },
+    {
+      "recordId": "app-sqorus-pfe-2027-data-analytics",
+      "company": "SQORUS Maroc",
+      "role": "Stage PFE 2027 – Data Analytics",
+      "channel": "direct recruitment email",
+      "status": "Sent — employer receipt unconfirmed",
+      "date": "2026-11-10",
+      "cv": "Mohssine_Echlaihi_PFE.pdf (PDF attachment verified)",
+      "source": "Gmail SENT message and PDF attachment metadata",
+      "evidenceCategory": "Verified direct sent application; not employer acknowledgment",
+      "notes": "Separate Data Analytics track from existing SQORUS Web & Digital Solutions application."
+    },
+    {
+      "recordId": "app-masai-consulting-pfe-2027-intelligence-artificielle",
+      "company": "MASAI Consulting",
+      "role": "Stage PFE 2027 – Intelligence Artificielle",
+      "channel": "direct recruitment email",
+      "status": "Sent — employer receipt unconfirmed",
+      "date": "2026-11-10",
+      "cv": "Mohssine_Echlaihi_PFE.pdf (PDF attachment verified)",
+      "source": "Gmail SENT message and PDF attachment metadata",
+      "evidenceCategory": "Verified direct sent PFE application; not employer acknowledgment"
     }
   ],
   "priority": [
@@ -1321,12 +1355,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-10T21:47:51.582+00:00",
+    "lastVerifiedAt": "2026-11-10T23:23:41.552+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-09 excluding promotions/social (up to 100 results, pagination not exhausted); sent after 2026-11-07 (up to 100 results); StagiairesMA completion notices after 2026-11-07 (up to 100 results); recruiting terms after 2026-11-07 (first 100, more pages). Employer confirmation for Société Générale requisition 26000NJB read and reconciled; SQORUS direct sent PDF verified and already present. No newly received StagiairesMA notice after previous audit; aggregate counts not recounted.",
+    "scope": "Received after 2026-11-09 excluding promotions/social (84 results, complete); sent after 2026-11-08 (13, complete); StagiairesMA/external completion after 2026-11-07 (30, complete); targeted recruiting after 2026-11-08 (83, complete). Six new relevant messages read: Segula employer acknowledgment, SQORUS Data Analytics and MASAI AI direct sent CVs, Google DeepMind exploratory sent email (not application), tesselate non-PFE Talent Acquisition application, Maersk Lean internship StagiairesMA intermediary notice. No historical aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (recent received, sent, StagiairesMA completion, recruiting overlap); read_email exact employer confirmation and sent application; attachment metadata reviewed; historical totals not recounted",
+    "method": "Connected Gmail search_emails across received, sent, StagiairesMA completion, recruiting overlap; batch_read_email for six newly relevant messages; attachment metadata reviewed; historical totals not recounted",
     "result": "success",
     "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
@@ -1410,7 +1444,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-10T21:47:51.582+00:00",
+  "lastSyncedAt": "2026-11-10T23:23:41.552+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -1924,6 +1958,19 @@
       "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk",
       "cvLabel": "General English Software Engineering CV",
       "note": "DeepMind weather-team message requested separate email only after researching application fit; email to team not sent. Strong ML research background required."
+    },
+    {
+      "id": "maersk-lean-continuous-improvement-4480524059",
+      "company": "A.P. Moller - Maersk",
+      "role": "End-of-Studies Internship | Lean and Continuous Improvement",
+      "platform": "StagiairesMA / LinkedIn",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4480524059",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk",
+      "cvLabel": "Approved general Software Engineering CV",
+      "status": "needs-original-platform-check",
+      "warning": "Intermediary completion notice only, not employer confirmation. LinkedIn job posting is the supplied destination, not verified as an employer-hosted completion form. Lean/continuous-improvement role may not fit a software-engineering PFE; verify eligibility, contract and whether a separate submission is needed.",
+      "discoveredAt": "2026-11-10",
+      "source": "StagiairesMA automated external-completion notice"
     }
   ],
   "completionQueuePolicy": {
