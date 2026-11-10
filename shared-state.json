@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-10T00:39:25.919+00:00",
+  "updatedAt": "2026-11-10",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
@@ -491,12 +491,13 @@
       "company": "LOGISTA IT",
       "role": "Stage PFE 2027 – Développement Java/JEE",
       "channel": "email",
-      "status": "Sent",
+      "status": "Sent — CV correction attached",
       "cv": "Java Backend PDF attachment verified",
       "language": "FR",
       "date": "2026-11-10",
       "source": "Verified direct outgoing application to company; subsequent CV attachment correction",
-      "evidenceCategory": "Gmail sent label; CV attachment verified; employer receipt unconfirmed"
+      "evidenceCategory": "Gmail original SENT and correction SENT with attached Java Backend PDF verified; employer receipt unconfirmed",
+      "notes": "Initial direct-email application omitted its CV; correction sent in same Gmail thread with Mohssine_Echlaihi_PFE_Java_Backend.pdf attached. Website application submission not verified; no duplicate email needed."
     },
     {
       "company": "Coface",
@@ -515,6 +516,19 @@
         "evidenceType": "employer-confirmation",
         "summary": "Coface confirmed receipt of the DataLab PFE 2026/2027 application; review pending."
       }
+    },
+    {
+      "recordId": "app-sqorus-pfe-2027-web-digital",
+      "company": "SQORUS Maroc",
+      "role": "Stage PFE 2027 – Consultant Développement Web & Solutions Digitales",
+      "channel": "direct recruitment email",
+      "status": "Sent",
+      "cv": "Mohssine_Echlaihi_PFE.pdf (general Software Engineering, attachment verified)",
+      "language": "FR",
+      "date": "2026-11-10",
+      "source": "Company LinkedIn PFE 2027 recruitment announcement and Gmail SENT message 1a1c7121568f2408",
+      "evidenceCategory": "Gmail SENT label and PDF attachment independently checked; employer delivery/receipt not confirmed",
+      "notes": "Direct-email application for Web & Digital Solutions track. Do not repeat unless a recruiter requests follow-up."
     }
   ],
   "priority": [
@@ -1348,7 +1362,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-10T20:43:28.397+01:00",
+  "lastSyncedAt": "2026-11-10T21:00:00+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -1834,6 +1848,34 @@
       "source": "StagiairesMA intermediary completion notice",
       "fitWarning": "Possibly same vacancy as LinkedIn posting; verify before applying.",
       "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
+    },
+    {
+      "id": "sg-gsc-devops-pega-26000njb",
+      "company": "Société Générale Global Solution Centre Morocco",
+      "role": "Stage PFE – Développeur DevOps / Pega",
+      "platform": "Société Générale careers",
+      "status": "in-progress-unverified",
+      "warning": "User was completing Google? No: SG GSC application form, including disclosure and cover letter, on 10 Nov 2026. Final submission not independently confirmed. Do not mark applied.",
+      "discoveredAt": "2026-11-10",
+      "source": "User-shared official vacancy and application form for requisition 26000NJB",
+      "postingId": "26000NJB",
+      "cvUrl": "https://drive.google.com/file/d/1qM71FKPzU4TIObkxMwJn6Pik31NSsqcC/view?usp=drivesdk",
+      "cvLabel": "Cloud & DevOps approved CV",
+      "startDate": "2027-01-06 (advertised; user availability from mid-January or February)",
+      "note": "User mentioned candidate account overwriting older SG applications. Verify official application history rather than assuming new account required."
+    },
+    {
+      "id": "google-student-researcher-2027",
+      "company": "Google / DeepMind",
+      "role": "Student Researcher, 2027 (EMEA)",
+      "platform": "Google Careers",
+      "status": "in-progress-unverified",
+      "warning": "Google Careers profile and résumé upload were shown, but a completed job application has not been confirmed. Do not mark applied. Google limits applications to three per 30 days.",
+      "discoveredAt": "2026-11-10",
+      "source": "User-shared Google Careers profile and application form",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk",
+      "cvLabel": "General English Software Engineering CV",
+      "note": "DeepMind weather-team message requested separate email only after researching application fit; email to team not sent. Strong ML research background required."
     }
   ],
   "completionQueuePolicy": {
