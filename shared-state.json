@@ -611,6 +611,24 @@
       "cv": "Mohssine_Echlaihi_PFE.pdf (PDF attachment verified)",
       "source": "Gmail SENT message and PDF attachment metadata",
       "evidenceCategory": "Verified direct sent PFE application; not employer acknowledgment"
+    },
+    {
+      "recordId": "app-pwc-stage-consultant-cybersecurite",
+      "company": "PwC",
+      "role": "Stage - Consultant en Cybersécurité",
+      "channel": "PwC Workday candidate portal",
+      "status": "Acknowledged — awaiting review",
+      "date": "2026-11-10",
+      "source": "Direct employer automated application confirmation",
+      "evidenceCategory": "Verified employer receipt for exact cybersecurity internship role",
+      "notes": "Employer confirmed submission and provides candidate portal for progress and any tasks; no specific assessment or action deadline in message.",
+      "emailEvidence": {
+        "sourceType": "verified-employer-email",
+        "status": "acknowledged",
+        "verifiedAt": "2026-11-10",
+        "evidenceType": "employer-confirmation",
+        "summary": "PwC confirmed submission of the cybersecurity internship application; candidate portal available for progress."
+      }
     }
   ],
   "priority": [
@@ -1355,12 +1373,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-10T23:23:41.552+00:00",
+    "lastVerifiedAt": "2026-11-10T23:26:04.279+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-09 excluding promotions/social (84 results, complete); sent after 2026-11-08 (13, complete); StagiairesMA/external completion after 2026-11-07 (30, complete); targeted recruiting after 2026-11-08 (83, complete). Six new relevant messages read: Segula employer acknowledgment, SQORUS Data Analytics and MASAI AI direct sent CVs, Google DeepMind exploratory sent email (not application), tesselate non-PFE Talent Acquisition application, Maersk Lean internship StagiairesMA intermediary notice. No historical aggregate recount.",
+    "scope": "Received after 2026-11-09 excluding promotions/social: 85 complete; sent after 2026-11-08 with internship/application terms: 12 complete, attachment metadata inspected; external completion notices after 2026-11-08: 27 complete; targeted recruiting after 2026-11-08: first 100 with further pagination, not exhaustive. Read PwC direct employer confirmation and latest Maersk StagiairesMA intermediary notice; Maersk already queued. No historical aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails across received, sent, StagiairesMA completion, recruiting overlap; batch_read_email for six newly relevant messages; attachment metadata reviewed; historical totals not recounted",
+    "method": "Connected Gmail search_emails four overlapping scopes; batch_read_email for two new messages; sent attachment metadata reviewed; targeted recruiting search paginated, historical totals not recounted",
     "result": "success",
     "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
@@ -1444,7 +1462,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-10T23:23:41.552+00:00",
+  "lastSyncedAt": "2026-11-10T23:26:04.279+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
