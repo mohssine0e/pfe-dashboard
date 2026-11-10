@@ -529,6 +529,41 @@
       "source": "Company LinkedIn PFE 2027 recruitment announcement and Gmail SENT message 1a1c7121568f2408",
       "evidenceCategory": "Gmail SENT label and PDF attachment independently checked; employer delivery/receipt not confirmed",
       "notes": "Direct-email application for Web & Digital Solutions track. Do not repeat unless a recruiter requests follow-up."
+    },
+    {
+      "recordId": "app-cilas-stagiaire-ingenieur-informatique-base-donnee",
+      "company": "Cilas",
+      "role": "Stagiaire ingénieur informatique/base de donnée (H/F)",
+      "channel": "employer recruiting platform",
+      "status": "Acknowledged — awaiting review",
+      "date": "2026-11-10",
+      "source": "Direct employer recruitment acknowledgment",
+      "evidenceCategory": "Verified employer application receipt for exact internship role",
+      "emailEvidence": {
+        "sourceType": "verified-employer-email",
+        "status": "acknowledged",
+        "verifiedAt": "2026-11-10",
+        "evidenceType": "employer-confirmation",
+        "summary": "Cilas confirmed receipt of the database/informatics internship application; recruiter review pending."
+      }
+    },
+    {
+      "recordId": "app-devoteam-france-stage-rd-intelligence-artificielle",
+      "company": "Devoteam France",
+      "role": "Stage - Ingénieur(e) R&D Intelligence Artificielle (F/H)",
+      "channel": "employer recruiting platform",
+      "status": "Acknowledged — awaiting review",
+      "date": "2026-11-10",
+      "source": "Direct employer application acknowledgment",
+      "evidenceCategory": "Verified employer application receipt for exact R&D AI internship role",
+      "notes": "Employer indicated an expected response within five days of 10 November; this is an estimated contact window, not a candidate action deadline.",
+      "emailEvidence": {
+        "sourceType": "verified-employer-email",
+        "status": "acknowledged",
+        "verifiedAt": "2026-11-10",
+        "evidenceType": "employer-confirmation",
+        "summary": "Devoteam acknowledged the AI R&D internship application and indicated a five-day review/contact window."
+      }
     }
   ],
   "priority": [
@@ -1273,12 +1308,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-10T20:43:28.397+01:00",
+    "lastVerifiedAt": "2026-11-10T21:55:07+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-09 excluding promotions/social: 68 complete; sent after 2026-11-03 with application terms: 17 complete, attachment metadata; external-completion notices after 2026-11-03 searched; targeted recruiting after 2026-11-03 searched. Two new Coface DataLab messages read: LinkedIn submission notice and direct Coface employer receipt acknowledgment. No newly received StagiairesMA completion notice since previous verification. Historical totals not recounted.",
+    "scope": "Received after 2026-11-10 excluding promotions/social: 42 complete; sent after 2026-11-09: 5 complete with attachment metadata; StagiairesMA completion notices after 2026-11-10: 16 complete; overlapping recruiting search after 2026-11-07 reviewed. Two new exact-role employer acknowledgments read (Cilas and Devoteam). No new external-completion notices after previous audit. Historical aggregate totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: four overlapping received/sent/completion/recruiting searches; read_email for two new Coface application confirmations; sent attachment metadata inspected; no historical aggregate recount",
+    "method": "Connected Gmail search_emails across received, sent, completion and recruiting scopes; read_email for two new employer confirmations; attachment metadata inspected; no full historical recount",
     "result": "success",
     "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
@@ -1362,7 +1397,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-10T21:00:00+01:00",
+  "lastSyncedAt": "2026-11-10T21:55:07+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
