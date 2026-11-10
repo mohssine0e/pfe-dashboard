@@ -635,7 +635,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-10T10:00:00+01:00",
+    "updatedAt": "2026-11-10T10:16:04+00:00",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -713,6 +713,26 @@
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No NUPSOL email in Gmail (checked 2026-11-09)",
         "verifiedAt": "2026-11-09T17:30:00+01:00"
+      },
+      {
+        "title": "Software, Cloud & Test Automation PFE 2027",
+        "company": "Bertrandt Group",
+        "role": "Software engineering, backend/frontend, cloud and test automation",
+        "verifiedTitle": true,
+        "sourceUrl": "https://bertrandt.jobs.hr.cloud.sap/job/Rabat-Software%2C-Cloud-%26-Test-Automation-PFE-2027-11100/4987-en_US/",
+        "postingId": "bertrandt:4987",
+        "source": "Official Bertrandt SAP careers listing, cross-checked against public LinkedIn job 4483224231",
+        "discoveredAt": "2026-11-10T10:16:04+00:00",
+        "checkedAt": "2026-11-10T10:16:04+00:00",
+        "location": "Rabat, Morocco",
+        "applicationMethod": "Official Bertrandt careers portal (SAP SuccessFactors); submit an English CV",
+        "officialApplicationUrl": "https://bertrandt.jobs.hr.cloud.sap/job/Rabat-Software%2C-Cloud-%26-Test-Automation-PFE-2027-11100/4987-en_US/",
+        "dedicatedCvUploadVerified": false,
+        "recommendedCv": "Approved generic English Software Engineering CV for any profile-backed submission. Tailor a separate copy only if a dedicated CV upload is confirmed.",
+        "nextAction": "Open official Bertrandt job listing and check application form, eligibility for 5–6 months, and any prior application before submitting. Do not assume submission.",
+        "durationNote": "PFE 2027 confirmed; exact internship duration and start date not specified in the original listing. Confirm 5–6 months.",
+        "compatibilityAssessment": "Very high technical fit: Java, TypeScript, React, Docker, CI/CD, cloud and backend/frontend. Final-year software engineering eligible; English CV required.",
+        "note": "Employer original job ID 4987 and public LinkedIn posting 4483224231 verified. No explicit deadline found. Dedicated upload field not observed; private applied statuses inaccessible."
       }
     ],
     "rules": {
