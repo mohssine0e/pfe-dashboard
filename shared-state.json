@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "source": "Gmail readback and employer/platform message review, 7 Nov 2026",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
@@ -1408,12 +1408,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-11T08:31:46+01:00",
+    "lastVerifiedAt": "2026-11-11T09:06:45.704+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail: received after 2026-11-09 (95; complete), sent after 2026-11-09 (9; attachment metadata checked; complete), external-completion after 2026-11-08 (27; complete), recruiting-related after 2026-11-08 (first 100; additional page available). Overlapping comparison to last successful audit 2026-11-11T07:27:02+01:00; no new PFE employer messages or StagiairesMA completion notices; no aggregate recount.",
-    "staleAfterHours": 2,
+    "scope": "Connected Gmail searches: received since 10 Nov 2026 (messages including PwC, Segula, Coface, Cilas, Devoteam and SG confirmations), sent since 8 Nov 2026 (outgoing messages and attachment filename metadata); no inbox-wide historical recount. No new substantive recruiter decision verified in reviewed results.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: received, sent with attachment metadata, external-completion, and recruiting-related overlapping searches; broad recruiting query paginated; no aggregate recount",
+    "method": "Connected Gmail search_emails (received and sent queries); results compared with existing public-safe application records",
     "result": "success",
     "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
@@ -1422,64 +1422,64 @@
       "id": "linkedin",
       "label": "LinkedIn public jobs",
       "url": "https://ma.linkedin.com/jobs/view/software-cloud-test-automation-pfe-2027-at-bertrandt-group-4483224231",
-      "checkedAt": "2026-11-10T08:36:43+00:00",
+      "checkedAt": "2026-11-11T08:06:45.704Z",
       "status": "ok",
-      "details": "Public Bertrandt PFE listing checked; previously identified, not new.",
-      "accessIssue": null
+      "details": "Public LinkedIn job search results checked; Sofrecom PFE Full Stack & Generative AI and Bertrandt already known; no unique verified direct-email vacancy.",
+      "accessIssue": "LinkedIn application flow requires login; employer submission route not independently verified."
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
       "url": "https://ma.indeed.com/q-stage-informatique-pfe-emplois.html",
-      "checkedAt": "2026-11-10T08:36:43+00:00",
+      "checkedAt": "2026-11-11T08:06:45.704Z",
       "status": "ok",
-      "details": "Public Indeed PFE listings checked; no uniquely verified direct-email match.",
+      "details": "Public Indeed Morocco PFE/Java/DevOps search results checked; SG, Intelcia, Segula and other previously known postings; no eligible verified direct-email new match.",
       "accessIssue": null
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
       "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
-      "checkedAt": "2026-11-10T08:36:43+00:00",
-      "status": "ok",
-      "details": "Cnexia original STAGE PFE software architecture posting inspected; deadline not independently displayed in accessible original page.",
-      "accessIssue": null
+      "checkedAt": "2026-11-11T08:06:45.704Z",
+      "status": "limited",
+      "details": "Targeted public search query attempted; no independently inspected current ReKrute job detail in returned results.",
+      "accessIssue": "No relevant ReKrute result returned for targeted search."
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7204-founder-s-associate-pfe-2027",
-      "checkedAt": "2026-11-10T08:36:43+00:00",
-      "status": "ok",
-      "details": "Public PFE campaign and existing offers checked; no new verified direct-email opportunity.",
-      "accessIssue": null
+      "checkedAt": "2026-11-11T08:06:45.704Z",
+      "status": "limited",
+      "details": "Targeted public search attempted; no independently inspected current Stagiaires.ma job detail in returned results.",
+      "accessIssue": "No relevant Stagiaires.ma result returned for targeted search."
     },
     {
       "id": "company",
       "label": "Company careers pages",
       "url": null,
-      "checkedAt": "2026-11-10T08:36:43+00:00",
+      "checkedAt": "2026-11-11T08:06:45.704Z",
       "status": "limited",
-      "details": "Indexed official employer careers searched; Orange campaign found on third-party sites but employer-owned form not verified.",
-      "accessIssue": "Official application flow and upload field not independently confirmed."
+      "details": "Official employer postings surfaced through Indeed and LinkedIn aggregations; no employer-owned application route independently inspected.",
+      "accessIssue": "Direct official careers pages and email application routes not independently verified."
     },
     {
       "id": "catalogues",
       "label": "Public PFE catalogues",
       "url": "https://joblia.ma/offres-emploi/orange-maroc-recrute-ses-stagiaires-pfe-2027/",
-      "checkedAt": "2026-11-10T08:36:43+00:00",
-      "status": "ok",
-      "details": "Joblia and EmploiMaroc Orange Maroc PFE 2027 five-month campaign checked; third-party listing only, employer authorization not verified.",
-      "accessIssue": null
+      "checkedAt": "2026-11-11T08:06:45.704Z",
+      "status": "limited",
+      "details": "Public PFE catalogue search attempted; no new suitable catalogue project independently inspected.",
+      "accessIssue": "No matching current catalogue detail returned."
     },
     {
       "id": "ensa",
       "label": "ENSA / alumni announcements",
       "url": "https://ensah.ma/public/tableauAffichage.php",
-      "checkedAt": "2026-11-10T08:36:43+00:00",
+      "checkedAt": "2026-11-11T08:06:45.704Z",
       "status": "no_results",
-      "details": "Public ENSA announcements searched; no verified new employer PFE posting.",
-      "accessIssue": null
+      "details": "Public ENSA/alumni search attempted; no matching new announcement independently inspected.",
+      "accessIssue": "No relevant results returned."
     }
   ],
   "sourceSearchPolicy": {
@@ -1497,7 +1497,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-11T08:31:46+01:00",
+  "lastSyncedAt": "2026-11-11T09:06:45.704+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
