@@ -353,6 +353,64 @@ body.route-ready #view-overview .page-heading{margin-top:2px}
 #completion-queue-list .completion-controls .admin-feedback{display:block;margin-top:5px;font-size:11px;color:#61778e;line-height:1.45}
 @media(max-width:700px){#completion-queue-list{grid-template-columns:1fr}#completion-queue-list .completion-entry{padding:14px}}
 
+
+/* PFE Desk 2027 — Modern SaaS visual refresh. Presentation only; Firebase and data scripts unchanged. */
+:root{--ink:#14243a;--muted:#64748b;--line:#e3eaf2;--bg:#f7f9fc;--brand:#2857cf;--blue:#edf3ff;--red:#b54747}
+html{scroll-behavior:smooth}body{background:radial-gradient(ellipse 850px 460px at 8% -10%,#e8f0ff 0%,transparent 75%),#f7f9fc;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+main{max-width:1380px;padding:20px clamp(14px,2.8vw,42px) 100px}
+header{padding:10px 0 14px}.hero{align-items:center;gap:20px}.hero>div:first-child{max-width:760px}
+h1{font-size:clamp(30px,3.5vw,46px);font-weight:800;letter-spacing:-.055em;margin:5px 0 9px}
+h2{font-size:clamp(19px,2vw,23px);font-weight:760;letter-spacing:-.035em}
+h3{letter-spacing:-.025em}.eyebrow{color:#4566b5;font-size:11px;letter-spacing:.16em}
+.hero p{font-size:14px;line-height:1.65;max-width:680px}
+.last-sync{border:1px solid #e3eaf4;background:#fff;border-radius:12px;padding:12px 16px;box-shadow:0 3px 14px #172e5410;min-width:175px}
+section{border:1px solid #e4eaf2;border-radius:16px;padding:clamp(16px,2vw,25px);margin:16px 0;box-shadow:0 3px 18px #1c34570a;background:#fff}
+.site-nav{top:8px;border:1px solid #dfe7f1;background:#ffffffed;box-shadow:0 7px 28px #213b6213;border-radius:14px;padding:6px;gap:5px}
+.site-nav a,.site-nav button{border-radius:9px;transition:background .15s ease,color .15s ease}
+.site-nav a:hover,.site-nav button:hover{background:#eef3ff}
+.freshness{border-radius:12px;border:1px solid #e2eaf4;background:#f0f5fc;color:#526985}
+#private-auth{border-color:#e1e9f4;background:linear-gradient(110deg,#fff,#f9fbff)}
+#overview{background:linear-gradient(155deg,#fff,#fafdff)}
+.kpi-grid{grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}
+.kpi{border:1px solid #e5ecf5;border-radius:12px;padding:17px 15px;background:#f9fbfe;min-height:98px}
+.kpi strong{font-size:clamp(26px,3vw,34px);font-weight:800;color:#1b3f80;letter-spacing:-.05em}
+.kpi span{font-size:11px;line-height:1.4;display:block;margin-top:5px}
+.banner{border:1px solid #e2eaf6;border-left:3px solid #8eabec;border-radius:10px;background:#f6f9ff}
+.two{gap:16px}.two>section{min-width:0}
+.priority{padding:15px 0;gap:14px}.rank{background:#edf3ff;color:#315bb4;border:1px solid #dce8ff;border-radius:10px}
+#opportunities{scroll-margin-top:90px}
+#opportunities>.muted{max-width:850px;font-size:13px}
+#opportunities .controls{position:relative;display:flex;flex-wrap:wrap;gap:9px;padding:13px;background:#f7f9fd;border:1px solid #e5ebf4;border-radius:12px;margin:16px 0 10px}
+#opportunities .controls input,#opportunities .controls select{min-height:42px;border:1px solid #dce5f0;border-radius:9px;background:#fff;color:#243952;font:inherit;font-size:13px;padding:9px 12px}
+#opportunities .controls #search{flex:2 1 260px;min-width:180px}
+#opportunities .controls select{flex:1 1 150px;min-width:140px}
+#offer-filter-count{font-size:12px;color:#60748e;margin:10px 0 17px}
+#opportunities .offers{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:15px;align-items:stretch}
+#opportunities .offer{min-width:0;display:flex;flex-direction:column;gap:10px;padding:18px;border:1px solid #e2e9f3!important;border-radius:14px;background:#fff;box-shadow:0 2px 10px #1c3a6210!important;animation:none!important;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+#opportunities .offer:hover{transform:translateY(-2px);border-color:#b6c9ed!important;box-shadow:0 10px 28px #1d3c6618!important}
+#opportunities .offer[hidden]{display:none!important}
+#opportunities .offer-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+#opportunities .offer-header h3{font-size:16px;line-height:1.3;font-weight:780;overflow-wrap:anywhere}
+#opportunities .offer-header .tags{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+#opportunities .offer-header .tags span{font-size:10px;letter-spacing:.01em}
+#opportunities .offer-role-block{min-height:64px}
+#opportunities .offer .jobtitle{font-size:14px;font-weight:740;line-height:1.45;overflow-wrap:anywhere;margin:0 0 5px}
+#opportunities .offer .role{font-size:12px;color:#64748b;overflow-wrap:anywhere;margin:0}
+#opportunities .offer-meta,#opportunities .method-block{border-top:1px solid #eef2f7;padding-top:10px;font-size:12px;color:#5b6e85}
+#opportunities .offer-meta p,#opportunities .method-block p{margin:4px 0;overflow-wrap:anywhere}
+#opportunities .offer-footer{margin-top:auto;padding-top:9px}
+#opportunities .offer .buttons{display:flex;flex-wrap:wrap;gap:8px}
+#opportunities .offer .buttons a{flex:1 1 120px;min-height:38px;white-space:normal;text-align:center;line-height:1.3}
+a.btn,button{background:#2857cf;color:#fff;border-color:#2857cf}
+a.secondary{color:#2857cf;border-color:#d7e2f6;background:#f8faff}
+a.btn:hover,button:hover{filter:brightness(.96)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a9c6ff;outline-offset:2px}
+#opportunities .offer.offer-is-applied{background:#fbfefc;border-color:#8bc6a6!important}
+#opportunities .offer.offer-is-expired{background:#fcfbfa;border-color:#d6c7bf!important}
+#completion-queue-list .completion-entry{border-radius:13px;box-shadow:0 2px 10px #1c3a6208}
+@media(max-width:760px){main{padding:12px 12px 70px}.hero{align-items:stretch}.last-sync{width:100%}section{padding:16px;margin:12px 0}.site-nav{top:0;overflow-x:auto;scrollbar-width:thin}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#opportunities .controls{padding:10px}#opportunities .controls #search{flex-basis:100%}#opportunities .offers{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#opportunities .offer{transition:none}#opportunities .offer:hover{transform:none}}
+
 </style></head><body><main>
 <header><div class="hero"><div><div class="eyebrow">PFE 2027 · Morocco</div><h1>PFE Desk 2027</h1><p>One focused workspace for your 2027 PFE applications. Public opportunity summaries are read-only; personal applied statuses and notes require authorized GitHub sign-in.</p></div><div class="last-sync" aria-live="polite"><strong>Last sync</strong><span id="last-sync-time">Loading…</span></div></div><span class="pill">English CV default · French only when required</span></header><div class="freshness" id="gmail-freshness" role="status"><strong>Gmail data last verified:</strong> <span id="gmail-last-verified">Loading…</span><span id="gmail-stale-warning"></span><small id="gmail-scope">This time only changes after an actual Gmail check, not when the page refreshes.</small></div>
 <section id="private-auth" aria-labelledby="private-auth-heading">
