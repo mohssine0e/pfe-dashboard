@@ -1735,6 +1735,106 @@
       },
       "discoverySource": "User-provided internships.json (2026-11-11)",
       "reviewNote": "Distinct quant development role; do not confuse with acknowledged SG software engineering and DevOps roles"
+    },
+    {
+      "company": "VINCI Energies Afrique de l'Ouest",
+      "title": "Développement d’une solution interne d’analyse intelligente de documents basée sur l’IA F/H",
+      "role": "Développement d’une solution interne d’analyse intelligente de documents basée sur l’IA F/H",
+      "division": "Building Solutions - CFO CFA",
+      "location": "Siège de VINCI Energies",
+      "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
+      "verifiedTitle": true,
+      "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
+      "verifiedDeadline": null,
+      "remuneration": "Not verified",
+      "postingDateVerification": "Not provided",
+      "recommendedCvId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null
+      },
+      "reviewNote": "Top priority: software/AI document processing; actual stack and eligibility to verify",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+    },
+    {
+      "company": "VINCI Energies Afrique de l'Ouest",
+      "title": "Stage - Développement d'une plateforme de chiffrage connectée à SYDEV (OPTIMA)",
+      "role": "Stage - Développement d'une plateforme de chiffrage connectée à SYDEV (OPTIMA)",
+      "division": "Building Solutions - Fluides",
+      "location": "Casablanca (chantier), Rabat",
+      "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
+      "verifiedTitle": true,
+      "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
+      "verifiedDeadline": null,
+      "remuneration": "Not verified",
+      "postingDateVerification": "Not provided",
+      "recommendedCvId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null
+      },
+      "reviewNote": "Top priority: platform engineering and integrations; actual stack to verify",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+    },
+    {
+      "company": "VINCI Energies Afrique de l'Ouest",
+      "title": "STAGE PFE - Implémentation d'un jumeau numérique pour la supervision et la maintenance prédictive",
+      "role": "STAGE PFE - Implémentation d'un jumeau numérique pour la supervision et la maintenance prédictive",
+      "division": "Industrie - Actemium",
+      "location": "Siège de VINCI Energies",
+      "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
+      "verifiedTitle": true,
+      "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
+      "verifiedDeadline": null,
+      "remuneration": "Not verified",
+      "postingDateVerification": "Not provided",
+      "recommendedCvId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null
+      },
+      "reviewNote": "Digital twin and monitoring; check programming requirements",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+    },
+    {
+      "company": "VINCI Energies Afrique de l'Ouest",
+      "title": "STAGE PFE - Implémentation d'une solution de cybersécurité pour des systèmes SCADA",
+      "role": "STAGE PFE - Implémentation d'une solution de cybersécurité pour des systèmes SCADA",
+      "division": "Industrie - Actemium",
+      "location": "Siège de VINCI Energies",
+      "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
+      "verifiedTitle": true,
+      "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
+      "verifiedDeadline": null,
+      "remuneration": "Not verified",
+      "postingDateVerification": "Not provided",
+      "recommendedCvId": "cloud",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null
+      },
+      "reviewNote": "Industrial cybersecurity; check required SCADA experience",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+    },
+    {
+      "company": "VINCI Energies Afrique de l'Ouest",
+      "title": "Stage Digitalisation du suivi qualité des installations Fluides: Conception et expérimentation d'une solution numérique de contrôle qualité, de gestion des non-conformités et de traçabilité des travaux Fluides",
+      "role": "Stage Digitalisation du suivi qualité des installations Fluides: Conception et expérimentation d'une solution numérique de contrôle qualité, de gestion des non-conformités et de traçabilité des travaux Fluides",
+      "division": "Building Solutions - Fluides",
+      "location": "Casablanca (chantier), Rabat",
+      "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
+      "verifiedTitle": true,
+      "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
+      "verifiedDeadline": null,
+      "remuneration": "Not verified",
+      "postingDateVerification": "Not provided",
+      "recommendedCvId": "software",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null
+      },
+      "reviewNote": "Digital quality-tracking solution; check development scope",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
     }
   ],
   "gmailVerification": {
