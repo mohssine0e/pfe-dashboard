@@ -1745,7 +1745,7 @@
       "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
       "verifiedTitle": true,
       "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
-      "verifiedDeadline": null,
+      "verifiedDeadline": "2026-11-16T18:00:00+01:00",
       "remuneration": "Not verified",
       "postingDateVerification": "Not provided",
       "recommendedCvId": "software",
@@ -1753,8 +1753,10 @@
         "status": "Not verified",
         "evidence": null
       },
-      "reviewNote": "Top priority: software/AI document processing; actual stack and eligibility to verify",
-      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+      "reviewNote": "Top priority: software/AI document processing; actual stack and eligibility to verify | Campaign deadline verified from official employer announcement; individual role remains to be checked.",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11",
+      "deadlineVerification": "Official VINCI Energies au Maroc LinkedIn campaign announcement: Monday 16 Nov 2026 at 18:00 Morocco time",
+      "deadlineSource": "https://ma.linkedin.com/company/vinci-energies-au-maroc"
     },
     {
       "company": "VINCI Energies Afrique de l'Ouest",
@@ -1765,7 +1767,7 @@
       "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
       "verifiedTitle": true,
       "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
-      "verifiedDeadline": null,
+      "verifiedDeadline": "2026-11-16T18:00:00+01:00",
       "remuneration": "Not verified",
       "postingDateVerification": "Not provided",
       "recommendedCvId": "software",
@@ -1773,8 +1775,10 @@
         "status": "Not verified",
         "evidence": null
       },
-      "reviewNote": "Top priority: platform engineering and integrations; actual stack to verify",
-      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+      "reviewNote": "Top priority: platform engineering and integrations; actual stack to verify | Campaign deadline verified from official employer announcement; individual role remains to be checked.",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11",
+      "deadlineVerification": "Official VINCI Energies au Maroc LinkedIn campaign announcement: Monday 16 Nov 2026 at 18:00 Morocco time",
+      "deadlineSource": "https://ma.linkedin.com/company/vinci-energies-au-maroc"
     },
     {
       "company": "VINCI Energies Afrique de l'Ouest",
@@ -1785,7 +1789,7 @@
       "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
       "verifiedTitle": true,
       "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
-      "verifiedDeadline": null,
+      "verifiedDeadline": "2026-11-16T18:00:00+01:00",
       "remuneration": "Not verified",
       "postingDateVerification": "Not provided",
       "recommendedCvId": "software",
@@ -1793,8 +1797,10 @@
         "status": "Not verified",
         "evidence": null
       },
-      "reviewNote": "Digital twin and monitoring; check programming requirements",
-      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+      "reviewNote": "Digital twin and monitoring; check programming requirements | Campaign deadline verified from official employer announcement; individual role remains to be checked.",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11",
+      "deadlineVerification": "Official VINCI Energies au Maroc LinkedIn campaign announcement: Monday 16 Nov 2026 at 18:00 Morocco time",
+      "deadlineSource": "https://ma.linkedin.com/company/vinci-energies-au-maroc"
     },
     {
       "company": "VINCI Energies Afrique de l'Ouest",
@@ -1805,7 +1811,7 @@
       "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
       "verifiedTitle": true,
       "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
-      "verifiedDeadline": null,
+      "verifiedDeadline": "2026-11-16T18:00:00+01:00",
       "remuneration": "Not verified",
       "postingDateVerification": "Not provided",
       "recommendedCvId": "cloud",
@@ -1813,8 +1819,10 @@
         "status": "Not verified",
         "evidence": null
       },
-      "reviewNote": "Industrial cybersecurity; check required SCADA experience",
-      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+      "reviewNote": "Industrial cybersecurity; check required SCADA experience | Campaign deadline verified from official employer announcement; individual role remains to be checked.",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11",
+      "deadlineVerification": "Official VINCI Energies au Maroc LinkedIn campaign announcement: Monday 16 Nov 2026 at 18:00 Morocco time",
+      "deadlineSource": "https://ma.linkedin.com/company/vinci-energies-au-maroc"
     },
     {
       "company": "VINCI Energies Afrique de l'Ouest",
@@ -1825,7 +1833,7 @@
       "sourceLabel": "User-provided VINCI Energies Teamtailor careers listing",
       "verifiedTitle": true,
       "listingReviewStatus": "Title and department from user-provided career page; individual posting not independently checked",
-      "verifiedDeadline": null,
+      "verifiedDeadline": "2026-11-16T18:00:00+01:00",
       "remuneration": "Not verified",
       "postingDateVerification": "Not provided",
       "recommendedCvId": "software",
@@ -1833,8 +1841,28 @@
         "status": "Not verified",
         "evidence": null
       },
-      "reviewNote": "Digital quality-tracking solution; check development scope",
-      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11"
+      "reviewNote": "Digital quality-tracking solution; check development scope | Campaign deadline verified from official employer announcement; individual role remains to be checked.",
+      "discoverySource": "User-provided VINCI Energies careers listing, 2026-11-11",
+      "deadlineVerification": "Official VINCI Energies au Maroc LinkedIn campaign announcement: Monday 16 Nov 2026 at 18:00 Morocco time",
+      "deadlineSource": "https://ma.linkedin.com/company/vinci-energies-au-maroc"
+    },
+    {
+      "company": "Oracle Maroc",
+      "title": "Oracle Morocco R&D Center — PFE 2027 Internship Program",
+      "role": "Software Engineering / R&D / Cloud",
+      "location": "Casablanca",
+      "url": "https://www.oracle.com/ma/careers/research-development/",
+      "sourceLabel": "Oracle Morocco official careers page",
+      "listingReviewStatus": "Official Oracle Morocco page explicitly offers PFE 2027 internship applications; specific role and current availability must be checked",
+      "verifiedTitle": true,
+      "verifiedDeadline": null,
+      "remuneration": "Not verified",
+      "submission": {
+        "status": "Not verified",
+        "evidence": null
+      },
+      "reviewNote": "Strong fit. Six-month January 2027 start reported by ENSA Tanger; use official Oracle application route and English CV. No application evidence in public snapshot.",
+      "discoverySource": "User-shared 14-company roundup cross-checked with Oracle official page"
     }
   ],
   "gmailVerification": {
