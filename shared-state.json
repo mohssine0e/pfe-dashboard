@@ -1738,7 +1738,7 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-11T16:58:58+00:00+01:00",
+    "lastVerifiedAt": "2026-11-11T16:59:09+01:00",
     "timezone": "Africa/Casablanca",
     "scope": "Received after 9 Nov: 111 messages, 2 pages; sent after 6 Nov: 25 messages; StagiairesMA/external completion after 5 Nov: 27 messages; recruiting keywords after 7 Nov: 138 messages, 2 pages. Recent messages read, including employer acknowledgments and sent attachment metadata. Incremental comparison against prior 11 Nov 16:04:07 +01:00 verification. No historical aggregate recount.",
     "staleAfterHours": 2,
@@ -1827,7 +1827,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-11T16:58:58+00:00+01:00",
+  "lastSyncedAt": "2026-11-11T16:59:09+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
