@@ -653,6 +653,17 @@
       "evidenceCategory": "Verified employer receipt for exact role; no screening decision",
       "applicationStatusUrl": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/login",
       "notes": "Employer receipt confirmed. Candidate portal available for progress and tasks; no specific action requested."
+    },
+    {
+      "recordId": "app-data-major-spontaneous-pfe-2027",
+      "company": "Data Major",
+      "role": "Spontaneous PFE 2027 inquiry — Software Engineering / Java Backend / Cloud & DevOps",
+      "channel": "direct outgoing email",
+      "status": "Sent — exploratory application; employer receipt unconfirmed",
+      "date": "2026-11-10",
+      "source": "Verified Gmail SENT application email with PDF CV attachment",
+      "evidenceCategory": "Verified direct sent exploratory PFE application, not employer acknowledgment or confirmed listing submission",
+      "notes": "Candidate requested an alternative software-oriented PFE placement for January/February 2027. Referenced advertised Data/AI placement runs May–August 2027; fit and availability are unconfirmed. No employer response or action deadline verified."
     }
   ],
   "priority": [
@@ -1397,12 +1408,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-11T00:33:19.694+00:00",
+    "lastVerifiedAt": "2026-11-11T01:53:42.561+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-10 excluding promotions/social: 55 complete; sent after 2026-11-10: 8 complete with attachment metadata; external-completion notices after 2026-11-09: 18 complete; targeted recruiting after 2026-11-09: 40 complete. Read three distinct PwC confirmations (cybersecurity already recorded, IT audit and technology consulting newly added). Historical totals not recounted.",
+    "scope": "Received after 2026-11-10 excluding promotions/social: 55 messages, complete; sent after 2026-11-09 matching PFE/application terms: 8 messages, complete; StagiairesMA/external-completion after 2026-11-09: 18 messages, complete; targeted recruiting after 2026-11-09: 56 messages, complete. Compared against prior 2026-11-11 00:33:19+00:00 verification with overlapping history. One new direct exploratory Data Major sent application with PDF CV; no new employer-confirmed messages or completion notices. Aggregates not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails four overlapping searches, read_email three PwC employer acknowledgements, sent attachment metadata inspected; no full historical recount",
+    "method": "Connected Gmail search_emails four overlapping complete searches; read_email one new direct sent PFE inquiry; inspected sent PDF attachment metadata; no historical aggregate recount",
     "result": "success",
     "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
@@ -1486,7 +1497,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-11T00:33:19.694+00:00",
+  "lastSyncedAt": "2026-11-11T01:53:42.561+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
