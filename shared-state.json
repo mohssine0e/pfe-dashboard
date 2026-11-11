@@ -1408,7 +1408,7 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-11T05:21:11++01:00",
+    "lastVerifiedAt": "2026-11-11T05:21:18+01:00",
     "timezone": "Africa/Casablanca",
     "scope": "Connected Gmail: received after 2026-11-10 excluding promotions (59); sent after 2026-11-09 (9), with attachment metadata; external completion notices after 2026-11-09 (18); targeted recruiting after 2026-11-09 (56). All searches complete without pagination. Compared against previous successful audit 2026-11-11T03:31:27+01:00 with earlier overlap. No new PFE-relevant employer or external-completion messages; newest received was an unrelated LinkedIn messaging notice at 2026-11-11T00:17:38Z. No aggregate recount.",
     "staleAfterHours": 2,
@@ -1497,7 +1497,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-11T05:21:11++01:00",
+  "lastSyncedAt": "2026-11-11T05:21:18+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
