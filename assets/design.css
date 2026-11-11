@@ -49,3 +49,26 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .manual-task.task-is-complete{border-left:3px solid #58a780;padding-left:12px;background:#f9fcfa}
 .manual-task.task-is-complete>strong,.manual-task.task-is-complete>div>strong{text-decoration:line-through;text-decoration-color:#92a59c;color:#61786a}
 .manual-task.task-is-complete .task-manual-control{background:#eaf8ef;color:#2f7950;border-color:#c9e7d3}
+
+/* v4.1 precision pass: override broad legacy button and label rules */
+#action-center{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:12px;align-items:stretch}
+#action-center .next-action-card{display:flex;flex-direction:column;gap:12px;min-width:0;padding:16px;border:1px solid #e2e8f1;border-radius:12px;background:#fff;box-shadow:0 2px 9px #1b2e4a08}
+#action-center .next-action-header{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+#action-center .next-action-content{flex:1;min-width:0}
+#action-center .next-action-company{display:block;font-size:13px;line-height:1.35;color:#172b4d;font-weight:800}
+#action-center .next-action-title{font-size:12px;line-height:1.55;color:#53657d;margin:7px 0 9px;overflow-wrap:anywhere}
+#action-center .next-action-meta{display:flex;flex-wrap:wrap;gap:6px;font-size:10px;color:#6a7b92}
+#action-center .next-action-date{color:#a0444b;font-weight:750}
+#action-center .next-action-certainty{color:#77849a}
+#action-center .next-action-extra{border-top:1px solid #edf0f6;padding-top:9px;font-size:11px;color:#6d7d91}
+#action-center .next-action-extra summary{cursor:pointer;font-weight:650;color:#5368b9}
+#action-center .next-action-extra p{margin:7px 0 0}
+#action-center .next-action-links{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+#action-center .next-action-links a{font-size:11px;text-decoration:none;border:1px solid #dce4f4;background:#f8faff;padding:6px 9px;border-radius:7px;line-height:1.4;color:#4056bc}
+#action-center .task-manual-control,#priority-list .task-manual-control{width:auto!important;min-width:0!important;max-width:max-content!important;min-height:30px!important;height:auto!important;display:inline-flex!important;flex:0 0 auto!important;gap:6px!important;align-items:center!important;justify-content:center!important;margin:0!important;padding:5px 9px!important;border:1px solid #dbe2f6!important;border-radius:8px!important;background:#f2f4ff!important;color:#3f53b5!important;font-size:11px!important;font-weight:700!important;line-height:1.25!important;box-shadow:none!important;white-space:nowrap}
+#action-center .task-manual-control input,#priority-list .task-manual-control input{width:15px!important;height:15px!important;min-width:15px!important;margin:0!important;padding:0!important;appearance:auto!important;accent-color:#4257dc}
+#priority-list .task-manual-control{margin-top:9px!important}
+#action-center .task-manual-control:has(input:disabled),#priority-list .task-manual-control:has(input:disabled){opacity:.6}
+#action-center .task-is-complete{border-color:#c9e7d3;background:#f8fcf9}
+@media(max-width:800px){#action-center{grid-template-columns:1fr}#action-center .next-action-header{gap:8px}}
+@media(max-width:430px){#action-center .next-action-header{flex-direction:column}#action-center .task-manual-control{align-self:flex-start}}
