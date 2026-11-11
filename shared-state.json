@@ -629,6 +629,30 @@
         "evidenceType": "employer-confirmation",
         "summary": "PwC confirmed submission of the cybersecurity internship application; candidate portal available for progress."
       }
+    },
+    {
+      "recordId": "app-pwc-auditeur-it-stagiaire",
+      "company": "PwC",
+      "role": "Auditeur IT Stagiaire",
+      "channel": "employer careers portal (Workday)",
+      "status": "Acknowledged — application submitted",
+      "date": "2026-11-10",
+      "source": "PwC employer application acknowledgement",
+      "evidenceCategory": "Verified employer receipt for exact role; no screening decision",
+      "applicationStatusUrl": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/login",
+      "notes": "Employer receipt confirmed. Candidate portal available for progress and tasks; no specific action requested."
+    },
+    {
+      "recordId": "app-pwc-stage-conseil-technologique",
+      "company": "PwC",
+      "role": "Stage - Conseil Technologique",
+      "channel": "employer careers portal (Workday)",
+      "status": "Acknowledged — application submitted",
+      "date": "2026-11-10",
+      "source": "PwC employer application acknowledgement",
+      "evidenceCategory": "Verified employer receipt for exact role; no screening decision",
+      "applicationStatusUrl": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/login",
+      "notes": "Employer receipt confirmed. Candidate portal available for progress and tasks; no specific action requested."
     }
   ],
   "priority": [
@@ -1373,12 +1397,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-10T23:26:04.279+00:00",
+    "lastVerifiedAt": "2026-11-11T00:33:19.694+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-09 excluding promotions/social: 85 complete; sent after 2026-11-08 with internship/application terms: 12 complete, attachment metadata inspected; external completion notices after 2026-11-08: 27 complete; targeted recruiting after 2026-11-08: first 100 with further pagination, not exhaustive. Read PwC direct employer confirmation and latest Maersk StagiairesMA intermediary notice; Maersk already queued. No historical aggregate recount.",
+    "scope": "Received after 2026-11-10 excluding promotions/social: 55 complete; sent after 2026-11-10: 8 complete with attachment metadata; external-completion notices after 2026-11-09: 18 complete; targeted recruiting after 2026-11-09: 40 complete. Read three distinct PwC confirmations (cybersecurity already recorded, IT audit and technology consulting newly added). Historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails four overlapping scopes; batch_read_email for two new messages; sent attachment metadata reviewed; targeted recruiting search paginated, historical totals not recounted",
+    "method": "Connected Gmail search_emails four overlapping searches, read_email three PwC employer acknowledgements, sent attachment metadata inspected; no full historical recount",
     "result": "success",
     "hourlySyncPolicy": "Refresh only after successful real Gmail checks; 24-hour freshness does not imply live sync."
   },
@@ -1462,7 +1486,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-10T23:26:04.279+00:00",
+  "lastSyncedAt": "2026-11-11T00:33:19.694+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
