@@ -39,3 +39,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 @media(max-width:1150px){main{width:calc(100% - 210px);margin-left:210px;padding:24px 20px 80px}.site-nav{width:210px!important}.two{grid-template-columns:1fr}#opportunities .controls{grid-template-columns:repeat(2,minmax(0,1fr))}#opportunities .controls #search{grid-column:1/-1}}
 @media(max-width:760px){main{width:100%;margin:0;padding:18px 12px 105px}.site-nav{top:auto!important;bottom:0!important;right:0!important;width:100%!important;height:auto!important;min-height:70px;padding:6px 3px max(8px,env(safe-area-inset-bottom))!important;flex-direction:row!important;justify-content:space-around!important;gap:0!important;overflow:visible;background:#111b30!important}.site-nav:before,.site-nav:after{display:none}.site-nav a{flex:1 1 0!important;min-width:0;min-height:54px;flex-direction:column!important;justify-content:center!important;gap:3px!important;padding:6px 0!important;font-size:9px!important;text-align:center}.site-nav .nav-icon{font-size:18px!important;width:auto}.hero{flex-direction:column;align-items:stretch;gap:12px}.hero h1{font-size:29px}.last-sync{width:100%}.page-heading h2{font-size:24px}section{padding:16px;margin:12px 0}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#opportunities .controls{grid-template-columns:1fr}#opportunities .controls #search{grid-column:auto}#opportunities .offers{grid-template-columns:1fr}.two{gap:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#opportunities .offer{transition:none}}
+
+/* Manual next-action controls */
+.manual-task{position:relative}
+.task-manual-control{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:12px;font-weight:700;color:#4358c7;margin-top:9px;padding:7px 10px;background:#f0f3ff;border:1px solid #dce3fb;border-radius:9px;min-height:35px}
+.task-manual-control input{width:16px;height:16px;accent-color:#4257dc;cursor:pointer}
+.task-manual-control input:disabled{cursor:not-allowed}
+.task-manual-control:has(input:disabled){opacity:.65;cursor:not-allowed}
+.manual-task.task-is-complete{border-left:3px solid #58a780;padding-left:12px;background:#f9fcfa}
+.manual-task.task-is-complete>strong,.manual-task.task-is-complete>div>strong{text-decoration:line-through;text-decoration-color:#92a59c;color:#61786a}
+.manual-task.task-is-complete .task-manual-control{background:#eaf8ef;color:#2f7950;border-color:#c9e7d3}
