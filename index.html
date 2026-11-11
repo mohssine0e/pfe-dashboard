@@ -581,6 +581,30 @@ function showSources(data){
 }
 function showVerifiedOfferTitles(data){
  const main=Array.isArray(data.mainOfferRegistry)?data.mainOfferRegistry:[];
+ // The first cards are legacy static HTML. Render newly published registry entries too.
+ const container=document.querySelector('#opportunities .offers');
+ for(let i=cards.length;i<main.length;i++){
+   const item=main[i];
+   const card=make('article','offer');
+   card.dataset.offerIndex=String(i);
+   const hay=(item.role||item.title||'').toLowerCase();
+   card.dataset.lane=/devops|cloud|infra|linux|automation|automatisation/.test(hay)?'devops':/java|spring|jee/.test(hay)?'java':/full.?stack|web|react/.test(hay)?'fullstack':'other';
+   card.dataset.fit=/software|devops|cloud|full.?stack|développement|development|automation|automatisation/.test(hay)?'good':'weak';
+   const header=make('div','offer-header'),heading=make('h3',null,item.company||'Company');
+   const tags=make('div','tags');tags.append(make('span',null,card.dataset.lane),make('span',null,card.dataset.fit+' fit'));header.append(heading,tags);
+   const roleBlock=make('div','offer-role-block');roleBlock.append(make('p','jobtitle',item.title||'Internship'),make('p','role',item.role||item.title||''));
+   const meta=make('div','offer-meta'),provenance=make('p','provenance'),sourceLink=make('a','source-link','Original listing');
+   if(/^https:\/\//.test(item.url||'')){sourceLink.href=item.url;sourceLink.target='_blank';sourceLink.rel='noopener noreferrer'}
+   provenance.append(sourceLink);
+   meta.append(provenance,make('p','deadline',item.verifiedDeadline?'Verified deadline: '+item.verifiedDeadline:'Deadline not verified'));
+   const method=make('div','method-block');
+   method.append(make('p','method-label',item.listingReviewStatus||'Imported listing — verify details'),make('p','submission-evidence','Application status not verified; check platform history before applying.'));
+   const footer=make('div','offer-footer'),buttons=make('div','buttons'),open=make('a','secondary','Open listing');
+   if(/^https:\/\//.test(item.url||'')){open.href=item.url;open.target='_blank';open.rel='noopener noreferrer'}
+   buttons.append(open);footer.append(buttons);
+   card.append(header,roleBlock,meta,method,footer);
+   container.append(card);cards.push(card);
+ }
  cards.forEach((card,i)=>{const source=main[i];if(!source)return;
  const title=card.querySelector('.jobtitle'),heading=card.querySelector('h3'),sourceLink=card.querySelector('.source-link'),role=card.querySelector('.role');
  if(heading)heading.textContent=source.company||'Company unverified';
