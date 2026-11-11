@@ -1,0 +1,41 @@
+/* PFE Desk v4 — new design system; legacy.css retains component behavior */
+:root{--ink:#19263a;--muted:#69788c;--line:#e5eaf2;--bg:#f6f8fc;--brand:#4257dc;--blue:#edf0ff;--red:#b84953;--surface:#fff;--sidebar:#111b30;--radius:14px}
+html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:14px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+body:before{display:none}main{max-width:none;width:calc(100% - 236px);margin:0 0 0 236px;padding:30px clamp(20px,3.2vw,52px) 95px;min-height:100vh}
+header{margin:0 auto 22px;padding:0 0 20px;max-width:1370px;border-bottom:1px solid var(--line)}
+.hero{align-items:center;gap:20px}.hero .eyebrow{font-size:10px;letter-spacing:.16em;color:#5869bc}.hero h1{font-size:clamp(28px,3vw,39px);letter-spacing:-.055em;margin:4px 0 8px;font-weight:800}
+.hero p{font-size:13px;line-height:1.55;color:var(--muted);max-width:670px}
+header>.pill{display:none}.last-sync{background:#fff;border:1px solid var(--line);box-shadow:none;border-radius:11px;padding:11px 15px;min-width:170px}
+.site-nav{position:fixed!important;top:0!important;bottom:0!important;left:0!important;right:auto!important;width:236px!important;height:100dvh!important;margin:0!important;padding:105px 12px 24px!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:var(--sidebar)!important;display:flex!important;flex-direction:column!important;gap:6px!important;overflow-y:auto;z-index:50}
+.site-nav:before{content:"PFE DESK";position:absolute;top:28px;left:24px;font-size:20px;font-weight:850;letter-spacing:-.05em;color:#fff}
+.site-nav:after{content:"2027  /  CAREER WORKSPACE";position:absolute;top:60px;left:24px;font-size:10px;font-weight:650;letter-spacing:.1em;color:#96a4c0}
+.site-nav a{flex:0 0 auto!important;min-height:45px;display:flex!important;align-items:center!important;justify-content:flex-start!important;flex-direction:row!important;gap:12px!important;padding:11px 13px!important;border-radius:10px!important;color:#b1bed4!important;font-size:13px!important;text-align:left}
+.site-nav a:hover{background:#25324e!important;color:#fff!important}
+.site-nav a[aria-current="page"]{background:#4056d7!important;color:#fff!important;box-shadow:none!important}
+.site-nav .nav-icon{font-size:20px!important;line-height:1;width:23px;text-align:center}
+.page-panel{max-width:1370px;margin:0 auto;min-width:0}.page-panel[hidden]{display:none!important}.page-heading{margin:0 0 12px;padding:2px 0 12px}.page-heading h2{font-size:27px;line-height:1.2;font-weight:820;letter-spacing:-.045em;margin:0 0 5px}.page-heading p{color:var(--muted);font-size:13px;margin:0}
+section{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin:15px 0;box-shadow:0 2px 12px #182b4708}
+section h2{font-size:18px;letter-spacing:-.025em;font-weight:780}.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:15px}.two>section{min-width:0}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.kpi{background:#f8faff;border:1px solid #ebeff7;border-radius:11px;padding:16px;min-height:104px}.kpi strong{font-size:31px;color:#2c4185;font-weight:830;letter-spacing:-.045em}.kpi span{font-size:11px;color:var(--muted);line-height:1.4;display:block;margin-top:7px}
+.banner,.freshness{background:#f6f8ff;border:1px solid #e4e9f8;border-radius:10px;color:#65748c}
+.pill{background:#eef0ff;color:#4053b4}.rank{border-radius:9px;background:#eef0ff;color:#4053b4}
+button,a.btn{background:#4257dc;color:#fff;border-color:#4257dc;border-radius:9px}a.secondary{background:#fff;color:#4053bf;border-color:#dbe1f2;border-radius:9px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a8b5ff;outline-offset:2px}
+#opportunities .controls{display:grid;grid-template-columns:minmax(190px,2fr) repeat(3,minmax(125px,1fr));gap:9px;padding:12px;background:#f8f9fc;border:1px solid var(--line);border-radius:12px;margin:16px 0}
+#opportunities .controls input,#opportunities .controls select{width:100%;min-width:0;min-height:42px;border:1px solid #dce3ef;background:#fff;border-radius:9px;padding:9px 11px;font:inherit;font-size:12px;color:var(--ink)}
+#opportunities .offers{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,315px),1fr));gap:13px;align-items:stretch}
+#opportunities .offer{min-width:0;display:flex;flex-direction:column;gap:9px;padding:18px!important;background:#fff!important;border:1px solid #e3e8f1!important;border-radius:13px!important;box-shadow:0 2px 10px #1c31510b!important;transition:border-color .15s,box-shadow .15s}
+#opportunities .offer:hover{transform:none!important;border-color:#adbaf0!important;box-shadow:0 7px 20px #1c315116!important}
+#opportunities .offer[hidden]{display:none!important}
+#opportunities .offer-header h3{font-size:16px;line-height:1.3;font-weight:780;overflow-wrap:anywhere}
+#opportunities .offer .jobtitle{font-size:13px;line-height:1.45;font-weight:740;overflow-wrap:anywhere}
+#opportunities .offer .role{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+#opportunities .offer-meta,#opportunities .method-block{border-top:1px solid #edf0f6;padding-top:9px;font-size:11px;color:#60718a}
+#opportunities .offer-meta p,#opportunities .method-block p{overflow-wrap:anywhere}
+#opportunities .offer-footer{margin-top:auto;padding-top:8px}#opportunities .offer .buttons{display:flex;gap:7px;flex-wrap:wrap}#opportunities .offer .buttons a{flex:1 1 115px;white-space:normal;line-height:1.3;text-align:center;font-size:11px}
+#opportunities .offer.offer-is-applied{background:#fbfefc!important;border-color:#9dcdb4!important}#opportunities .offer.offer-is-expired{background:#fcfaf9!important;border-color:#d9c6bf!important}
+#application-table-section,#completion-queue-section,#activity-feed-section{overflow-wrap:anywhere}
+#view-tasks #completion-queue-section{border-left:3px solid #6d7de5}
+@media(max-width:1150px){main{width:calc(100% - 210px);margin-left:210px;padding:24px 20px 80px}.site-nav{width:210px!important}.two{grid-template-columns:1fr}#opportunities .controls{grid-template-columns:repeat(2,minmax(0,1fr))}#opportunities .controls #search{grid-column:1/-1}}
+@media(max-width:760px){main{width:100%;margin:0;padding:18px 12px 105px}.site-nav{top:auto!important;bottom:0!important;right:0!important;width:100%!important;height:auto!important;min-height:70px;padding:6px 3px max(8px,env(safe-area-inset-bottom))!important;flex-direction:row!important;justify-content:space-around!important;gap:0!important;overflow:visible;background:#111b30!important}.site-nav:before,.site-nav:after{display:none}.site-nav a{flex:1 1 0!important;min-width:0;min-height:54px;flex-direction:column!important;justify-content:center!important;gap:3px!important;padding:6px 0!important;font-size:9px!important;text-align:center}.site-nav .nav-icon{font-size:18px!important;width:auto}.hero{flex-direction:column;align-items:stretch;gap:12px}.hero h1{font-size:29px}.last-sync{width:100%}.page-heading h2{font-size:24px}section{padding:16px;margin:12px 0}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#opportunities .controls{grid-template-columns:1fr}#opportunities .controls #search{grid-column:auto}#opportunities .offers{grid-template-columns:1fr}.two{gap:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#opportunities .offer{transition:none}}
