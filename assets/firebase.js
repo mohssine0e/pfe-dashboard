@@ -42,6 +42,7 @@ function removeControls(){
   for(const panel of completionPanels.values())panel.root.replaceChildren();
   completionPanels.clear();
   privateStatusSnapshot=new Map();
+  syncManualTasks();
   for(const card of cards){
     delete card.dataset.applied;
     delete card.dataset.expired;
@@ -216,8 +217,52 @@ function renderPrivateRecords(snapshot){
  }
  if(!rows.length)root.append(make('p','muted','No manually marked applied or expired offers yet.'));
 }
+
+/* User-controlled task state: stored in the existing privateApplications collection,
+   behind the same authorized GitHub/Firebase account as application checkboxes. */
+function syncManualTasks(){
+ const controls=[...document.querySelectorAll('.manual-task')];
+ for(const row of controls){
+  const input=row.querySelector('.task-manual-control input');
+  if(!input)continue;
+  const taskId=String(row.dataset.taskId||'');
+  if(!taskId)continue;
+  const key='task-'+encodeURIComponent(taskId).slice(0,800);
+  const record=privateStatusSnapshot.get(key);
+  const complete=record?.taskCompleted===true;
+  input.checked=complete;
+  input.disabled=!adminReady||!auth.currentUser;
+  row.classList.toggle('task-is-complete',complete);
+  const label=row.querySelector('.task-manual-control span');
+  if(label)label.textContent=complete?'Completed':'Mark done';
+  if(input.dataset.bound==='true')continue;
+  input.dataset.bound='true';
+  input.addEventListener('change',async()=>{
+   if(!adminReady||!auth.currentUser){syncManualTasks();return;}
+   const next=input.checked;
+   input.disabled=true;
+   const feedback=make('span','admin-feedback','Saving privately…');
+   row.append(feedback);
+   try{
+    await setDoc(doc(db,'privateApplications',key),{
+      type:'manual-task',taskId,taskCompleted:next,
+      status:'task',evidence:'self-report',
+      evidenceSource:'User manually toggled task status',
+      completedOn:next?localDate():null,updatedAt:serverTimestamp()
+    },{merge:true});
+    feedback.textContent='Saved';
+   }catch(error){
+    input.checked=!next;
+    feedback.textContent='Could not save: '+(error.code||'unknown');
+   }finally{input.disabled=false;setTimeout(()=>feedback.remove(),3000);}
+  });
+ }
+}
+document.addEventListener('pfe:tasks-rendered',syncManualTasks);
+
 function renderSaved(snapshot){
  privateStatusSnapshot=snapshot;
+ syncManualTasks();
  renderCompletionStatuses(snapshot);
  for(const panel of panels.values()){
    const data=snapshot.get(panel.key);
@@ -254,6 +299,7 @@ async function authorizeAndLoad(user,sequence){
     const state=await resp.json();
     if(!Array.isArray(state.mainOfferRegistry))throw new Error('Offer list unavailable');
     adminReady=true;
+    syncManualTasks();
     status.textContent='Private admin verified. Application statuses are visible only to your account.';
     const offers=state.mainOfferRegistry;
     for(let index=0;index<Math.min(cards.length,offers.length);index++){
