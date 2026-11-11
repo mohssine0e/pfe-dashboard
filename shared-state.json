@@ -802,7 +802,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-11T10:00:00+01:00",
+    "updatedAt": "2026-11-11T10:15:45Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -929,6 +929,23 @@
         "compatibilityAssessment": "Moderate-good SRE/DevOps fit: choosing key indicators, configuring monitoring tools, building dashboards and alerts for a centralised IT supervision solution. Profile asked: Bac+5 Génie Informatique, réseaux, télécom, cybersécurité or data. No specific tool named.",
         "note": "Offer not found in ChatGPT's main list at the last comparison (2026-11-11); this is not proof the main list is wrong. Same VINCI Energies PFE campaign as the Azure subject; distinct role.",
         "distinct_role": true
+      },
+      {
+        "title": "Stagiaire PFE – Ingénieur Full Stack & IA Générative (F/H)",
+        "company": "Sofrecom Maroc",
+        "role": "Développement Full Stack et IA générative pour un assistant DevOps intelligent",
+        "verifiedTitle": true,
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/stagiaire-pfe-%E2%80%93-ing%C3%A9nieur-full-stack-ia-g%C3%A9n%C3%A9rative-f-h-at-sofrecom-maroc-4484439777",
+        "postingId": "linkedin:4484439777",
+        "source": "Original Sofrecom Maroc LinkedIn job listing",
+        "location": "Rabat, Morocco",
+        "discoveredAt": "2026-11-11T10:15:45Z",
+        "checkedAt": "2026-11-11T10:15:45Z",
+        "applicationMethod": "LinkedIn job application button; external application flow not verified",
+        "dedicatedCvUploadVerified": false,
+        "cvGuidance": "Use approved generic Software Engineering CV if profile-backed; tailor a separate copy only if dedicated upload is verified. No application or CV submission claimed.",
+        "durationNote": "PFE internship; 5–6-month duration and 2027 start date not explicitly confirmed in original listing.",
+        "note": "Excellent technical match: Java 17+/Spring Boot, React/TypeScript, REST, PostgreSQL, Docker, CI/CD and DevOps monitoring integrations. Also requires Python, LLM/RAG familiarity; distinguish existing experience from learning interests. No original deadline stated."
       }
     ],
     "rules": {
