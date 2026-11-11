@@ -664,6 +664,26 @@
       "source": "Verified Gmail SENT application email with PDF CV attachment",
       "evidenceCategory": "Verified direct sent exploratory PFE application, not employer acknowledgment or confirmed listing submission",
       "notes": "Candidate requested an alternative software-oriented PFE placement for January/February 2027. Referenced advertised Data/AI placement runs May–August 2027; fit and availability are unconfirmed. No employer response or action deadline verified."
+    },
+    {
+      "company": "Deloitte Conseil Maroc",
+      "role": "Stagiaire Technology & Transformation F/H",
+      "channel": "employer recruitment platform",
+      "status": "Acknowledged",
+      "date": "2026-11-11",
+      "source": "Employer recruitment acknowledgment for exact internship role",
+      "recordId": "app-deloitte-technology-transformation-intern-20261111",
+      "evidenceCategory": "Employer-issued application receipt; under review"
+    },
+    {
+      "company": "Inetum Maroc",
+      "role": "Sécurisation et automatisation des infrastructures IT Windows/Linux, bases de données et solutions ITSM grâce à l’IA",
+      "channel": "SmartRecruiters",
+      "status": "Acknowledged",
+      "date": "2026-11-11",
+      "source": "Employer recruitment platform acknowledgment for exact role",
+      "recordId": "app-inetum-infrastructure-automation-ai-20261111",
+      "evidenceCategory": "Employer-issued application receipt; queued for review"
     }
   ],
   "priority": [
@@ -1718,12 +1738,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-11T16:04:07+01:00",
+    "lastVerifiedAt": "2026-11-11T16:58:58+00:00+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 11 Nov: 10 complete; sent after 9 Nov: 9 complete; StagiairesMA subject after 9 Nov: 18 complete; recruiting keywords after 10 Nov: 53 complete. Compared with prior verification 2026-11-11T14:24:32+01:00; no new PFE employer action in newest received messages; no aggregate recount.",
+    "scope": "Received after 9 Nov: 111 messages, 2 pages; sent after 6 Nov: 25 messages; StagiairesMA/external completion after 5 Nov: 27 messages; recruiting keywords after 7 Nov: 138 messages, 2 pages. Recent messages read, including employer acknowledgments and sent attachment metadata. Incremental comparison against prior 11 Nov 16:04:07 +01:00 verification. No historical aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: overlapping received, sent with attachment metadata, StagiairesMA completion notices, recruiting keywords; newest messages reviewed",
+    "method": "Connected Gmail search_emails (four overlapping, fully paginated queries) and batch_read_email of recent matching messages",
     "result": "success",
     "hourlySyncPolicy": "Verification timestamp updated only after real connected Gmail queries and confirmed GitHub commit; freshness expires after two hours."
   },
@@ -1807,7 +1827,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-11T16:04:07+01:00",
+  "lastSyncedAt": "2026-11-11T16:58:58+00:00+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
