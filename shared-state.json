@@ -325,15 +325,21 @@
       "company": "torck GmbH",
       "role": "Graduate Internship software development (m/f) Morocco",
       "channel": "LinkedIn Easy Apply",
-      "status": "Applied via LinkedIn — ATS questionnaire completion unverified",
+      "status": "Applied via LinkedIn — HR questionnaire completed (user reported)",
       "cv": "Not independently verified (LinkedIn)",
       "language": "EN/DE",
       "date": "2026-11-08",
       "source": "LinkedIn application sent confirmation dated 8 Nov 2026",
       "postingId": "linkedin:4487295321",
       "postingUrl": "https://www.linkedin.com/jobs/view/4487295321/",
-      "evidenceCategory": "Verified LinkedIn application confirmation; ATS form completion not verified",
-      "notes": "LinkedIn application confirmed by LinkedIn email dated 8 Nov 2026; HR questionnaire invited 9 Nov, user requested help and viewed verification code, but final form submission is not confirmed."
+      "evidenceCategory": "Verified LinkedIn application; HR questionnaire completion user-reported",
+      "notes": "LinkedIn application confirmed 8 Nov 2026. User confirmed on 11 Nov 2026 that the torck HR questionnaire was submitted; independent ATS receipt not checked.",
+      "hrQuestionnaire": {
+        "status": "completed",
+        "source": "User confirmation in conversation",
+        "confirmedOn": "2026-11-11",
+        "independentlyVerified": false
+      }
     },
     {
       "recordId": "app-intelcia-d2t2-2027",
@@ -698,17 +704,13 @@
     {
       "rank": 1,
       "company": "torck GmbH",
-      "task": "Confirm torck HR questionnaire submission (deadline 13 Nov), or complete it",
-      "reason": "LinkedIn application sent; ATS form invitation and verification code received. No final ATS screening form submission confirmation found.",
+      "task": "HR questionnaire submitted — await next step",
+      "reason": "User confirmed questionnaire submission on 11 Nov 2026. ATS receipt not independently checked.",
       "date": "2026-11-13",
-      "certainty": "Verified LinkedIn application; ATS questionnaire completion unverified",
-      "kind": "unfinished",
-      "actionLinks": [
-        {
-          "label": "Complete torck HR questionnaire",
-          "url": "https://ats.torck.io/public/questions/d7d1a375-eb73-4f19-a871-def352fb6616?type=hr"
-        }
-      ]
+      "certainty": "Completed — user reported",
+      "kind": "completed",
+      "actionLinks": [],
+      "completedOn": "2026-11-11"
     },
     {
       "rank": 2,
