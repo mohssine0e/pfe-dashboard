@@ -1870,12 +1870,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-12T23:22:59+01:00",
+    "lastVerifiedAt": "2026-11-12T23:44:59+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-12 excluding sent/promotions/social: 29 fully read; sent after 2026-11-07: 23 matching (latest and prior follow-up sampled with attachment metadata); external completion notices after 2026-11-07: 27 matching (latest sampled); recruiting-keyword matches after 2026-11-07: first 100 returned, older pagination available; recent received after 2026-11-10: first 100 returned, older pagination available. No new employer responses, deadlines, sent applications or external completion notices after previous verification at 21:06:33 Africa/Casablanca. Sofrecom and Visian LinkedIn confirmations already reconciled. No aggregate recount; countsAuditedAt unchanged.",
+    "scope": "Received after 2026-11-11 excluding spam/trash/promotions/social: 50 messages; sent after 2026-11-09: 10 messages (attachment metadata); StagiairesMA subject completion notices after 2026-11-07: 27; recruiting-keyword matches after 2026-11-11: 39. All four search result pages complete: true. Compared against prior verification at 2026-11-12T23:22:59+01:00. No new relevant employer messages, sent applications, deadlines, or completion notices since prior verification; earlier SDG Group rejection checked without exact vacancy attribution. This is an incremental scan, not a historical aggregate recount; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_email_ids (four overlapping searches) and batch_read_email (29 received since Nov 12 plus 3 earlier-context sent/platform notices)",
+    "method": "Connected Gmail search_emails (four overlapping queries, returned message summaries and attachment metadata), plus read_email for SDG Group earlier-context verification",
     "result": "success",
     "freshnessPolicy": "Only a real successful connected Gmail query and confirmed GitHub write advance verification; stale after 2 hours."
   },
@@ -1959,7 +1959,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-12T23:22:59+01:00",
+  "lastSyncedAt": "2026-11-12T23:44:59+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
