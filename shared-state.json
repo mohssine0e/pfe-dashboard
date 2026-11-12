@@ -698,6 +698,19 @@
       "source": "User confirmation in conversation on 2026-11-11",
       "certainty": "User-reported; not independently verified",
       "nextAction": "Await employer response; do not reapply or retake assessment without a distinct invitation"
+    },
+    {
+      "recordId": "app-sofrecom-maroc-campagne-stage-pfe-2027-linkedin-4490327145",
+      "company": "Sofrecom Maroc",
+      "role": "Campagne de Stage PFE 2027",
+      "postingId": "linkedin:4490327145",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4490327145/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-12",
+      "source": "LinkedIn application-sent confirmation",
+      "evidenceCategory": "Verified LinkedIn application sending confirmation; not employer acknowledgement",
+      "notes": "Distinct from Sofrecom PHP, DevOps, and Full Stack vacancies. LinkedIn confirmation does not establish employer receipt or review."
     }
   ],
   "priority": [
@@ -1857,12 +1870,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-12T20:35:52+00:00",
+    "lastVerifiedAt": "2026-11-12T21:06:33.885+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-11 excluding spam/trash/promotions: 50 messages; sent after 2026-11-09: 10 messages, attachment metadata reviewed; external completion notices after 2026-11-08: 27 messages; recruiting-term matches after 2026-11-10: 55 messages. All four searches fully paginated. No new verified PFE activity since prior audit; latest MA LOGISTICS notice is a job alert, not an application. No new StagiairesMA notices. Historical totals not recounted; countsAuditedAt remains 2026-11-07.",
+    "scope": "Received after 2026-11-10: 31 messages in Nov 12 overlap; sent after Nov 12: 1 with PDF attachment; StagiairesMA completion notices after Nov 12: 0; broader overlapping searches since Nov 8/10 completed. New verified LinkedIn submission for Sofrecom Maroc PFE 2027 posting 4490327145; separate Visian Java regular-role submission not counted as PFE. No employer acknowledgement, urgent deadline or new intermediary completion notice. Historical aggregate totals not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: four fully paginated overlapping searches; sent attachment metadata reviewed; relevant employer and intermediary notices classified by subject/snippet against prior audit",
+    "method": "Connected Gmail search_emails: four overlapping queries (recent non-promotional received, sent with attachment metadata, StagiairesMA completion notices, recruiting-related terms); two exact LinkedIn application confirmations read with read_email",
     "result": "success",
     "freshnessPolicy": "Only a real successful connected Gmail query and confirmed GitHub write advance verification; stale after 2 hours."
   },
@@ -1946,7 +1959,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-12T20:35:52+00:00",
+  "lastSyncedAt": "2026-11-12T21:06:33.885+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
