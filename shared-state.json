@@ -832,22 +832,9 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-11T10:15:45Z",
+    "updatedAt": "2026-11-12T09:20:00Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
-      {
-        "title": "Research Assistant - PFE 2027",
-        "company": "Oracle",
-        "role": "Oracle Morocco R&D software engineering internship",
-        "verifiedTitle": true,
-        "sourceUrl": "https://ma.linkedin.com/jobs/view/research-assistant-pfe-2027-at-oracle-4419628643",
-        "postingId": "4419628643",
-        "source": "LinkedIn public Oracle job listing",
-        "discoveredAt": "2026-11-08T09:48:47+00:00",
-        "location": "Casablanca, Morocco",
-        "durationMonths": 6,
-        "note": "High-fit software R&D internship; Oracle employees confirm the 2027 PFE program is open with six-month placements and rolling review, no fixed deadline. English resume required; separate CV upload field not confirmed. Avoid multiple accounts or duplicate applications."
-      },
       {
         "title": "Orange Maroc recrute ses stagiaires PFE 2027",
         "company": "Orange Maroc",
@@ -961,21 +948,33 @@
         "distinct_role": true
       },
       {
-        "title": "Stagiaire PFE – Ingénieur Full Stack & IA Générative (F/H)",
-        "company": "Sofrecom Maroc",
-        "role": "Développement Full Stack et IA générative pour un assistant DevOps intelligent",
+        "title": "Stage PFE – Conception d’une Plateforme de Validation et de Simulation des règles d’allocation de P&L",
+        "company": "Société Générale Maroc (SG Global Solution Centre)",
+        "role": "Full-stack development of a P&L allocation rule validation & simulation platform (Python/FastAPI/Django, Vue.js/TypeScript)",
         "verifiedTitle": true,
-        "sourceUrl": "https://ma.linkedin.com/jobs/view/stagiaire-pfe-%E2%80%93-ing%C3%A9nieur-full-stack-ia-g%C3%A9n%C3%A9rative-f-h-at-sofrecom-maroc-4484439777",
-        "postingId": "linkedin:4484439777",
-        "source": "Original Sofrecom Maroc LinkedIn job listing",
-        "location": "Rabat, Morocco",
-        "discoveredAt": "2026-11-11T10:15:45Z",
-        "checkedAt": "2026-11-11T10:15:45Z",
-        "applicationMethod": "LinkedIn job application button; external application flow not verified",
+        "sourceUrl": "https://careers.societegenerale.com/en/job-offers/stage-pfe-conception-dune-plateforme-de-validation-et-de-simulation-des-regles-dallocation-de-pl-26000NNK-en",
+        "link": "https://www.linkedin.com/jobs/view/4489976823/",
+        "postingId": "linkedin:4489976823 / SG ref 26000NNK",
+        "source": "LinkedIn job search (Société Générale posting), verified on Société Générale careers site",
+        "location": "Casablanca, Morocco",
+        "discoveredAt": "2026-11-12T10:20:00+01:00",
+        "checkedAt": "2026-11-12T10:20:00+01:00",
+        "durationNote": "Paid internship, 5 to 6 months (stated on the official listing). No deadline stated.",
+        "applicationMethod": "Apply on company website (Société Générale Taleo career section); online test link sent after applying, then interview",
+        "officialApplicationUrl": "https://socgen.taleo.net/careersection/sgcareers/jobapply.ftl?job=26000NNK&src=CWS-1&lang=en",
         "dedicatedCvUploadVerified": false,
-        "cvGuidance": "Use approved generic Software Engineering CV if profile-backed; tailor a separate copy only if dedicated upload is verified. No application or CV submission claimed.",
-        "durationNote": "PFE internship; 5–6-month duration and 2027 start date not explicitly confirmed in original listing.",
-        "note": "Excellent technical match: Java 17+/Spring Boot, React/TypeScript, REST, PostgreSQL, Docker, CI/CD and DevOps monitoring integrations. Also requires Python, LLM/RAG familiarity; distinguish existing experience from learning interests. No original deadline stated."
+        "requiredDocuments": [
+          "CV (upload step is behind the Taleo sign-in; not verified)"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE.pdf (generic), or a lightly tailored copy if Taleo allows a separate CV upload",
+        "profileAdjustment": "Optional one-line profile mention of Société Générale and this rule-validation/simulation platform; stress TypeScript, REST API design, design patterns and testing. Do not claim Python/FastAPI/Django/Vue.js.",
+        "compatibilityAssessment": "Moderate: a genuine software-engineering PFE (design patterns, REST/OpenAPI, async processing, dashboards/KPIs, unit and integration tests, TypeScript frontend) that matches your full-stack profile, but the stack is Python (FastAPI/Django) and Vue.js rather than Java/Spring Boot and React. Finance (P&L) domain.",
+        "nextAction": "Optional: apply on SG's Taleo site with your existing SG account (you already applied to other SG PFEs there); expect an online test.",
+        "note": "Not among the SG roles already applied to (Software Engineer, R&D Software Engineer, DevOps/Pega). Missed by the main list.",
+        "missedByMain": true,
+        "status": "New — apply on company website",
+        "alreadyApplied": false,
+        "alreadyAppliedEvidence": "No 26000NNK / P&L allocation email in Gmail; not in main applications (checked 2026-11-12)"
       }
     ],
     "rules": {
