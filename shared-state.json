@@ -1857,12 +1857,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-12T16:04:45+01:00",
+    "lastVerifiedAt": "2026-11-12T16:30:18+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-10 excluding spam/trash/promotions: 97 messages; sent after 2026-11-07: 23 messages; external-completion notices after 2026-11-07: 26 messages; recruiting-term search after 2026-11-07: 83 messages. All four result sets fully paginated. Newly verified sent Ostorlab Software Engineer Intern follow-up with CV attachment on 2026-11-12; not a new application or employer acknowledgment. LinkedIn Societe Generale listing is a job alert only. No new employer response or StagiairesMA completion requirement. Aggregate counts not recounted; countsAuditedAt remains 2026-11-07.",
+    "scope": "Received after 2026-11-10 excluding sent/spam/trash/promotions: 88; sent after 2026-11-07: 23; external-completion notices after 2026-11-07: 27; recruiting-term matches after 2026-11-07: 149. All fully paginated. Compared with previous 2026-11-12 16:04:45+01:00 audit: no newer employer application activity or StagiairesMA completion notices; newest messages were unrelated GitHub CI notifications and social/job alerts. Existing Ostorlab follow-up remains a sent follow-up, not acknowledgment. Aggregate totals not recounted; independent countsAuditedAt remains 2026-11-07.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (four fully paginated overlapping searches), plus read_email for new sent follow-up and job-alert classification",
+    "method": "Connected Gmail search_emails; four fully paginated overlapping searches, message subjects/timestamps and sent attachment metadata",
     "result": "success",
     "freshnessPolicy": "Only a real successful connected Gmail query and confirmed GitHub write advance verification; stale after 2 hours."
   },
@@ -1946,7 +1946,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-12T16:04:45+01:00",
+  "lastSyncedAt": "2026-11-12T16:30:18+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
