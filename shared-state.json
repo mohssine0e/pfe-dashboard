@@ -1870,14 +1870,14 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-13T08:37:49+00:00",
+    "lastVerifiedAt": "2026-11-13T09:54:10+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Successful connected Gmail searches on 13 Nov 2026: received after 12 Nov (41 matches); recruitment/assessment/rejection terms after 11 Nov (18 matches), plus earlier overlapping received and sent queries. Reviewed subject/snippet/date and attachment summaries. One EDICOM rejection for Valencia, Spain (outside Morocco PFE scope); LinkedIn application-sent notices for Visian and Sofrecom Maroc, not employer acknowledgements. No new verified Morocco PFE interview or assessment in reviewed messages. Historical totals not re-audited.",
-    "staleAfterHours": 24,
+    "scope": "13 Nov 2026 audit: received since 11 Nov (63), sent since 8 Nov (15), StagiairesMA/external completion since 1 Nov (31), recruiting since 7 Nov (118); all searches fully paginated. 42 selected recent/overlap messages read successfully. No newly verified PFE-specific action after prior successful audit; existing EDICOM Valencia rejection excluded from Morocco PFE matching. Historical aggregate counts not recounted; countsAuditedAt remains 7 Nov.",
+    "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (successful queries, message metadata and snippets); limited scope, not complete inbox audit",
+    "method": "Connected Gmail search_emails; fully paginated overlapping received, sent, recruiting and external-completion searches; selected message bodies and attachment metadata read",
     "result": "success",
-    "freshnessPolicy": "Advance only after successful connected Gmail search; 24-hour freshness; never on refresh or failed check."
+    "freshnessPolicy": "2-hour Gmail verification freshness; update only after genuine Gmail query and confirmed GitHub commit; independent historical aggregate audit date."
   },
   "sourcesChecked": [
     {
@@ -1959,7 +1959,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-13T08:37:49+00:00",
+  "lastSyncedAt": "2026-11-13T09:54:10+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
