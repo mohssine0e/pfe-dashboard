@@ -711,6 +711,40 @@
       "source": "LinkedIn application-sent confirmation",
       "evidenceCategory": "Verified LinkedIn application sending confirmation; not employer acknowledgement",
       "notes": "Distinct from Sofrecom PHP, DevOps, and Full Stack vacancies. LinkedIn confirmation does not establish employer receipt or review."
+    },
+    {
+      "recordId": "app-firstfintech-full-stack-developer-pfe-2026-11-13",
+      "company": "FIRSTFINTECH",
+      "role": "Full-Stack Developer PFE internship (6 months, Agadir)",
+      "channel": "email",
+      "status": "Sent — employer receipt unverified",
+      "date": "2026-11-13",
+      "source": "Verified outgoing PFE application with PDF CV attachment",
+      "evidenceCategory": "Gmail SENT with PDF attachment; no employer acknowledgment"
+    },
+    {
+      "recordId": "app-inetum-sap-commerce-composable-storefront-744000157819328",
+      "company": "Inetum Business Solutions Maroc",
+      "role": "Conception et développement d'une solution e-commerce avec SAP Commerce et SAP Composable Storefront",
+      "postingId": "smartrecruiters:744000157819328",
+      "postingUrl": "https://jobs.smartrecruiters.com/Inetum2/744000157819328-conception-et-developpement-d-une-solution-e-commerce-avec-sap-commerce-et-sap-composable-storefront",
+      "channel": "Indeed / employer recruitment platform",
+      "status": "Acknowledged — queued for employer review",
+      "date": "2026-11-13",
+      "source": "Employer recruitment platform acknowledgment for exact role",
+      "evidenceCategory": "Verified employer-platform receipt; no screening decision"
+    },
+    {
+      "recordId": "app-btechnologie-camunda-stage-pfe-linkedin-4490742553",
+      "company": "Btechnologie",
+      "role": "Camunda - Stage PFE",
+      "postingId": "linkedin:4490742553",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4490742553/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-13",
+      "source": "LinkedIn application sent confirmation for exact vacancy",
+      "evidenceCategory": "Verified platform submission; not employer acknowledgment"
     }
   ],
   "priority": [
@@ -1960,12 +1994,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-13T18:52:42+01:00",
+    "lastVerifiedAt": "2026-11-13T20:10:27+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "13 Nov 2026 overlap audit against prior successful 2026-11-13T18:21:09+01:00: non-promotional received after 11 Nov (73 messages, 1 page); sent after 8 Nov (15 messages, 1 page, attachment metadata); external completion notices after 8 Nov (27 messages, 1 page); recruiting-keyword messages after 8 Nov (161 messages, 2 pages). No messages newer than previous audit across these scopes; no verified new PFE action. No full aggregate recount; countsAuditedAt remains 2026-11-07.",
+    "scope": "13 Nov 2026 incremental audit vs previous 2026-11-13T18:52:42+01:00; non-promotional received after 11 Nov (78, 1 page), sent after 9 Nov (11, 1 page), external completion notices after 9 Nov (18, 1 page), recruiting keywords after 9 Nov (121, 2 pages). Read 4 new candidate messages. New: FIRSTFINTECH sent with PDF, Inetum exact-role employer platform acknowledgment, Btechnologie distinct Camunda PFE LinkedIn submission. No new StagiairesMA completion notices; no full historical aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; four fully paginated overlapping queries; sent attachment metadata reviewed; timestamp comparison with previous successful verification",
+    "method": "Connected Gmail search_emails; four fully paginated overlapping queries, selected message bodies and sent attachment metadata verified",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail verification freshness; update only after genuine Gmail query and confirmed GitHub commit; independent historical aggregate audit date."
   },
@@ -2049,7 +2083,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-13T18:52:42+01:00",
+  "lastSyncedAt": "2026-11-13T20:10:27+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -2468,7 +2502,14 @@
       "status": "needs-original-platform-check",
       "source": "StagiairesMA intermediary completion notice",
       "fitWarning": "Project-based opportunity; PFE contract and duration unverified.",
-      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk",
+      "emailEvidence": {
+        "sourceType": "verified-employer-email",
+        "status": "acknowledged",
+        "verifiedAt": "2026-11-13",
+        "evidenceType": "employer-confirmation",
+        "summary": "Employer recruitment platform confirmed receipt for this exact SAP Commerce project application; queued for review."
+      }
     },
     {
       "company": "Sofrecom Maroc",
