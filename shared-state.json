@@ -1889,7 +1889,7 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-13T13:55:39+00:00+01:00",
+    "lastVerifiedAt": "2026-11-13T13:55:49+01:00",
     "timezone": "Africa/Casablanca",
     "scope": "13 Nov 2026 incremental overlapping audit after prior successful verification 2026-11-13T13:15:12+01:00: 44 received after 12 Nov (fully paginated); 1 sent after 12 Nov with PDF attachment metadata; 0 StagiairesMA completion notices after 11 Nov; 10 recruiting matches after 12 Nov (fully paginated). Six selected relevant messages read; all predate prior verification, including LinkedIn application confirmations, unrelated EDICOM vacancy rejection and unassigned SDG rejection. No full aggregate recount; countsAuditedAt remains independent.",
     "staleAfterHours": 2,
@@ -1978,7 +1978,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-13T13:55:39+00:00+01:00",
+  "lastSyncedAt": "2026-11-13T13:55:49+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
