@@ -1870,12 +1870,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-12T23:34:01.601+00:00",
+    "lastVerifiedAt": "2026-11-13T00:37:17.085+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Received after 2026-11-12 excluding spam/trash/promotions and sent: 35 messages; sent after 2026-11-09: 10 messages (attachment metadata); external completion notices after 2026-11-07: 27; recruiting keyword matches after 2026-11-11: 43. All four searches fully paginated. Compared with prior verification timestamp 2026-11-12T23:44:59+01:00 (22:44:59 UTC); newly received LinkedIn social-message notifications are unrelated to recruitment. No new verified employer response, application, deadline, or completion action. Incremental scan only; countsAuditedAt and aggregate totals unchanged. Actual check time is before the prior recorded verification timestamp; this run records its actual time without implying later execution.",
+    "scope": "Incremental audit on 13 Nov 2026 with overlap to 9-12 Nov: received after 12 Nov 38 messages fully paginated; sent after 9 Nov, external-completion notices after 7 Nov, and recruiting keyword matches after 9 Nov searched with max 100 each; earlier broad result included up to 100 and may have older unpaginated matches. Newly arrived social and account-access notifications excluded. Previously known SDG Group rejection re-read, exact vacancy not established. No new verified PFE employer action or completion requirement. Historical aggregate counts not recounted; countsAuditedAt remains independent.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: four fully paginated overlapping queries; received and sent message summaries including attachment metadata; platform completion and recruiting-keyword searches",
+    "method": "Connected Gmail search_emails (received, sent with attachment metadata, StagiairesMA external-completion, recruiting keywords); targeted read_email for ambiguous employer response",
     "result": "success",
     "freshnessPolicy": "Only a real successful connected Gmail query and confirmed GitHub write advance verification; stale after 2 hours."
   },
@@ -1959,7 +1959,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-12T23:34:01.601+00:00",
+  "lastSyncedAt": "2026-11-13T00:37:17.085+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
