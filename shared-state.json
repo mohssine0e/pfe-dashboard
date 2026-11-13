@@ -1889,12 +1889,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-13T16:52:25+01:00",
+    "lastVerifiedAt": "2026-11-13T18:21:09+00:00+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "13 Nov 2026 incremental overlap after previous successful audit 2026-11-13T16:16:32+01:00; queries: non-promotional received after 10 Nov (111 messages/2 pages), sent after 8 Nov (15 messages/1 pages, attachment metadata checked), external-completion notices after 8 Nov (27 messages/1 pages; none newer than 10 Nov), recruiting keywords after 8 Nov (104 messages/2 pages). Newly received 13 Nov 15:42 UTC Capgemini PFE 2027 acknowledgement from event committee at ai iot external domain, not verified employer-issued and not matched to existing Software Developer Intern vacancy; no employer emailEvidence assigned. No full aggregate recount; historical countsAuditedAt unchanged.",
+    "scope": "13 Nov 2026 incremental overlap since prior successful verification 2026-11-13T16:52:25+01:00: non-promotional received after 10 Nov (122 messages/2 pages); sent after 8 Nov (15 messages/1 page, attachment metadata); external-completion notices after 8 Nov (27 messages/1 page); recruiting keywords after 8 Nov (161 messages/2 pages). Only newer message was unrelated LinkedIn messaging notification at 16:40 UTC; no new employer-confirmed PFE action, deadline or StagiairesMA completion request. No full aggregate recount; countsAuditedAt remains 2026-11-07.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; four fully paginated overlapping queries, sent attachment metadata, read_email on selected relevant messages; exact vacancy and provenance classification",
+    "method": "Connected Gmail search_emails; four fully paginated overlapping searches; sent attachment metadata inspected; incremental timestamp comparison with previous verified audit",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail verification freshness; update only after genuine Gmail query and confirmed GitHub commit; independent historical aggregate audit date."
   },
@@ -1978,7 +1978,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-13T16:52:25+01:00",
+  "lastSyncedAt": "2026-11-13T18:21:09+00:00+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
