@@ -1870,12 +1870,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-13T02:55:45+01:00",
+    "lastVerifiedAt": "2026-11-13T04:07:08+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Incremental overlap: received after 2026-11-11 (60), sent after 2026-11-09 (10), external-completion notices after 2026-11-09 (18), recruiting keyword matches after 2026-11-10 (55). All returned without further pages. Compared with previous verified 2026-11-13T00:37:17.085+00:00; no newly verified employer response, application, urgent action or PFE completion notice. General job alerts and social/account notices excluded. Historical totals not recounted; countsAuditedAt remains independent.",
+    "scope": "Received after 2026-11-11: 62; sent after 2026-11-07: 23 (attachment metadata); external-completion notices after 2026-11-07: 27; recruiting keywords after 2026-11-10: 89. All four result sets returned no next page. Compared with prior verified 2026-11-13T02:55:45+01:00. Two newly received Indeed sent-application confirmations for regular Italian Java roles (CWBT Padova, Omicron Roma) verified, excluded from PFE-specific rows and totals. No new PFE employer action, urgent deadline or StagiairesMA notice. SDG rejection still lacks exact vacancy identity. No aggregate recount; countsAuditedAt remains independent.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: received, sent with attachment metadata, external-completion notices, recruiting keyword matches; all four result sets fully paginated",
+    "method": "Connected Gmail search_emails (four fully paginated overlapping scopes), read_email for two new Indeed application confirmations and prior SDG response; GitHub fetch_file/update_file/readback",
     "result": "success",
     "freshnessPolicy": "Only a real successful connected Gmail query and confirmed GitHub write advance verification; stale after 2 hours."
   },
@@ -1959,7 +1959,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-13T02:55:45+01:00",
+  "lastSyncedAt": "2026-11-13T04:07:08+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
