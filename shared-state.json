@@ -845,7 +845,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-13T10:35:20Z",
+    "updatedAt": "2026-11-13T17:32:43Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1007,6 +1007,77 @@
         "recommendedCv": "Approved generic Software Engineering PDF as email attachment; do not overwrite master; no CV has been sent",
         "verifiedDeadline": null,
         "note": "New 20-topic official 2027 campaign, 6 months beginning February 2027. Strongest fit: DEV-20 Console de mesure des gains de productivité liés à l'IA (Angular, Java Spring AI) — Rabat; OPS-14 Pipeline CI/CD : tests automatisés et documentation générée — Rabat; OPS-13 Génération et revue de code Terraform assistées par IA — Rabat. Original posting allows a maximum of 2 topics in the email subject. No fixed deadline shown. Email submission not made. No private Firestore applied status accessed."
+      },
+      {
+        "title": "Développeur Full Stack – Stage PFE (E-commerce B2B / FMCG)",
+        "company": "DRM",
+        "role": "Full-stack PFE: frontend + backend REST APIs, auth, database, B2B e-commerce platform for FMCG",
+        "verifiedTitle": true,
+        "sourceUrl": "https://www.stagiaires.ma/stage-emploi-maroc/7918-developpeur-full-stack-stage-pfe-e-commerce-b2b-fmcg",
+        "link": "https://www.stagiaires.ma/stage-emploi-maroc/7918-developpeur-full-stack-stage-pfe-e-commerce-b2b-fmcg",
+        "additionalSources": [
+          "https://ma.indeed.com/viewjob?jk=30e16dbdf2c0b201"
+        ],
+        "postingId": "stagiaires:7918",
+        "source": "JobSpy: Indeed (redirects to Stagiaires.ma original); verified on Stagiaires.ma 2026-11-13",
+        "discoveredAt": "2026-11-13T17:32:43Z",
+        "checkedAt": "2026-11-13T17:32:43Z",
+        "foundDate": "2026-11-13",
+        "location": "Remote (100% télétravail), company based in Casablanca",
+        "durationMonths": "4-6",
+        "startDate": "Dès que possible",
+        "applicationMethod": "Apply on Stagiaires.ma ('Postuler maintenant', needs a Stagiaires.ma candidate account); listing says 'Candidature via la plateforme'",
+        "applicationEmail": null,
+        "applicationEmailVerified": false,
+        "emailSubject": "Candidature – Stage PFE Développeur Full Stack",
+        "requiredDocuments": [
+          "CV",
+          "Portfolio or GitHub profile (if available)",
+          "Short presentation of skills and technologies"
+        ],
+        "officialApplicationUrl": "https://www.stagiaires.ma/stage-emploi-maroc/7918-developpeur-full-stack-stage-pfe-e-commerce-b2b-fmcg",
+        "dedicatedCvUploadVerified": false,
+        "recommendedCv": "Mohssine_Echlaihi_PFE.pdf (generic) — platform/profile application",
+        "profileAdjustment": null,
+        "verifiedDeadline": null,
+        "nextAction": "Sign in to Stagiaires.ma, check which CV the profile sends, add GitHub (MicroPaaS) and a short skills note, then apply. Not applied.",
+        "compatibilityAssessment": "Medium: real 4-6 month PFE, full-stack with REST APIs, auth and DB; React matches. Backend is Node/Express/NestJS/Django 'or equivalent' (no Java). Unpaid, fully remote, available ASAP (you start Feb 1, 2027).",
+        "note": "Posted 2026-11-13. No deadline shown. No recruitment email in the listing."
+      },
+      {
+        "title": "Stage – Consultant Atlassian H/F",
+        "company": "AZARA Consulting",
+        "role": "PFE: configure Jira/Confluence workflows, permissions and automations, documentation and testing for clients",
+        "verifiedTitle": true,
+        "sourceUrl": "https://www.stagiaires.ma/stage-emploi-maroc/7931-stage-consultant-atlassian-h-f",
+        "link": "https://www.stagiaires.ma/stage-emploi-maroc/7931-stage-consultant-atlassian-h-f",
+        "additionalSources": [
+          "https://ma.indeed.com/viewjob?jk=8243a960b749a586"
+        ],
+        "postingId": "stagiaires:7931",
+        "source": "JobSpy: Indeed (redirects to Stagiaires.ma original); verified on Stagiaires.ma 2026-11-13",
+        "discoveredAt": "2026-11-13T17:32:43Z",
+        "checkedAt": "2026-11-13T17:32:43Z",
+        "foundDate": "2026-11-13",
+        "location": "Oujda (listing header says Casablanca; body says 'Poste basé à Oujda')",
+        "durationMonths": null,
+        "startDate": null,
+        "applicationMethod": "Apply on Stagiaires.ma ('Postuler maintenant', needs a Stagiaires.ma candidate account)",
+        "applicationEmail": null,
+        "applicationEmailVerified": false,
+        "emailSubject": null,
+        "requiredDocuments": [
+          "CV"
+        ],
+        "officialApplicationUrl": "https://www.stagiaires.ma/stage-emploi-maroc/7931-stage-consultant-atlassian-h-f",
+        "dedicatedCvUploadVerified": false,
+        "recommendedCv": "Mohssine_Echlaihi_PFE.pdf (generic) — platform/profile application",
+        "profileAdjustment": null,
+        "verifiedDeadline": "2026-11-30",
+        "deadlineSourceUrl": "https://www.stagiaires.ma/stage-emploi-maroc/7931-stage-consultant-atlassian-h-f",
+        "nextAction": "Optional: apply on Stagiaires.ma before Nov 30, 2026 at noon if an Atlassian consulting PFE in Oujda interests you. Not applied.",
+        "compatibilityAssessment": "Low-medium: tooling/consulting (Jira, Confluence config) rather than software development; asks for Java/JavaScript/Groovy basics and Agile/DevOps understanding. Duration not stated.",
+        "note": "Posted 2026-11-13. Deadline 30/11/2026 avant 12h (from the listing)."
       }
     ],
     "rules": {
