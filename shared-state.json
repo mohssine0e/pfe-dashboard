@@ -1889,12 +1889,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-13T11:40:46+00:00",
+    "lastVerifiedAt": "2026-11-13T13:15:12+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "13 Nov 2026 incremental audit: received after 10 Nov (124 results, fully paginated); sent after 8 Nov (15, fully paginated, attachment filenames checked); external completion notices after 7 Nov (27, fully paginated, none after 10 Nov); recruiting-related after 7 Nov (117, fully paginated). Compared against previous successful verification at 13 Nov 11:23:47 +01:00. Latest new messages are unrelated newsletter and LinkedIn job alert; EDICOM rejection verified for separate Valencia IT Presales Engineer vacancy. No verified new PFE employer action. Historical aggregate totals not recounted; independent countsAuditedAt remains 7 Nov.",
+    "scope": "13 Nov 2026 incremental audit since previous 2026-11-13T11:40:46.000Z; received after 10 Nov (109, 2 pages), sent after 8 Nov (13, 1 pages), external completion notices after 8 Nov (21, 1 pages), recruiting matches after 8 Nov (107, 2 pages). 0 unique messages newer than prior verification; 5 selected messages read. No full aggregate recount; independent countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: four overlapping paginated queries, sent attachment metadata, and read_email verification of EDICOM vacancy",
+    "method": "Connected Gmail search_emails: four fully paginated overlapping queries, sent attachment metadata, selected batch_read_email verification",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail verification freshness; update only after genuine Gmail query and confirmed GitHub commit; independent historical aggregate audit date."
   },
@@ -1978,7 +1978,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-13T11:40:46+00:00",
+  "lastSyncedAt": "2026-11-13T13:15:12+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
