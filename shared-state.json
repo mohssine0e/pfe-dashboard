@@ -845,7 +845,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-12T09:20:00Z",
+    "updatedAt": "2026-11-13T10:35:20Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -988,6 +988,25 @@
         "status": "New — apply on company website",
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No 26000NNK / P&L allocation email in Gmail; not in main applications (checked 2026-11-12)"
+      },
+      {
+        "title": "Campagne de Stage PFE 2027",
+        "company": "Sofrecom Maroc",
+        "role": "PFE 2027 — DEV-20 (Angular / Java Spring AI), OPS-14 (CI/CD tests automatisés), OPS-13 (Terraform) — subjects within one original campaign",
+        "verifiedTitle": true,
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
+        "postingId": "linkedin:4490327145",
+        "source": "Original Sofrecom Maroc LinkedIn job posting; checked 2026-11-13",
+        "discoveredAt": "2026-11-13T10:35:20Z",
+        "checkedAt": "2026-11-13T10:35:20Z",
+        "location": "Rabat / Casablanca, Morocco",
+        "durationMonths": 6,
+        "startDate": "2027-02",
+        "applicationMethod": "Email CV to the employer's recruitment mailbox published in the original listing; subject must include topic code and title; up to two subjects per application",
+        "dedicatedCvUploadVerified": false,
+        "recommendedCv": "Approved generic Software Engineering PDF as email attachment; do not overwrite master; no CV has been sent",
+        "verifiedDeadline": null,
+        "note": "New 20-topic official 2027 campaign, 6 months beginning February 2027. Strongest fit: DEV-20 Console de mesure des gains de productivité liés à l'IA (Angular, Java Spring AI) — Rabat; OPS-14 Pipeline CI/CD : tests automatisés et documentation générée — Rabat; OPS-13 Génération et revue de code Terraform assistées par IA — Rabat. Original posting allows a maximum of 2 topics in the email subject. No fixed deadline shown. Email submission not made. No private Firestore applied status accessed."
       }
     ],
     "rules": {
