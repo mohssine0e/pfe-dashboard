@@ -844,6 +844,39 @@
       "date": "2026-11-14",
       "source": "Verified Gmail sent application with CV attachment",
       "evidenceCategory": "verified-sent-email"
+    },
+    {
+      "recordId": "app-sebn-direct-pfe-outreach-20261114",
+      "company": "SEBN",
+      "role": "PFE 2027 — Software Engineering / Full-Stack / DevOps (spontaneous inquiry)",
+      "channel": "direct email",
+      "status": "Sent — employer receipt unverified",
+      "cv": "Software Engineering PDF attached",
+      "date": "2026-11-14",
+      "source": "Verified Gmail sent application with CV attachment",
+      "evidenceCategory": "verified-sent-email"
+    },
+    {
+      "recordId": "app-yazaki-direct-pfe-outreach-20261114",
+      "company": "Yazaki",
+      "role": "PFE 2027 — Software Engineering / Full-Stack / DevOps (spontaneous inquiry)",
+      "channel": "direct email",
+      "status": "Sent — employer receipt unverified",
+      "cv": "Software Engineering PDF attached",
+      "date": "2026-11-14",
+      "source": "Verified Gmail sent application with CV attachment",
+      "evidenceCategory": "verified-sent-email"
+    },
+    {
+      "recordId": "app-coficab-direct-pfe-outreach-20261114",
+      "company": "Coficab",
+      "role": "PFE 2027 — Software Engineering / Full-Stack / DevOps (spontaneous inquiry)",
+      "channel": "direct email",
+      "status": "Sent — employer receipt unverified",
+      "cv": "Software Engineering PDF attached",
+      "date": "2026-11-14",
+      "source": "Verified Gmail sent application with CV attachment",
+      "evidenceCategory": "verified-sent-email"
     }
   ],
   "priority": [
@@ -2084,12 +2117,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-14T18:02:45+01:00",
+    "lastVerifiedAt": "2026-11-14T18:28:32+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "45 received non-promotional/non-social matches after 13 Nov; 14 sent matches with attachment metadata after 13 Nov; 17 historical external-completion phrase matches after 10 Nov (none new); 122 recruiting keyword matches after 10 Nov across two pages. One newly verified Beiersdorf direct PFE inquiry with CV attachment; no employer receipt confirmed. No comprehensive historical aggregate recount; metrics and countsAuditedAt unchanged.",
+    "scope": "48 received non-promotional/non-social messages after 13 Nov; 17 sent messages after 13 Nov with attachment metadata; 17 historical external-completion notices after 10 Nov (none new); recruiting-keyword search after 10 Nov, first page only (not a comprehensive recount). Four newest sent messages read: three distinct new PFE outreach companies SEBN, Yazaki, Coficab and one already-recorded Beiersdorf message. No new verified employer reply or urgent action.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails, four overlapping searches fully paginated; read_email of latest sent Beiersdorf PFE inquiry; compared against 14 Nov 16:51:14 +01:00 verification and current GitHub application records; no Firestore access.",
+    "method": "Connected Gmail search_emails overlapping received, sent, external-completion and recruiting keyword searches; read_email for four newest sent CV-attached PFE inquiries; compared with previous 14 Nov 18:02:45 +01:00 checkpoint and current GitHub snapshot; no private Firestore access.",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail freshness; advance only after genuine connected Gmail searches and confirmed GitHub commit."
   },
@@ -2173,7 +2206,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-14T18:02:45+01:00",
+  "lastSyncedAt": "2026-11-14T18:28:32+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
