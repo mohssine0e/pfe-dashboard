@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-13",
-  "source": "Connected Gmail and targeted public searches, 13 Nov 2026; no application sends",
+  "updatedAt": "2026-11-14",
+  "source": "Connected Gmail and targeted public PFE searches on 14 Nov 2026; no new application sends; historical metrics unchanged.",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
     "emailSentMessages": 86,
@@ -1994,78 +1994,78 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-14T08:37:04+01:00",
+    "lastVerifiedAt": "2026-11-14T08:20:46+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Incremental overlap versus prior successful verification 2026-11-14T07:50:42+01:00: non-promotional/non-social received after 12 Nov (45); sent after 10 Nov with attachment metadata (10); external-completion notices after 7 Nov (27, none newer); recruiting after 10 Nov (93 across 2 pages); additional recent received search after 13 Nov (29). Latest 14 Nov LinkedIn connection notice read and excluded. No messages newer than prior verified checkpoint in reviewed scope; no verified employer action. Historical aggregate counts not recounted; countsAuditedAt unchanged.",
-    "staleAfterHours": 2,
+    "scope": "Successful connected Gmail searches on 14 Nov: inbox after 12 Nov excluding promotions/social (54), recruiting/assessment/rejection terms after 12 Nov (41), Sent after 12 Nov (2), delivery-failure terms after 10 Nov (0). Read 13 Nov Inetum SmartRecruiters receipt, Btechnologie LinkedIn sent notice, and Capgemini PFE receipt: all acknowledgments/submission confirmations, no verified interview or assessment. No newly verified substantive employer decision on 14 Nov. Counts not fully audited.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails with overlapping date-scoped received, sent, StagiairesMA/external-completion and recruiting queries; pagination completed, recent candidate read; public GitHub only, no private Firestore.",
+    "method": "Connected Gmail search_emails date-scoped queries plus batch_read_email for three candidate notices; public-safe summary only, no Firestore.",
     "result": "success",
-    "freshnessPolicy": "2-hour Gmail verification freshness; update only after genuine Gmail query and confirmed GitHub commit; independent historical aggregate audit date."
+    "freshnessPolicy": "24-hour Gmail freshness; advance only after genuine successful connected Gmail queries and verified GitHub write."
   },
   "sourcesChecked": [
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
       "url": "https://ma.linkedin.com/jobs/view/software-cloud-test-automation-pfe-2027-at-bertrandt-group-4483224231",
-      "checkedAt": "2026-11-13T08:37:49+00:00",
+      "checkedAt": "2026-11-14T08:20:46+00:00",
       "status": "limited",
-      "details": "Targeted public LinkedIn PFE 2027 search returned Docaposte posting with Feb/March 2026 start (ineligible for Jan/Feb 2027) and a third-party Orange campaign; no verified new employer-email route.",
-      "accessIssue": "Public LinkedIn search results do not confirm candidate application state or direct employer email."
+      "details": "Targeted public LinkedIn PFE 2027 and ENSA/alumni posts searched; accessible student posts were not employer vacancies.",
+      "accessIssue": "Public search does not verify live application status or employer application instructions."
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
       "url": "https://ma.indeed.com/q-stage-informatique-pfe-emplois.html",
-      "checkedAt": "2026-11-13T08:37:49+00:00",
+      "checkedAt": "2026-11-14T08:20:46+00:00",
       "status": "ok",
-      "details": "Indeed Morocco public results inspected for PFE/Cloud/DevOps/Full Stack. Existing Sofrecom, Société Générale and FGMED roles resurfaced; a 1–3 month web internship and a 4-month PHP internship were excluded as duration mismatches.",
+      "details": "Indeed Morocco stage Java/Spring and PFE listings inspected: Société Générale, FGMED, Capgemini Engineering, Ostorlab and other known listings; no new independently verified direct-email eligible 2027 offer.",
       "accessIssue": null
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
       "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
-      "checkedAt": "2026-11-13T08:37:49+00:00",
+      "checkedAt": "2026-11-14T08:20:46+00:00",
       "status": "limited",
-      "details": "Targeted ReKrute PFE 2027 search performed; no independently verifiable matching job detail surfaced.",
-      "accessIssue": "Search did not return inspectable current role details."
+      "details": "Targeted ReKrute PFE 2027 search attempted; no inspectable matching current posting returned.",
+      "accessIssue": "No verifiable listing detail returned."
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7204-founder-s-associate-pfe-2027",
-      "checkedAt": "2026-11-13T08:37:49+00:00",
+      "checkedAt": "2026-11-14T08:20:46+00:00",
       "status": "limited",
-      "details": "Targeted Stagiaires.ma 2027 PFE search performed; no independently verifiable matching posting detail surfaced.",
-      "accessIssue": "Search did not return inspectable current role details."
+      "details": "Targeted Stagiaires.ma PFE 2027 search attempted; no inspectable current software internship returned.",
+      "accessIssue": "No verified live posting returned."
     },
     {
       "id": "company",
       "label": "Company careers pages",
       "url": null,
-      "checkedAt": "2026-11-13T08:37:49+00:00",
+      "checkedAt": "2026-11-14T08:20:46+00:00",
       "status": "limited",
-      "details": "Public employer-career searches attempted in multi-source search; no verified new official 2027 role with explicit employer email application method surfaced.",
-      "accessIssue": "No current official employer application instruction independently verified."
+      "details": "Targeted employer-owned Sofrecom careers search attempted; no verified new 2027 employer-owned direct-email posting surfaced.",
+      "accessIssue": "Official application email/route not confirmed."
     },
     {
       "id": "catalogues",
       "label": "Public PFE catalogues",
       "url": "https://joblia.ma/offres-emploi/orange-maroc-recrute-ses-stagiaires-pfe-2027/",
-      "checkedAt": "2026-11-13T08:37:49+00:00",
+      "checkedAt": "2026-11-14T08:20:46+00:00",
       "status": "limited",
-      "details": "Public Morocco PFE catalogue search attempted; third-party Orange campaign appeared, not independently confirmed by employer.",
-      "accessIssue": "No independently inspected original catalogue or employer-owned application route."
+      "details": "Targeted public PFE catalogue search attempted; no inspectable original catalogue with qualifying new offer.",
+      "accessIssue": "No original catalogue details verified."
     },
     {
       "id": "ensa",
       "label": "ENSA / alumni announcements",
       "url": "https://ensah.ma/public/tableauAffichage.php",
-      "checkedAt": "2026-11-13T08:37:49+00:00",
-      "status": "no_results",
-      "details": "Public ENSA/ENSAH and alumni PFE announcement search attempted; no independently verifiable high-fit posting surfaced.",
-      "accessIssue": "No relevant verifiable result."
+      "checkedAt": "2026-11-14T08:20:46+00:00",
+      "status": "limited",
+      "details": "Public LinkedIn ENSA/alumni posts inspected; student PFE-seeking posts, not official employer offers.",
+      "accessIssue": "No verified employer vacancy or official ENSA PFE catalogue from results."
     }
   ],
   "sourceSearchPolicy": {
@@ -2083,7 +2083,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-14T08:37:04+01:00",
+  "lastSyncedAt": "2026-11-14T08:20:46+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
