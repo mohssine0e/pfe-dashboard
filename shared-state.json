@@ -2073,12 +2073,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-14T16:15:50+01:00",
+    "lastVerifiedAt": "2026-11-14T16:51:14+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "76 recent non-promotional/non-social received matches; 20 sent matches with CV attachment filenames; 13 historical StagiairesMA/external-completion matches, none after 10 Nov; first 90 recruiting-keyword matches (not fully paginated). New since prior checkpoint: 11 direct PFE outreach messages, one HPS automated receipt, four Accenture recipient delivery failures. Seven public-safe direct-outreach records added; prior Oracle portal status and Accenture older record untouched. No full aggregate recount; metrics and countsAuditedAt unchanged.",
+    "scope": "42 recent non-promotional/non-social received matches, 13 sent messages with attachment metadata, 0 recent external-completion phrase matches, 58 recruiting keyword matches. No verified new PFE recruiting messages since previous checkpoint; prior HPS acknowledgment and Accenture bounces retained. No comprehensive aggregate recount; metrics and countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: recent received after 12 Nov (76, fully paginated), sent after 10 Nov (20, fully paginated), external completion phrases after 10 Nov (13, fully paginated), recruiting keyword search after 8 Nov (first 90, additional page not audited); read_email for 11 new sent PFE messages, four bounce reports, and one HPS automated acknowledgment. Compared against previous 14 Nov 14:49:10 +01:00 checkpoint; no Firestore access.",
+    "method": "Connected Gmail search_emails: received after 13 Nov (42, fully paginated), sent after 13 Nov (13, fully paginated, attachment metadata), completion phrases after 12 Nov (0), recruiting keywords after 12 Nov (58, fully paginated); read_email HPS acknowledgment. Compared with previous 14 Nov 16:15:50 +01:00 checkpoint; no Firestore access.",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail freshness; advance only after genuine connected Gmail searches and confirmed GitHub commit."
   },
@@ -2162,7 +2162,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-14T16:15:50+01:00",
+  "lastSyncedAt": "2026-11-14T16:51:14+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
