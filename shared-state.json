@@ -325,20 +325,29 @@
       "company": "torck GmbH",
       "role": "Graduate Internship software development (m/f) Morocco",
       "channel": "LinkedIn Easy Apply",
-      "status": "Applied via LinkedIn — HR questionnaire completed (user reported)",
+      "status": "Online assessment invited — due 19 Nov 2026 11:53 UTC",
       "cv": "Not independently verified (LinkedIn)",
       "language": "EN/DE",
       "date": "2026-11-08",
       "source": "LinkedIn application sent confirmation dated 8 Nov 2026",
       "postingId": "linkedin:4487295321",
       "postingUrl": "https://www.linkedin.com/jobs/view/4487295321/",
-      "evidenceCategory": "Verified LinkedIn application; HR questionnaire completion user-reported",
-      "notes": "LinkedIn application confirmed 8 Nov 2026. User confirmed on 11 Nov 2026 that the torck HR questionnaire was submitted; independent ATS receipt not checked.",
+      "evidenceCategory": "Verified employer assessment invitation for exact torck Graduate Internship role; prior LinkedIn application and user-reported questionnaire preserved",
+      "notes": "LinkedIn application confirmed 8 Nov 2026. User confirmed on 11 Nov 2026 that the torck HR questionnaire was submitted; independent ATS receipt not checked. Employer invited a 16-question, approximately 16-minute one-attempt assessment on 14 Nov; due 19 Nov 2026 11:53 UTC. No completion evidence yet.",
       "hrQuestionnaire": {
         "status": "completed",
         "source": "User confirmation in conversation",
         "confirmedOn": "2026-11-11",
         "independentlyVerified": false
+      },
+      "assessment": {
+        "status": "invited",
+        "deadline": "2026-11-19T11:53:00Z",
+        "questions": 16,
+        "estimatedMinutes": 16,
+        "attemptsAllowed": 1,
+        "source": "Verified employer assessment invitation received 14 Nov 2026",
+        "completed": false
       }
     },
     {
@@ -1975,12 +1984,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-14T12:44:18+01:00",
+    "lastVerifiedAt": "2026-11-14T14:19:47++1",
     "timezone": "Africa/Casablanca",
-    "scope": "14 Nov 2026: received after 12 Nov excluding promotions/social/spam/trash (56, fully paginated); sent after 10 Nov (10, attachment metadata, fully paginated); external completion notices after 7 Nov (26, fully paginated; latest 10 Nov); recruiting keyword search after 10 Nov (81 first-page matches, more pages not audited); additional all-mail after 13 Nov (30, fully paginated). Compared with prior 2026-11-14T12:14:45+01:00 checkpoint: latest message 14 Nov 08:01 UTC, before checkpoint. No new verified employer action or completion request. Historical aggregates not recounted.",
+    "scope": "Received after 13 Nov excluding spam/trash/promotions: 28 messages, fully paginated; sent after 12 Nov: 2, attachment metadata reviewed; external-completion phrase search after 12 Nov: 0. Overlap compared against 14 Nov 12:44:18 +01:00 checkpoint. One new exact-role torck assessment invitation read; no new StagiairesMA notices. Historical aggregates not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: recent non-promotional received, sent attachment metadata, external completion notices, recruiting keywords (first page only), recent all-mail overlap; read_email of newest LinkedIn invitation. No private Firestore access.",
+    "method": "Connected Gmail search_emails in three fully paginated overlapping scopes; read_email for torck employer assessment, matched company, exact role and existing posting identity. No Firestore access.",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail freshness; advance only after genuine connected Gmail searches and confirmed GitHub commit."
   },
