@@ -2117,12 +2117,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-15T05:07:38+01:00",
+    "lastVerifiedAt": "2026-11-15T05:52:11+00:00+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail overlapping searches: received after 13 Nov excluding promotions/social (53); sent after 10 Nov (26, recent attachment metadata inspected); external-completion keyword notices after 10 Nov (17 historical, no newly received notices); recruiting-keyword matches after 10 Nov (138, two fully paginated pages). Recent matching messages dated 14 Nov or earlier; no new verified employer actions since previous audit. Historical aggregate totals not recounted.",
+    "scope": "Connected Gmail searches: received after 12 Nov excluding promotions/social (86); sent after 10 Nov (26, attachment metadata available); external-completion keywords after 10 Nov (17 historical, none new); recruiting keywords after 10 Nov (138 across two fully paginated pages). Latest recruiting matches are 14 Nov; newer unrelated notifications excluded. Selected assessment, auto-reply and delivery-failure messages read for context. Historical aggregates not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_email_ids, fully paginated overlapping searches and batch_read_email of 12 newest recruiting matches including sent attachment metadata; irrelevant alerts excluded; no private Firestore access.",
+    "method": "Connected Gmail search_emails with full pagination, batch_read_email of relevant assessment, auto-reply and delivery-failure messages; prior checkpoint comparison; no private Firestore access.",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail freshness; advance only after genuine connected Gmail searches and confirmed GitHub commit."
   },
@@ -2206,7 +2206,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-15T05:07:38+01:00",
+  "lastSyncedAt": "2026-11-15T05:52:11+00:00+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
