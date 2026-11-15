@@ -882,6 +882,25 @@
   "priority": [
     {
       "rank": 1,
+      "company": "VINCI Energies au Maroc",
+      "task": "Check and submit the Cloud hybride Microsoft Azure or IT infrastructure monitoring PFE application on the official Teamtailor platform before 16 Nov 2026, 18:00 Morocco time",
+      "reason": "Company's own public recruitment announcement confirms 16 Nov 2026 18:00 deadline. Two distinct Casablanca PFE subjects are listed on its official careers site. No employer submission confirmation found in connected Gmail or existing public application records; this is not proof of non-submission.",
+      "date": "2026-11-16",
+      "certainty": "Deadline confirmed by VINCI Energies official public announcement; submission not verified",
+      "kind": "deadline",
+      "actionLinks": [
+        {
+          "label": "Cloud hybride Azure PFE",
+          "url": "https://ytdvincienergiesafriqueouest.teamtailor.com/jobs/8635452-stage-pfe-mise-en-oeuvre-d-une-infrastructure-cloud-hybride-microsoft-azure"
+        },
+        {
+          "label": "IT infrastructure monitoring PFE",
+          "url": "https://ytdvincienergiesafriqueouest.teamtailor.com/jobs/8635233-deploiement-d-une-solution-de-supervision-it-et-monitoring-des-infrastructures"
+        }
+      ]
+    },
+    {
+      "rank": 2,
       "company": "torck GmbH",
       "task": "Complete new one-time Software Development online assessment by 19 Nov 2026, 11:53 UTC",
       "reason": "Employer assessment invitation received 14 Nov 2026 for Graduate Internship software development (m/f) Morocco. 16 timed questions (~16 minutes), one attempt. Distinct from the HR questionnaire already completed on 11 Nov. Personal assessment URL intentionally excluded from public snapshot.",
@@ -891,7 +910,7 @@
       "actionLinks": []
     },
     {
-      "rank": 2,
+      "rank": 3,
       "company": "torck GmbH",
       "task": "HR questionnaire submitted — await next step",
       "reason": "User confirmed questionnaire submission on 11 Nov 2026. ATS receipt not independently checked.",
@@ -902,7 +921,7 @@
       "completedOn": "2026-11-11"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "company": "Cnexia",
       "task": "Check live availability and submission status for Cloud & DevOps, Architecture and Full-Stack PFE roles",
       "reason": "Previously recorded Nov 10 closing date is not independently verified. One Cloud & DevOps submission was reported; avoid duplicate applications.",
@@ -925,7 +944,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "company": "New PFE applications",
       "task": "Track Société Générale (26000NJV and 26000NJA), Managem (req888), and Sofrecom Full Stack — await review",
       "reason": "Both Société Générale roles and Managem acknowledged on 9 Nov. LinkedIn confirms Sofrecom Full Stack submission. No interview invitations verified.",
@@ -947,7 +966,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "company": "Ostorlab / CGI / Sofrecom DevOps / FGMED",
       "task": "Verify actual employer application forms, PFE duration and start-date compatibility before completing remaining steps",
       "reason": "Platform-generated completion prompts are not employer confirmations. FGMED advertises paid internship but immediate-start mismatch remains unverified. Sofrecom Full Stack application is separately confirmed sent via LinkedIn; its DevOps listing remains unverified.",
@@ -973,7 +992,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "company": "Maersk / Intelcia / Inetum",
       "task": "Monitor existing applications without duplicate submissions",
       "reason": "Employer acknowledgments already exist; no new interview invitation verified.",
@@ -991,7 +1010,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "company": "BCG X",
       "task": "Assessment completed — await BCG X review",
       "reason": "Completion confirmed by CodeSignal email on 9 Nov and by the candidate. No passing score, employer decision or new assessment step verified.",
