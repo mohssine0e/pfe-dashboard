@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-14",
-  "source": "Connected Gmail and targeted public PFE searches on 14 Nov 2026; no new application sends; historical metrics unchanged.",
+  "updatedAt": "2026-11-15",
+  "source": "Connected Gmail and public LinkedIn, Indeed, ReKrute and Stagiaires.ma targeted checks on 15 Nov 2026; no direct-email applications sent; historical metrics preserved.",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
     "emailSentMessages": 86,
@@ -2117,51 +2117,51 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-15T09:10:31+01:00",
+    "lastVerifiedAt": "2026-11-15T09:45:51+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail: received after 12 Nov 2026 excluding spam/trash/promotions/social (86 messages); sent after 10 Nov (26 messages with attachment filenames); external-completion phrase search after 8 Nov (27 historical notices, none newer than 10 Nov); recruiting-keyword search after 8 Nov (110 matches, fully paginated). Overlap with 15 Nov 07:48 +01 audit; no new verified employer or external-completion action. Historical aggregate totals not recounted.",
-    "staleAfterHours": 2,
+    "scope": "Connected Gmail: after 13 Nov 2026 excluding promotions/spam/trash (35 messages, including Sent); Sent after 13 Nov (17 messages); inspected subject, timestamps and snippets for recruitment, assessments, acknowledgements and delivery failures. Four distinct Accenture non-delivery notifications dated 14 Nov; HPS automated receipt; torck assessment invitation already tracked. Historical inbox-wide totals not re-audited.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails, four overlapping scoped queries with complete pagination, subject/timestamp/snippet and attachment metadata review; compared to prior verified checkpoint; no private Firestore access.",
+    "method": "Successful connected Gmail search_emails queries for recent mail and Sent; reviewed all returned result summaries; no private Firestore access.",
     "result": "success",
-    "freshnessPolicy": "2-hour Gmail freshness; advance only after genuine connected Gmail searches and confirmed GitHub commit."
+    "freshnessPolicy": "24-hour Gmail freshness; only advance following real successful connected Gmail query."
   },
   "sourcesChecked": [
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
       "url": "https://ma.linkedin.com/jobs/view/software-cloud-test-automation-pfe-2027-at-bertrandt-group-4483224231",
-      "checkedAt": "2026-11-14T08:20:46+00:00",
+      "checkedAt": "2026-11-15T09:45:51+01:00",
       "status": "limited",
-      "details": "Targeted public LinkedIn PFE 2027 and ENSA/alumni posts searched; accessible student posts were not employer vacancies.",
-      "accessIssue": "Public search does not verify live application status or employer application instructions."
+      "details": "Public LinkedIn listings and targeted ENSA/alumni searches checked; Sofrecom Full Stack & IA Générative posting says applications no longer accepted.",
+      "accessIssue": "Public search cannot establish private applied status or saved-profile submissions."
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
-      "url": "https://ma.indeed.com/q-stage-informatique-pfe-emplois.html",
-      "checkedAt": "2026-11-14T08:20:46+00:00",
+      "url": "https://ma.indeed.com/q-stage-pfe-2027-emplois.html",
+      "checkedAt": "2026-11-15T09:45:51+01:00",
       "status": "ok",
-      "details": "Indeed Morocco stage Java/Spring and PFE listings inspected: Société Générale, FGMED, Capgemini Engineering, Ostorlab and other known listings; no new independently verified direct-email eligible 2027 offer.",
+      "details": "Fresh Indeed Morocco PFE search found Sofrecom Maroc Campagne de Stage PFE 2027, 6 months February 2027 Rabat, and existing torck, BTECHNOLOGIE, Société Générale; application through platform, not verified employer mailto.",
       "accessIssue": null
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
-      "url": "https://www.rekrute.com/offre-emploi-stage-pfe-recrutement-cnexia-rabat-186223.html",
-      "checkedAt": "2026-11-14T08:20:46+00:00",
+      "url": "https://www.rekrute.com/emploi-Stage-d%C3%A9veloppement-informatique",
+      "checkedAt": "2026-11-15T09:45:51+01:00",
       "status": "limited",
-      "details": "Targeted ReKrute PFE 2027 search attempted; no inspectable matching current posting returned.",
-      "accessIssue": "No verifiable listing detail returned."
+      "details": "ReKrute public stage-development listings inspected; no new independently verified matching PFE 2027 email application.",
+      "accessIssue": "Search listings do not establish eligibility or live application instructions."
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
-      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7204-founder-s-associate-pfe-2027",
-      "checkedAt": "2026-11-14T08:20:46+00:00",
+      "url": "https://stagiaires.ma/stage-emploi-maroc/7671-stage-pfe-pfe-challenge-2027",
+      "checkedAt": "2026-11-15T09:45:51+01:00",
       "status": "limited",
-      "details": "Targeted Stagiaires.ma PFE 2027 search attempted; no inspectable current software internship returned.",
-      "accessIssue": "No verified live posting returned."
+      "details": "Stagiaires.ma public listings checked: Amsys PFE Challenge 2027, BTECHNOLOGIE, Bertrandt; no verified new eligible direct-email posting.",
+      "accessIssue": "Application routes not independently verified as employer mailto."
     },
     {
       "id": "company",
