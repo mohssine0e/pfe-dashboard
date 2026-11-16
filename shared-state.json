@@ -2161,12 +2161,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-16T00:37:09+01:00",
+    "lastVerifiedAt": "2026-11-16T00:33:55.740+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "in:inbox after:2026/11/15 -category:promotions -in:trash: 14 messages / 1 page; in:sent after:2026/11/15 -in:trash: 24 messages / 1 page with attachment metadata; after:2026/11/12 {\"Complétez votre candidature\" \"finaliser votre candidature\" \"complete your application\"}: 0 messages / 1 page. Compared messages after prior verified checkpoint 2026-11-15T23:46:44+01:00; only one unrelated job alert newer. No comprehensive aggregate recount.",
+    "scope": "in:inbox after:2026/11/15 -category:promotions -in:trash: 15 messages / 1 page; in:sent after:2026/11/15 -in:trash: 24 messages / 1 page with attachment metadata; after:2026/11/12 {\"Complétez votre candidature\" \"finaliser votre candidature\" \"complete your application\"}: 0 messages / 1 page. Reviewed overlap with prior audit; no newly confirmed employer actions. No comprehensive aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails, fully paginated targeted inbox/sent/external-completion searches; reviewed message subjects, timestamps and sent attachment metadata; no Firestore access.",
+    "method": "Connected Gmail search_emails, fully paginated targeted inbox/sent/external-completion searches; reviewed subject, timestamps, snippets and sent attachment metadata; no Firestore access.",
     "result": "success",
     "freshnessPolicy": "2-hour Gmail freshness; update only after real connected Gmail search and confirmed GitHub commit."
   },
