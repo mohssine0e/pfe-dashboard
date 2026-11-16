@@ -877,6 +877,19 @@
       "date": "2026-11-14",
       "source": "Verified Gmail sent application with CV attachment",
       "evidenceCategory": "verified-sent-email"
+    },
+    {
+      "recordId": "app-payment-center-for-africa-pca-pfe-java-spring-react-linkedin-4489772384",
+      "company": "Payment Center For Africa - PCA",
+      "role": "Stage PFE – Développement Java / Spring Boot / React.js",
+      "postingId": "linkedin:4489772384",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4489772384/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-16",
+      "source": "LinkedIn application-sent confirmation",
+      "evidenceCategory": "Verified intermediary platform sending confirmation; not employer acknowledgment",
+      "notes": "Distinct vacancy from PCA PFE Ingénieur Support email outreach; CV attachment not independently verified."
     }
   ],
   "priority": [
@@ -2161,12 +2174,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-16T14:00:31+01:00",
+    "lastVerifiedAt": "2026-11-16T16:11:40+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail: inbox excluding promotions after 2026-11-11 (100 messages, 2 pages); sent after 2026-11-11 (42 messages, attachment metadata); targeted external-completion notices after 2026-11-11 (0). Compared with 2026-11-16T11:19:19+01:00 checkpoint; one LinkedIn-mediated rejection for an unrelated Talent Acquisition Junior role excluded from PFE records. Historical totals not recounted.",
+    "scope": "Inbox after 2026-11-11 excluding promotions (150 results cap, check pagination), sent after 2026-11-11 (42 messages with attachment metadata), targeted external-completion search after 2026-11-11 (0); additional inbox after 2026-11-15 (29 messages, no further page). Prior checkpoint 2026-11-16T14:00:31+01:00. New PCA LinkedIn application-sent confirmation for exact Java/Spring/React PFE role; Btechnologie Camunda application-viewed notification (not employer decision); earlier Adkomo contact objection identified. Historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails, full pagination for inbox/sent/targeted completion; read_email for ambiguous LinkedIn application update; compared against prior checkpoint.",
+    "method": "Connected Gmail search_emails inbox/sent/external-completion with complete pagination; read_email for role-specific LinkedIn confirmations and prior correspondence; compared with previous verified checkpoint.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after a successful connected Gmail search and verified GitHub commit."
   },
@@ -2250,7 +2263,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-16T14:00:31+01:00",
+  "lastSyncedAt": "2026-11-16T16:11:40+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
