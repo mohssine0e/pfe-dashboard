@@ -567,17 +567,17 @@
       "company": "Devoteam France",
       "role": "Stage - Ingénieur(e) R&D Intelligence Artificielle (F/H)",
       "channel": "employer recruiting platform",
-      "status": "Acknowledged — awaiting review",
+      "status": "Rejected — employer decision",
       "date": "2026-11-10",
-      "source": "Direct employer application acknowledgment",
-      "evidenceCategory": "Verified employer application receipt for exact R&D AI internship role",
-      "notes": "Employer indicated an expected response within five days of 10 November; this is an estimated contact window, not a candidate action deadline.",
+      "source": "Direct employer rejection",
+      "evidenceCategory": "Verified employer rejection for exact R&D AI internship role",
+      "notes": "Employer explicitly declined this AI R&D internship application on 16 November 2026; distinct from expiry or silence.",
       "emailEvidence": {
         "sourceType": "verified-employer-email",
-        "status": "acknowledged",
-        "verifiedAt": "2026-11-10",
-        "evidenceType": "employer-confirmation",
-        "summary": "Devoteam acknowledged the AI R&D internship application and indicated a five-day review/contact window."
+        "status": "rejected",
+        "verifiedAt": "2026-11-16",
+        "evidenceType": "employer-rejection",
+        "summary": "Devoteam France declined the R&D AI internship application."
       }
     },
     {
@@ -2174,12 +2174,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-16T16:11:40+01:00",
+    "lastVerifiedAt": "2026-11-16T17:16:44+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Inbox after 2026-11-11 excluding promotions (150 results cap, check pagination), sent after 2026-11-11 (42 messages with attachment metadata), targeted external-completion search after 2026-11-11 (0); additional inbox after 2026-11-15 (29 messages, no further page). Prior checkpoint 2026-11-16T14:00:31+01:00. New PCA LinkedIn application-sent confirmation for exact Java/Spring/React PFE role; Btechnologie Camunda application-viewed notification (not employer decision); earlier Adkomo contact objection identified. Historical totals not recounted.",
+    "scope": "Connected Gmail inbox after 2026-11-11 excluding sent, spam, trash and promotions: 230 messages across 3 complete pages; sent after 2026-11-12: 42 messages with attachment metadata, complete; targeted external-completion notices after 2026-11-12: 0, complete. Compared against previous verified checkpoint 2026-11-16T16:11:40+01:00; no newer messages, but an earlier exact-role Devoteam France rejection was newly verified. Historical aggregate totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails inbox/sent/external-completion with complete pagination; read_email for role-specific LinkedIn confirmations and prior correspondence; compared with previous verified checkpoint.",
+    "method": "Connected Gmail search_emails with complete inbox/sent/external-completion pagination; read_email verified exact-role Devoteam rejection; overlapping checkpoint comparison.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after a successful connected Gmail search and verified GitHub commit."
   },
@@ -2263,7 +2263,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-16T16:11:40+01:00",
+  "lastSyncedAt": "2026-11-16T17:16:44+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
