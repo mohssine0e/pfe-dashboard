@@ -2269,7 +2269,7 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-16T23:27:28+00:00+01:00",
+    "lastVerifiedAt": "2026-11-16T23:27:36+01:00",
     "timezone": "Africa/Casablanca",
     "scope": "Non-spam/non-trash/non-promotions after 2026-11-15: 169 messages across two complete pages; sent after 2026-11-11: 45 messages, complete with attachment metadata; targeted external-completion notices after 2026-11-11: zero. Compared with 2026-11-16T21:42:29+00:00 checkpoint with overlap. Three newly sent PFE emails verified: two to Highness for the same broad internship inquiry and one to CBI. No employer-confirmed receipt or new StagiairesMA completion notice. Historical totals not recounted.",
     "staleAfterHours": 2,
@@ -2358,7 +2358,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-16T23:27:28+00:00+01:00",
+  "lastSyncedAt": "2026-11-16T23:27:36+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
