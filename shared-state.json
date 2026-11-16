@@ -890,6 +890,28 @@
       "source": "LinkedIn application-sent confirmation",
       "evidenceCategory": "Verified intermediary platform sending confirmation; not employer acknowledgment",
       "notes": "Distinct vacancy from PCA PFE Ingénieur Support email outreach; CV attachment not independently verified."
+    },
+    {
+      "recordId": "app-highness-direct-pfe-software-engineering-20261116",
+      "company": "Highness",
+      "role": "PFE 2027 — Software Engineering / Backend / Full-Stack / DevOps (spontaneous inquiry)",
+      "channel": "direct email",
+      "status": "Sent — employer receipt unverified",
+      "cv": "General software engineering CV PDF attached",
+      "date": "2026-11-16",
+      "source": "Verified Gmail sent application with CV attachment; two destination mailboxes, one application identity",
+      "evidenceCategory": "verified-sent-email"
+    },
+    {
+      "recordId": "app-cbi-direct-pfe-software-engineering-20261116",
+      "company": "CBI",
+      "role": "PFE 2027 — Software Engineering (spontaneous inquiry)",
+      "channel": "direct email",
+      "status": "Sent — employer receipt unverified",
+      "cv": "General software engineering CV PDF attached",
+      "date": "2026-11-16",
+      "source": "Verified Gmail sent application with CV attachment; recruitment form reported an authentication error, so direct email was used",
+      "evidenceCategory": "verified-sent-email"
     }
   ],
   "priority": [
@@ -2247,12 +2269,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-16T21:42:29+00:00",
+    "lastVerifiedAt": "2026-11-16T23:27:20+00:00+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail, non-spam/non-trash/non-promotions mail after 2026-11-15: 162 messages in 2 complete pages; sent after 2026-11-11: 42 messages with attachment metadata, complete; targeted external-completion notices after 2026-11-11: 0, complete. Compared with previous 2026-11-16T21:08:06+01:00 checkpoint and overlapping earlier messages. No newer relevant PFE recruiting activity or completion notices identified. Historical aggregate totals not recounted.",
+    "scope": "Non-spam/non-trash/non-promotions after 2026-11-15: 169 messages across two complete pages; sent after 2026-11-11: 45 messages, complete with attachment metadata; targeted external-completion notices after 2026-11-11: zero. Compared with 2026-11-16T21:42:29+00:00 checkpoint with overlap. Three newly sent PFE emails verified: two to Highness for the same broad internship inquiry and one to CBI. No employer-confirmed receipt or new StagiairesMA completion notice. Historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; fully paginated broad mail search, complete sent-mail search with attachment metadata, and targeted StagiairesMA/external-completion search; subject and message timestamp screening with overlap.",
+    "method": "Connected Gmail search_emails, fully paginated non-promotional mailbox search, complete sent-mail search with attachment metadata, targeted external-completion search; read exact new sent applications.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after a successful connected Gmail search and verified GitHub commit."
   },
@@ -2336,7 +2358,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-16T21:42:29+00:00",
+  "lastSyncedAt": "2026-11-16T23:27:20+00:00+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
