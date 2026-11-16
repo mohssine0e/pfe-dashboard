@@ -1053,7 +1053,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-15T18:30:00Z",
+    "updatedAt": "2026-11-16T19:10:00Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1069,7 +1069,16 @@
         "startDate": "2027-02-01",
         "verifiedDeadline": "2027-01-10",
         "deadlineSourceUrl": "https://joblia.ma/offres-emploi/orange-maroc-recrute-ses-stagiaires-pfe-2027/",
-        "note": "Strong full-stack fit: paid five-month PFE beginning 1 February 2027, with web front-end/back-end/full-stack among tracks. Deadline 10 January 2027 per two public reposts; official Orange application form and separate CV upload have not been independently confirmed. Use generic CV until confirmed."
+        "note": "Strong full-stack fit: paid five-month PFE beginning 1 February 2027, with web front-end/back-end/full-stack among tracks. Deadline 10 January 2027 per two public reposts; official Orange application form and separate CV upload have not been independently confirmed. Use generic CV until confirmed. Update 2026-11-16: official form found via SUP MTI Rabat's LinkedIn post; form text says start 1 Feb 2027 and requires a PDF CV/portfolio upload. Form is open to any 5th-year student (asks for university). Deadline 10 Jan 2027 confirmed by SUP MTI post.",
+        "officialApplicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe1xrQ6GbKJnw8ZHChpflX8wH89f1CBulOw5MovEXRqMwZEgQ/viewform",
+        "applicationMethod": "Apply on company website: Orange Digital Center Google Form 'Candidature – Stage PFE 2027' (Agadir, Rabat or Casablanca; specialty 'Développement Web (Front-end/Back-end/Full-Stack)')",
+        "dedicatedCvUploadVerified": true,
+        "recommendedCv": "Mohssine_Echlaihi_PFE.pdf (general; form accepts a PDF CV upload)",
+        "nextAction": "Fill the ODC form (choose Rabat or Casablanca, specialty Développement Web), upload your general CV and write the motivation answer. Not applied.",
+        "additionalSources": [
+          "https://www.linkedin.com/search/results/content/?keywords=stage%20PFE%20informatique (SUP MTI Rabat post, 2026-11-16: start from 2 Feb 2027, deadline 10 Jan 2027, form https://forms.gle/sweTnwWkddhaoWEf6)"
+        ],
+        "checkedAt": "2026-11-16T19:10:00Z"
       },
       {
         "title": "End-of-Studies Project (PFE) Internship Opportunities (Onsite Casablanca) · source: Effyis Group careers",
@@ -1292,6 +1301,70 @@
         "nextAction": "Optional: only if AI security interests you. Write the .docx answers to the three questions, then have ChatGPT prepare the email to contacts@cmxarchi.com for your approval. Not applied.",
         "compatibilityAssessment": "Low-medium: API security, OAuth/OIDC and RBAC connect to backend work, and your OverTheWire practice shows security interest, but the core is LLM security and AI governance research, which is not on your CV. 4-month PFE (Feb-Jun 2027). 115 applicants on LinkedIn at check time.",
         "note": "Posted 2026-11-14. Stagiaires.ma copy says \"Date limite : janvier 2027\" (no exact day); Talent Acquisition Day early January 2027. Not found in ChatGPT's main list at the last comparison."
+      },
+      {
+        "title": "Novelis : PFE 2027",
+        "company": "Novelis",
+        "role": "PFE 2027: Développement et Automatisation, or Testing & Assurance Qualité / Business Analyse (paid, 6 months)",
+        "verifiedTitle": true,
+        "discoveredAt": "2026-11-16T19:10:00Z",
+        "checkedAt": "2026-11-16T19:10:00Z",
+        "foundDate": "2026-11-16",
+        "location": "Morocco (Novelis offices in Rabat and Oujda; city not stated on the form)",
+        "durationMonths": 6,
+        "startDate": null,
+        "verifiedDeadline": null,
+        "sourceUrl": "https://www.novelis.io/pfe2027",
+        "link": "https://www.novelis.io/pfe2027",
+        "source": "LinkedIn post by Dr. Badr El Khalyly (2026-11-16, '6 entreprises recrutent leurs stagiaires PFE au Maroc'); official Novelis Google Form verified 2026-11-16",
+        "postingId": "novelis:pfe2027-form",
+        "applicationMethod": "Apply on company website: Novelis Google Form (novelis.io/pfe2027)",
+        "officialApplicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdNznhDL_2gEL4urZZFmgma5jxlvfWgmmtx3YRenmm1Km6Mgg/viewform",
+        "dedicatedCvUploadVerified": true,
+        "applicationEmail": null,
+        "applicationEmailVerified": false,
+        "emailSubject": null,
+        "requiredDocuments": [
+          "CV (1 file, max 10 MB)",
+          "Form answers: name, email, phone, home city, school, tech preference, optional 'what is an ideal PFE'"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE.pdf (general; choose 'Développement et Automatisation')",
+        "profileAdjustment": null,
+        "nextAction": "Fill the Novelis form, pick 'Développement et Automatisation', upload your general CV. Not applied.",
+        "compatibilityAssessment": "Medium: paid 6-month software development PFE at an AI/intelligent-automation software company (LeBrain platform) with Moroccan offices; exact stack and subjects not published, so fit with Java/Spring/React is unconfirmed.",
+        "note": "Not in ChatGPT's main list or applications at check time. No deadline published."
+      },
+      {
+        "title": "Tessi Maroc – U-TALENT 2026–2027 (PFE 2027)",
+        "company": "Tessi Maroc",
+        "role": "PFE campaign: Software Development, DevOps & IT Operations, Automated Testing, AI, Systems & Networks, Cybersecurity, IT Support",
+        "verifiedTitle": false,
+        "discoveredAt": "2026-11-16T19:10:00Z",
+        "checkedAt": "2026-11-16T19:10:00Z",
+        "foundDate": "2026-11-16",
+        "location": "Morocco (city not stated)",
+        "durationMonths": null,
+        "startDate": null,
+        "verifiedDeadline": null,
+        "statedDeadline": "2026-11-27 (applications Nov 9–27, 2026, per LinkedIn posts; not shown on Tessi's own page)",
+        "sourceUrl": "https://www.linkedin.com/posts/eboutahir_tessi-utalent-pfe2027-share-7528110208510947328-oOHh",
+        "link": "https://www.linkedin.com/posts/eboutahir_tessi-utalent-pfe2027-share-7528110208510947328-oOHh",
+        "source": "LinkedIn post by Mohamed Khalifa Boutahir (2026-11-16), also listed in Dr. Badr El Khalyly's PFE 2027 roundup",
+        "postingId": "tessi:utalent-2026-2027",
+        "applicationMethod": "Needs verification: the post links to Tessi's careers page, but no Morocco U-TALENT offer could be found on it or on Tessi's job board",
+        "officialApplicationUrl": "https://www.tessi.eu/fr/espace-carrieres/nos-offres-demplois/",
+        "dedicatedCvUploadVerified": false,
+        "applicationEmail": null,
+        "applicationEmailVerified": false,
+        "emailSubject": null,
+        "requiredDocuments": [
+          "CV (assumed; not verified)"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE.pdf (general)",
+        "profileAdjustment": null,
+        "nextAction": "Before Nov 27: open Tessi's careers page, filter for Maroc/stage to find the U-TALENT Software Development or DevOps offer, and apply there; or ask the poster for the direct link. Not applied.",
+        "compatibilityAssessment": "Medium-good on paper: Software Development and DevOps & IT Operations tracks match your profile; stack, city and duration not published.",
+        "note": "Not in ChatGPT's main list or applications at check time."
       }
     ],
     "rules": {
