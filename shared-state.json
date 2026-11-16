@@ -760,12 +760,12 @@
       "company": "HPS",
       "role": "PFE 2027 — Java Backend / Software Engineering (spontaneous inquiry)",
       "channel": "direct email",
-      "status": "Acknowledged — automated receipt; review pending",
+      "status": "Acknowledged — employer-confirmed receipt; internship campaign pending",
       "cv": "Java Backend PDF attached",
       "date": "2026-11-14",
-      "source": "Verified sent application and HPS automated receipt",
-      "evidenceCategory": "verified-sent-email + employer-auto-acknowledgment",
-      "nextAction": "Await review; automated three-week nonresponse policy is not a current rejection."
+      "source": "Verified sent application, prior automated receipt, and direct HPS HR confirmation",
+      "evidenceCategory": "verified-sent-email + employer-confirmation",
+      "nextAction": "HPS confirmed the CV and application are registered; await contact when the 2026–2027 internship campaign opens. No interview or deadline announced."
     },
     {
       "recordId": "app-accenture-pfe-java-outreach-20261114",
@@ -2161,12 +2161,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-16T09:58:25+01:00",
+    "lastVerifiedAt": "2026-11-16T11:19:19+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Inbox excluding promotions/social after 2026-11-11 (93 messages, no next page); sent after 2026-11-11 (42 messages, attachment filename metadata, no next page); targeted external-completion search after 2026-11-11 (0 messages, no next page). No messages newer than prior checkpoint; historical aggregate counts not recounted.",
+    "scope": "Connected Gmail: inbox excluding promotions after 2026-11-11 (113 messages across 2 pages); sent after 2026-11-11 (42 messages, attachment filenames); targeted external-completion notices after 2026-11-11 (0). One new direct HPS HR acknowledgment verified against its sent application; other alerts excluded. Historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails, fully paginated result sets; targeted read_email for earlier employer replies and delivery failures; comparison with previous verified checkpoint.",
+    "method": "Connected Gmail search_emails with complete pagination for inbox/sent/targeted completion; read_email for new HPS reply and quoted original application; compared with 2026-11-16T09:58:25+01:00 checkpoint.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after a successful connected Gmail search and verified GitHub commit."
   },
@@ -2250,7 +2250,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-16T09:58:25+01:00",
+  "lastSyncedAt": "2026-11-16T11:19:19+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
