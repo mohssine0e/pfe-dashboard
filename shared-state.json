@@ -2161,12 +2161,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-16T09:16:33+01:00",
+    "lastVerifiedAt": "2026-11-16T09:58:25+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail query after 14 Nov 2026, excluding promotions/spam/trash; first 100 results with pagination available, targeted full-body reads of significant replies, bounce and acknowledgement. Partial result set; no full sent/inbox audit.",
-    "staleAfterHours": 24,
+    "scope": "Inbox excluding promotions/social after 2026-11-11 (93 messages, no next page); sent after 2026-11-11 (42 messages, attachment filename metadata, no next page); targeted external-completion search after 2026-11-11 (0 messages, no next page). No messages newer than prior checkpoint; historical aggregate counts not recounted.",
+    "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Gmail search_emails succeeded; batch_read_email inspected selected messages; results classified by evidence. Pagination incomplete.",
+    "method": "Connected Gmail search_emails, fully paginated result sets; targeted read_email for earlier employer replies and delivery failures; comparison with previous verified checkpoint.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after a successful connected Gmail search and verified GitHub commit."
   },
@@ -2250,7 +2250,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-16T08:55:33+01:00",
+  "lastSyncedAt": "2026-11-16T09:58:25+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
