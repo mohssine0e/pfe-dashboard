@@ -953,6 +953,17 @@
       "source": "Verified employer-issued application receipt confirmation",
       "evidenceCategory": "employer-confirmation",
       "notes": "Automated receipt confirmation for this exact role; review pending. Internship/PFE eligibility not independently established; no interview, assessment, or deadline confirmed."
+    },
+    {
+      "company": "Theodo",
+      "role": "Campagne PFE 2027 (specific role not identified)",
+      "channel": "employer recruiting process",
+      "status": "Rejected — employer decision",
+      "date": "2026-11-17",
+      "source": "Verified employer rejection",
+      "recordId": "app-theodo-campagne-pfe-2027",
+      "evidenceCategory": "Verified employer rejection",
+      "notes": "Employer explicitly declined the PFE 2027 campaign application on 17 Nov 2026; no specific vacancy or posting ID verified. Rejection is not listing expiry."
     }
   ],
   "priority": [
@@ -2385,12 +2396,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-17T19:30:20+01:00",
+    "lastVerifiedAt": "2026-11-17T20:35:27+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Mailbox after 11 Nov: first 100 messages only (additional pages not reviewed), with historical overlap; Sent after 1 Nov: 73 messages (complete); targeted external-completion notices after 11 Nov: 0 (complete). New torck assessment access code relates to existing invited assessment, not proof of completion; NEXOTEK outgoing PFE email with CV verified, but official posting identity not independently validated so no new public application row. Historical aggregates not recounted.",
+    "scope": "Non-promotional mailbox after 11 Nov: first 100 messages, additional pages not reviewed; Sent after 1 Nov: all 73 messages with attachment metadata; targeted external-completion search after 11 Nov: 0 matches. Historical overlap reviewed; new Theodo PFE 2027 campaign rejection read and matched to distinct campaign. Historical aggregate totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: non-promotional mailbox since 11 Nov, Sent since 1 Nov with attachment metadata, targeted external-completion search; read_email for new torck assessment access code and NEXOTEK outgoing PFE email; compared previous verified checkpoint.",
+    "method": "Connected Gmail search_emails for mailbox, Sent and StagiairesMA/external-completion notices; read_email for new employer decision; compared previous successful audit and existing public records.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful connected Gmail search and confirmed GitHub commit."
   },
@@ -2474,7 +2485,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-17T19:30:20+01:00",
+  "lastSyncedAt": "2026-11-17T20:35:27+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
