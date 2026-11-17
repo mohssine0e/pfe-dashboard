@@ -942,6 +942,17 @@
       "source": "Verified employer-issued application receipt confirmation",
       "evidenceCategory": "employer-confirmation",
       "notes": "Employer confirms receipt for exact internship posting; review pending. No interview, assessment, or rejection established."
+    },
+    {
+      "recordId": "app-segula-stage-technique-pre-embauche-20261117",
+      "company": "Segula Technologies",
+      "role": "Stage technique pré-embauche",
+      "channel": "Employer application system",
+      "status": "Employer acknowledged receipt — under review",
+      "date": "2026-11-17",
+      "source": "Verified employer-issued application receipt confirmation",
+      "evidenceCategory": "employer-confirmation",
+      "notes": "Automated receipt confirmation for this exact role; review pending. Internship/PFE eligibility not independently established; no interview, assessment, or deadline confirmed."
     }
   ],
   "priority": [
@@ -2326,12 +2337,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-17T17:32:15+01:00",
+    "lastVerifiedAt": "2026-11-17T19:03:40+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Recent mailbox after 17 Nov: 20 messages (complete); Sent after 11 Nov: 46 messages with attachment metadata (complete); external-completion targeted after 11 Nov: 0 messages (complete). 1 messages after previous checkpoint, no verified recruiting changes. Historical aggregates not recounted.",
+    "scope": "Mailbox after 11 Nov: first 100 messages only (additional pages not reviewed), including overlap; Sent after 1 Nov: 100 messages (complete); targeted StagiairesMA/external-completion after 11 Nov: 0 (complete). One new Segula employer acknowledgment for distinct Stage technique pré-embauche role. Historical aggregates not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; complete recent non-promotional mailbox, Sent attachment metadata, and targeted external-completion searches; compared against previous verified checkpoint.",
+    "method": "Connected Gmail search_emails for non-promotional mailbox since 11 Nov, Sent since 1 Nov with attachment metadata, targeted external-completion notices; read_email for Segula employer acknowledgment; compared previous checkpoint.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful connected Gmail search and confirmed GitHub commit."
   },
@@ -2415,7 +2426,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-17T17:32:15+01:00",
+  "lastSyncedAt": "2026-11-17T19:03:40+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
