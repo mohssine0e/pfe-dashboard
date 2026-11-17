@@ -1469,6 +1469,40 @@
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No 26000NTH / Python-React / accès marchés email in Gmail (60 days); not in main applications (checked 2026-11-17)",
         "distinct_role": "Different from backup SG P&L platform (26000NNK) and main SG applications"
+      },
+      {
+        "title": "PFE en Data science",
+        "company": "Inetum Maroc",
+        "exactRole": "PFE en Data science",
+        "role": "Entraînement d'un modèle d'IA et IA Gen et mise en place de plateforme DevOps: data preparation, model fine-tuning/evaluation, scripts and APIs, CI/CD pipeline, Docker containerisation, DevOps infrastructure automation, model versioning and monitoring",
+        "verifiedTitle": true,
+        "postingId": "smartrecruiters:744000156785899",
+        "sourceUrl": "https://pfebooks.com/stages/ia-generative-devops-inetum-maroc/",
+        "link": "https://jobs.smartrecruiters.com/Inetum2/744000156785899-pfe-en-data-science",
+        "source": "Inetum Maroc PFE Book on PFEBooks (published 2026-10-26), verified on Inetum's SmartRecruiters posting",
+        "location": "Casablanca, Morocco (on-site)",
+        "city": "Casablanca",
+        "durationNote": "PFE, on-site. Duration and start date not stated. Max two Inetum PFE subjects per candidate.",
+        "discoveredAt": "2026-11-17T18:25:00Z",
+        "checkedAt": "2026-11-17T18:25:00Z",
+        "verifiedAt": "2026-11-17T18:25:00Z",
+        "found": "Maya on-demand backup search 2026-11-17 evening (PFEBooks catalogue)",
+        "verifiedDeadline": "2026-12-06",
+        "applicationMethod": "Apply on SmartRecruiters ('Je suis intéressé(e)' button on the Inetum posting)",
+        "officialApplicationUrl": "https://jobs.smartrecruiters.com/Inetum2/744000156785899-pfe-en-data-science",
+        "dedicatedCvUploadVerified": false,
+        "requiredDocuments": [
+          "CV (SmartRecruiters form; not opened)"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE_Cloud_DevOps (French version, posting is in French)",
+        "profileAdjustment": "Lead with Docker/Docker Compose, GitLab CI/CD, REST APIs and MicroPaaS (build, deploy, logs, health checks). Do not claim Python, ML/DL, generative AI, Kubernetes or MLflow experience.",
+        "compatibilityAssessment": "Medium: the DevOps half (Git, Docker, CI/CD pipelines, REST APIs, backend) matches your CV; the required Python and Machine Learning / Deep Learning / generative AI knowledge is not on your CV. Kubernetes, MLflow, Jenkins and cloud are listed only as assets.",
+        "nextAction": "Apply on SmartRecruiters before December 6 if you are comfortable with the ML/Python part; it counts as one of your two allowed Inetum PFE subjects.",
+        "fit": "medium",
+        "missedByMain": true,
+        "status": "New — apply on company website",
+        "alreadyApplied": false,
+        "alreadyAppliedEvidence": "No Inetum 'PFE en Data science' / SmartRecruiters email in Gmail since Oct 1 (checked 2026-11-17); not in main applications or registry (main Inetum entries are SAP Commerce and the Forum Geni spontaneous application)"
       }
     ],
     "rules": {
