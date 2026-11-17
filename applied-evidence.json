@@ -1,0 +1,828 @@
+{
+ "generatedAt": "2026-11-17T21:00:48+01:00",
+ "gmail": {
+  "checkedAt": "2026-11-17T21:10:00+01:00",
+  "checkedBy": "Maya",
+  "scope": "Gmail searches on 2026-11-17: LinkedIn 'application was sent' and rejection notices since 15 Oct, employer replies and confirmations since 1 Nov, interview/assessment mail since 15 Oct."
+ },
+ "emailTracker": {
+  "updatedAt": "2026-11-17T20:37:45+01:00",
+  "total": 142,
+  "sent": 37,
+  "draftedNotSent": 104,
+  "draftedNotSentByLanguage": {
+   "en": 0,
+   "fr": 104
+  },
+  "notDrafted": 0,
+  "sentToPersonalAddresses": 1
+ },
+ "events": [
+  {
+   "company": "Highness",
+   "role": "Software Engineer Intern",
+   "kind": "sent",
+   "date": "2026-11-16",
+   "channel": "Email",
+   "evidence": "verified"
+  },
+  {
+   "company": "Highness",
+   "role": "Software Engineer Intern",
+   "kind": "interview",
+   "date": "2026-11-17",
+   "at": "2026-11-19T19:00:00+01:00",
+   "channel": "Google Meet",
+   "evidence": "verified",
+   "note": "Calendar invite: Thu 19 Nov, 1:00-1:30 PM Toronto time (EST); the time shown above is that moment on your clock. The recruiter's email proposed '6PM' and you accepted. Confirm which hour."
+  },
+  {
+   "company": "torck GmbH",
+   "role": "Graduate Internship software development",
+   "kind": "assessment",
+   "date": "2026-11-14",
+   "due": "2026-11-19T12:53:00+01:00",
+   "channel": "Online test",
+   "evidence": "verified"
+  },
+  {
+   "company": "torck GmbH",
+   "role": "Graduate Internship software development",
+   "kind": "assessment-done",
+   "date": "2026-11-17",
+   "channel": "Online test",
+   "evidence": "reported",
+   "note": "You said you finished the test on 17 Nov."
+  },
+  {
+   "company": "BCG X",
+   "role": "Delivery AI Software Engineering Intern",
+   "kind": "assessment-done",
+   "date": "2026-11-09",
+   "channel": "CodeSignal",
+   "evidence": "reported"
+  },
+  {
+   "company": "Segula Technologies",
+   "role": "Stage technique pré-embauche",
+   "kind": "ack",
+   "date": "2026-11-17",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "Segula Technologies",
+   "role": "Campagne PFE 2026-2027",
+   "kind": "ack",
+   "date": "2026-11-10",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "Microsoft",
+   "role": "Software Engineer, Teamwork Experiences Internship",
+   "kind": "ack",
+   "date": "2026-11-17",
+   "channel": "Microsoft careers",
+   "evidence": "verified"
+  },
+  {
+   "company": "VINCI Energies Afrique de l’Ouest",
+   "role": "Stage PFE Cloud Hybride Microsoft Azure (Young Talents Day)",
+   "kind": "ack",
+   "date": "2026-11-17",
+   "channel": "Company form",
+   "evidence": "verified"
+  },
+  {
+   "company": "Devoteam France",
+   "role": "Stage - Ingénieur(e) R&D Intelligence Artificielle (F/H)",
+   "kind": "sent",
+   "date": "2026-11-10",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "Devoteam France",
+   "role": "Stage - Ingénieur(e) R&D Intelligence Artificielle (F/H)",
+   "kind": "rejected",
+   "date": "2026-11-16",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "Btechnologie",
+   "role": "Stage PFE Camunda",
+   "kind": "sent",
+   "date": "2026-11-13",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "Btechnologie",
+   "role": "Stage PFE Camunda",
+   "kind": "viewed",
+   "date": "2026-11-16",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "HPS",
+   "role": "",
+   "kind": "ack",
+   "date": "2026-11-16",
+   "channel": "Email",
+   "evidence": "verified",
+   "note": "HPS will contact you when its internship campaign opens."
+  },
+  {
+   "company": "Monadem",
+   "role": "",
+   "kind": "ack",
+   "date": "2026-11-15",
+   "channel": "Email",
+   "evidence": "verified",
+   "note": "Automatic reply."
+  },
+  {
+   "company": "Inetum Business Solutions",
+   "role": "PFE SAP Commerce",
+   "kind": "ack",
+   "date": "2026-11-13",
+   "channel": "Indeed / SmartRecruiters",
+   "evidence": "verified"
+  },
+  {
+   "company": "Inetum Maroc",
+   "role": "Sécurisation et automatisation de l'infrastructure IT",
+   "kind": "ack",
+   "date": "2026-11-11",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "Deloitte",
+   "role": "Stagiaire Technology & Transformation",
+   "kind": "ack",
+   "date": "2026-11-11",
+   "channel": "Workday",
+   "evidence": "verified"
+  },
+  {
+   "company": "Assystem",
+   "role": "Ingénieur Informatique & Développement POO",
+   "kind": "rejected",
+   "date": "2026-11-11",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "PwC",
+   "role": "Auditeur IT Stagiaire",
+   "kind": "ack",
+   "date": "2026-11-10",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "PwC",
+   "role": "Stage Conseil Technologique",
+   "kind": "ack",
+   "date": "2026-11-10",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "PwC",
+   "role": "Stage Consultant en Cybersécurité",
+   "kind": "ack",
+   "date": "2026-11-10",
+   "channel": "Company portal",
+   "evidence": "verified"
+  },
+  {
+   "company": "tesselate",
+   "role": "Talent Acquisition Junior",
+   "kind": "rejected",
+   "date": "2026-11-16",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "Visian",
+   "role": "Développeur Java",
+   "kind": "rejected",
+   "date": "2026-11-15",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "Astek",
+   "role": "Développeur Java",
+   "kind": "rejected",
+   "date": "2026-10-28",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "Ostorlab",
+   "role": "Software Engineer Intern",
+   "kind": "rejected",
+   "date": "2026-10-26",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "Faurecia",
+   "role": "End-of-Studies HR Intern",
+   "kind": "rejected",
+   "date": "2026-10-24",
+   "channel": "LinkedIn",
+   "evidence": "verified"
+  },
+  {
+   "company": "Docaposte",
+   "role": "",
+   "kind": "sent",
+   "date": "2026-11-11",
+   "channel": "LinkedIn",
+   "evidence": "verified",
+   "note": "LinkedIn's notice names the company, not the role."
+  },
+  {
+   "company": "EQDOM",
+   "role": "",
+   "kind": "sent",
+   "date": "2026-11-11",
+   "channel": "LinkedIn",
+   "evidence": "verified",
+   "note": "LinkedIn's notice names the company, not the role."
+  },
+  {
+   "company": "Candilia",
+   "role": "",
+   "kind": "sent",
+   "date": "2026-11-09",
+   "channel": "LinkedIn",
+   "evidence": "verified",
+   "note": "LinkedIn's notice names the company, not the role."
+  },
+  {
+   "company": "Cnexia",
+   "role": "STAGE PFE Software Architecture",
+   "kind": "sent",
+   "date": "2026-11-07",
+   "channel": "ReKrute",
+   "evidence": "reported",
+   "note": "You said you applied to all three Cnexia PFE roles on ReKrute; the main tracker only recorded Cloud & DevOps. Check your ReKrute history."
+  },
+  {
+   "company": "Cnexia",
+   "role": "STAGE PFE Full-Stack Developer (React / FastAPI)",
+   "kind": "sent",
+   "date": "2026-11-07",
+   "channel": "ReKrute",
+   "evidence": "reported",
+   "note": "You said you applied to all three Cnexia PFE roles on ReKrute; the main tracker only recorded Cloud & DevOps. Check your ReKrute history."
+  }
+ ],
+ "emailCampaign": [
+  {
+   "company": "NEXOTEK (NexotekMaroc)",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-17",
+   "lastSent": "2026-11-17",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "Java Backend EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": "PFE 2027 – Web & Mobile Development (Front/Back/Full Stack: React, Angular, .NET, Java, PHP, Drupal, Flutter); also DevOps & DevSecOps (CI/CD, Docker, Kubernetes), AI, QA tracks",
+   "source": "LinkedIn post by NexotekMaroc company page, posted 2026-11-16: 'NEXOTEK is Hiring – PFE Internship Opportunities 2027' (https://www.linkedin.com/company/nexotek-maroc/posts/)"
+  },
+  {
+   "company": "anakot",
+   "sent": 2,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-10-21",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Cloud & DevOps FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "netopia",
+   "sent": 2,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-08",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "adkomo",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "adria-bt",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "advisiarh",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "afdtech",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Cloud & DevOps FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "akdital",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "algoconsulting",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "alomrane.gov",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "amaris",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "mabelka",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "maltem",
+   "sent": 2,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "management-square",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "manpower-maroc",
+   "sent": 2,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "maroclear",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "metraco",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "mibtech",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "monadem",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "nemo",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "ora",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "percallgroup",
+   "sent": 2,
+   "drafted": 11,
+   "notSent": 0,
+   "firstSent": "2026-11-15",
+   "lastSent": "2026-11-15",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "Java Backend FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "accenture",
+   "sent": 2,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-14",
+   "lastSent": "2026-11-14",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "Java Backend EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "beiersdorf",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-14",
+   "lastSent": "2026-11-14",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "General EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "coficab",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-14",
+   "lastSent": "2026-11-14",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "General EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "dedalus",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-14",
+   "lastSent": "2026-11-14",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "Java Backend EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "oracle",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-14",
+   "lastSent": "2026-11-14",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "Java Backend EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "yazaki-europe",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-14",
+   "lastSent": "2026-11-14",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "General EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "experio",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-08",
+   "lastSent": "2026-11-08",
+   "languages": [
+    "fr"
+   ],
+   "cv": [],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  },
+  {
+   "company": "involys",
+   "sent": 1,
+   "drafted": 1,
+   "notSent": 0,
+   "firstSent": "2026-10-21",
+   "lastSent": "2026-10-21",
+   "languages": [
+    "fr"
+   ],
+   "cv": [],
+   "replied": false,
+   "bounced": 0,
+   "role": null,
+   "source": null
+  }
+ ],
+ "emailOffers": []
+}
