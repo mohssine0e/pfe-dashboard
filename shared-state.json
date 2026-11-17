@@ -1121,7 +1121,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-17T06:59:36Z",
+    "updatedAt": "2026-11-17T18:25:00Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1435,26 +1435,40 @@
         "note": "Not in ChatGPT's main list or applications at check time."
       },
       {
-        "company": "Sofrecom Maroc",
-        "title": "Campagne de Stage PFE 2027",
-        "exactRole": "Campagne de Stage PFE 2027",
-        "role": "DEV-20 Angular / Java Spring AI; OPS-14 CI/CD automation; OPS-13 Terraform",
+        "title": "Stage PFE – Développeur full stack – Python/React",
+        "company": "Société Générale (SG GSC Morocco, Casablanca)",
+        "exactRole": "Stage PFE – Développeur full stack – Python/React",
+        "role": "Full-stack PFE (Market Access team): evolve a web platform for trader registration documentation and automate registration/supervision workflows; backend Python (FastAPI/Flask) or Java (Spring Boot), React.js, PostgreSQL, Camunda-type workflows, REST APIs, Git/GitLab CI/CD",
         "verifiedTitle": true,
-        "postingId": "linkedin:4490327145",
-        "sourceUrl": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
-        "link": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
-        "source": "Original Sofrecom Maroc LinkedIn job posting",
-        "location": "Rabat and Casablanca, Morocco",
-        "duration": "6 months",
-        "startDate": "February 2027",
-        "discoveredAt": "2026-11-17T06:59:36Z",
-        "checkedAt": "2026-11-17T06:59:36Z",
-        "verifiedAt": "2026-11-17T06:59:36Z",
+        "postingId": "linkedin:4490431857 / SG ref 26000NTH",
+        "sourceUrl": "https://careers.societegenerale.com/en/job-offers/stage-pfe-developpeur-full-stack-python-react-26000NTH-en",
+        "link": "https://www.linkedin.com/jobs/view/4490431857/",
+        "source": "LinkedIn job search (Société Générale posting, posted 2026-11-17), verified on Société Générale careers site",
+        "location": "Casablanca, Morocco",
+        "city": "Casablanca",
+        "durationNote": "Paid internship, 5 to 6 months (official listing). SG page start date 2027/02/28, publication 2026/11/17. No deadline stated.",
+        "discoveredAt": "2026-11-17T18:25:00Z",
+        "checkedAt": "2026-11-17T18:25:00Z",
+        "verifiedAt": "2026-11-17T18:25:00Z",
+        "found": "Maya silent backup run 2026-11-17 19:00 (LinkedIn guest search, past 12h)",
         "verifiedDeadline": null,
-        "applicationMethod": "Email CV to recruitment address in original employer listing; specify subject code and title, maximum two subjects",
+        "applicationMethod": "Apply on company website (Société Générale careers 'Apply' button, Taleo career section where earlier SG PFE applications were made); interview after application",
+        "officialApplicationUrl": "https://careers.societegenerale.com/en/job-offers/stage-pfe-developpeur-full-stack-python-react-26000NTH-en",
         "dedicatedCvUploadVerified": false,
-        "cvGuidance": "Email application; approved generic CV unless separately preparing a lightly tailored copy. Do not modify approved masters or assert submission.",
-        "note": "Original employer campaign explicitly confirms 6 months, February 2027, 20 subjects. High-fit DEV-20 Angular and Java Spring AI (Rabat), OPS-14 CI/CD testing and documentation (Rabat), OPS-13 Terraform code review (Rabat). No explicit deadline verified. No private applied-status check performed."
+        "requiredDocuments": [
+          "CV (upload step behind the SG/Taleo sign-in; not verified)"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE_Java_Backend.pdf (Java Backend) — Spring Boot is an accepted backend option",
+        "profileAdjustment": "Lead with Java 21 / Spring Boot 3 REST work, React 19 + TypeScript, PostgreSQL and GitLab CI/CD; the PFA document-validation workflow is relevant to process automation. Do not claim Python/FastAPI/Flask or Camunda.",
+        "compatibilityAssessment": "Strong: listing accepts Java (Spring Boot) or Python backend, requires React.js, PostgreSQL, REST APIs and Git/GitLab CI/CD — all on your CV. Gaps: Camunda/workflow orchestration and market-access/trading domain knowledge; professional English required.",
+        "nextAction": "Apply on SG's site with your existing SG account (different role from your SG 26000NJV/NJA/NJB applications).",
+        "note": "Not in ChatGPT's main list at the last comparison (main holds SG 26000NJV, 26000NJA, 26000NJB and Quant Developer only); this is not proof of an error in the main list.",
+        "fit": "strong",
+        "missedByMain": true,
+        "status": "New — apply on company website",
+        "alreadyApplied": false,
+        "alreadyAppliedEvidence": "No 26000NTH / Python-React / accès marchés email in Gmail (60 days); not in main applications (checked 2026-11-17)",
+        "distinct_role": "Different from backup SG P&L platform (26000NNK) and main SG applications"
       }
     ],
     "rules": {
