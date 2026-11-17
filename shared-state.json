@@ -1086,7 +1086,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-16T19:10:00Z",
+    "updatedAt": "2026-11-17T06:59:36Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1398,6 +1398,28 @@
         "nextAction": "Before Nov 27: open Tessi's careers page, filter for Maroc/stage to find the U-TALENT Software Development or DevOps offer, and apply there; or ask the poster for the direct link. Not applied.",
         "compatibilityAssessment": "Medium-good on paper: Software Development and DevOps & IT Operations tracks match your profile; stack, city and duration not published.",
         "note": "Not in ChatGPT's main list or applications at check time."
+      },
+      {
+        "company": "Sofrecom Maroc",
+        "title": "Campagne de Stage PFE 2027",
+        "exactRole": "Campagne de Stage PFE 2027",
+        "role": "DEV-20 Angular / Java Spring AI; OPS-14 CI/CD automation; OPS-13 Terraform",
+        "verifiedTitle": true,
+        "postingId": "linkedin:4490327145",
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
+        "link": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
+        "source": "Original Sofrecom Maroc LinkedIn job posting",
+        "location": "Rabat and Casablanca, Morocco",
+        "duration": "6 months",
+        "startDate": "February 2027",
+        "discoveredAt": "2026-11-17T06:59:36Z",
+        "checkedAt": "2026-11-17T06:59:36Z",
+        "verifiedAt": "2026-11-17T06:59:36Z",
+        "verifiedDeadline": null,
+        "applicationMethod": "Email CV to recruitment address in original employer listing; specify subject code and title, maximum two subjects",
+        "dedicatedCvUploadVerified": false,
+        "cvGuidance": "Email application; approved generic CV unless separately preparing a lightly tailored copy. Do not modify approved masters or assert submission.",
+        "note": "Original employer campaign explicitly confirms 6 months, February 2027, 20 subjects. High-fit DEV-20 Angular and Java Spring AI (Rabat), OPS-14 CI/CD testing and documentation (Rabat), OPS-13 Terraform code review (Rabat). No explicit deadline verified. No private applied-status check performed."
       }
     ],
     "rules": {
