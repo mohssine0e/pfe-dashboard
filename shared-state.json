@@ -930,6 +930,18 @@
       "source": "Verified employer-issued application receipt confirmation",
       "evidenceCategory": "employer-confirmation",
       "notes": "Recruitment team confirmed receipt for the exact Azure hybrid cloud PFE internship; no interview or assessment invitation."
+    },
+    {
+      "recordId": "app-microsoft-software-engineer-teamwork-experiences-internship-200061280",
+      "company": "Microsoft",
+      "role": "Software Engineer, Teamwork Experiences Internship Opportunities",
+      "postingId": "200061280",
+      "channel": "Microsoft Careers",
+      "status": "Employer acknowledged receipt — under review",
+      "date": "2026-11-17",
+      "source": "Verified employer-issued application receipt confirmation",
+      "evidenceCategory": "employer-confirmation",
+      "notes": "Employer confirms receipt for exact internship posting; review pending. No interview, assessment, or rejection established."
     }
   ],
   "priority": [
@@ -2314,12 +2326,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-17T15:25:03+01:00",
+    "lastVerifiedAt": "2026-11-17T16:54:42+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Complete non-promotional mailbox search after 17 Nov: 17 messages; complete Sent search after 11 Nov: 46 messages with attachment metadata; complete targeted external-completion searches after 11 Nov: 0 messages. Overlap against prior verified checkpoint. Historical totals not recounted.",
+    "scope": "Complete non-promotional mailbox search after 17 Nov: 19 messages; complete Sent search after 11 Nov: 46 messages with attachment metadata; targeted external-completion searches after 11 Nov: 0 messages. Historical broad search after 11 Nov sampled first 100 results, not exhaustively paginated. Compared against prior checkpoint; historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; complete recent mailbox, Sent with attachment metadata, and targeted StagiairesMA/external-completion searches; compared against prior checkpoint.",
+    "method": "Connected Gmail search_emails and batch_read_email; complete recent mailbox, Sent, targeted external-completion searches; verified exact Microsoft employer receipt against role and posting.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful connected Gmail search and confirmed GitHub commit."
   },
@@ -2403,7 +2415,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-17T15:25:03+01:00",
+  "lastSyncedAt": "2026-11-17T16:54:42+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
