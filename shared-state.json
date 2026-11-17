@@ -935,46 +935,51 @@
   "priority": [
     {
       "rank": 1,
-      "company": "VINCI Energies au Maroc",
-      "task": "Check and submit the Cloud hybride Microsoft Azure or IT infrastructure monitoring PFE application on the official Teamtailor platform before 16 Nov 2026, 18:00 Morocco time",
-      "reason": "Company's own public recruitment announcement confirms 16 Nov 2026 18:00 deadline. Two distinct Casablanca PFE subjects are listed on its official careers site. No employer submission confirmation found in connected Gmail or existing public application records; this is not proof of non-submission.",
-      "date": "2026-11-16",
-      "certainty": "Deadline confirmed by VINCI Energies official public announcement; submission not verified",
-      "kind": "deadline",
-      "actionLinks": [
-        {
-          "label": "Cloud hybride Azure PFE",
-          "url": "https://ytdvincienergiesafriqueouest.teamtailor.com/jobs/8635452-stage-pfe-mise-en-oeuvre-d-une-infrastructure-cloud-hybride-microsoft-azure"
-        },
-        {
-          "label": "IT infrastructure monitoring PFE",
-          "url": "https://ytdvincienergiesafriqueouest.teamtailor.com/jobs/8635233-deploiement-d-une-solution-de-supervision-it-et-monitoring-des-infrastructures"
-        }
-      ]
+      "company": "Highness",
+      "task": "Prepare for confirmed online Software Engineer Intern interview on 19 Nov 2026, 18:00–18:30 Morocco time",
+      "reason": "Employer proposed the interview on 17 Nov; candidate confirmed availability and organizer sent Google Calendar invitation. Verified in primary calendar. Meeting details intentionally excluded.",
+      "date": "2026-11-19",
+      "certainty": "Direct employer email and primary Google Calendar verified 17 Nov 2026",
+      "kind": "interview",
+      "actionLinks": []
     },
     {
       "rank": 2,
       "company": "torck GmbH",
-      "task": "Complete new one-time Software Development online assessment by 19 Nov 2026, 11:53 UTC",
-      "reason": "Employer assessment invitation received 14 Nov 2026 for Graduate Internship software development (m/f) Morocco. 16 timed questions (~16 minutes), one attempt. Distinct from the HR questionnaire already completed on 11 Nov. Personal assessment URL intentionally excluded from public snapshot.",
+      "task": "Complete one-attempt 16-question online assessment by 19 Nov 2026, 11:53 UTC; check candidate portal first for any completion record",
+      "reason": "Employer invitation dated 14 Nov; HR questionnaire already completed separately. Assessment completion not confirmed.",
       "date": "2026-11-19",
-      "certainty": "Employer email verified 14 Nov 2026",
+      "certainty": "Employer assessment invitation verified; completion unverified",
       "kind": "deadline",
       "actionLinks": []
     },
     {
       "rank": 3,
-      "company": "torck GmbH",
-      "task": "HR questionnaire submitted — await next step",
-      "reason": "User confirmed questionnaire submission on 11 Nov 2026. ATS receipt not independently checked.",
-      "date": "2026-11-13",
-      "certainty": "Completed — user reported",
-      "kind": "completed",
-      "actionLinks": [],
-      "completedOn": "2026-11-11"
+      "company": "VINCI Energies Afrique de l’Ouest",
+      "task": "Await recruiter review for Cloud Hybride Microsoft Azure PFE; do not reapply",
+      "reason": "Employer Teamtailor receipt verified 17 Nov 2026 for exact Azure role; prior 16 Nov campaign deadline has passed. Monitoring role is distinct and its submission unverified.",
+      "date": "2026-11-17",
+      "certainty": "Direct employer acknowledgment verified",
+      "kind": "followup",
+      "actionLinks": [
+        {
+          "label": "Azure PFE posting",
+          "url": "https://ytdvincienergiesafriqueouest.teamtailor.com/jobs/8635452-stage-pfe-mise-en-oeuvre-d-une-infrastructure-cloud-hybride-microsoft-azure"
+        }
+      ]
     },
     {
       "rank": 4,
+      "company": "Microsoft",
+      "task": "Track submitted Software Engineer, Teamwork Experiences Internship Opportunities application; check eligibility/location and candidate Action Center",
+      "reason": "Employer application acknowledgment on 17 Nov for exact requisition 200061280; no interview or decision. Location and Morocco PFE fit not independently confirmed.",
+      "date": "2026-11-17",
+      "certainty": "Employer application acknowledgment verified",
+      "kind": "followup",
+      "actionLinks": []
+    },
+    {
+      "rank": 5,
       "company": "Cnexia",
       "task": "Check live availability and submission status for Cloud & DevOps, Architecture and Full-Stack PFE roles",
       "reason": "Previously recorded Nov 10 closing date is not independently verified. One Cloud & DevOps submission was reported; avoid duplicate applications.",
@@ -997,7 +1002,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "company": "New PFE applications",
       "task": "Track Société Générale (26000NJV and 26000NJA), Managem (req888), and Sofrecom Full Stack — await review",
       "reason": "Both Société Générale roles and Managem acknowledged on 9 Nov. LinkedIn confirms Sofrecom Full Stack submission. No interview invitations verified.",
@@ -1019,7 +1024,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "company": "Ostorlab / CGI / Sofrecom DevOps / FGMED",
       "task": "Verify actual employer application forms, PFE duration and start-date compatibility before completing remaining steps",
       "reason": "Platform-generated completion prompts are not employer confirmations. FGMED advertises paid internship but immediate-start mismatch remains unverified. Sofrecom Full Stack application is separately confirmed sent via LinkedIn; its DevOps listing remains unverified.",
@@ -1045,7 +1050,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "company": "Maersk / Intelcia / Inetum",
       "task": "Monitor existing applications without duplicate submissions",
       "reason": "Employer acknowledgments already exist; no new interview invitation verified.",
@@ -1063,7 +1068,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "company": "BCG X",
       "task": "Assessment completed — await BCG X review",
       "reason": "Completion confirmed by CodeSignal email on 9 Nov and by the candidate. No passing score, employer decision or new assessment step verified.",
