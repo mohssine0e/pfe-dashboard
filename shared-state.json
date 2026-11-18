@@ -977,6 +977,18 @@
       "source": "Verified LinkedIn application-sent confirmation read 18 Nov 2026",
       "evidenceCategory": "platform-application-confirmation",
       "notes": "Platform confirms application sent for exact posting on 18 Nov 2026. No employer acknowledgment, interview, or assessment established."
+    },
+    {
+      "recordId": "app-inetum-pfe-data-science-linkedin-4483595292",
+      "company": "Inetum Maroc",
+      "role": "PFE en Data science",
+      "postingId": "linkedin:4483595292",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4483595292",
+      "channel": "LinkedIn / SmartRecruiters",
+      "status": "Acknowledged — queued for employer review",
+      "date": "2026-11-18",
+      "source": "Employer recruitment platform confirmation for exact PFE en Data science role",
+      "evidenceCategory": "Verified employer-issued application receipt; no screening decision"
     }
   ],
   "priority": [
@@ -2479,12 +2491,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-18T10:50:06.369Z",
+    "lastVerifiedAt": "2026-11-18T11:25:35.069Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Non-promotional non-spam/non-trash mailbox after 16 Nov 2026: 70 messages; sent after 16 Nov: 8 messages with attachment metadata; external-completion notices after 10 Nov: 19 matches (two on 18 Nov already queued). All searches exhausted with no pagination. Six earlier relevant messages read. Latest mailbox message at 18 Nov 09:39 UTC was a general job alert, excluded; no recruiting messages newer than prior 09:40:27 UTC checkpoint. Historical aggregate totals not recounted; countsAuditedAt remains 7 Nov 2026.",
+    "scope": "Connected Gmail non-promotional mailbox after 16 Nov 2026: 72 messages; sent after 16 Nov: 8 messages (attachment metadata inspected); targeted external-completion notices after 10 Nov: 19 matches, including two previously queued on 18 Nov. All three searches exhausted without pagination. Two new 18 Nov messages read: LinkedIn application confirmation and Inetum Maroc employer receipt for the same PFE Data Science posting. Historical aggregate totals not recounted; countsAuditedAt remains 7 Nov 2026.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: recent non-promotional mailbox, sent mail with attachment metadata, targeted external-completion notices; read_email of six prior relevant messages for identity and deduplication; reconciled against public GitHub snapshot.",
+    "method": "Connected Gmail search_emails (recent mailbox, sent and external-completion), read_email of both new Inetum messages; exact-role and LinkedIn posting identity reconciliation against GitHub public snapshot.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after connected Gmail query and verified GitHub write."
   },
@@ -2568,7 +2580,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-18T10:50:06.369Z",
+  "lastSyncedAt": "2026-11-18T11:25:35.069Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
