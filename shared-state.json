@@ -1524,9 +1524,9 @@
         "nextAction": "Apply on SmartRecruiters before December 6 if you are comfortable with the ML/Python part; it counts as one of your two allowed Inetum PFE subjects.",
         "fit": "medium",
         "missedByMain": true,
-        "status": "New — apply on company website",
-        "alreadyApplied": false,
-        "alreadyAppliedEvidence": "No Inetum 'PFE en Data science' / SmartRecruiters email in Gmail since Oct 1 (checked 2026-11-17); not in main applications or registry (main Inetum entries are SAP Commerce and the Forum Geni spontaneous application)"
+        "status": "Applied (LinkedIn Easy Apply, 18 Nov)",
+        "alreadyApplied": true,
+        "alreadyAppliedEvidence": "LinkedIn job tracker shows Applied on 2026-11-18 (Easy Apply submitted by Maya with user approval)."
       },
       {
         "title": "Offre de Stage – Développeur Full Stack",

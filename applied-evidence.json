@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-18T01:28:02+01:00",
+ "generatedAt": "2026-11-18T12:25:05+01:00",
  "gmail": {
   "checkedAt": "2026-11-17T21:10:00+01:00",
   "checkedBy": "Maya",
   "scope": "Gmail searches on 2026-11-17: LinkedIn 'application was sent' and rejection notices since 15 Oct, employer replies and confirmations since 1 Nov, interview/assessment mail since 15 Oct."
  },
  "emailTracker": {
-  "updatedAt": "2026-11-17T20:37:45+01:00",
-  "total": 142,
-  "sent": 37,
+  "updatedAt": "2026-11-18T05:30:00+01:00",
+  "total": 144,
+  "sent": 39,
   "draftedNotSent": 104,
   "draftedNotSentByLanguage": {
    "en": 0,
@@ -293,9 +293,63 @@
    "channel": "SG careers portal",
    "evidence": "reported",
    "note": "You said on 18 Nov that you applied (ref 26000NTH). No SG confirmation email found in Gmail."
+  },
+  {
+   "company": "HESTIM",
+   "role": "Offre de stage PFE – Génie Informatique / IA / Data",
+   "kind": "sent",
+   "date": "2026-11-18",
+   "channel": "LinkedIn Easy Apply",
+   "evidence": "verified",
+   "note": "LinkedIn job tracker shows Applied."
+  },
+  {
+   "company": "Inetum",
+   "role": "PFE en Data science",
+   "kind": "sent",
+   "date": "2026-11-18",
+   "channel": "LinkedIn Easy Apply",
+   "evidence": "verified",
+   "note": "LinkedIn job tracker shows Applied."
   }
  ],
  "emailCampaign": [
+  {
+   "company": "xPage.ai",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-18",
+   "lastSent": "2026-11-18",
+   "languages": [
+    "en"
+   ],
+   "cv": [
+    "General EN"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": "PFE 2027 – AI / vibe coding projects (hybrid or remote)",
+   "source": "LinkedIn group chat posts (PFE 2027 / friend group), shared 2026-11-16 (Taha Lamhandi)"
+  },
+  {
+   "company": "Easysoft",
+   "sent": 1,
+   "drafted": 0,
+   "notSent": 0,
+   "firstSent": "2026-11-18",
+   "lastSent": "2026-11-18",
+   "languages": [
+    "fr"
+   ],
+   "cv": [
+    "General FR"
+   ],
+   "replied": false,
+   "bounced": 0,
+   "role": "Stage Développeur(se) IT & IA (post aimed at recent graduates)",
+   "source": "LinkedIn group chat posts (PFE 2027 / friend group), shared 2026-11-16"
+  },
   {
    "company": "NEXOTEK (NexotekMaroc)",
    "sent": 1,
