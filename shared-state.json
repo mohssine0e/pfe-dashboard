@@ -1145,7 +1145,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-17T18:25:00Z",
+    "updatedAt": "2026-11-18T06:10:00Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1527,6 +1527,38 @@
         "status": "New — apply on company website",
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No Inetum 'PFE en Data science' / SmartRecruiters email in Gmail since Oct 1 (checked 2026-11-17); not in main applications or registry (main Inetum entries are SAP Commerce and the Forum Geni spontaneous application)"
+      },
+      {
+        "title": "Offre de Stage – Développeur Full Stack",
+        "company": "Cartway",
+        "exactRole": "Offre de Stage – Développeur Full Stack",
+        "role": "Full-stack stage at a restaurant-tech startup (online ordering, payment, operations): build and maintain the Cartway web and mobile apps (front-end and back-end), partner apps (restaurant tablets, staff interfaces, dashboards), integrate APIs, databases and third-party services (payment, delivery, notifications), testing, bug fixing and documentation",
+        "verifiedTitle": true,
+        "postingId": "indeed:f9f1fa790339d36a",
+        "sourceUrl": "https://ma.indeed.com/viewjob?jk=f9f1fa790339d36a",
+        "link": "https://ma.indeed.com/viewjob?jk=f9f1fa790339d36a",
+        "source": "JobSpy: Indeed (Indeed Maroc listing, posted 2026-11-17)",
+        "location": "Rabat, Morocco (on-site)",
+        "city": "Rabat",
+        "durationNote": "3 to 6 months, full time, flexible hours, on-site. The listing does not say PFE and gives no start date or pay.",
+        "discoveredAt": "2026-11-18T06:10:00Z",
+        "checkedAt": "2026-11-18T06:10:00Z",
+        "verifiedAt": "2026-11-18T06:10:00Z",
+        "found": "Maya silent backup search 2026-11-18 7 AM (JobSpy Indeed)",
+        "applicationMethod": "Apply on Indeed (listing's apply button)",
+        "officialApplicationUrl": "https://ma.indeed.com/viewjob?jk=f9f1fa790339d36a",
+        "requiredDocuments": [
+          "CV (Indeed application; form not opened)"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE_General (French version, posting is in French)",
+        "profileAdjustment": "Lead with the Laravel REST API internship, React/TypeScript front ends, PostgreSQL, Git/GitLab and MicroPaaS. Do not claim mobile development experience.",
+        "compatibilityAssessment": "Medium: web front-end/back-end, API and database integration, Git and testing match your CV, and Rabat is a preferred city. Unknowns: it is not labelled PFE (3–6 months, so a 6-month PFE from February 1 must be confirmed) and part of the work is mobile apps.",
+        "nextAction": "Apply on Indeed and state in the message that you need a 6-month PFE starting February 1, 2027.",
+        "fit": "medium",
+        "missedByMain": true,
+        "status": "New — apply on Indeed",
+        "alreadyApplied": false,
+        "alreadyAppliedEvidence": "No Cartway email in Gmail in the last 60 days (checked 2026-11-18); not in main applications, registry, completionQueue or priority."
       }
     ],
     "rules": {
