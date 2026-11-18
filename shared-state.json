@@ -550,16 +550,16 @@
       "company": "Cilas",
       "role": "Stagiaire ingénieur informatique/base de donnée (H/F)",
       "channel": "employer recruiting platform",
-      "status": "Acknowledged — awaiting review",
+      "status": "Rejected — employer decision 2026-11-18",
       "date": "2026-11-10",
-      "source": "Direct employer recruitment acknowledgment",
-      "evidenceCategory": "Verified employer application receipt for exact internship role",
+      "source": "Direct employer recruiting response",
+      "evidenceCategory": "Explicit employer rejection for exact internship role",
       "emailEvidence": {
         "sourceType": "verified-employer-email",
-        "status": "acknowledged",
-        "verifiedAt": "2026-11-10",
-        "evidenceType": "employer-confirmation",
-        "summary": "Cilas confirmed receipt of the database/informatics internship application; recruiter review pending."
+        "status": "rejected",
+        "verifiedAt": "2026-11-18",
+        "evidenceType": "employer-rejection",
+        "summary": "Cilas declined the application for the informatics/database engineering internship."
       }
     },
     {
@@ -989,6 +989,23 @@
       "date": "2026-11-18",
       "source": "Employer recruitment platform confirmation for exact PFE en Data science role",
       "evidenceCategory": "Verified employer-issued application receipt; no screening decision"
+    },
+    {
+      "recordId": "app-ostorlab-software-engineer-intern-linkedin",
+      "company": "Ostorlab",
+      "role": "Software Engineer Intern",
+      "channel": "LinkedIn",
+      "status": "Employer replied — LinkedIn application to be reviewed",
+      "date": "2026-11-18",
+      "source": "Direct employer recruiting response",
+      "evidenceCategory": "Employer confirms LinkedIn-only processing and intent to review exact role",
+      "emailEvidence": {
+        "sourceType": "verified-employer-email",
+        "status": "acknowledged",
+        "verifiedAt": "2026-11-18",
+        "evidenceType": "employer-confirmation",
+        "summary": "Ostorlab confirmed LinkedIn is its accepted application channel and said the Software Engineer Intern application will be reviewed; StagiairesMA submissions are not processed."
+      }
     }
   ],
   "priority": [
@@ -2491,12 +2508,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-18T12:41:02.258Z",
+    "lastVerifiedAt": "2026-11-18T14:05:49.096Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Non-promotional mailbox after 16 Nov 2026: 77 messages; sent after 16 Nov: 8 messages; external-completion search after 10 Nov: 19 matches. All searches fully paginated (no remaining pages). 5 newer messages than prior checkpoint, none relevant to PFE recruitment; historical aggregate totals not recounted (independent audit 2026-11-07).",
+    "scope": "Connected Gmail non-promotional mailbox after 16 Nov 2026: 88 messages; sent after 16 Nov: 8 messages with attachment metadata; targeted external-completion search after 10 Nov: 19 matches. All three searches fully paginated. Compared with 2026-11-18T12:41:02.258Z checkpoint and earlier context. Read new Cilas employer rejection and Ostorlab employer reply. Historical aggregate counts independently audited 2026-11-07, not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: recent non-promotional mailbox, sent messages with attachment metadata, targeted external-completion notice search; comparison with previous verified checkpoint.",
+    "method": "Connected Gmail search_emails (recent non-promotional, sent/attachment metadata, external-completion notices) and read_email for two new employer replies; matched exact company and role to dashboard.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after connected Gmail query and verified GitHub write."
   },
@@ -2580,7 +2597,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-18T12:41:02.258Z",
+  "lastSyncedAt": "2026-11-18T14:05:49.096Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
