@@ -2396,12 +2396,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-18T01:13:50+01:00",
+    "lastVerifiedAt": "2026-11-18T02:23:33+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Non-promotional mailbox after 17 Nov: 29 messages, no additional page; Sent after 17 Nov: 2 messages with attachment metadata; targeted external-completion notices after 11 Nov: 0 matches. Overlap checked against prior checkpoint (17 Nov 23:26:38 Casablanca). Aggregate totals not recounted; countsAuditedAt unchanged.",
+    "scope": "33 non-promotional mailbox messages since 17 Nov, no additional page; 3 Sent messages since 17 Nov with attachment metadata; 3 targeted external-completion matches (2 relevant notices, 1 newsletter). Compared with 18 Nov 01:13:50 +01:00 checkpoint; 2 new intermediary notices, LinkedIn application-sent confirmation for Ostorlab Pre-Sales Engineer Intern, and a sent Ostorlab follow-up for a different role. Historical aggregates not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails for recent non-promotional mailbox, Sent with attachment metadata, and targeted external-completion notices; overlapping checkpoint comparison.",
+    "method": "Connected Gmail search_emails for non-promotional mailbox since 17 Nov, Sent since 17 Nov (attachment metadata), targeted StagiairesMA/external-completion since 11 Nov; read four relevant message bodies and reconciled stable posting identities.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful connected Gmail search and confirmed GitHub commit."
   },
@@ -2485,7 +2485,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-18T01:13:50+01:00",
+  "lastSyncedAt": "2026-11-18T02:23:33+01:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -3019,6 +3019,32 @@
       "warning": "Intermediary completion notice only, not employer confirmation. LinkedIn job posting is the supplied destination, not verified as an employer-hosted completion form. Lean/continuous-improvement role may not fit a software-engineering PFE; verify eligibility, contract and whether a separate submission is needed.",
       "discoveredAt": "2026-11-10",
       "source": "StagiairesMA automated external-completion notice"
+    },
+    {
+      "id": "ostorlab-pre-sales-engineer-intern-linkedin-4479004129",
+      "company": "Ostorlab",
+      "role": "Pre-Sales Engineer Intern",
+      "platform": "LinkedIn",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4479004129/",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk",
+      "cvLabel": "General Software Engineering PFE CV",
+      "status": "needs-original-platform-check",
+      "warning": "Internship title verified; check PFE duration, start date and whether an additional employer-site step exists. LinkedIn confirms application sent; StagiairesMA reminder is not employer confirmation.",
+      "discoveredAt": "2026-11-18",
+      "source": "StagiairesMA automated platform completion notice"
+    },
+    {
+      "id": "pca-stage-pfe-java-spring-react-linkedin-4489772384",
+      "company": "Payment Center For Africa - PCA",
+      "role": "Stage PFE – Développement Java / Spring Boot / React.js",
+      "platform": "LinkedIn",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4489772384/",
+      "cvUrl": "https://drive.google.com/file/d/1r8hgV6ZE2vL9HnAjFf5JVQbyHEJmhnmH/view?usp=drivesdk",
+      "cvLabel": "Java Backend PFE CV",
+      "status": "needs-original-platform-check",
+      "warning": "PFE internship indicated; verify the original posting and any additional employer-site submission. StagiairesMA reminder does not prove an incomplete employer application.",
+      "discoveredAt": "2026-11-18",
+      "source": "StagiairesMA automated platform completion notice"
     }
   ],
   "completionQueuePolicy": {
