@@ -1145,7 +1145,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-18T06:10:00Z",
+    "updatedAt": "2026-11-18T06:58:45Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1559,6 +1559,44 @@
         "status": "New — apply on Indeed",
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No Cartway email in Gmail in the last 60 days (checked 2026-11-18); not in main applications, registry, completionQueue or priority."
+      },
+      {
+        "company": "Société Générale",
+        "title": "Stage PFE - R&D Software Engineer",
+        "url": "https://ma.linkedin.com/jobs/view/stage-pfe-r-d-software-engineer-at-societe-generale-4489107237",
+        "postingId": "linkedin:4489107237",
+        "sourceLabel": "LinkedIn · original employer listing",
+        "verifiedTitle": true,
+        "titleVerifiedAt": "2026-11-18T06:58:45Z",
+        "discoveredAt": "2026-11-18T06:58:45Z",
+        "checkedAt": "2026-11-18T06:58:45Z",
+        "city": "Casablanca",
+        "country": "Morocco",
+        "duration": "6 months",
+        "paid": true,
+        "role": "Software engineering R&D · cloud monitoring · CI/CD",
+        "fit": "high",
+        "technicalMatch": [
+          "software engineering",
+          "C#/.NET",
+          "Java fundamentals",
+          "REST APIs",
+          "Azure cloud monitoring",
+          "CI/CD"
+        ],
+        "applicationMethod": "linkedin",
+        "applicationMethodCertainty": "LinkedIn Apply shown; downstream employer form and dedicated CV upload not verified",
+        "dedicatedCvUploadVerified": false,
+        "cvUsage": "Use approved generic CV if profile-backed; tailored copy only if separate upload is verified; no CV submitted",
+        "verifiedDeadline": null,
+        "deadlineVerification": "No explicit deadline in original posting",
+        "startDateVerification": "2027 start date not explicit in posting; current PFE recruitment, confirm start date before applying",
+        "submission": {
+          "status": "Not verified",
+          "evidence": null,
+          "recordedAt": null
+        },
+        "notes": "Original employer posting explicitly states paid six-month final-year internship, software R&D including cloud resource monitoring, REST APIs, tests and CI/CD. Different role from SG P&L validation and Python/React listings."
       }
     ],
     "rules": {
