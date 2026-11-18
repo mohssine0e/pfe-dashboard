@@ -1476,9 +1476,9 @@
         "note": "Not in ChatGPT's main list at the last comparison (main holds SG 26000NJV, 26000NJA, 26000NJB and Quant Developer only); this is not proof of an error in the main list.",
         "fit": "strong",
         "missedByMain": true,
-        "status": "New — apply on company website",
-        "alreadyApplied": false,
-        "alreadyAppliedEvidence": "No 26000NTH / Python-React / accès marchés email in Gmail (60 days); not in main applications (checked 2026-11-17)",
+        "status": "Applied (you reported, 18 Nov)",
+        "alreadyApplied": true,
+        "alreadyAppliedEvidence": "User said on 2026-11-18 that he applied via the SG careers portal; no SG confirmation email in Gmail.",
         "distinct_role": "Different from backup SG P&L platform (26000NNK) and main SG applications"
       },
       {

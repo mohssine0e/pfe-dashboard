@@ -270,6 +270,15 @@
    "channel": "ReKrute",
    "evidence": "reported",
    "note": "You said you applied to all three Cnexia PFE roles on ReKrute; the main tracker only recorded Cloud & DevOps. Check your ReKrute history."
+  },
+  {
+   "company": "Société Générale",
+   "role": "Stage PFE – Développeur full stack – Python/React",
+   "kind": "sent",
+   "date": "2026-11-18",
+   "channel": "SG careers portal",
+   "evidence": "reported",
+   "note": "You said on 18 Nov that you applied (ref 26000NTH). No SG confirmation email found in Gmail."
   }
  ]
 }
