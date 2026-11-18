@@ -1174,7 +1174,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-18T06:58:45Z",
+    "updatedAt": "2026-11-18T18:05:55Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1524,40 +1524,6 @@
         "distinct_role": "Different from backup SG P&L platform (26000NNK) and main SG applications"
       },
       {
-        "title": "PFE en Data science",
-        "company": "Inetum Maroc",
-        "exactRole": "PFE en Data science",
-        "role": "Entraînement d'un modèle d'IA et IA Gen et mise en place de plateforme DevOps: data preparation, model fine-tuning/evaluation, scripts and APIs, CI/CD pipeline, Docker containerisation, DevOps infrastructure automation, model versioning and monitoring",
-        "verifiedTitle": true,
-        "postingId": "smartrecruiters:744000156785899",
-        "sourceUrl": "https://pfebooks.com/stages/ia-generative-devops-inetum-maroc/",
-        "link": "https://jobs.smartrecruiters.com/Inetum2/744000156785899-pfe-en-data-science",
-        "source": "Inetum Maroc PFE Book on PFEBooks (published 2026-10-26), verified on Inetum's SmartRecruiters posting",
-        "location": "Casablanca, Morocco (on-site)",
-        "city": "Casablanca",
-        "durationNote": "PFE, on-site. Duration and start date not stated. Max two Inetum PFE subjects per candidate.",
-        "discoveredAt": "2026-11-17T18:25:00Z",
-        "checkedAt": "2026-11-17T18:25:00Z",
-        "verifiedAt": "2026-11-17T18:25:00Z",
-        "found": "Maya on-demand backup search 2026-11-17 evening (PFEBooks catalogue)",
-        "verifiedDeadline": "2026-12-06",
-        "applicationMethod": "Apply on SmartRecruiters ('Je suis intéressé(e)' button on the Inetum posting)",
-        "officialApplicationUrl": "https://jobs.smartrecruiters.com/Inetum2/744000156785899-pfe-en-data-science",
-        "dedicatedCvUploadVerified": false,
-        "requiredDocuments": [
-          "CV (SmartRecruiters form; not opened)"
-        ],
-        "recommendedCv": "Mohssine_Echlaihi_PFE_Cloud_DevOps (French version, posting is in French)",
-        "profileAdjustment": "Lead with Docker/Docker Compose, GitLab CI/CD, REST APIs and MicroPaaS (build, deploy, logs, health checks). Do not claim Python, ML/DL, generative AI, Kubernetes or MLflow experience.",
-        "compatibilityAssessment": "Medium: the DevOps half (Git, Docker, CI/CD pipelines, REST APIs, backend) matches your CV; the required Python and Machine Learning / Deep Learning / generative AI knowledge is not on your CV. Kubernetes, MLflow, Jenkins and cloud are listed only as assets.",
-        "nextAction": "Apply on SmartRecruiters before December 6 if you are comfortable with the ML/Python part; it counts as one of your two allowed Inetum PFE subjects.",
-        "fit": "medium",
-        "missedByMain": true,
-        "status": "Applied (LinkedIn Easy Apply, 18 Nov)",
-        "alreadyApplied": true,
-        "alreadyAppliedEvidence": "LinkedIn job tracker shows Applied on 2026-11-18 (Easy Apply submitted by Maya with user approval)."
-      },
-      {
         "title": "Offre de Stage – Développeur Full Stack",
         "company": "Cartway",
         "exactRole": "Offre de Stage – Développeur Full Stack",
@@ -1588,44 +1554,6 @@
         "status": "New — apply on Indeed",
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No Cartway email in Gmail in the last 60 days (checked 2026-11-18); not in main applications, registry, completionQueue or priority."
-      },
-      {
-        "company": "Société Générale",
-        "title": "Stage PFE - R&D Software Engineer",
-        "url": "https://ma.linkedin.com/jobs/view/stage-pfe-r-d-software-engineer-at-societe-generale-4489107237",
-        "postingId": "linkedin:4489107237",
-        "sourceLabel": "LinkedIn · original employer listing",
-        "verifiedTitle": true,
-        "titleVerifiedAt": "2026-11-18T06:58:45Z",
-        "discoveredAt": "2026-11-18T06:58:45Z",
-        "checkedAt": "2026-11-18T06:58:45Z",
-        "city": "Casablanca",
-        "country": "Morocco",
-        "duration": "6 months",
-        "paid": true,
-        "role": "Software engineering R&D · cloud monitoring · CI/CD",
-        "fit": "high",
-        "technicalMatch": [
-          "software engineering",
-          "C#/.NET",
-          "Java fundamentals",
-          "REST APIs",
-          "Azure cloud monitoring",
-          "CI/CD"
-        ],
-        "applicationMethod": "linkedin",
-        "applicationMethodCertainty": "LinkedIn Apply shown; downstream employer form and dedicated CV upload not verified",
-        "dedicatedCvUploadVerified": false,
-        "cvUsage": "Use approved generic CV if profile-backed; tailored copy only if separate upload is verified; no CV submitted",
-        "verifiedDeadline": null,
-        "deadlineVerification": "No explicit deadline in original posting",
-        "startDateVerification": "2027 start date not explicit in posting; current PFE recruitment, confirm start date before applying",
-        "submission": {
-          "status": "Not verified",
-          "evidence": null,
-          "recordedAt": null
-        },
-        "notes": "Original employer posting explicitly states paid six-month final-year internship, software R&D including cloud resource monitoring, REST APIs, tests and CI/CD. Different role from SG P&L validation and Python/React listings."
       }
     ],
     "rules": {
