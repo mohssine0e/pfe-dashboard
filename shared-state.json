@@ -2396,12 +2396,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-18T03:18:43+00:00",
+    "lastVerifiedAt": "2026-11-18T02:54:17.055+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "33 non-promotional mailbox messages since 17 Nov (no further page), 3 Sent messages since 17 Nov (attachment metadata; no further page), 2 targeted external-completion notices since 11 Nov (no further page), plus 4 messages since 18 Nov for checkpoint overlap. Compared with prior 18 Nov 02:23:33 +01:00 checkpoint; all relevant items already reflected. No new verified employer action or completion notice. Historical aggregate totals not recounted; countsAuditedAt unchanged.",
+    "scope": "29 non-promotional messages since 17 Nov, 3 sent messages since 17 Nov with attachment metadata, 2 external-completion notices since 11 Nov; all searches exhausted (no next page). Compared with previous checkpoint 2026-11-18T03:18:43+00:00; no messages after that checkpoint; earlier Ostorlab follow-up and two intermediary reminders already known. No comprehensive aggregate recount; countsAuditedAt unchanged. Note: runtime check time precedes stored prior checkpoint; actual clock recorded without claiming a later audit.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: non-promotional mailbox since 17 Nov, Sent since 17 Nov with attachment metadata, and targeted external-completion notices since 11 Nov; supplementary 18 Nov search.",
+    "method": "Connected Gmail search_emails for non-promotional mailbox, Sent with attachment metadata, and targeted external-completion notices; read_email for overlapping Ostorlab sent follow-up.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful connected Gmail search and confirmed GitHub commit."
   },
@@ -2485,7 +2485,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-18T03:18:43+00:00",
+  "lastSyncedAt": "2026-11-18T02:54:17.055+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
