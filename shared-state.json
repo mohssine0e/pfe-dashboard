@@ -2508,12 +2508,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-18T15:44:01.535Z",
+    "lastVerifiedAt": "2026-11-18T17:10:22.381Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail, after 2026-11-16 non-promotional mailbox: 69 messages; sent after 2026-11-10: 45 messages with attachment metadata; targeted external-completion notices after 2026-11-10: 12 matches. Each query exhausted (no next page). Compared with prior successful checkpoint 2026-11-18T14:59:15.248Z; two new LinkedIn social notifications (message and connection invitation) were read and excluded as non-recruiting. Prior Cilas rejection, Ostorlab reply and two StagiairesMA notices reviewed for deduplication. Historical aggregate totals independently audited 2026-11-07 and not recounted.",
+    "scope": "Connected Gmail non-promotional mailbox after 2026-11-16: 91 messages; sent after 2026-11-10: 58 messages (attachment metadata included); targeted external-completion after 2026-11-10: 19 matches. All searches exhausted. No new messages since 2026-11-18T15:44:01.535Z. Earlier employer/platform context retained; historical totals audited 2026-11-07 and not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails across mailbox, sent and targeted external-completion queries; batch_read_email for new notifications and earlier employer/platform context; checked sent attachment metadata; no Firestore access.",
+    "method": "Connected Gmail search_emails: non-promotional mailbox, sent mail with attachment metadata, and targeted external-completion notices; full returned pages, comparison with prior successful checkpoint; no Firestore access.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after connected Gmail query and verified GitHub write."
   },
@@ -2597,7 +2597,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-18T15:44:01.535Z",
+  "lastSyncedAt": "2026-11-18T17:10:22.381Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
