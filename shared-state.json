@@ -964,6 +964,19 @@
       "recordId": "app-theodo-campagne-pfe-2027",
       "evidenceCategory": "Verified employer rejection",
       "notes": "Employer explicitly declined the PFE 2027 campaign application on 17 Nov 2026; no specific vacancy or posting ID verified. Rejection is not listing expiry."
+    },
+    {
+      "recordId": "app-hestim-pfe-genie-informatique-ia-data-4491142839",
+      "company": "HESTIM",
+      "role": "Offre de stage PFE – Génie Informatique / Intelligence Artificielle / Data (H/F)",
+      "postingId": "4491142839",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4491142839/",
+      "channel": "LinkedIn",
+      "status": "Application sent via platform — not employer acknowledged",
+      "date": "2026-11-18",
+      "source": "Verified LinkedIn application-sent confirmation",
+      "evidenceCategory": "platform-application-confirmation",
+      "notes": "Platform confirms application sent for exact posting on 18 Nov 2026. No employer acknowledgment, interview, or assessment established."
     }
   ],
   "priority": [
@@ -2396,12 +2409,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-18T02:54:17.055+00:00",
+    "lastVerifiedAt": "2026-11-18T04:48:14+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "29 non-promotional messages since 17 Nov, 3 sent messages since 17 Nov with attachment metadata, 2 external-completion notices since 11 Nov; all searches exhausted (no next page). Compared with previous checkpoint 2026-11-18T03:18:43+00:00; no messages after that checkpoint; earlier Ostorlab follow-up and two intermediary reminders already known. No comprehensive aggregate recount; countsAuditedAt unchanged. Note: runtime check time precedes stored prior checkpoint; actual clock recorded without claiming a later audit.",
+    "scope": "36 non-promotional messages since 17 Nov (all pages exhausted); 5 sent messages since 17 Nov with attachment metadata (all pages exhausted); 3 targeted StagiairesMA/external-completion search matches since 11 Nov, including 2 already known notices and 1 irrelevant career newsletter (all pages exhausted). Compared against prior 18 Nov 02:54:17 checkpoint with overlap. Read 2 newly sent PFE messages and exact HESTIM platform application confirmation. No comprehensive aggregate recount; countsAuditedAt remains 7 Nov.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails for non-promotional mailbox, Sent with attachment metadata, and targeted external-completion notices; read_email for overlapping Ostorlab sent follow-up.",
+    "method": "Connected Gmail search_emails for non-promotional recent mailbox, Sent, targeted external-completion; read_email for two direct sent PFE applications and LinkedIn HESTIM application confirmation.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful connected Gmail search and confirmed GitHub commit."
   },
@@ -2485,7 +2498,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-18T02:54:17.055+00:00",
+  "lastSyncedAt": "2026-11-18T04:48:14+00:00",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
