@@ -1174,7 +1174,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-19T08:00:00+01:00",
+    "updatedAt": "2026-11-19T06:56:36Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1586,6 +1586,31 @@
         "status": "New — apply on company website",
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No Banque Populaire / BCP / Talent-soft email in Gmail in the last 90 days (checked 2026-11-19); not in main applications, registry, completionQueue, priority, email_tracker.json or easy_apply_log.json."
+      },
+      {
+        "company": "Sofrecom Maroc",
+        "title": "Campagne de Stage PFE 2027",
+        "url": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
+        "postingId": "linkedin:4490327145",
+        "sourceLabel": "LinkedIn — original employer announcement",
+        "verifiedTitle": true,
+        "titleVerifiedAt": "2026-11-19T06:56:36Z",
+        "discoveredAt": "2026-11-19T06:56:36Z",
+        "checkedAt": "2026-11-19T06:56:36Z",
+        "verifiedDeadline": null,
+        "location": "Rabat / Casablanca, Morocco",
+        "duration": "6 months",
+        "startDate": "February 2027",
+        "role": "Software engineering / Java Spring AI / Angular / Cloud / DevOps",
+        "matchingSubjects": [
+          "DEV-20 — Console de mesure des gains de productivité liés à l’IA (Angular, Java Spring AI)",
+          "OPS-14 — Pipeline CI/CD : tests automatisés et documentation générée",
+          "OPS-13 — Génération et revue de code Terraform assistées par IA"
+        ],
+        "applicationMethod": "Email CV to employer; subject line must include subject number and title; maximum two subjects",
+        "dedicatedCvUploadVerified": false,
+        "cvRule": "Email-based application; do not send or attach CV automatically. Generic approved CV for profile-backed applications; tailor copies only after dedicated separate upload is confirmed.",
+        "verificationNotes": "Original Sofrecom Maroc public LinkedIn announcement explicitly states Bac+5 PFE, 6 months, February 2027 start, Rabat/Casablanca, and application instructions. No explicit deadline."
       }
     ],
     "rules": {
