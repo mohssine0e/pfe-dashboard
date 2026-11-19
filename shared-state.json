@@ -1012,20 +1012,20 @@
     {
       "rank": 1,
       "company": "Highness",
-      "task": "Prepare for confirmed online Software Engineer Intern interview on 19 Nov 2026, 18:00–18:30 Morocco time",
+      "task": "Attend confirmed Software Engineer Intern online interview today, 19 Nov 2026, 18:00–18:30 Morocco time; prepare and check invitation details",
       "reason": "Employer proposed the interview on 17 Nov; candidate confirmed availability and organizer sent Google Calendar invitation. Verified in primary calendar. Meeting details intentionally excluded.",
       "date": "2026-11-19",
-      "certainty": "Direct employer email and primary Google Calendar verified 17 Nov 2026",
+      "certainty": "Employer invitation and primary Google Calendar reverified 19 Nov 2026; calendar response status needsAction despite email acceptance",
       "kind": "interview",
       "actionLinks": []
     },
     {
       "rank": 2,
       "company": "torck GmbH",
-      "task": "Complete one-attempt 16-question online assessment by 19 Nov 2026, 11:53 UTC; check candidate portal first for any completion record",
-      "reason": "Employer invitation dated 14 Nov; HR questionnaire already completed separately. Assessment completion not confirmed.",
+      "task": "Assessment deadline passed today at 11:53 UTC; check torck candidate portal for submission status, without assuming failure or completion",
+      "reason": "Employer invitation verified 19 Nov; 16 timed questions, one attempt. No completion confirmation found in connected Gmail. Do not assume a missed assessment proves rejection.",
       "date": "2026-11-19",
-      "certainty": "Employer assessment invitation verified; completion unverified",
+      "certainty": "Employer deadline verified; completion unknown as of 19 Nov 2026 14:56 UTC",
       "kind": "deadline",
       "actionLinks": []
     },
