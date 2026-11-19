@@ -2493,12 +2493,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-19T14:12:59.633Z",
+    "lastVerifiedAt": "2026-11-19T15:08:05.800Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail search_emails, all results (no next page): non-promotional mailbox after 2026-11-17 (79 messages); sent after 2026-11-10 (58 messages, attachment metadata checked); targeted external-completion notices after 2026-11-01 (29 matches). Compared against 2026-11-19T12:48:32.701Z; new messages were LinkedIn messaging and unrelated GitHub workflow notifications, not verified PFE employer activity. Historical aggregate metrics not recounted.",
+    "scope": "Connected Gmail search_emails: non-promotional mailbox after 2026-11-17 (84 messages, no next page); sent with attachments after 2026-11-10 (54 messages, no next page); all sent after 2026-11-17 (5 messages, no next page); targeted external-completion notices after 2026-11-01 (29 matches, no next page). Compared with previous verified checkpoint 2026-11-19T14:12:59.633Z. New Oracle account/HR identity verification passcodes are not proof of an application or employer decision; GitHub workflow failures and LinkedIn messages excluded. No verified new PFE employer or external-completion action. Historical aggregate metrics not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails across received, sent and StagiairesMA/external-completion scopes; reviewed new relevant subjects and LinkedIn notification body; checked sent attachment metadata; reconciled current GitHub snapshot without private Firestore access.",
+    "method": "Connected Gmail search_emails for recent received, sent, sent attachments, and targeted external-completion notices; read both new Oracle verification emails; checked sent attachment metadata; reconciled public GitHub snapshot without private Firestore access.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after connected Gmail query and confirmed GitHub write."
   },
@@ -2582,7 +2582,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-19T14:12:59.633Z",
+  "lastSyncedAt": "2026-11-19T15:08:05.800Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
