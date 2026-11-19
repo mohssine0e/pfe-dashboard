@@ -2493,78 +2493,78 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-19T07:49:29.024Z",
+    "lastVerifiedAt": "2026-11-19T08:40:38.379Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail non-promotional mailbox after 2026-11-17 (68 messages); sent with attachments after 2026-11-10 (54 messages, attachment metadata); external-completion notices after 2026-11-01 (29 messages). All three queries exhausted, no pagination. Compared against 2026-11-19T06:44:46.537Z; no newer messages. Historical aggregate counts independently audited 2026-11-07, not recounted.",
-    "staleAfterHours": 2,
+    "scope": "Connected Gmail search after 2026-11-17 (up to 80 messages, inspected employer replies and platform notices), Sent PFE search after 2026-11-17 (up to 50), targeted Ostorlab, Cilas, torck, Highness, Bertrandt, Sofrecom messages; employer reply bodies read for Ostorlab and Cilas. Limited recent-window audit; historical aggregate counts not recounted.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails with overlapping checkpoint comparison, sent attachment metadata, and StagiairesMA completion notice search; no private Firestore access.",
+    "method": "Connected Gmail search_emails and read_email for employer decisions; compared with prior public-safe tracker; no private Firestore access.",
     "result": "success",
-    "freshnessPolicy": "2-hour verification; advance only after connected Gmail query and verified GitHub write."
+    "freshnessPolicy": "24-hour verification; advance only after connected Gmail query and verified GitHub write."
   },
   "sourcesChecked": [
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
-      "url": "https://ma.linkedin.com/company/emploi-stage-it",
-      "checkedAt": "2026-11-18T08:35:20.866Z",
+      "url": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
+      "checkedAt": "2026-11-19T08:40:38.379Z",
       "status": "ok",
-      "details": "Public LinkedIn PFE listings inspected; Société Générale Python/React listing and Sofrecom Full Stack/IA listing (latter closed to applications). No private application statuses inferred.",
+      "details": "Public LinkedIn postings inspected: Bertrandt Software, Cloud & Test Automation PFE 2027 (already applied), Sofrecom Campagne de Stage PFE 2027 (official subject instructions; other Sofrecom applications exist), torck Graduate Internship (already applied; LinkedIn now shows not accepting), CGI PFE JEE/Angular. No duplicate applications sent.",
       "accessIssue": null
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
-      "url": "https://ma.indeed.com/",
-      "checkedAt": "2026-11-18T08:35:20.866Z",
+      "url": "https://ma.indeed.com/q-stage-pfe-%2Ccloud%2C-devops-emplois.html",
+      "checkedAt": "2026-11-19T08:40:38.379Z",
       "status": "limited",
-      "details": "Public Indeed Morocco results inspected; no new verified 2027 Java/React/DevOps employer posting or official mailto route.",
-      "accessIssue": "Original eligible application instructions or relevant listing not verified."
+      "details": "Public Indeed Morocco cloud/DevOps/PFE result pages inspected; Société Générale DevOps/Pega already applied; no new verified eligible official direct-email route.",
+      "accessIssue": "Listings aggregated; employer-owned submission routes not independently verified."
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
       "url": "https://www.rekrute.com/emploi-Stage-d%C3%A9veloppement-informatique",
-      "checkedAt": "2026-11-18T08:35:20.866Z",
+      "checkedAt": "2026-11-19T08:40:38.379Z",
       "status": "limited",
-      "details": "Public ReKrute stage PFE and development stage result pages inspected; no verified new 2027 employer mailto route.",
-      "accessIssue": "Original eligible application instructions or relevant listing not verified."
+      "details": "Targeted public web search for ReKrute 2027 development internships attempted; no directly verified relevant posting returned.",
+      "accessIssue": "No verifiable listing or employer application instructions returned."
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7923-campagne-de-stage-pfe",
-      "checkedAt": "2026-11-18T08:35:20.866Z",
-      "status": "ok",
-      "details": "Public Sofrecom Maroc Campagne de Stage PFE 2027 page inspected; already known offer.",
-      "accessIssue": null
+      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "status": "limited",
+      "details": "Targeted public web search for Stagiaires.ma 2027 Spring/DevOps attempted; no new original posting returned.",
+      "accessIssue": "No verifiable new posting returned."
     },
     {
       "id": "company",
       "label": "Company careers pages",
       "url": null,
-      "checkedAt": "2026-11-18T08:35:20.866Z",
+      "checkedAt": "2026-11-19T08:40:38.379Z",
       "status": "limited",
-      "details": "Targeted public employer career search attempted; no newly verified employer-owned PFE direct-email application route.",
-      "accessIssue": "Original eligible application instructions or relevant listing not verified."
+      "details": "Targeted Société Générale employer careers search attempted; no independently verified new employer-owned application page returned.",
+      "accessIssue": "Search results insufficient to establish an official application route."
     },
     {
       "id": "catalogues",
       "label": "Public PFE catalogues",
       "url": "https://fr.linkedin.com/posts/salstart_sal-bfe-book-activity-7526923079134941184-U1a0",
-      "checkedAt": "2026-11-18T08:35:20.866Z",
+      "checkedAt": "2026-11-19T08:40:38.379Z",
       "status": "limited",
-      "details": "Targeted public PFE catalogue and ENSA searches attempted; no new original catalogue verified.",
-      "accessIssue": "Original eligible application instructions or relevant listing not verified."
+      "details": "Public PFE catalogue search attempted; no original 2027 catalogue verified.",
+      "accessIssue": "Original document not verified."
     },
     {
       "id": "ensa",
       "label": "ENSA / alumni announcements",
       "url": "https://ensah.ma/public/tableauAffichage.php",
-      "checkedAt": "2026-11-18T08:35:20.866Z",
+      "checkedAt": "2026-11-19T08:40:38.379Z",
       "status": "limited",
-      "details": "Targeted public ENSA/alumni search attempted; no verified new employer listing.",
-      "accessIssue": "Original eligible application instructions or relevant listing not verified."
+      "details": "Public ENSA/alumni 2027 search attempted; no original new announcement verified.",
+      "accessIssue": "Original source not verified."
     }
   ],
   "sourceSearchPolicy": {
