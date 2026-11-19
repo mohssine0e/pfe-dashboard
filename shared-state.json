@@ -1174,7 +1174,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-19T06:56:36Z",
+    "updatedAt": "2026-11-19T18:10:00Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1588,29 +1588,39 @@
         "alreadyAppliedEvidence": "No Banque Populaire / BCP / Talent-soft email in Gmail in the last 90 days (checked 2026-11-19); not in main applications, registry, completionQueue, priority, email_tracker.json or easy_apply_log.json."
       },
       {
-        "company": "Sofrecom Maroc",
-        "title": "Campagne de Stage PFE 2027",
-        "url": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
-        "postingId": "linkedin:4490327145",
-        "sourceLabel": "LinkedIn — original employer announcement",
+        "title": "Stage PFE SI",
+        "company": "CIH Bank",
+        "exactRole": "Stage PFE SI",
+        "role": "PFE internship pool in Systèmes d'Information. Domains listed: Développement informatique, Data / Data Science, Intelligence Artificielle, Cybersécurité, Cloud et DevOps, Systèmes, Réseaux et Infrastructure, Bases de données. No specific subject named.",
         "verifiedTitle": true,
-        "titleVerifiedAt": "2026-11-19T06:56:36Z",
-        "discoveredAt": "2026-11-19T06:56:36Z",
-        "checkedAt": "2026-11-19T06:56:36Z",
-        "verifiedDeadline": null,
-        "location": "Rabat / Casablanca, Morocco",
-        "duration": "6 months",
-        "startDate": "February 2027",
-        "role": "Software engineering / Java Spring AI / Angular / Cloud / DevOps",
-        "matchingSubjects": [
-          "DEV-20 — Console de mesure des gains de productivité liés à l’IA (Angular, Java Spring AI)",
-          "OPS-14 — Pipeline CI/CD : tests automatisés et documentation générée",
-          "OPS-13 — Génération et revue de code Terraform assistées par IA"
+        "postingId": "cihbank:1109",
+        "sourceUrl": "https://recrutement.cihbank.ma/1109_offre-emploi-stage-pfe-si.html",
+        "link": "https://recrutement.cihbank.ma/1109_offre-emploi-stage-pfe-si.html",
+        "source": "JobSpy: Indeed (ma.indeed.com jk=0aa846df4408ea8c); original offer on CIH Bank's recruitment site, posted 19-11-2026",
+        "indeedUrl": "https://ma.indeed.com/viewjob?jk=0aa846df4408ea8c",
+        "location": "Casablanca",
+        "city": "Casablanca",
+        "durationNote": "Stage de fin d'études (PFE) for Bac+4 / Bac+5 students in IT, information systems, data, AI or cybersecurity. No duration, start date, deadline or pay stated.",
+        "discoveredAt": "2026-11-19T18:10:00Z",
+        "checkedAt": "2026-11-19T18:10:00Z",
+        "verifiedAt": "2026-11-19T18:10:00Z",
+        "found": "Maya silent backup search 2026-11-19 7 PM (JobSpy Indeed)",
+        "applicationMethod": "Company website: 'Postuler à cette offre' on CIH Bank's recruitment site (requires a candidate account via Connexion / Inscription; form not opened)",
+        "officialApplicationUrl": "https://recrutement.cihbank.ma/1109_offre-emploi-stage-pfe-si.html",
+        "requiredDocuments": [
+          "CV (candidate account on recrutement.cihbank.ma; form not opened)"
         ],
-        "applicationMethod": "Email CV to employer; subject line must include subject number and title; maximum two subjects",
-        "dedicatedCvUploadVerified": false,
-        "cvRule": "Email-based application; do not send or attach CV automatically. Generic approved CV for profile-backed applications; tailor copies only after dedicated separate upload is confirmed.",
-        "verificationNotes": "Original Sofrecom Maroc public LinkedIn announcement explicitly states Bac+5 PFE, 6 months, February 2027 start, Rabat/Casablanca, and application instructions. No explicit deadline."
+        "recommendedCv": "Mohssine_Echlaihi_PFE_General (French version); Cloud & DevOps French CV if a Cloud/DevOps domain can be chosen",
+        "profileAdjustment": "Aim for the Développement informatique or Cloud et DevOps domain. Lead with the Java 21 / Spring Boot 3 / React PFA, PostgreSQL, Oracle Database and PL/SQL, Docker and MicroPaaS.",
+        "compatibilityAssessment": "Medium: Développement informatique, Cloud et DevOps and Bases de données are listed domains and it is explicitly a PFE in Casablanca, but it is a general SI pool with no subject, duration or start date stated.",
+        "fit": "medium",
+        "why": "Explicit PFE pool at a major Moroccan bank whose listed domains include software development and Cloud/DevOps, in Casablanca (a preferred city).",
+        "how": "Create a candidate account on recrutement.cihbank.ma and apply to offer 1109 with the French general CV.",
+        "nextAction": "Create a CIH Bank candidate account and apply to 'Stage PFE SI' (offer 1109), mentioning interest in development or Cloud/DevOps.",
+        "missedByMain": true,
+        "status": "New — apply on company website",
+        "alreadyApplied": false,
+        "alreadyAppliedEvidence": "No CIH application or confirmation in Gmail in the last 60 days (only a bank customer survey, checked 2026-11-19); not in main applications, registry, completionQueue, priority, email_tracker.json or easy_apply_log.json."
       }
     ],
     "rules": {
