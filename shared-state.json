@@ -1174,7 +1174,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-18T18:05:55Z",
+    "updatedAt": "2026-11-19T08:00:00+01:00",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1554,6 +1554,38 @@
         "status": "New — apply on Indeed",
         "alreadyApplied": false,
         "alreadyAppliedEvidence": "No Cartway email in Gmail in the last 60 days (checked 2026-11-18); not in main applications, registry, completionQueue or priority."
+      },
+      {
+        "title": "Candidatures spontanées - Stage PFE 2027 (Bac+5) H/F",
+        "company": "Groupe Banque Populaire (BCP)",
+        "exactRole": "Candidatures spontanées - Stage PFE 2027 (Bac+5) H/F",
+        "role": "Spontaneous-application pool for BCP's PFE 2027 campaign (final-year Bac+5). Domains listed include IT, Data & Intelligence Artificielle, Transformation digitale and Cybersécurité, alongside banking, finance, risk, marketing, HR and audit. No specific software subject is named.",
+        "verifiedTitle": true,
+        "postingId": "bcp-talentsoft:1672",
+        "sourceUrl": "https://lnkd.in/dHTbHyZC",
+        "link": "https://bcp-cand.talent-soft.com/offre-de-emploi/emploi-candidatures-spontanees-stage-pfe-2027-bac-5-h-f_1672.aspx",
+        "source": "LinkedIn posts: 'Stages PFE 2027 au Maroc' lists by Moulay Hachem ALAOUI HAROUNI (UMI) and others, Nov 18–19, 2026; offer page on BCP's Talent-soft careers site",
+        "location": "Morocco (BCP careers site lists offers mainly in Casablanca; the offer itself names no city)",
+        "city": "Casablanca",
+        "durationNote": "Stage, 4 to 6 months, Bac+5 final year. No start date, deadline or pay stated.",
+        "discoveredAt": "2026-11-19T07:00:00Z",
+        "checkedAt": "2026-11-19T07:00:00Z",
+        "verifiedAt": "2026-11-19T07:00:00Z",
+        "found": "Maya LinkedIn PFE discovery 2026-11-19 7:30 AM (LinkedIn posts)",
+        "applicationMethod": "Company website: BCP Talent-soft candidate account, then apply to offer 1672",
+        "officialApplicationUrl": "https://bcp-cand.talent-soft.com/offre-de-emploi/emploi-candidatures-spontanees-stage-pfe-2027-bac-5-h-f_1672.aspx",
+        "requiredDocuments": [
+          "CV (candidate account on bcp-cand.talent-soft.com; form not opened)"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE_General (French version)",
+        "profileAdjustment": "Pick the IT / Data / Transformation digitale domain if the form asks. Lead with Java 21 / Spring Boot 3 / React PFA work, PostgreSQL, Oracle Database and PL/SQL, Docker and MicroPaaS.",
+        "compatibilityAssessment": "Low-medium: it is a general spontaneous pool, not a software role. IT and digital transformation are listed domains and 4–6 months fits a February 1 start, but the subject and team are unknown and much of the campaign is banking/finance.",
+        "nextAction": "Create a candidate account on BCP's Talent-soft site and submit the spontaneous PFE 2027 application, choosing the IT domain.",
+        "fit": "low-medium",
+        "missedByMain": true,
+        "status": "New — apply on company website",
+        "alreadyApplied": false,
+        "alreadyAppliedEvidence": "No Banque Populaire / BCP / Talent-soft email in Gmail in the last 90 days (checked 2026-11-19); not in main applications, registry, completionQueue, priority, email_tracker.json or easy_apply_log.json."
       }
     ],
     "rules": {
