@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-18",
-  "source": "Connected Gmail partial check and public PFE Morocco search 18 Nov 2026; historical metrics preserved; no outbound applications.",
+  "updatedAt": "2026-11-20",
+  "source": "Connected Gmail scoped check and public Morocco PFE research 20 Nov 2026; no outbound applications; historical metrics unchanged.",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
     "emailSentMessages": 86,
@@ -1012,11 +1012,11 @@
     {
       "rank": 1,
       "company": "Highness",
-      "task": "Attend confirmed Software Engineer Intern online interview today, 19 Nov 2026, 18:00–18:30 Morocco time; prepare and check invitation details",
-      "reason": "Employer proposed the interview on 17 Nov; candidate confirmed availability and organizer sent Google Calendar invitation. Verified in primary calendar. Meeting details intentionally excluded.",
-      "date": "2026-11-19",
-      "certainty": "Employer invitation and primary Google Calendar reverified 19 Nov 2026; calendar response status needsAction despite email acceptance",
-      "kind": "interview",
+      "task": "Highness requested internship convention and identity documentation after 19 Nov interview; verify request through established employer channel and coordinate convention with ENSA before securely sharing documents. No reply sent.",
+      "reason": "Direct post-interview employer response on 19 Nov requests documents to prepare legal paperwork. Meaningful next step, not proof of signed offer or completed hiring.",
+      "date": "2026-11-20",
+      "certainty": "Direct employer email verified 20 Nov; documentation pending",
+      "kind": "employer-next-step",
       "actionLinks": []
     },
     {
@@ -2742,51 +2742,51 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-20T07:31:03.046Z",
+    "lastVerifiedAt": "2026-11-20T08:43:45.239Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail audit completed 2026-11-20T07:31:03.046Z (Africa/Casablanca timezone; actual instant recorded in UTC ISO). Non-promotional mailbox after 2026-11-17: 102 messages (fully paginated); sent with attachments after 2026-11-10: 54; recent sent after 2026-11-17: 6; external-completion phrase matches after 2026-11-01: 29. Compared against previous verified checkpoint 2026-11-20T06:39:32.614Z; no newer messages in non-promotional mailbox, and no new verified PFE activity in scoped searches. No aggregate recount; independent countsAuditedAt unchanged.",
-    "staleAfterHours": 2,
+    "scope": "Connected Gmail search on 20 Nov 2026: mailbox after 18 Nov (80 returned, no next page), Sent after 18 Nov (4 returned); inspected Highness employer follow-up and Cilas rejection. This is a scoped review, not a complete historical recount.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: four scoped searches, complete pagination; sent attachment metadata and StagiairesMA completion overlap; no private Firestore access.",
+    "method": "Connected Gmail search_emails for recent mailbox and Sent; batch_read_email for selected employer messages; no private Firestore access.",
     "result": "success",
-    "freshnessPolicy": "2-hour verification; advance only after connected Gmail query and confirmed GitHub write."
+    "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
   "sourcesChecked": [
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
       "url": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
-      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "checkedAt": "2026-11-20T08:43:45.239Z",
       "status": "ok",
-      "details": "Public LinkedIn postings inspected: Bertrandt Software, Cloud & Test Automation PFE 2027 (already applied), Sofrecom Campagne de Stage PFE 2027 (official subject instructions; other Sofrecom applications exist), torck Graduate Internship (already applied; LinkedIn now shows not accepting), CGI PFE JEE/Angular. No duplicate applications sent.",
+      "details": "Public Sofrecom campaign, Bertrandt, torck, CGI postings inspected; Sofrecom official email instructions seen but prior Sofrecom applications require duplicate/subject verification. No new send.",
       "accessIssue": null
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
-      "url": "https://ma.indeed.com/q-stage-pfe-%2Ccloud%2C-devops-emplois.html",
-      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "url": "https://ma.indeed.com/q-stage-java-%2C-spring-boot-emplois.html",
+      "checkedAt": "2026-11-20T08:43:45.239Z",
       "status": "limited",
-      "details": "Public Indeed Morocco cloud/DevOps/PFE result pages inspected; Société Générale DevOps/Pega already applied; no new verified eligible official direct-email route.",
-      "accessIssue": "Listings aggregated; employer-owned submission routes not independently verified."
+      "details": "Public Indeed Morocco results inspected: PCA, Ostorlab, Sofrecom and other listings; known submissions and no newly verified employer mailto eligibility.",
+      "accessIssue": "Aggregator listings do not prove original employer application channel."
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
-      "url": "https://www.rekrute.com/emploi-Stage-d%C3%A9veloppement-informatique",
-      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "url": "https://www.rekrute.com/offres-emploi-metiers-de-l-it.html",
+      "checkedAt": "2026-11-20T08:43:45.239Z",
       "status": "limited",
-      "details": "Targeted public web search for ReKrute 2027 development internships attempted; no directly verified relevant posting returned.",
-      "accessIssue": "No verifiable listing or employer application instructions returned."
+      "details": "Public ReKrute IT listings and targeted search inspected; no newly verified eligible PFE employer email route.",
+      "accessIssue": "Generic listings; no exact new employer application route verified."
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
-      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7923-campagne-de-stage-pfe",
-      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "url": "https://www.stagiaires.ma/stage-emploi-maroc/7558-stagiaire-pfe-ingenieur-full-stack-ia-generative-f-h",
+      "checkedAt": "2026-11-20T08:43:45.239Z",
       "status": "limited",
-      "details": "Targeted public web search for Stagiaires.ma 2027 Spring/DevOps attempted; no new original posting returned.",
-      "accessIssue": "No verifiable new posting returned."
+      "details": "Public Sofrecom listing on Stagiaires.ma inspected; LinkedIn application history and employer instructions take precedence.",
+      "accessIssue": "Platform listing is not proof of employer processing."
     },
     {
       "id": "company",
@@ -2810,10 +2810,10 @@
       "id": "ensa",
       "label": "ENSA / alumni announcements",
       "url": "https://ensah.ma/public/tableauAffichage.php",
-      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "checkedAt": "2026-11-20T08:43:45.239Z",
       "status": "limited",
-      "details": "Public ENSA/alumni 2027 search attempted; no original new announcement verified.",
-      "accessIssue": "Original source not verified."
+      "details": "Targeted ENSA 2027 PFE/alumni public search attempted; no relevant original PFE posting verified.",
+      "accessIssue": "Search did not return an original eligible posting."
     }
   ],
   "sourceSearchPolicy": {
