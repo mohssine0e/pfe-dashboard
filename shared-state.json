@@ -1174,7 +1174,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-19T19:55:00Z",
+    "updatedAt": "2026-11-20T06:20:00Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1664,6 +1664,37 @@
         "status": "ready to submit",
         "distinct_role": true,
         "note": "Not in ChatGPT's main offers or applications; not in email_tracker.json; LinkedIn shows no Applied label."
+      },
+      {
+        "id": "linkedin-4492467319",
+        "title": "Stage PFE en Développement, Infrastructure & Applicatif (F/H)",
+        "exactRole": "Stage PFE en Développement, Infrastructure & Applicatif (F/H)",
+        "company": "CGI",
+        "role": "PFE 2027 campaign for final-year Bac+5 IT students. Domains: Développement (.NET, Angular, Java J2EE), Data/ETL/BI (SQL, PL/SQL), DevOps & Cloud, Systèmes & Réseaux, ITSM, bases de données, Mainframe.",
+        "verifiedTitle": true,
+        "postingId": "linkedin:4492467319",
+        "distinct_role": true,
+        "sourceUrl": "https://www.linkedin.com/jobs/view/4492467319/",
+        "link": "https://www.linkedin.com/jobs/view/4492467319/",
+        "source": "LinkedIn job posting (shared in Mohssine's PFE group chats; verified on LinkedIn's public job page 2026-11-20)",
+        "location": "Casablanca",
+        "city": "Casablanca",
+        "discoveredAt": "2026-11-20T06:20:00Z",
+        "checkedAt": "2026-11-20T06:20:00Z",
+        "verifiedAt": "2026-11-20T06:20:00Z",
+        "found": "Maya silent backup search 2026-11-20 7 AM (LinkedIn group-chat lead, verified on the posting)",
+        "applicationMethod": "Apply on CGI's own careers site via LinkedIn's Apply button (external application; form not opened)",
+        "officialApplicationUrl": "https://www.linkedin.com/jobs/view/4492467319/",
+        "requiredDocuments": [
+          "CV (CGI careers form; not opened)"
+        ],
+        "recommendedCv": "Mohssine_Echlaihi_PFE_Java_Backend_FR.pdf (posting is in French)",
+        "compatibilityAssessment": "Good: explicit PFE 2027 in Casablanca listing Java J2EE, SQL/PL/SQL and DevOps & Cloud among its domains. No deadline, duration or start date stated; over 200 applicants on LinkedIn at check time.",
+        "fit": "good",
+        "why": "New CGI PFE 2027 posting whose domains match Java, PL/SQL and DevOps; not found in the main list at the last comparison.",
+        "how": "Open the LinkedIn posting, tap Apply and complete CGI's careers form with the French Java Backend CV, choosing the Développement (Java J2EE) or DevOps & Cloud domain.",
+        "nextAction": "Apply on CGI's site soon (posting is new and busy). Note: you applied to CGI 'PFE Développeur JEE / Angular / .NET / PHP' on Oct 25 and emailed a CGI recruiter on Nov 15; this is a separate posting, so check whether CGI's portal already holds your application for it.",
+        "status": "New — apply on company website"
       }
     ],
     "rules": {
