@@ -2742,12 +2742,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-20T13:46:14.048Z",
+    "lastVerifiedAt": "2026-11-20T15:22:19.667Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Audit completed 2026-11-20T13:46:14.048Z (Africa/Casablanca, UTC+00:00 on 20 Nov 2026). Non-promotional mailbox after 17 Nov: 110 messages (100+10 paginated); sent with attachments after 10 Nov: 53; sent after 18 Nov: 4; external-completion subject candidates after 1 Nov: 29; recent mailbox after 19 Nov: 48. Compared with previous verified checkpoint 2026-11-20T12:26:54.580Z using overlapping windows. New messages were social notifications and online-learning newsletter, not verified employer activity. No new StagiairesMA completion notices. Historical aggregate totals not recounted; countsAuditedAt unchanged.",
+    "scope": "Actual check completed 2026-11-20T15:22:19.667Z (Africa/Casablanca, UTC+00:00 on 20 Nov 2026). Non-promotional mailbox after 17 Nov: 112 messages across 2 pages; sent with attachments after 10 Nov: 39; sent after 18 Nov: 3; external-completion subject candidates after 1 Nov: 24; mailbox after 19 Nov: 52. Compared with previous verified checkpoint 2026-11-20T13:46:14.048Z using overlapping windows. Two new non-promotional messages since checkpoint: social notification and generic job alert; no verified PFE employer activity or new external-completion request. Historical aggregate counts not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five scoped searches with full pagination, message timestamps and sent attachment metadata; no private Firestore access.",
+    "method": "Connected Gmail search_emails; five scoped searches and fully paginated non-promotional mailbox overlap; sent attachment metadata reviewed; no private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2831,7 +2831,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-20T13:46:14.048Z",
+  "lastSyncedAt": "2026-11-20T15:22:19.667Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
