@@ -2742,12 +2742,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-20T20:43:17.736Z",
+    "lastVerifiedAt": "2026-11-20T21:25:55.332Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail audit completed 2026-11-20T20:43:17.736Z (Africa/Casablanca, UTC+00:00). Non-promotional mailbox after 17 Nov: 119 messages (2 fully paginated pages); sent with attachments after 10 Nov: 54; sent after 19 Nov: 1; external-completion phrase candidates after 1 Nov: 29; recent mail after 19 Nov: 61. Compared against prior checkpoint 2026-11-20T19:26:15.221Z, including overlapping older context. New messages were Gemini settings information, Windows Insider update, and LinkedIn social-message notifications; no verified PFE employer or external-completion action. Historical aggregate totals not recounted; countsAuditedAt unchanged.",
+    "scope": "Connected Gmail checked at 2026-11-20T21:25:55.332Z (Africa/Casablanca UTC+00:00). Non-promotional mailbox after 17 Nov: 111 messages (90+21, fully paginated); sent with attachments after 10 Nov: 54; sent after 19 Nov: 1; external-completion phrase candidates after 1 Nov: 29; recent mail after 19 Nov: 63. Compared against previous verified checkpoint 2026-11-20T20:43:17.736Z. New recruitment-team psychometric test invitation received 20 Nov 21:24 UTC, 45-minute assessment, expires 27 Nov 21:24 UTC; employer/company and exact role unverified, so no application or completionQueue row changed. Historical aggregate totals not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_email_ids (five scoped searches; first fully paginated), batch_read_email of 19 messages dated 20 Nov, timestamp comparison against previous verified checkpoint and overlap; screened sent attachment metadata and external-completion candidates; excluded general job alerts, newsletters and unrelated notifications. No private Firestore access.",
+    "method": "Connected Gmail search_emails: five scoped queries, main mailbox fully paginated (2 pages); reviewed sent attachment metadata, recent sent messages, external-completion candidates, overlapping recent mailbox messages; read newly received psychometric assessment email and checked matching historical subjects. No private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2831,7 +2831,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-20T20:43:17.736Z",
+  "lastSyncedAt": "2026-11-20T21:25:55.332Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
