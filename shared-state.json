@@ -2742,12 +2742,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-20T18:05:47.743Z",
+    "lastVerifiedAt": "2026-11-20T19:07:57.597Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Actual Gmail search completed 2026-11-20T18:05:47.743Z (Africa/Casablanca UTC+00:00). Non-promotional mailbox after 17 Nov: 112 messages (2 pages); sent with attachments after 10 Nov: 54; sent after 19 Nov: 1; external-completion phrase matches after 1 Nov: 29; recent mail after 19 Nov: 53. Compared with previous verified checkpoint 2026-11-20T17:14:25.532Z; newest non-promotional message 2026-11-20T14:56:33Z predates checkpoint. No new verified PFE employer action or platform completion notice. Historical aggregate counts not recounted; countsAuditedAt unchanged.",
+    "scope": "Actual Gmail check completed 2026-11-20T19:07:57.597Z (Africa/Casablanca UTC+00:00). Non-promotional mailbox after 17 Nov: 109 messages (2 pages); sent with attachments after 10 Nov: 54; sent after 19 Nov: 1; exact external-completion subject candidates after 1 Nov: 21; broad phrase matches after 1 Nov: 29; recent mail after 19 Nov: 57. Previous verified checkpoint 2026-11-20T18:05:47.743Z. Newly observed saved-job expiration alert (Bertrandt Group, Nov 25) is a third-party saved-job reminder, not employer confirmation or verified application deadline. No newly verified employer activity or actionable platform completion notice. Historical aggregate totals not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five scoped searches, complete pagination of non-promotional mailbox (2 pages), sent attachment metadata and recent sent activity, external-completion subject candidates, and recent-mail overlap. Compared dates and subjects; no private Firestore access.",
+    "method": "Connected Gmail search_emails: five scoped searches, non-promotional mailbox fully paginated (2 pages), sent attachment metadata, recent sent messages, external-completion subject candidates, and recent-mail overlap. Compared timestamps with previous verified checkpoint; excluded generic job alerts and unrelated notifications. No private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2831,7 +2831,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-20T18:05:47.743Z",
+  "lastSyncedAt": "2026-11-20T19:07:57.597Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
