@@ -2742,12 +2742,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-20T08:43:45.239Z",
+    "lastVerifiedAt": "2026-11-20T08:43:57.463Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail search on 20 Nov 2026: mailbox after 18 Nov (80 returned, no next page), Sent after 18 Nov (4 returned); inspected Highness employer follow-up and Cilas rejection. This is a scoped review, not a complete historical recount.",
-    "staleAfterHours": 24,
+    "scope": "Verified connected Gmail audit completed 2026-11-20T08:43:57.463Z (actual time, UTC ISO; Africa/Casablanca). Non-promotional mailbox after 2026-11-17: 102 messages over two pages; sent attachments after 2026-11-10: 54; sent after 2026-11-17: 6; external-completion matches after 2026-11-01: 29; after 2026-11-20: zero. No newer messages relative to 2026-11-20T07:31:03.046Z. No aggregate recount; countsAuditedAt preserved.",
+    "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails for recent mailbox and Sent; batch_read_email for selected employer messages; no private Firestore access.",
+    "method": "Connected Gmail search_emails: five scoped searches, full pagination; sent attachment metadata and StagiairesMA external-completion overlap; no private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2831,7 +2831,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-20T07:31:03.046Z",
+  "lastSyncedAt": "2026-11-20T08:43:57.463Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
