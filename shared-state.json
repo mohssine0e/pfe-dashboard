@@ -2742,12 +2742,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T00:09:44.028Z",
+    "lastVerifiedAt": "2026-11-21T00:39:34.020Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Connected Gmail check completed 2026-11-21T00:09:44.028Z (Africa/Casablanca UTC+00:00). Non-promotional mailbox after 19 Nov: 58; sent with attachments after 10 Nov: 54; sent after 19 Nov: 1; external-completion phrase candidates after 14 Nov: 2; recruiting-keyword overlap after 17 Nov: 78. Compared with previous verified checkpoint 2026-11-20T22:24:23.947Z. 1 newer message(s) in mailbox scope; classified as third-party job alert(s), not employer application evidence. No new verified PFE employer or completion action. Historical aggregates not recounted; countsAuditedAt unchanged.",
+    "scope": "Actual check completed 2026-11-21T00:39:34.020Z (Africa/Casablanca UTC+00:00). Non-promotional mailbox after 19 Nov: 59; sent after 18 Nov: 4; historical sent with attachments after 20 Oct: 98 on first page (additional page exists, not comprehensively counted); external-completion candidates after 18 Nov: 2; recruiting-keyword overlap after 18 Nov: 14. Compared against previous verified checkpoint 2026-11-21T00:09:44.028Z. One newer social-network message at 00:33:47 UTC, not PFE employer activity. No new verified employer or completion action. Historical aggregate counts not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: five scoped searches, all returned pages complete; reviewed subjects, timestamps, sent attachment metadata, completion phrase candidates and recruitment overlap. No private Firestore access.",
+    "method": "Connected Gmail search_emails: five scoped queries; mailbox, recent sent, completion and recruiting overlap fully paginated; historical sent-with-attachments search returned 98 messages with a further page not audited. Reviewed subjects, timestamps, attachment metadata and candidate classifications. No private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2831,7 +2831,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T00:09:44.028Z",
+  "lastSyncedAt": "2026-11-21T00:39:34.020Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
