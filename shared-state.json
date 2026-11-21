@@ -1107,6 +1107,31 @@
       "source": "Recruitment-platform application confirmation",
       "evidenceCategory": "platform-confirmed submission (not PFE)",
       "fitWarning": "Permanent full-time position requiring 1–2 years' experience in Turin; not a PFE internship."
+    },
+    {
+      "recordId": "app-sti-srl-sviluppatore-web-java-linkedin-4487471319",
+      "company": "STI Srl Sviluppo Tecnologie Industriali",
+      "role": "Sviluppatore/Sviluppatrice Web Java",
+      "postingId": "linkedin:4487471319",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4487471319/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-21",
+      "source": "Verified LinkedIn platform application-sent confirmation",
+      "evidenceCategory": "platform-application-confirmation",
+      "notes": "Sora, Italy; on-site Java web developer role. PFE internship eligibility and contract type not verified; no employer acknowledgment."
+    },
+    {
+      "recordId": "app-chari-direct-pfe-software-engineering-20261121",
+      "company": "Chari",
+      "role": "PFE 2027 — Software Engineering / Backend or Full-Stack (spontaneous inquiry)",
+      "channel": "direct email",
+      "status": "Sent — exploratory PFE inquiry; employer receipt unconfirmed",
+      "cv": "General English CV PDF attachment verified",
+      "date": "2026-11-21",
+      "source": "Verified Gmail SENT PFE inquiry with PDF CV attachment",
+      "evidenceCategory": "verified-sent-email",
+      "notes": "Exploratory request for a 5–6 month PFE internship beginning January or February 2027; no specific vacancy or employer acknowledgment established."
     }
   ],
   "priority": [
@@ -2906,12 +2931,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T17:55:13.743Z",
+    "lastVerifiedAt": "2026-11-21T18:42:00.012Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Compared against verified checkpoint 2026-11-21T16:53:34.989Z, with overlap from 2026-11-19. Non-promotional recent mailbox 98; recent sent 3; sent with attachments since 2026-11-01 70; external completion notices since 2026-11-14 9; recruitment keywords since 2026-11-19 41. All pages complete. 1 newer messages, unrelated to recruitment (LinkedIn subscription payment notice); no verified employer steps or new completion actions. No full historical recount; aggregate countsAuditedAt unchanged.",
+    "scope": "Compared messages newer than 2026-11-21T17:55:13.743Z with overlap from 2026-11-19. Non-promotional mailbox since Nov 20: 51; sent since Nov 19: 4; sent with attachments since Nov 1: 69; StagiairesMA and similar external-completion search since Nov 1: 41; recruitment keywords since Nov 18: 57. All searches complete. Two new application-related messages read: direct Chari PFE inquiry with CV PDF, and LinkedIn STI Java web developer application-sent confirmation. No employer acknowledgment, urgent action, or new external-completion notice established. Historical aggregates not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five scoped queries, all result pages complete; recent message metadata and sent attachment indicators checked with historical overlap.",
+    "method": "Connected Gmail search_emails across five scoped queries (all pages complete), followed by read_email for two new application-related messages; checked sent PDF attachment metadata and prior dashboard posting identities.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2995,7 +3020,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T17:55:13.743Z",
+  "lastSyncedAt": "2026-11-21T18:42:00.012Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
