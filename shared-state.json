@@ -1066,25 +1066,50 @@
     {
       "rank": 1,
       "company": "Highness",
-      "task": "Highness requested internship convention and identity documentation after 19 Nov interview; verify request through established employer channel and coordinate convention with ENSA before securely sharing documents. No reply sent.",
-      "reason": "Direct post-interview employer response on 19 Nov requests documents to prepare legal paperwork. Meaningful next step, not proof of signed offer or completed hiring.",
-      "date": "2026-11-20",
-      "certainty": "Direct employer email verified 20 Nov; documentation pending",
+      "task": "After 19 Nov Software Engineer Intern interview, coordinate internship convention with ENSA and verify secure identity-document transfer with the established employer contact; no signed offer confirmed.",
+      "reason": "Direct employer request for CIN and internship convention; no verified subsequent response.",
+      "date": "2026-11-21",
+      "certainty": "Employer email verified; candidate response not found",
       "kind": "employer-next-step",
       "actionLinks": []
     },
     {
       "rank": 2,
-      "company": "torck GmbH",
-      "task": "Assessment deadline passed today at 11:53 UTC; check torck candidate portal for submission status, without assuming failure or completion",
-      "reason": "Employer invitation verified 19 Nov; 16 timed questions, one attempt. No completion confirmation found in connected Gmail. Do not assume a missed assessment proves rejection.",
-      "date": "2026-11-19",
-      "certainty": "Employer deadline verified; completion unknown as of 19 Nov 2026 14:56 UTC",
-      "kind": "deadline",
+      "company": "Psychometric assessment — employer not identified",
+      "task": "Verify the recruiting organization and role through a trusted channel before starting the 45-minute psychometric test; invitation says it expires 27 Nov 2026 at 21:24 (email timezone not specified). Do not share the personalized link.",
+      "reason": "20 Nov recruitment-team email lacks a company or job title and uses an unsecured numerical-IP test link; invitation alone does not establish legitimate employer identity.",
+      "date": "2026-11-21",
+      "certainty": "Email invitation verified; employer identity and legitimacy unverified",
+      "kind": "assessment",
       "actionLinks": []
     },
     {
       "rank": 3,
+      "company": "Trusted Advisors",
+      "task": "Check the original Teamtailor candidate portal for Développeurs Java BSCS (Ref16) email verification and application completion; avoid duplicate submission.",
+      "reason": "21 Nov employer-platform verification request followed by CV-receipt acknowledgment for the exact role. Receipt does not conclusively prove email verification finished.",
+      "date": "2026-11-21",
+      "certainty": "Two employer-platform messages verified; final verification state unknown",
+      "kind": "unfinished",
+      "actionLinks": [
+        {
+          "label": "Trusted Advisors careers",
+          "url": "https://jobs.trustedadvisors-group.com"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "company": "torck GmbH",
+      "task": "Check portal for assessment completion status after 19 Nov deadline; do not infer rejection.",
+      "reason": "No completion confirmation in checked Gmail.",
+      "date": "2026-11-21",
+      "certainty": "Deadline verified; completion unknown",
+      "kind": "deadline",
+      "actionLinks": []
+    },
+    {
+      "rank": 5,
       "company": "VINCI Energies Afrique de l’Ouest",
       "task": "Await recruiter review for Cloud Hybride Microsoft Azure PFE; do not reapply",
       "reason": "Employer Teamtailor receipt verified 17 Nov 2026 for exact Azure role; prior 16 Nov campaign deadline has passed. Monitoring role is distinct and its submission unverified.",
@@ -1099,7 +1124,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 6,
       "company": "Microsoft",
       "task": "Track submitted Software Engineer, Teamwork Experiences Internship Opportunities application; check eligibility/location and candidate Action Center",
       "reason": "Employer application acknowledgment on 17 Nov for exact requisition 200061280; no interview or decision. Location and Morocco PFE fit not independently confirmed.",
@@ -1109,7 +1134,7 @@
       "actionLinks": []
     },
     {
-      "rank": 5,
+      "rank": 7,
       "company": "Cnexia",
       "task": "Check live availability and submission status for Cloud & DevOps, Architecture and Full-Stack PFE roles",
       "reason": "Previously recorded Nov 10 closing date is not independently verified. One Cloud & DevOps submission was reported; avoid duplicate applications.",
@@ -1132,7 +1157,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 8,
       "company": "New PFE applications",
       "task": "Track Société Générale (26000NJV and 26000NJA), Managem (req888), and Sofrecom Full Stack — await review",
       "reason": "Both Société Générale roles and Managem acknowledged on 9 Nov. LinkedIn confirms Sofrecom Full Stack submission. No interview invitations verified.",
@@ -1154,7 +1179,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "company": "Ostorlab / CGI / Sofrecom DevOps / FGMED",
       "task": "Verify actual employer application forms, PFE duration and start-date compatibility before completing remaining steps",
       "reason": "Platform-generated completion prompts are not employer confirmations. FGMED advertises paid internship but immediate-start mismatch remains unverified. Sofrecom Full Stack application is separately confirmed sent via LinkedIn; its DevOps listing remains unverified.",
@@ -1180,7 +1205,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 10,
       "company": "Maersk / Intelcia / Inetum",
       "task": "Monitor existing applications without duplicate submissions",
       "reason": "Employer acknowledgments already exist; no new interview invitation verified.",
@@ -1198,7 +1223,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 11,
       "company": "BCG X",
       "task": "Assessment completed — await BCG X review",
       "reason": "Completion confirmed by CodeSignal email on 9 Nov and by the candidate. No passing score, employer decision or new assessment step verified.",
