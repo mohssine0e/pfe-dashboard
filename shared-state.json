@@ -2762,12 +2762,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T03:54:04.027Z",
+    "lastVerifiedAt": "2026-11-21T05:15:59.464Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Checked 2026-11-21T03:54:04.027Z Africa/Casablanca (UTC+00:00), against previous verified checkpoint 2026-11-21T02:50:55.201Z. External-completion overlap: six previously reconciled StagiairesMA notices; no newly evidenced queue additions. New Indeed platform notification from EdPulse for a remote WordPress regular job has no message body in the email, and is not verified PFE or exact-role employer evidence. No new PFE employer confirmation, interview, assessment, rejection, bounce, or urgent verified action. Historical sent attachment search first 100 results only, not a comprehensive recount; countsAuditedAt and metrics unchanged.",
+    "scope": "Actual Gmail audit completed 2026-11-21T05:15:59.464Z (Africa/Casablanca UTC+00:00), previous checkpoint 2026-11-21T03:54:04.027Z. Search result counts: non-promotional 42, recent sent 3, sent attachments 70, external-completion 8, recruitment overlap 44. No messages newer than prior checkpoint. Six StagiairesMA notices already reconciled; no new exact-role employer evidence or completion actions. Historical aggregate metrics not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: five scoped searches (non-promotional mailbox after 20 Nov, sent after 19 Nov, historical sent with attachments after 1 Nov, StagiairesMA/external-completion phrases after 19 Nov, recruitment-keyword overlap after 19 Nov); read new Indeed employer-platform message and recent sent PFE email, checked attachment metadata. No private Firestore access.",
+    "method": "Connected Gmail search_emails: five scoped, fully paginated searches (non-promotional mailbox after 20 Nov; sent after 19 Nov; sent attachments after 1 Nov; external-completion notices after 18 Nov; recruitment keyword overlap after 18 Nov). Compared against previous checkpoint; inspected subjects, timestamps and attachment metadata. No private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2851,7 +2851,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T03:54:04.027Z",
+  "lastSyncedAt": "2026-11-21T05:15:59.464Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
