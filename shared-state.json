@@ -2762,12 +2762,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T01:51:19.560Z",
+    "lastVerifiedAt": "2026-11-21T02:50:55.201Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Actual Gmail check completed 2026-11-21T01:51:19.560Z (Africa/Casablanca UTC+00:00). Since prior checkpoint 2026-11-21T00:39:34.020Z: two ONCF exact-role recruitment-site application receipts, six StagiairesMA intermediary completion notices, and one ONCF site registration notice (not an application). Search scopes: mailbox after 20 Nov (30 results); sent after 18 Nov (4); external completion after 18 Nov (8); recruiting overlap after 18 Nov (18). No comprehensive historical aggregate recount; countsAuditedAt unchanged.",
+    "scope": "Audit completed 2026-11-21T02:50:55.201Z (Africa/Casablanca UTC+00:00). Compared with previous verified checkpoint 2026-11-21T01:51:19.560Z using mailbox after 20 Nov, sent after 19 Nov, external completion after 19 Nov and recruitment-keyword overlap after 19 Nov. New Trusted Advisors Java BSCS Ref16 exact-role receipt and email-verification request, Cegid confirmed .NET/React experienced-position receipt (not PFE), and three sent PFE outreach emails including one verified PDF attachment. Exact-role non-PFE messages and generic outreach not conflated with existing PFE applications. Previously audited six StagiairesMA notices and two ONCF acknowledgements were overlap only. No comprehensive historical aggregate recount; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails, four scoped queries (non-promotional recent mailbox, recent sent, external-completion notices and recruiting-keyword overlap), all returned without pagination; read eight newly relevant full messages and reviewed recent sent attachment metadata. No private Firestore access.",
+    "method": "Connected Gmail search_emails: four scoped searches for recent non-promotional mailbox, sent mail, external-completion notices and recruitment-keyword overlap; read six new relevant full messages and checked sent attachment metadata. No private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2851,7 +2851,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T01:51:19.560Z",
+  "lastSyncedAt": "2026-11-21T02:50:55.201Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
