@@ -1194,7 +1194,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-20T07:10:00Z",
+    "updatedAt": "2026-11-21T07:02:29Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -1880,6 +1880,44 @@
         "nextAction": "Apply yourself before November 26 on oncf.etalent.ma.",
         "status": "New — apply on company website",
         "priority": "medium"
+      },
+      {
+        "company": "HESTIM",
+        "title": "Offre de stage PFE – Génie Informatique / Intelligence Artificielle / Data (H/F)",
+        "postingId": "8036",
+        "sourceUrl": "https://www.stagiaires.ma/stage-emploi-maroc/8036-offre-de-sta",
+        "source": "Stagiaires.ma",
+        "role": "Application development, Python, PostgreSQL, automation and Odoo integration",
+        "location": "Casablanca",
+        "durationNote": "5–6 months",
+        "applicationMethod": "Stagiaires.ma application button; upload not verified",
+        "note": "Two PFE pre-employment positions; early February 2027.",
+        "link": "https://www.stagiaires.ma/stage-emploi-maroc/8036-offre-de-sta",
+        "verifiedTitle": true,
+        "discoveredAt": "2026-11-21",
+        "checkedAt": "2026-11-21",
+        "startDate": "2027-02",
+        "dedicatedCvUploadVerified": false,
+        "cvGuidance": "Approved generic CV for profile-backed applications; no tailored copy without verified separate upload; no submission performed."
+      },
+      {
+        "company": "Sofrecom Maroc",
+        "title": "Campagne de Stage PFE 2027",
+        "postingId": "4490327145",
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
+        "source": "LinkedIn employer posting",
+        "role": "DEV-20 Angular/Java Spring AI; OPS-13 Terraform; OPS-14 CI/CD",
+        "location": "Rabat / Casablanca",
+        "durationMonths": 6,
+        "applicationMethod": "Employer requests CV by email, subject with up to two project codes and titles",
+        "note": "February 2027; previously reported but absent from current registries.",
+        "link": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
+        "verifiedTitle": true,
+        "discoveredAt": "2026-11-21",
+        "checkedAt": "2026-11-21",
+        "startDate": "2027-02",
+        "dedicatedCvUploadVerified": false,
+        "cvGuidance": "Approved generic CV for profile-backed applications; no tailored copy without verified separate upload; no submission performed."
       }
     ],
     "rules": {
