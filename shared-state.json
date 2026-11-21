@@ -1026,6 +1026,40 @@
       "date": "2026-11-21",
       "source": "ONCF recruitment-site receipt email",
       "evidenceCategory": "Verified recruitment-site acknowledgment for exact role; no screening decision"
+    },
+    {
+      "company": "Qualitiz Technologies Maroc",
+      "role": "Stagiaire PFE Technologies IA et Vibe coding",
+      "channel": "LinkedIn",
+      "status": "Applied (platform-confirmed)",
+      "date": "2026-11-21",
+      "source": "LinkedIn application-submission confirmation",
+      "evidenceCategory": "platform-confirmed submission",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4490299450/",
+      "recordId": "app-qualitiz-technologies-maroc-pfe-4490299450"
+    },
+    {
+      "company": "ENOSIS",
+      "role": "Stage PFE chez ENOSIS GROUP – ENovate Talent Day",
+      "channel": "Indeed",
+      "status": "Applied (platform-confirmed)",
+      "date": "2026-11-21",
+      "source": "Indeed application-submission confirmation",
+      "evidenceCategory": "platform-confirmed submission",
+      "postingUrl": "https://ma.indeed.com/viewjob?jk=e41c40eed388df00",
+      "recordId": "app-enosis-stage-pfe-enovate-e41c40eed388df00"
+    },
+    {
+      "company": "A2MAC1",
+      "role": "Fullstack Engineer",
+      "channel": "Indeed / Workable",
+      "status": "Applied (platform-confirmed)",
+      "date": "2026-11-21",
+      "source": "Indeed submission and Workable receipt",
+      "evidenceCategory": "platform-confirmed submission (not verified PFE)",
+      "postingUrl": "https://a2mac1.workable.com/jobs/5504862",
+      "recordId": "app-a2mac1-fullstack-engineer-5504862",
+      "fitWarning": "Regular fullstack role; PFE internship compatibility not established"
     }
   ],
   "priority": [
@@ -2800,12 +2834,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T11:42:29.317Z",
+    "lastVerifiedAt": "2026-11-21T12:44:51.860Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Actual check 2026-11-21T11:42:29.317Z Africa/Casablanca (UTC+00:00); prior checkpoint 2026-11-21T10:31:47.069Z. Since Nov 19 non-promotional mailbox 82; sent since Nov 18 6; sent with attachments since Oct 1 148 across 2 pages; external-completion candidates since Nov 14 8; recruitment-keyword matches since Nov 14 210 across 3 pages. One newer LinkedIn TOTALCALL job alert, not an application or employer confirmation. No verified new PFE employer or external-completion actions. Historical aggregate totals not recounted; countsAuditedAt unchanged.",
+    "scope": "Actual check 2026-11-21 13:44:51 Africa/Casablanca; previous checkpoint 2026-11-21T11:42:29.317Z. Four newer platform submission confirmations across three distinct applications: Qualitiz PFE, ENOSIS PFE, A2MAC1 fullstack (PFE fit unverified). No new StagiairesMA completion notices. Historical broad searches first 100 only; no comprehensive aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail: five scoped searches, fully paginated; checked recent non-promotional mailbox, sent mail, sent attachment metadata, external-completion phrases, recruitment-keyword matches; read the new candidate and excluded job alert. No private Firestore access.",
+    "method": "Connected Gmail searches: recent non-promotional mailbox, recent sent, sent with attachments, external-completion notices, recruitment keywords; read four new submission confirmations. Search pagination not exhaustive for historical broad queries.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2889,7 +2923,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T11:42:29.317Z",
+  "lastSyncedAt": "2026-11-21T12:44:51.860Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
