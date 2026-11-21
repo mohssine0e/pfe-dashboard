@@ -1060,6 +1060,53 @@
       "postingUrl": "https://a2mac1.workable.com/jobs/5504862",
       "recordId": "app-a2mac1-fullstack-engineer-5504862",
       "fitWarning": "Regular fullstack role; PFE internship compatibility not established"
+    },
+    {
+      "recordId": "app-linkedin-4486384606",
+      "company": "ADENTIS Italia",
+      "role": "Junior Software Developer – Java",
+      "channel": "LinkedIn",
+      "status": "Applied (platform-confirmed)",
+      "date": "2026-11-21",
+      "source": "LinkedIn application-submission confirmation",
+      "evidenceCategory": "platform-confirmed submission (not verified PFE)",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4486384606/",
+      "fitWarning": "Greater Brescia; regular junior role, PFE eligibility not established"
+    },
+    {
+      "recordId": "app-linkedin-4492068154",
+      "company": "VLC2 s.r.l.",
+      "role": "Sviluppatore Web Java",
+      "channel": "LinkedIn",
+      "status": "Applied (platform-confirmed)",
+      "date": "2026-11-21",
+      "source": "LinkedIn application-submission confirmation",
+      "evidenceCategory": "platform-confirmed submission (not verified PFE)",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4492068154/",
+      "fitWarning": "Greater Turin; regular Java developer role, PFE eligibility not established"
+    },
+    {
+      "recordId": "app-linkedin-4492321030",
+      "company": "BeaconFire Inc.",
+      "role": "Java Full-Stack Developer",
+      "channel": "LinkedIn",
+      "status": "Applied (platform-confirmed)",
+      "date": "2026-11-21",
+      "source": "LinkedIn application-submission confirmation",
+      "evidenceCategory": "platform-confirmed submission (not verified PFE)",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4492321030/",
+      "fitWarning": "Ohio, United States; regular role, PFE eligibility and work authorization not established"
+    },
+    {
+      "recordId": "app-action-ict-junior-java-m19jjt",
+      "company": "ACTION ICT SRL",
+      "role": "JUNIOR JAVA DEVELOPER - Rif.M19JJT",
+      "channel": "Reteinformaticalavoro",
+      "status": "Applied (platform-confirmed)",
+      "date": "2026-11-21",
+      "source": "Recruitment-platform application confirmation",
+      "evidenceCategory": "platform-confirmed submission (not PFE)",
+      "fitWarning": "Permanent full-time position requiring 1–2 years' experience in Turin; not a PFE internship."
     }
   ],
   "priority": [
@@ -2859,12 +2906,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T14:26:04.244Z",
+    "lastVerifiedAt": "2026-11-21T15:40:50.150Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Actual Gmail check completed 2026-11-21T14:26:04.244Z (Africa/Casablanca UTC+00:00); previous checkpoint 2026-11-21T13:37:49.811Z. Searches: non-promotional after 2026-11-19 (86, complete); sent after 2026-11-19 (3, complete); sent attachments after 2026-10-01 (first 100, historical search not exhaustive); external-completion phrases after 2026-10-01 (first 100, historical search not exhaustive); recruitment keywords after 2026-11-15 (first 100, historical search not exhaustive). No post-checkpoint messages found; overlapping application confirmations already reconciled. No aggregate recount.",
+    "scope": "Connected Gmail audit completed Saturday, 21 November 2026 at 16:40:50 GMT+1; previous verified checkpoint 2026-11-21T14:26:04.244Z. Five searches: non-promotional after 2026-11-19 (90, complete); sent after 2026-11-19 (3, complete); sent attachments after 2026-11-01 (70, complete); external completion phrases after 2026-11-01 (36, complete); recruitment keywords after 2026-11-19 (40, complete). Five relevant new messages read: four platform application confirmations (three LinkedIn, one Reteinformaticalavoro) and one account-credentials email excluded from application evidence. No new StagiairesMA completion notice or employer-issued urgent step. No comprehensive aggregate recount.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: five scoped searches; read subject, timestamps and attachment metadata for recent results; no full message-body reads required for post-checkpoint messages.",
+    "method": "Connected Gmail search_emails: five fully paginated scoped searches; batch_read_email for five relevant new messages, with exact company/role and posting identity verified where provided; attachment metadata reviewed.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2948,7 +2995,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T14:26:04.244Z",
+  "lastSyncedAt": "2026-11-21T15:40:50.150Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
