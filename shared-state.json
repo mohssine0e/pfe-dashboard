@@ -1006,6 +1006,26 @@
         "evidenceType": "employer-confirmation",
         "summary": "Ostorlab confirmed LinkedIn is its accepted application channel and said the Software Engineer Intern application will be reviewed; StagiairesMA submissions are not processed."
       }
+    },
+    {
+      "recordId": "app-oncf-refonte-cpa-20261121",
+      "company": "ONCF",
+      "role": "Refonte de l'application CPA (Centre de psychologie appliquée)",
+      "channel": "ONCF recruitment site",
+      "status": "Acknowledged — application registered",
+      "date": "2026-11-21",
+      "source": "ONCF recruitment-site receipt email",
+      "evidenceCategory": "Verified recruitment-site acknowledgment for exact role; no screening decision"
+    },
+    {
+      "recordId": "app-oncf-plateforme-grc-20261121",
+      "company": "ONCF",
+      "role": "Développement d'une plateforme GRC (Gouvernance, Risques et Conformité)",
+      "channel": "ONCF recruitment site",
+      "status": "Acknowledged — application registered",
+      "date": "2026-11-21",
+      "source": "ONCF recruitment-site receipt email",
+      "evidenceCategory": "Verified recruitment-site acknowledgment for exact role; no screening decision"
     }
   ],
   "priority": [
@@ -2742,12 +2762,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T00:39:34.020Z",
+    "lastVerifiedAt": "2026-11-21T01:51:19.560Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Actual check completed 2026-11-21T00:39:34.020Z (Africa/Casablanca UTC+00:00). Non-promotional mailbox after 19 Nov: 59; sent after 18 Nov: 4; historical sent with attachments after 20 Oct: 98 on first page (additional page exists, not comprehensively counted); external-completion candidates after 18 Nov: 2; recruiting-keyword overlap after 18 Nov: 14. Compared against previous verified checkpoint 2026-11-21T00:09:44.028Z. One newer social-network message at 00:33:47 UTC, not PFE employer activity. No new verified employer or completion action. Historical aggregate counts not recounted; countsAuditedAt unchanged.",
+    "scope": "Actual Gmail check completed 2026-11-21T01:51:19.560Z (Africa/Casablanca UTC+00:00). Since prior checkpoint 2026-11-21T00:39:34.020Z: two ONCF exact-role recruitment-site application receipts, six StagiairesMA intermediary completion notices, and one ONCF site registration notice (not an application). Search scopes: mailbox after 20 Nov (30 results); sent after 18 Nov (4); external completion after 18 Nov (8); recruiting overlap after 18 Nov (18). No comprehensive historical aggregate recount; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: five scoped queries; mailbox, recent sent, completion and recruiting overlap fully paginated; historical sent-with-attachments search returned 98 messages with a further page not audited. Reviewed subjects, timestamps, attachment metadata and candidate classifications. No private Firestore access.",
+    "method": "Connected Gmail search_emails, four scoped queries (non-promotional recent mailbox, recent sent, external-completion notices and recruiting-keyword overlap), all returned without pagination; read eight newly relevant full messages and reviewed recent sent attachment metadata. No private Firestore access.",
     "result": "success",
     "freshnessPolicy": "24-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -2831,7 +2851,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T00:39:34.020Z",
+  "lastSyncedAt": "2026-11-21T01:51:19.560Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
@@ -3391,6 +3411,72 @@
       "warning": "PFE internship indicated; verify the original posting and any additional employer-site submission. StagiairesMA reminder does not prove an incomplete employer application.",
       "discoveredAt": "2026-11-18",
       "source": "StagiairesMA automated platform completion notice"
+    },
+    {
+      "company": "HESTIM",
+      "role": "Offre de stage PFE – Génie Informatique / Intelligence Artificielle / Data (H/F)",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=33a2c6eb2dacfe8e",
+      "platform": "Indeed",
+      "discoveredAt": "2026-11-21",
+      "status": "needs-original-platform-check",
+      "source": "StagiairesMA intermediary completion notice",
+      "fitWarning": "PFE internship; platform reminder only. LinkedIn application for the same title was already confirmed sent; check whether this Indeed posting is the same vacancy before acting.",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
+    },
+    {
+      "company": "Inetum",
+      "role": "Liasse fiscale Développé avec du CAP",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=bc2f3e0ae99b4b23",
+      "platform": "Indeed",
+      "discoveredAt": "2026-11-21",
+      "status": "needs-original-platform-check",
+      "source": "StagiairesMA intermediary completion notice",
+      "fitWarning": "Tax/accounting-oriented title; PFE software fit and internship contract not established.",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
+    },
+    {
+      "company": "MAROC FORCE EMPLOI",
+      "role": "OFFRE DE STAGE RÉMUNÉRÉ – STAGIAIRE EN COMPTABILITÉ",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=cbb85efb0484aff8",
+      "platform": "Indeed",
+      "discoveredAt": "2026-11-21",
+      "status": "needs-original-platform-check",
+      "source": "StagiairesMA intermediary completion notice",
+      "fitWarning": "Paid accounting internship, not an established software-engineering PFE fit.",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
+    },
+    {
+      "company": "Orchid Island Real Estate",
+      "role": "OFFRE DE STAGE EN PROMPT ENGINEER & IA , MARRAKECH",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=e2d36be6b1885c4b",
+      "platform": "Indeed",
+      "discoveredAt": "2026-11-21",
+      "status": "needs-original-platform-check",
+      "source": "StagiairesMA intermediary completion notice",
+      "fitWarning": "AI/prompt-engineering internship in Marrakech; PFE eligibility, dates and technical fit unverified.",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
+    },
+    {
+      "company": "Easy Solutions",
+      "role": "Stagiaire en développement informatique",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=442c59d517f4c9e4",
+      "platform": "Indeed",
+      "discoveredAt": "2026-11-21",
+      "status": "needs-original-platform-check",
+      "source": "StagiairesMA intermediary completion notice",
+      "fitWarning": "Software-development internship; PFE duration and start date unverified.",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
+    },
+    {
+      "company": "Inetum",
+      "role": "Configuration et Tests du Module Transportation Management (TM) en SAP S/4HANA",
+      "applyUrl": "https://ma.indeed.com/viewjob?jk=790ab9a84eb5462a",
+      "platform": "Indeed",
+      "discoveredAt": "2026-11-21",
+      "status": "needs-original-platform-check",
+      "source": "StagiairesMA intermediary completion notice",
+      "fitWarning": "SAP Transportation Management configuration/testing; PFE eligibility and software-development fit unverified.",
+      "cvUrl": "https://drive.google.com/file/d/12pbxhUinxsV48-SjKwJ4c5Zf7iITNMNB/view?usp=drivesdk"
     }
   ],
   "completionQueuePolicy": {
