@@ -1132,6 +1132,18 @@
       "source": "Verified Gmail SENT PFE inquiry with PDF CV attachment",
       "evidenceCategory": "verified-sent-email",
       "notes": "Exploratory request for a 5–6 month PFE internship beginning January or February 2027; no specific vacancy or employer acknowledgment established."
+    },
+    {
+      "recordId": "app-ac2i-pfe-django-react-cloud-20261121",
+      "company": "AC2I",
+      "role": "Stage PFE — Django / React / IA & Cloud-DevOps",
+      "channel": "direct email",
+      "status": "Sent — employer receipt unconfirmed",
+      "cv": "General English PFE CV PDF attachment verified",
+      "date": "2026-11-21",
+      "source": "Verified Gmail SENT internship application with PDF CV attachment",
+      "evidenceCategory": "verified-sent-email",
+      "notes": "Direct application referencing a modular software suite and React, APIs, databases, cloud/DevOps; candidate notes stronger Java/Spring Boot experience than Django. No employer acknowledgment or exact posting URL verified."
     }
   ],
   "priority": [
@@ -2931,12 +2943,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T21:39:10.615Z",
+    "lastVerifiedAt": "2026-11-21T23:11:10.245Z",
     "timezone": "Africa/Casablanca",
-    "scope": "2026-11-21 audit: recent non-promotional 64; recent sent 4; sent with attachments 48; external-completion candidates 9; recruitment keywords 41. All five searches fully paginated (no next-page tokens). Read 64 recent messages including overlap with previous verified checkpoint 2026-11-21T20:53:22.268Z; no newer qualifying messages. Historical aggregate counts not recounted; no private Firestore access.",
+    "scope": "2026-11-21 audit since prior verified checkpoint 2026-11-21T21:39:10.615Z, with overlap from 2026-11-20: recent non-promotional 66, recent sent 4, sent with attachments 70 since 2026-11-07, recruitment keywords 45; external-completion search since 2026-11-07 returned first 100 only (not exhaustively paginated). Recent searches had no further pages. Read new direct AC2I PFE application and unrelated Indeed job alert; no new employer-issued response or new completion notice since checkpoint. Historical aggregate counts not recounted; no private Firestore access.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_email_ids and batch_read_email; checkpoint comparison with overlap; targeted sent, attachment, recruitment and external-completion searches",
+    "method": "Connected Gmail search_emails and batch_read_email; checkpoint comparison with overlap; targeted sent, attachment, recruitment and external-completion searches",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -3020,7 +3032,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T21:39:10.615Z",
+  "lastSyncedAt": "2026-11-21T23:11:10.245Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
