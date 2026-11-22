@@ -1138,12 +1138,12 @@
       "company": "AC2I",
       "role": "Stage PFE — Django / React / IA & Cloud-DevOps",
       "channel": "direct email",
-      "status": "Sent — employer receipt unconfirmed",
+      "status": "Draft — sending not verified",
       "cv": "General English PFE CV PDF attachment verified",
       "date": "2026-11-21",
-      "source": "Verified Gmail SENT internship application with PDF CV attachment",
-      "evidenceCategory": "verified-sent-email",
-      "notes": "Direct application referencing a modular software suite and React, APIs, databases, cloud/DevOps; candidate notes stronger Java/Spring Boot experience than Django. No employer acknowledgment or exact posting URL verified."
+      "source": "Gmail draft found; no matching sent message in scoped Sent search",
+      "evidenceCategory": "gmail-draft-unconfirmed",
+      "notes": "A matching Gmail draft with a CV PDF exists, but no corresponding sent message was found in the checked Sent scope. Do not treat as submitted or employer acknowledged; previous sent classification requires independent verification."
     }
   ],
   "priority": [
@@ -2943,12 +2943,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-22T00:36:08.915Z",
+    "lastVerifiedAt": "2026-11-22T08:49:57.260Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Recent non-promotional mail after 2026-11-20: 67; sent after 2026-11-19: 4; sent with attachments after 2026-11-15: 32; completion notices after 2026-11-15: 9; recruitment keyword matches after 2026-11-19: 46. All five searches returned no further pages. No messages later than prior verified checkpoint 2026-11-22T00:18:25.310Z; overlapping application-view notification already reconciled. No new verified employer or platform completion action. No aggregate recount; countsAuditedAt remains 2026-11-07. Public snapshot only; private Firestore not accessed.",
+    "scope": "Five fully paginated Gmail result sets with overlap since 2026-11-19/20 (69 recent non-promotional messages, other scopes independently checked); additional AC2I draft/Sent and external-completion searches fully paginated. No messages later than 2026-11-22T00:36:08.915Z in the recent search. AC2I draft contradicts prior sent classification; corrected to unconfirmed. Existing psychometric test invitation has deadline 2026-11-27 21:24 per email; employer identity not independently established. No comprehensive aggregate recount; countsAuditedAt unchanged. No private Firestore access.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: five scoped queries, all result sets fully paginated; compared message timestamps to previous successful checkpoint 2026-11-22T00:18:25.310Z with overlap through 2026-11-20; checked recent sent messages, sent attachments and StagiairesMA/external-completion notices.",
+    "method": "Connected Gmail search_emails: recent non-promotional mail since 2026-11-20, sent since 2026-11-19, sent attachments since 2026-11-01, completion notices and recruitment keywords since 2026-11-19, plus AC2I exact subject and Sent cross-check; read psychometric assessment email.",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -3032,7 +3032,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-22T00:36:08.915Z",
+  "lastSyncedAt": "2026-11-22T08:49:57.260Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
