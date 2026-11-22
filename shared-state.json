@@ -1126,12 +1126,12 @@
       "company": "Chari",
       "role": "PFE 2027 — Software Engineering / Backend or Full-Stack (spontaneous inquiry)",
       "channel": "direct email",
-      "status": "Sent — exploratory PFE inquiry; employer receipt unconfirmed",
+      "status": "Delivery delayed — Gmail retry pending; not a permanent bounce",
       "cv": "General English CV PDF attachment verified",
       "date": "2026-11-21",
       "source": "Verified Gmail SENT PFE inquiry with PDF CV attachment",
-      "evidenceCategory": "verified-sent-email",
-      "notes": "Exploratory request for a 5–6 month PFE internship beginning January or February 2027; no specific vacancy or employer acknowledgment established."
+      "evidenceCategory": "Verified Gmail temporary delivery delay; outgoing PFE email not yet confirmed delivered",
+      "notes": "Exploratory PFE inquiry sent 21 Nov 2026 with CV attachment. Gmail reported on 22 Nov that recipient server connection timed out and automatic retries continue; delivery is unconfirmed, not permanently failed. Do not treat as employer rejection or acknowledgment."
     },
     {
       "recordId": "app-ac2i-pfe-django-react-cloud-20261121",
@@ -2958,12 +2958,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-22T20:33:49.615Z",
+    "lastVerifiedAt": "2026-11-22T21:45:55.673Z",
     "timezone": "Africa/Casablanca",
-    "scope": "22 Nov 2026 scoped Gmail audit: non-promotional messages after 21 Nov (60, 1 page); sent after 18 Nov (7, 1); sent with attachments after 15 Nov (32, 1); recruitment-keyword messages after 15 Nov (217, 3); external-completion notices after 15 Nov (9, 1). Compared with 2026-11-22T19:46:08.521Z checkpoint; one newly received generic saved-job alert, not an application or employer action. No verified new employer messages or external completion actions. Aggregate counts not recounted; countsAuditedAt remains 2026-11-07. Private Firestore not accessed.",
+    "scope": "22 Nov 2026: targeted non-promotional after 22 Nov (13 messages, fully paginated); broader after 19 Nov non-promotional (first 100, additional page not audited); sent after 15 Nov and sent with attachments after 15 Nov (first 100 each, pagination limits not claimed); recruitment-keyword after 19 Nov (46, complete); external-completion notices after 19 Nov (6, complete). Compared to prior successful 2026-11-22T20:33:49.615Z checkpoint. New Chari temporary delivery delay read and matched to 21 Nov outgoing PFE inquiry; Gmail retries pending, no permanent bounce. CWBT junior Java rejection for a regular non-PFE role not merged into PFE records. No new StagiairesMA notice after checkpoint. Historical aggregate counts not recounted; countsAuditedAt 2026-11-07 preserved. Private Firestore not accessed.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five scoped searches with complete pagination; compared with last successful checkpoint",
+    "method": "Connected Gmail search_emails (five scoped queries), targeted 22 Nov non-promotional search with full pagination, and batch_read_email verification of delivery notice",
     "result": "success",
     "freshnessPolicy": "2 hours; scoped Gmail verification, with independent historical aggregate audit dates preserved."
   },
@@ -3047,7 +3047,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-22T20:33:49.615Z",
+  "lastSyncedAt": "2026-11-22T21:45:55.673Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
