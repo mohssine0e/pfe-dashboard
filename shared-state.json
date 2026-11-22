@@ -2943,12 +2943,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-21T23:11:10.245Z",
+    "lastVerifiedAt": "2026-11-22T00:18:25.310Z",
     "timezone": "Africa/Casablanca",
-    "scope": "2026-11-21 audit since prior verified checkpoint 2026-11-21T21:39:10.615Z, with overlap from 2026-11-20: recent non-promotional 66, recent sent 4, sent with attachments 70 since 2026-11-07, recruitment keywords 45; external-completion search since 2026-11-07 returned first 100 only (not exhaustively paginated). Recent searches had no further pages. Read new direct AC2I PFE application and unrelated Indeed job alert; no new employer-issued response or new completion notice since checkpoint. Historical aggregate counts not recounted; no private Firestore access.",
+    "scope": "Since prior verified checkpoint 2026-11-21T23:11:10.245Z with overlap from 2026-11-20: 66 recent non-promotional messages (fully paginated), 39 recruitment keyword matches (fully paginated), 9 external-completion notices since 2026-11-15 (fully paginated). Sent and sent-attachment searches performed; sent-attachment historical results may be truncated at first 100. One newer LinkedIn platform notice confirms Qualitiz Technologies Maroc viewed the existing application for Stagiaire PFE Technologies IA et Vibe coding, posting 4490299450; not an employer-issued acknowledgment, interview, or assessment. No newly verified completion action. No aggregate recount; historical countsAuditedAt unchanged; no private Firestore access.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails and batch_read_email; checkpoint comparison with overlap; targeted sent, attachment, recruitment and external-completion searches",
+    "method": "Connected Gmail search_emails (five scoped searches) and read_email for new application-view notice; overlap comparison against 2026-11-21T23:11:10.245Z",
     "result": "success",
     "freshnessPolicy": "2-hour verification; advance only after successful Gmail query and verified GitHub write."
   },
@@ -3032,7 +3032,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-21T23:11:10.245Z",
+  "lastSyncedAt": "2026-11-22T00:18:25.310Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
