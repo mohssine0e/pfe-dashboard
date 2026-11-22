@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-20",
-  "source": "Connected Gmail scoped check and public Morocco PFE research 20 Nov 2026; no outbound applications; historical metrics unchanged.",
+  "updatedAt": "2026-11-22",
+  "source": "Connected Gmail scoped verification and public LinkedIn/Indeed Morocco research 22 Nov 2026; no outbound applications; historical aggregate metrics preserved.",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
     "emailSentMessages": 86,
@@ -1150,9 +1150,9 @@
     {
       "rank": 1,
       "company": "Highness",
-      "task": "After 19 Nov Software Engineer Intern interview, coordinate internship convention with ENSA and verify secure identity-document transfer with the established employer contact; no signed offer confirmed.",
+      "task": "Employer requested CIN and internship convention after online interview. Confirm secure identity-document transfer and obtain ENSA convention; no signed offer verified.",
       "reason": "Direct employer request for CIN and internship convention; no verified subsequent response.",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "certainty": "Employer email verified; candidate response not found",
       "kind": "employer-next-step",
       "actionLinks": []
@@ -1314,6 +1314,21 @@
       "certainty": "Completion verified; assessment outcome pending",
       "kind": "assessment",
       "actionLinks": []
+    },
+    {
+      "rank": 12,
+      "company": "PCA / TESSI / NOVELIS",
+      "task": "Review verified employer posting channels; PCA already received an earlier application for another role, so compare exact role before any further application. TESSI public roundup lists 27 Nov deadline; confirm original source.",
+      "reason": "Public Morocco PFE roundup and PCA recruiter post checked 22 Nov; no verified new direct-mail eligible unsubmitted vacancy.",
+      "date": "2026-11-22",
+      "certainty": "Third-party roundup; PCA recruiter post public",
+      "kind": "opportunity",
+      "actionLinks": [
+        {
+          "label": "PFE roundup",
+          "url": "https://fr.linkedin.com/posts/dr-badr-el-khalyly-49b992129_pfe2027-stagepfe-recrutement-activity-7528128688245288960-LjX1"
+        }
+      ]
     }
   ],
   "followUpPolicy": {
@@ -2943,33 +2958,33 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-22T08:49:57.260Z",
+    "lastVerifiedAt": "2026-11-22T08:55:37+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Five fully paginated Gmail result sets with overlap since 2026-11-19/20 (69 recent non-promotional messages, other scopes independently checked); additional AC2I draft/Sent and external-completion searches fully paginated. No messages later than 2026-11-22T00:36:08.915Z in the recent search. AC2I draft contradicts prior sent classification; corrected to unconfirmed. Existing psychometric test invitation has deadline 2026-11-27 21:24 per email; employer identity not independently established. No comprehensive aggregate recount; countsAuditedAt unchanged. No private Firestore access.",
-    "staleAfterHours": 2,
+    "scope": "Connected Gmail inbox search after 19 Nov and 16 Nov for PFE, internships, recruitment and decisions; Sent search after 7 Nov; inspected employer Highness, psychometric invitation, Trusted Advisors and ONCF messages. Recent results are scoped, not a comprehensive mailbox-wide count. Private Firestore not accessed.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: recent non-promotional mail since 2026-11-20, sent since 2026-11-19, sent attachments since 2026-11-01, completion notices and recruitment keywords since 2026-11-19, plus AC2I exact subject and Sent cross-check; read psychometric assessment email.",
+    "method": "Connected Gmail search_emails and batch_read_email; search succeeded 22 Nov 2026 08:55 Africa/Casablanca",
     "result": "success",
-    "freshnessPolicy": "2-hour verification; advance only after successful Gmail query and verified GitHub write."
+    "freshnessPolicy": "24 hours; update only after successful Gmail query and verified GitHub commit."
   },
   "sourcesChecked": [
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
-      "url": "https://ma.linkedin.com/jobs/view/campagne-de-stage-pfe-2027-at-sofrecom-maroc-4490327145",
-      "checkedAt": "2026-11-20T08:43:45.239Z",
+      "url": "https://ma.linkedin.com/in/meryem-oumchih-341766111",
+      "checkedAt": "2026-11-22T08:55:37+00:00",
       "status": "ok",
-      "details": "Public Sofrecom campaign, Bertrandt, torck, CGI postings inspected; Sofrecom official email instructions seen but prior Sofrecom applications require duplicate/subject verification. No new send.",
+      "details": "Public PCA recruiter post and Morocco PFE roundup checked; PCA direct email advertised but prior PCA submission exists; no duplicate send.",
       "accessIssue": null
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
-      "url": "https://ma.indeed.com/q-stage-java-%2C-spring-boot-emplois.html",
-      "checkedAt": "2026-11-20T08:43:45.239Z",
+      "url": "https://ma.indeed.com/q-stage-java%2C-spring-boot-%2C-react-emplois.html",
+      "checkedAt": "2026-11-22T08:55:37+00:00",
       "status": "limited",
-      "details": "Public Indeed Morocco results inspected: PCA, Ostorlab, Sofrecom and other listings; known submissions and no newly verified employer mailto eligibility.",
-      "accessIssue": "Aggregator listings do not prove original employer application channel."
+      "details": "Public Indeed Morocco Java/Spring Boot/React search results inspected, including PCA and Cartway; employer-owned application route not confirmed.",
+      "accessIssue": "Search results alone do not establish exact posting validity or verified mailto."
     },
     {
       "id": "rekrute",
@@ -3001,11 +3016,11 @@
     {
       "id": "catalogues",
       "label": "Public PFE catalogues",
-      "url": "https://fr.linkedin.com/posts/salstart_sal-bfe-book-activity-7526923079134941184-U1a0",
-      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "url": "https://fr.linkedin.com/posts/dr-badr-el-khalyly-49b992129_catalogue-pfe-20262027-70-sujets-pour-activity-7514692097879298050-aAhy",
+      "checkedAt": "2026-11-22T08:55:37+00:00",
       "status": "limited",
-      "details": "Public PFE catalogue search attempted; no original 2027 catalogue verified.",
-      "accessIssue": "Original document not verified."
+      "details": "Public 70-topic 2026–27 academic catalogue announcement checked; not verified as an employer internship vacancy.",
+      "accessIssue": "Original catalogue/application channel not verified."
     },
     {
       "id": "ensa",
