@@ -1352,7 +1352,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-21T07:02:29Z",
+    "updatedAt": "2026-11-23T07:04:04Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -2076,6 +2076,25 @@
         "startDate": "2027-02",
         "dedicatedCvUploadVerified": false,
         "cvGuidance": "Approved generic CV for profile-backed applications; no tailored copy without verified separate upload; no submission performed."
+      },
+      {
+        "company": "Société Générale",
+        "title": "Stage PFE - Data & Digital Transformation",
+        "postingId": "societegenerale:26000NIQ",
+        "sourceUrl": "https://careers.societegenerale.com/en/job-offers/stage-pfe-data-digital-transformation-26000NIQ-en",
+        "link": "https://careers.societegenerale.com/en/job-offers/stage-pfe-data-digital-transformation-26000NIQ-en",
+        "source": "Société Générale official careers",
+        "role": "Software development and automation (Python/C#), TDD/BDD, deployment, AI support tools, ETL",
+        "location": "Casablanca, Morocco",
+        "durationMonths": 6,
+        "startDate": "2027-01-31",
+        "verifiedTitle": true,
+        "discoveredAt": "2026-11-23T07:04:04Z",
+        "checkedAt": "2026-11-23T07:04:04Z",
+        "applicationMethod": "Online application via Société Générale official careers posting; exact form fields not independently verified",
+        "dedicatedCvUploadVerified": false,
+        "note": "Original posting explicitly states paid six-month internship and 2027/01/31 start. Careers metadata labels contract 'Permanent contract', inconsistent with internship body; verify contract type with employer before applying. No explicit deadline published.",
+        "cvGuidance": "Use approved generic CV for profile-backed applications; tailor only after a distinct CV upload is confirmed. No application or CV submission performed."
       }
     ],
     "rules": {
