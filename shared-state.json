@@ -3017,9 +3017,9 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T15:37:19+00:00+01:00",
+    "lastVerifiedAt": "2026-11-23T15:37:19+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "23 Nov 2026: non-promotional mail after Nov 21 (up to 100 results; confirm page completeness), sent after Nov 20 (4, complete), sent with attachments after Nov 20 (3, complete), recruitment-keyword matches after Nov 20 (77, complete), external-completion notices after Nov 15 (8, complete). Compared with prior verified 14:52:44 Africa/Casablanca checkpoint and earlier context. Newly verified Green Digital IT direct PFE email with PDF and Saham Bank LinkedIn PFE application submission. No new external-completion notice. Chari delay is temporary, not final failure. Historical totals not recounted.",
+    "scope": "23 Nov 2026: non-promotional mail after Nov 21 (100-result page; pagination not conclusively verified), sent after Nov 20 (4, complete), sent with attachments after Nov 20 (3, complete), recruitment-keyword matches after Nov 20 (77, complete), external-completion notices after Nov 15 (8, complete). Compared with prior verified 14:52:44 Africa/Casablanca checkpoint and earlier context. Newly verified Green Digital IT direct PFE email with PDF and Saham Bank LinkedIn PFE application submission. No new external-completion notice. Chari delay is temporary, not final failure. Historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
     "method": "Connected Gmail search_emails (five scoped searches, no remaining pagination) and read_email for direct sent application, LinkedIn submission confirmation, Highness thread, and Chari temporary delivery notice; public GitHub reconciliation; no private Firestore access",
