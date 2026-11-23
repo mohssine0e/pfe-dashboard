@@ -2977,12 +2977,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T11:33:32+01:00",
+    "lastVerifiedAt": "2026-11-23T13:10:51+01",
     "timezone": "Africa/Casablanca",
-    "scope": "2026-11-23 scoped overlapping audit: non-promotional messages after Nov 20 (85); sent after Nov 15 (36); sent with attachments after Nov 1 (71); recruiting-keyword matches after Nov 15 (290 across 3 pages); external-completion notices after Nov 1 (36). All five scopes fully paginated. Compared against 10:23:10 Africa/Casablanca prior checkpoint; one new LinkedIn Greycell Labs Java/J2EE job alert read and excluded as non-application. No verified new PFE application, employer response, deadline, or completion action. Historical aggregate totals not recounted.",
+    "scope": "23 Nov 2026 overlapping audit: non-promotional after Nov 21 (60, complete); sent after Nov 20 (query returned results, pagination not fully verified); sent with attachments after Nov 15 (pagination not fully verified); recruiting keywords after Nov 15 (pagination not fully verified); external-completion notices after Nov 1 (34, complete). Additional sent after Nov 22 (0, complete), completion notices after Nov 22 (0, complete). Compared with 11:33:32 Africa/Casablanca checkpoint. Newly received LinkedIn messaging notification read; no employer/application evidence. No verified new PFE action. Historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails with fully paginated scoped queries; read_email verification of new job-alert candidate",
+    "method": "Connected Gmail search_emails: five scoped queries plus targeted recent sent/completion cross-check; read_email of newly received LinkedIn messaging notification",
     "result": "success",
     "freshnessPolicy": "24 hours for scoped verification; historical aggregate counts retain independent audit date."
   },
@@ -3066,7 +3066,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-23T10:33:32.830Z",
+  "lastSyncedAt": "2026-11-23T12:10:51.231Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
