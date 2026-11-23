@@ -3017,7 +3017,7 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T19:25:41+00:00",
+    "lastVerifiedAt": "2026-11-23T19:25:41+01:00",
     "timezone": "Africa/Casablanca",
     "scope": "23 Nov 2026: after Nov 22 non-promotional 26 (complete); sent after Nov 20 4 (complete); sent with attachments after Nov 15 33 (complete); recruiting keywords after Nov 15 first 100 (pagination incomplete); external-completion notices after Nov 15 8 (complete, latest Nov 21). Overlap compared with previous verified 18:17:46 Africa/Casablanca; no newer recruiting or completion messages observed. No aggregate recount; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
