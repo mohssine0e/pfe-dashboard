@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
-  "updatedAt": "2026-11-22",
-  "source": "Connected Gmail scoped verification and public LinkedIn/Indeed Morocco research 22 Nov 2026; no outbound applications; historical aggregate metrics preserved.",
+  "updatedAt": "2026-11-23",
+  "source": "Scoped connected Gmail verification and public Morocco PFE discovery on 23 Nov 2026; no new direct-email applications; historical aggregates unchanged.",
   "syncMode": "Shared snapshot. Both devices display same data on refresh; publication is updated via ChatGPT GitHub commits, not direct browser-to-Gmail sync.",
   "metrics": {
     "emailSentMessages": 86,
@@ -1126,12 +1126,12 @@
       "company": "Chari",
       "role": "PFE 2027 — Software Engineering / Backend or Full-Stack (spontaneous inquiry)",
       "channel": "direct email",
-      "status": "Delivery delayed — Gmail retry pending; not a permanent bounce",
+      "status": "Temporary delivery delay — Gmail retry pending",
       "cv": "General English CV PDF attachment verified",
       "date": "2026-11-21",
       "source": "Verified Gmail SENT PFE inquiry with PDF CV attachment",
       "evidenceCategory": "Verified Gmail temporary delivery delay; outgoing PFE email not yet confirmed delivered",
-      "notes": "Exploratory PFE inquiry sent 21 Nov 2026 with CV attachment. Gmail reported on 22 Nov that recipient server connection timed out and automatic retries continue; delivery is unconfirmed, not permanently failed. Do not treat as employer rejection or acknowledgment."
+      "notes": "Gmail temporary delivery-delay notice observed 22 Nov; not a permanent bounce or confirmed delivery."
     },
     {
       "recordId": "app-ac2i-pfe-django-react-cloud-20261121",
@@ -1150,10 +1150,10 @@
     {
       "rank": 1,
       "company": "Highness",
-      "task": "Employer requested CIN and internship convention after online interview. Confirm secure identity-document transfer and obtain ENSA convention; no signed offer verified.",
-      "reason": "Direct employer request for CIN and internship convention; no verified subsequent response.",
-      "date": "2026-11-22",
-      "certainty": "Employer email verified; candidate response not found",
+      "task": "Employer requested internship convention and identity documents after interview; a reply appears in the email thread on 22 Nov, but outgoing attachment and secure receipt are not independently verified. Confirm with employer through established secure channel; no signed offer confirmed.",
+      "reason": "Employer request verified; later thread excerpt indicates candidate reply, but no independently verified receipt or attachment metadata.",
+      "date": "2026-11-23",
+      "certainty": "Employer request verified; document delivery/receipt uncertain",
       "kind": "employer-next-step",
       "actionLinks": []
     },
@@ -2977,78 +2977,78 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T09:24:58+01:00",
+    "lastVerifiedAt": "2026-11-23T09:33:45+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "Actual completed Gmail check 2026-11-23T09:24:58+01:00; previous checkpoint 2026-11-23T08:47:44+01:00. Fully paginated searches: non-promotional after 2026-11-21 (61); sent after 2026-11-18 (7); sent attachments after 2026-11-01 (70); recruiting keywords after 2026-11-16 (56); external completion notices after 2026-11-01 (35). No matching message newer than previous checkpoint. Older temporary delivery delay to Chari and rejection for CWBT regular junior Java role reviewed; not newly received; no inferred PFE rejection or completion. Historical aggregates not recounted; countsAuditedAt unchanged.",
-    "staleAfterHours": 2,
+    "scope": "Successful connected Gmail searches: inbox/non-sent messages after 21 Nov; targeted recruiting/assessment/rejection/delivery messages after 22 Nov; sent messages after 20 Nov; drafts and targeted Highness sent search. Reviewed Highness thread excerpt, Chari temporary delivery-delay notification, recent employer/portal notices. Search scopes are not an exhaustive historical audit; aggregate counts preserved.",
+    "staleAfterHours": 24,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: five fully paginated scoped searches; inspected selected delivery-delay and employer-status messages; compared timestamps and labels against previous checkpoint; no Firestore access",
+    "method": "Connected Gmail search_emails (multiple successful scoped queries, timestamp and message-summary inspection); no authorized private Firestore read",
     "result": "success",
-    "freshnessPolicy": "2 hours; scoped Gmail verification, with independent historical aggregate audit dates preserved."
+    "freshnessPolicy": "24 hours for scoped verification; historical aggregate counts retain independent audit date."
   },
   "sourcesChecked": [
     {
       "id": "linkedin",
       "label": "LinkedIn public jobs",
       "url": "https://ma.linkedin.com/in/meryem-oumchih-341766111",
-      "checkedAt": "2026-11-22T08:55:37+00:00",
-      "status": "ok",
-      "details": "Public PCA recruiter post and Morocco PFE roundup checked; PCA direct email advertised but prior PCA submission exists; no duplicate send.",
-      "accessIssue": null
+      "checkedAt": "2026-11-23T09:33:45+00:00",
+      "status": "limited",
+      "details": "Public PFE roundup and alumni reposts checked; TESSI 27 Nov and Novelis 30 Nov deadlines appear in third-party posts, not confirmed by original employer; PCA and SQORUS previously applied. No eligible new verified direct-email posting.",
+      "accessIssue": "Employer-owned vacancy and mailto not independently verified."
     },
     {
       "id": "indeed",
       "label": "Indeed Morocco",
-      "url": "https://ma.indeed.com/q-stage-java%2C-spring-boot-%2C-react-emplois.html",
-      "checkedAt": "2026-11-22T08:55:37+00:00",
+      "url": "https://ma.indeed.com/q-stage-java-%2C-spring-boot-l-rabat-emplois.html",
+      "checkedAt": "2026-11-23T09:33:45+00:00",
       "status": "limited",
-      "details": "Public Indeed Morocco Java/Spring Boot/React search results inspected, including PCA and Cartway; employer-owned application route not confirmed.",
-      "accessIssue": "Search results alone do not establish exact posting validity or verified mailto."
+      "details": "Public Morocco Java/Spring Boot search and Sofrecom PFE 2027 campaign listing checked; platform submission required; existing Sofrecom submissions require role-level deduplication.",
+      "accessIssue": "Search listing does not prove employer-owned email or submission state."
     },
     {
       "id": "rekrute",
       "label": "ReKrute",
       "url": "https://www.rekrute.com/offres-emploi-metiers-de-l-it.html",
-      "checkedAt": "2026-11-20T08:43:45.239Z",
+      "checkedAt": "2026-11-23T09:33:45+00:00",
       "status": "limited",
-      "details": "Public ReKrute IT listings and targeted search inspected; no newly verified eligible PFE employer email route.",
-      "accessIssue": "Generic listings; no exact new employer application route verified."
+      "details": "Targeted public ReKrute PFE Java/DevOps search attempted; no verified eligible exact new vacancy.",
+      "accessIssue": "No specific new official application route surfaced."
     },
     {
       "id": "stagiaires",
       "label": "Stagiaires.ma",
       "url": "https://www.stagiaires.ma/stage-emploi-maroc/7558-stagiaire-pfe-ingenieur-full-stack-ia-generative-f-h",
-      "checkedAt": "2026-11-20T08:43:45.239Z",
+      "checkedAt": "2026-11-23T09:33:45+00:00",
       "status": "limited",
-      "details": "Public Sofrecom listing on Stagiaires.ma inspected; LinkedIn application history and employer instructions take precedence.",
-      "accessIssue": "Platform listing is not proof of employer processing."
+      "details": "Targeted Stagiaires.ma 2027 React/DevOps search attempted; no independently verifiable new exact listing.",
+      "accessIssue": "No matching original listing confirmed."
     },
     {
       "id": "company",
       "label": "Company careers pages",
-      "url": null,
-      "checkedAt": "2026-11-19T08:40:38.379Z",
+      "url": "https://www.novelis.io/fr/carrieres",
+      "checkedAt": "2026-11-23T09:33:45+00:00",
       "status": "limited",
-      "details": "Targeted Société Générale employer careers search attempted; no independently verified new employer-owned application page returned.",
-      "accessIssue": "Search results insufficient to establish an official application route."
+      "details": "Official Novelis careers and Tessi public company pages checked; Novelis careers currently shows Paris CDI roles, not Morocco PFE; no verified direct-email PFE route.",
+      "accessIssue": "Original PFE application instructions not verified."
     },
     {
       "id": "catalogues",
       "label": "Public PFE catalogues",
-      "url": "https://fr.linkedin.com/posts/dr-badr-el-khalyly-49b992129_catalogue-pfe-20262027-70-sujets-pour-activity-7514692097879298050-aAhy",
-      "checkedAt": "2026-11-22T08:55:37+00:00",
+      "url": "https://pfebooks.com/catalogue/2026/inetum-marocco/",
+      "checkedAt": "2026-11-23T09:33:45+00:00",
       "status": "limited",
-      "details": "Public 70-topic 2026–27 academic catalogue announcement checked; not verified as an employer internship vacancy.",
-      "accessIssue": "Original catalogue/application channel not verified."
+      "details": "Public Inetum 2026–27 18-subject PFE book and YaneCode 16-subject PFE book listings inspected; third-party catalogues are not employer submission proof.",
+      "accessIssue": "Exact eligible role/application route not verified."
     },
     {
       "id": "ensa",
       "label": "ENSA / alumni announcements",
       "url": "https://ensah.ma/public/tableauAffichage.php",
-      "checkedAt": "2026-11-20T08:43:45.239Z",
+      "checkedAt": "2026-11-23T09:33:45+00:00",
       "status": "limited",
-      "details": "Targeted ENSA 2027 PFE/alumni public search attempted; no relevant original PFE posting verified.",
-      "accessIssue": "Search did not return an original eligible posting."
+      "details": "Targeted ENSA PFE 2027 public search attempted; no eligible original employer announcement found.",
+      "accessIssue": "Search returned no verified vacancy."
     }
   ],
   "sourceSearchPolicy": {
