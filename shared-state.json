@@ -2977,7 +2977,7 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T11:33:25+00:00+01:00",
+    "lastVerifiedAt": "2026-11-23T11:33:32+01:00",
     "timezone": "Africa/Casablanca",
     "scope": "2026-11-23 scoped overlapping audit: non-promotional messages after Nov 20 (85); sent after Nov 15 (36); sent with attachments after Nov 1 (71); recruiting-keyword matches after Nov 15 (290 across 3 pages); external-completion notices after Nov 1 (36). All five scopes fully paginated. Compared against 10:23:10 Africa/Casablanca prior checkpoint; one new LinkedIn Greycell Labs Java/J2EE job alert read and excluded as non-application. No verified new PFE application, employer response, deadline, or completion action. Historical aggregate totals not recounted.",
     "staleAfterHours": 2,
@@ -3066,7 +3066,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-23T10:33:25.495Z",
+  "lastSyncedAt": "2026-11-23T10:33:32.830Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
