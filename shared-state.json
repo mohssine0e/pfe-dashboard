@@ -3017,12 +3017,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T15:37:19+01:00",
+    "lastVerifiedAt": "2026-11-23T17:18:46+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "23 Nov 2026: non-promotional mail after Nov 21 (100-result page; pagination not conclusively verified), sent after Nov 20 (4, complete), sent with attachments after Nov 20 (3, complete), recruitment-keyword matches after Nov 20 (77, complete), external-completion notices after Nov 15 (8, complete). Compared with prior verified 14:52:44 Africa/Casablanca checkpoint and earlier context. Newly verified Green Digital IT direct PFE email with PDF and Saham Bank LinkedIn PFE application submission. No new external-completion notice. Chari delay is temporary, not final failure. Historical totals not recounted.",
+    "scope": "23 Nov 2026: non-promotional mail after Nov 21 (69, complete); sent after Nov 18, sent with attachments after Nov 15, recruiting keyword matches after Nov 18 (searches performed; some historical result sets not fully enumerated); external completion notices after Nov 15 (9, complete); targeted external completion after Nov 22 (0, complete), targeted recruiting after Nov 22 (5, complete). Compared against 15:37:19 previous verified checkpoint and older context. Only newly observed message was a generic LinkedIn messaging notification, read and excluded from employer/application evidence. No verified new PFE application, employer response, urgent deadline or external-completion action. No historical aggregate recount; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails (five scoped searches, no remaining pagination) and read_email for direct sent application, LinkedIn submission confirmation, Highness thread, and Chari temporary delivery notice; public GitHub reconciliation; no private Firestore access",
+    "method": "Connected Gmail search_emails: five paginated scoped searches (recent non-promotional, sent, sent with attachments, recruiting keywords, intermediary completion notices), two additional targeted searches; read_email of new LinkedIn notification; public GitHub snapshot only, no private Firestore access",
     "result": "success",
     "freshnessPolicy": "24 hours for scoped verification; historical aggregate counts retain independent audit date."
   },
@@ -3106,7 +3106,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-23T14:37:19.647Z",
+  "lastSyncedAt": "2026-11-23T16:18:46.301Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
