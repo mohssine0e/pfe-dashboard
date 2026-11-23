@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T12:25:05+01:00",
+ "generatedAt": "2026-11-23T15:20:00+01:00",
  "gmail": {
   "checkedAt": "2026-11-17T21:10:00+01:00",
   "checkedBy": "Maya",
@@ -311,6 +311,24 @@
    "channel": "LinkedIn Easy Apply",
    "evidence": "verified",
    "note": "LinkedIn job tracker shows Applied."
+  },
+  {
+   "company": "Green Digital IT",
+   "role": "PFE 2027 – Développeur Full Stack Java / Angular",
+   "kind": "sent",
+   "date": "2026-11-23",
+   "channel": "Email (offer in a LinkedIn group post)",
+   "evidence": "verified",
+   "note": "Emailed stages@greendigitalit.ma from Gmail on 23 Nov 2026 with English Java Backend PFE CV attached (Gmail send confirmed)."
+  },
+  {
+   "company": "Saham Bank",
+   "role": "STAGES PFE 2027 – PROFILS INGÉNIEURS",
+   "kind": "sent",
+   "date": "2026-11-23",
+   "channel": "LinkedIn Easy Apply",
+   "evidence": "verified",
+   "note": "LinkedIn 'application was sent' email 23 Nov 2026 14:57 and job page shows Application submitted. https://www.linkedin.com/jobs/view/4492378973/"
   }
  ],
  "emailCampaign": [
