@@ -3017,12 +3017,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T17:25:21+01:00",
+    "lastVerifiedAt": "2026-11-23T18:17:46.616+00:00",
     "timezone": "Africa/Casablanca",
-    "scope": "23 Nov 2026 scoped audit: recent non-promotional after Nov 22 (25, complete); sent after Nov 20 (4, complete); sent with attachments after Nov 15 (33, complete); recruiting keyword matches after Nov 18 (72, complete); external completion notices after Nov 18 (7, complete; latest Nov 21). Compared to prior verified checkpoint 17:18:46 Africa/Casablanca and older context. No newly verified PFE application, employer action, delivery failure, urgent deadline or completion requirement; existing Green Digital IT and Saham Bank applications and Highness conversation already predate checkpoint. Chari delay is temporary, not permanent. No aggregate recount; historical countsAuditedAt retained.",
+    "scope": "23 Nov 2026: recent non-promotional after Nov 22 (26, complete); sent after Nov 20 (4, complete); sent with attachments after Nov 15 (33, complete); recruitment keywords after Nov 15 (100 first page, further pages not audited); external completion notices after Nov 15 (8, complete, latest Nov 21). Compared with prior checkpoint 17:25:21 +01:00, with historical overlap. New LinkedIn application-view notification for STI Srl Java web role, not an employer-issued acknowledgement/interview or urgent action. No verified new PFE action or external completion notice. No aggregate recount; historical countsAuditedAt retained.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails: five complete paginated scoped searches (recent non-promotional, sent, sent attachments, recruiting keywords, external completion notices); batch_read_email of five contextual messages; public GitHub snapshot only",
+    "method": "Connected Gmail search_emails: five scoped searches (recent non-promotional, sent, sent attachments, recruitment keywords, external completion notices); read_email of STI LinkedIn application-view notification. Four searches complete; recruitment keyword search first 100 results only (pagination incomplete). Public GitHub snapshot only.",
     "result": "success",
     "freshnessPolicy": "24 hours for scoped verification; historical aggregate counts retain independent audit date."
   },
@@ -3106,7 +3106,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-23T16:25:21.406Z",
+  "lastSyncedAt": "2026-11-23T18:17:46.616Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
