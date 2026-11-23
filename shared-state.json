@@ -2958,12 +2958,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-22T22:51:00.147Z",
+    "lastVerifiedAt": "2026-11-23T00:14:23.970Z",
     "timezone": "Africa/Casablanca",
-    "scope": "22 Nov 2026 actual check 2026-11-22T22:51:00.147Z (Africa/Casablanca UTC+00): Q1 61 messages, 1 page(s), complete; Q2 4 messages, 1 page(s), complete; Q3 2 messages, 1 page(s), complete; Q4 101 messages, 2 page(s), complete; Q5 6 messages, 1 page(s), complete. Queries: after:2026/11/21 -in:spam -in:trash -category:promotions | in:sent after:2026/11/19 | in:sent has:attachment after:2026/11/19 | after:2026/11/19 {candidature entretien assessment test recrutement PFE internship rejection delivery failed delayed} | after:2026/11/19 {\"Complétez votre candidature\" \"complete your application\" \"finaliser votre candidature\"}. Compared to prior successful 2026-11-22T21:45:55.673Z checkpoint. New 22:48 Highness item is labeled DRAFT, not a sent reply; quoted 19 Nov employer request asks for CIN and internship convention, no new employer reply verified. Chari temporary delay remains previously audited; no new StagiairesMA notice. Historical aggregate counts not recounted; countsAuditedAt 2026-11-07 preserved. Private Firestore not accessed.",
+    "scope": "23 Nov 2026 actual Gmail check 2026-11-23T00:14:23.970Z (Africa/Casablanca UTC+00). Five fully paginated connected Gmail searches: Q1 after:2026/11/21 nonspam/nontrash/nonpromotional 63 messages/1 page; Q2 sent after:2026/11/20 3/1; Q3 sent attachments after:2026/11/15 32/1; Q4 recruitment keywords after:2026/11/18 106/2; Q5 external completion notices after:2026/11/15 9/1. Compared with prior successful checkpoint 2026-11-22T22:51:00.147Z. New items: two generic job alerts (Wa Lkhdma PFE recommendation and Leyton listing), and Highness reply still DRAFT, not sent. No new verified employer correspondence, sent application, delivery failure, or StagiairesMA completion notice. Historical aggregate counts not recounted; countsAuditedAt preserved. Private Firestore not accessed.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five scoped searches with pagination; read_email inspection of Highness draft and quoted employer request",
+    "method": "Connected Gmail search_emails; five scoped, fully paginated searches; subject, timestamps, labels, sent attachment metadata and prior checkpoint comparison",
     "result": "success",
     "freshnessPolicy": "2 hours; scoped Gmail verification, with independent historical aggregate audit dates preserved."
   },
@@ -3047,7 +3047,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-22T22:51:00.147Z",
+  "lastSyncedAt": "2026-11-23T00:14:23.970Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
