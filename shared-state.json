@@ -2958,12 +2958,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T05:49:42.091Z",
+    "lastVerifiedAt": "2026-11-23T06:38:40.199Z",
     "timezone": "Africa/Casablanca",
-    "scope": "Actual completed check 2026-11-23T05:49:42.091Z (23 Nov 2026, 06:49:42 GMT+1, Africa/Casablanca). Previous verified checkpoint 2026-11-23T04:44:24.511Z. Queries: after:2026/11/22 excluding spam/trash/promotions (17); sent after:2026/11/20 (3); sent with attachment after:2026/11/15 (32); recruitment keywords after:2026/11/18 excluding promotions (107, 2 pages); external completion phrases after:2026/11/15 (9). All queries fully paginated. No matching messages newer than prior checkpoint. Earlier overlapping context checked; no new employer action, outgoing application, delivery failure, deadline or intermediary completion request established. Historical aggregate totals NOT recounted; countsAuditedAt unchanged.",
+    "scope": "Actual completed Gmail check 2026-11-23T06:38:40.199Z (Africa/Casablanca local time is UTC+1 on 2026-11-23). Previous verified checkpoint 2026-11-23T05:49:42.091Z. Fully paginated scopes: after:2026/11/21 -in:spam -in:trash -category:promotions (64 results, 1 page(s)); in:sent after:2026/11/20 (3 results, 1 page(s)); in:sent has:attachment after:2026/11/15 (32 results, 1 page(s)); after:2026/11/15 {candidature entretien assessment test rejection refus PFE stage internship delivery failed} -in:spam -in:trash (320 results, 4 page(s)); after:2026/11/15 {\"Complétez votre candidature\" \"finaliser votre candidature\" \"complete your application\"} -in:spam -in:trash (8 results, 1 page(s)). 0 messages newer than checkpoint in combined scopes. Overlapping context checked; no new verified PFE employer action or StagiairesMA completion requirement. Historical aggregates not recounted; countsAuditedAt unchanged.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five scoped queries, all pages retrieved (including recruitment keyword pagination); timestamp, label and attachment metadata comparison against previous verified checkpoint; no private Firestore access",
+    "method": "Connected Gmail search_emails; five scoped fully paginated queries; timestamps, labels, sent attachment metadata and overlapping context compared with previous verified checkpoint; no private Firestore access",
     "result": "success",
     "freshnessPolicy": "2 hours; scoped Gmail verification, with independent historical aggregate audit dates preserved."
   },
@@ -3047,7 +3047,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-23T05:49:42.091Z",
+  "lastSyncedAt": "2026-11-23T06:38:40.199Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
