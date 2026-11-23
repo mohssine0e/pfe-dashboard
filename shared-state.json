@@ -1352,7 +1352,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-23T07:04:04Z",
+    "updatedAt": "2026-11-23T14:45:00Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -2095,6 +2095,23 @@
         "dedicatedCvUploadVerified": false,
         "note": "Original posting explicitly states paid six-month internship and 2027/01/31 start. Careers metadata labels contract 'Permanent contract', inconsistent with internship body; verify contract type with employer before applying. No explicit deadline published.",
         "cvGuidance": "Use approved generic CV for profile-backed applications; tailor only after a distinct CV upload is confirmed. No application or CV submission performed."
+      },
+      {
+        "company": "Xelops Technology",
+        "title": "Stage PFE pré-embauche – Intelligence Artificielle",
+        "postingId": "lnkd:eAY_x5Vq",
+        "sourceUrl": "https://lnkd.in/eAY_x5Vq",
+        "link": "https://lnkd.in/eAY_x5Vq",
+        "source": "LinkedIn roundup post (Othmane), past week, found 2026-11-23",
+        "role": "AI PFE with pre-hire",
+        "location": "Casablanca, Morocco",
+        "verifiedTitle": false,
+        "discoveredAt": "2026-11-23T14:45:00Z",
+        "checkedAt": "2026-11-23T14:45:00Z",
+        "applicationMethod": "Link from the post (lnkd.in short link); form not opened",
+        "dedicatedCvUploadVerified": false,
+        "note": "Low-medium fit: AI-focused, not his Java/backend core. Title from a roundup post, not the company's page. No deadline stated. Not applied.",
+        "cvGuidance": "English or French general CV. No application performed."
       }
     ],
     "rules": {
