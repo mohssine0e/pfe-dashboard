@@ -2958,12 +2958,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T00:14:23.970Z",
+    "lastVerifiedAt": "2026-11-23T00:57:24.216Z",
     "timezone": "Africa/Casablanca",
-    "scope": "23 Nov 2026 actual Gmail check 2026-11-23T00:14:23.970Z (Africa/Casablanca UTC+00). Five fully paginated connected Gmail searches: Q1 after:2026/11/21 nonspam/nontrash/nonpromotional 63 messages/1 page; Q2 sent after:2026/11/20 3/1; Q3 sent attachments after:2026/11/15 32/1; Q4 recruitment keywords after:2026/11/18 106/2; Q5 external completion notices after:2026/11/15 9/1. Compared with prior successful checkpoint 2026-11-22T22:51:00.147Z. New items: two generic job alerts (Wa Lkhdma PFE recommendation and Leyton listing), and Highness reply still DRAFT, not sent. No new verified employer correspondence, sent application, delivery failure, or StagiairesMA completion notice. Historical aggregate counts not recounted; countsAuditedAt preserved. Private Firestore not accessed.",
+    "scope": "Actual check 2026-11-23T00:57:24.216Z (Nov 23, 2026, 1:57:24 a.m. GMT+1). Q1 after:2026/11/21 nonspam/nontrash/nonpromotional 63 messages/1 page; Q2 sent after:2026/11/20 3/1; Q3 sent attachments after:2026/11/15 23/1; Q4 recruitment keywords after:2026/11/18 137/2; Q5 external completion after:2026/11/18 8/1. Compared against prior successful checkpoint 2026-11-23T00:14:23.970Z with earlier context. One new Wa Lkhdma Stage PFE job alert (not an application); Highness draft remains DRAFT, not sent; Leyton generic job alert. No verified new employer correspondence, sent application, failure or StagiairesMA completion notice. Historical counts not recounted; independent countsAuditedAt preserved. Private Firestore not accessed.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five scoped, fully paginated searches; subject, timestamps, labels, sent attachment metadata and prior checkpoint comparison",
+    "method": "Connected Gmail search_emails: five fully paginated scoped queries; batch_read_email of three recent messages; timestamp, labels, sent and attachment metadata, and previous checkpoint comparison",
     "result": "success",
     "freshnessPolicy": "2 hours; scoped Gmail verification, with independent historical aggregate audit dates preserved."
   },
@@ -3047,7 +3047,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-23T00:14:23.970Z",
+  "lastSyncedAt": "2026-11-23T00:57:24.216Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
