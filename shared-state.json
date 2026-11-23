@@ -3017,7 +3017,7 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T21:19:53++01:00",
+    "lastVerifiedAt": "2026-11-23T21:19:53+01:00",
     "timezone": "Africa/Casablanca",
     "scope": "23 Nov 2026: non-promotional after Nov 22 27 (complete); sent after Nov 20 4 (complete); sent attachments after Nov 16 9 (complete); recruitment keywords after Nov 16 first 99 (additional page not audited); external completion notices after Nov 16 8 (complete). Compared to 19:25:41 Africa/Casablanca previous verification; one newer generic LinkedIn connection invitation, not employer activity. No new PFE application, verified employer action, urgent deadline or external completion request. No aggregate recount; countsAuditedAt remains independently dated.",
     "staleAfterHours": 2,
