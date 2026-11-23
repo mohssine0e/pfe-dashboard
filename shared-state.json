@@ -1144,6 +1144,29 @@
       "source": "Gmail draft found; no matching sent message in scoped Sent search",
       "evidenceCategory": "gmail-draft-unconfirmed",
       "notes": "A matching Gmail draft with a CV PDF exists, but no corresponding sent message was found in the checked Sent scope. Do not treat as submitted or employer acknowledged; previous sent classification requires independent verification."
+    },
+    {
+      "recordId": "app-green-digital-it-pfe-2027-fullstack-java-angular",
+      "company": "Green Digital IT",
+      "role": "PFE 2027 – Développeur Full Stack Java / Angular",
+      "channel": "email",
+      "status": "Sent",
+      "date": "2026-11-23",
+      "cv": "Java Backend EN PDF",
+      "source": "Connected Gmail sent label",
+      "evidenceCategory": "Verified direct outgoing PFE application with CV attachment; employer receipt unconfirmed"
+    },
+    {
+      "recordId": "app-saham-bank-stages-pfe-2027-profils-ingenieurs-linkedin-4492378973",
+      "company": "Saham Bank (Officiel)",
+      "role": "STAGES PFE 2027 - PROFILS INGÉNIEURS",
+      "postingId": "linkedin:4492378973",
+      "postingUrl": "https://www.linkedin.com/jobs/view/4492378973/",
+      "channel": "LinkedIn",
+      "status": "Application sent via LinkedIn — employer receipt unverified",
+      "date": "2026-11-23",
+      "source": "LinkedIn application-sent notification",
+      "evidenceCategory": "Verified LinkedIn platform submission confirmation; not employer acknowledgement"
     }
   ],
   "priority": [
@@ -2994,12 +3017,12 @@
     }
   ],
   "gmailVerification": {
-    "lastVerifiedAt": "2026-11-23T14:52:44+01:00",
+    "lastVerifiedAt": "2026-11-23T15:37:19+00:00+01:00",
     "timezone": "Africa/Casablanca",
-    "scope": "23 Nov 2026: non-promotional after Nov 21 (68, complete); sent after Nov 20 (3, complete); sent with attachments after Nov 15 (32, complete); recruiting keywords after Nov 20 (66, complete); external-completion phrases after Nov 15 (8, complete). Compared with previous 13:53:40 Africa/Casablanca checkpoint. Two new LinkedIn messaging notifications were read and did not verify PFE employer activity. No new sent PFE applications or external-completion notices. Historical aggregates not recounted.",
+    "scope": "23 Nov 2026: non-promotional mail after Nov 21 (up to 100 results; confirm page completeness), sent after Nov 20 (4, complete), sent with attachments after Nov 20 (3, complete), recruitment-keyword matches after Nov 20 (77, complete), external-completion notices after Nov 15 (8, complete). Compared with prior verified 14:52:44 Africa/Casablanca checkpoint and earlier context. Newly verified Green Digital IT direct PFE email with PDF and Saham Bank LinkedIn PFE application submission. No new external-completion notice. Chari delay is temporary, not final failure. Historical totals not recounted.",
     "staleAfterHours": 2,
     "countsAuditedAt": "2026-11-07",
-    "method": "Connected Gmail search_emails; five complete scoped searches (no pagination remaining), two newly received LinkedIn notices read; no private Firestore access",
+    "method": "Connected Gmail search_emails (five scoped searches, no remaining pagination) and read_email for direct sent application, LinkedIn submission confirmation, Highness thread, and Chari temporary delivery notice; public GitHub reconciliation; no private Firestore access",
     "result": "success",
     "freshnessPolicy": "24 hours for scoped verification; historical aggregate counts retain independent audit date."
   },
@@ -3083,7 +3106,7 @@
     "auditRule": "Update checkedAt only after actual query, fetch or source review; do not advance on dashboard load, page refresh or scheduled task trigger without a completed search",
     "freshness": "No continuous monitoring claim; statuses describe last recorded real check."
   },
-  "lastSyncedAt": "2026-11-23T13:52:44.890Z",
+  "lastSyncedAt": "2026-11-23T14:37:19.647Z",
   "syncTimezone": "Africa/Casablanca",
   "cvMasters": {
     "policy": "The visible CV filename must be short and application-ready; approved source versions remain unchanged. Recruitment platforms using saved profile CVs get one generic Mohssine_Echlaihi_PFE.pdf. Only for an employer-hosted form with a confirmed separate PDF upload, duplicate the closest approved source and lightly tailor the profile/objective to the company and exact role. Never invent qualifications or label a draft submitted.",
