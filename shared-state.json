@@ -1375,7 +1375,7 @@
   ],
   "backupSearch": {
     "label": "Backup search — Maya",
-    "updatedAt": "2026-11-23T14:45:00Z",
+    "updatedAt": "2026-11-27T07:02:17Z",
     "producer": "Maya / compatible daily backup search",
     "offers": [
       {
@@ -2135,6 +2135,24 @@
         "dedicatedCvUploadVerified": false,
         "note": "Low-medium fit: AI-focused, not his Java/backend core. Title from a roundup post, not the company's page. No deadline stated. Not applied.",
         "cvGuidance": "English or French general CV. No application performed."
+      },
+      {
+        "company": "Expleo Group",
+        "title": "PFE DTX 2027",
+        "postingId": "linkedin:4494114246",
+        "sourceUrl": "https://ma.linkedin.com/jobs/view/pfe-dtx-2027-at-expleo-group-4494114246",
+        "link": "https://ma.linkedin.com/jobs/view/pfe-dtx-2027-at-expleo-group-4494114246",
+        "source": "Employer LinkedIn job posting",
+        "role": "Application development, software engineering, automation, testing and deployment; Java, Python, JavaScript, APIs, cloud and DevOps",
+        "location": "Tanger, Morocco",
+        "durationMonths": 6,
+        "verifiedTitle": true,
+        "discoveredAt": "2026-11-27T07:02:17Z",
+        "checkedAt": "2026-11-27T07:02:17Z",
+        "applicationMethod": "LinkedIn Apply sign-in required; downstream application method unverified",
+        "dedicatedCvUploadVerified": false,
+        "note": "Paid six-month PFE, 2027 campaign explicitly in title; exact start date and deadline not stated.",
+        "cvGuidance": "Approved generic CV for profile-backed applications; tailor only after separate upload is verified. No submission performed."
       }
     ],
     "rules": {
